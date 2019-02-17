@@ -1,0 +1,401 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Masters/Doctoral Thesis 
+% LaTeX Template
+% Version 2.5 (27/8/17)
+%
+% This template was downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Version 2.x major modifications by:
+% Vel (vel@latextemplates.com)
+%
+% This template is based on a template by:
+% Steve Gunn (http://users.ecs.soton.ac.uk/srg/softwaretools/document/templates/)
+% Sunil Patel (http://www.sunilpatel.co.uk/thesis-template/)
+%
+% Template license:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+11pt, % The default document font size, options: 10pt, 11pt, 12pt
+%oneside, % Two side (alternating margins) for binding by default, uncomment to switch to one side
+english, % ngerman for German
+singlespacing, % Single line spacing, alternatives: onehalfspacing or doublespacing
+%draft, % Uncomment to enable draft mode (no pictures, no links, overfull hboxes indicated)
+%nolistspacing, % If the document is onehalfspacing or doublespacing, uncomment this to set spacing in lists to single
+%liststotoc, % Uncomment to add the list of figures/tables/etc to the table of contents
+%toctotoc, % Uncomment to add the main table of contents to the table of contents
+%parskip, % Uncomment to add space between paragraphs
+%nohyperref, % Uncomment to not load the hyperref package
+headsepline, % Uncomment to get a line under the header
+%chapterinoneline, % Uncomment to place the chapter title next to the number on one line
+%consistentlayout, % Uncomment to change the layout of the declaration, abstract and acknowledgements pages to match the default layout
+]{MastersDoctoralThesis} % The class file specifying the document structure
+
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+
+\usepackage{mathpazo} % Use the Palatino font by default
+
+\usepackage[style=authoryear, backend=biber]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
+
+\addbibresource{RSI2018-bib.bib} % The filename of the bibliography
+\addbibresource{example.bib}
+
+\usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
+
+% Packages added by Niel:
+\usepackage{hyphenat}
+\usepackage{xspace}
+\usepackage{hyperref}
+\usepackage{}
+\usepackage[]{todo}
+\usepackage{eurosym} 
+\usepackage{textcomp}
+\usepackage[modulo]{lineno}
+\usepackage{quotchap}
+\linenumbers
+
+
+
+% New definitions:
+\newcommand\nox{\texorpdfstring{NO\textsubscript{x}}{NOx}\xspace}
+
+%----------------------------------------------------------------------------------------
+%	MARGIN SETTINGS
+%----------------------------------------------------------------------------------------
+
+\geometry{
+	paper=a4paper, % Change to letterpaper for US letter
+	inner=2.5cm, % Inner margin
+	outer=3.8cm, % Outer margin
+	bindingoffset=.5cm, % Binding offset
+	top=1.5cm, % Top margin
+	bottom=1.5cm, % Bottom margin
+ 	%showframe, % Uncomment to show how the type block is set on the page
+}
+
+%----------------------------------------------------------------------------------------
+%	THESIS INFORMATION
+%----------------------------------------------------------------------------------------
+
+\thesistitle{Analysis of biodiesel by \texorpdfstring{SFC$\times$GC}{SFC×GC}} % Your thesis title, this is used in the title and abstract, print it elsewhere with \ttitle
+\supervisor{Prof. ER \textsc{Rohwer}} % Your supervisor's name, this is used in the title page, print it elsewhere with \supname
+\examiner{} % Your examiner's name, this is not currently used anywhere in the template, print it elsewhere with \examname
+\degree{Doctor of Philosophy} % Your degree name, this is used in the title page and abstract, print it elsewhere with \degreename
+\author{Daniel \textsc{Malan}} % Your name, this is used in the title page and abstract, print it elsewhere with \authorname
+\addresses{} % Your address, this is not currently used anywhere in the template, print it elsewhere with \addressname
+
+\subject{Chemistry} % Your subject area, this is not currently used anywhere in the template, print it elsewhere with \subjectname
+\keywords{} % Keywords for your thesis, this is not currently used anywhere in the template, print it elsewhere with \keywordnames
+\university{University of Pretoria} % Your university's name and URL, this is used in the title page and abstract, print it elsewhere with \univname
+\department{Department of Chemistry} % Your department's name and URL, this is used in the title page and abstract, print it elsewhere with \deptname
+\group{Research Group Name} % Your research group's name and URL, this is used in the title page, print it elsewhere with \groupname
+\faculty{Natural and Agricultural Sciences} % Your faculty's name and URL, this is used in the title page and abstract, print it elsewhere with \facname
+
+\AtBeginDocument{
+\hypersetup{pdftitle=\ttitle} % Set the PDF's title to your title
+\hypersetup{pdfauthor=\authorname} % Set the PDF's author to your name
+\hypersetup{pdfkeywords=\keywordnames} % Set the PDF's keywords to your keywords
+}
+
+\begin{document}
+ 
+\frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
+
+\pagestyle{plain} % Default to the plain heading style until the thesis style is called for the body content
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+\begin{center}
+
+\vspace*{.06\textheight}
+{\scshape\LARGE \univname\par}\vspace{1.5cm} % University name
+\textsc{\Large Doctoral Thesis}\\[0.5cm] % Thesis type
+
+\HRule \\[0.4cm] % Horizontal line
+{\huge \bfseries \ttitle\par}\vspace{0.4cm} % Thesis title
+\HRule \\[1.5cm] % Horizontal line
+ 
+\begin{minipage}[t]{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Author:}\\
+%\label{\href{http://www.johnsmith.com}}{\authorname} % Author name - remove the \href bracket to remove the link
+{\authorname}
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.4\textwidth}
+\begin{flushright} \large
+\emph{Supervisor:} \\
+%\label{\href{http://www.jamessmith.com}}{\supname} % Supervisor name - remove the \href bracket to remove the link  
+{\supname}
+\end{flushright}
+\end{minipage}\\[3cm]
+ 
+\vfill
+
+\large \textit{A thesis submitted in fulfillment of the requirements\\ for the degree of \degreename}\\[0.3cm] % University requirement text
+\textit{in the}\\[0.4cm]
+\groupname\\\deptname\\[2cm] % Research group name and department name
+ 
+\vfill
+
+{\large \today}\\[4cm] % Date
+%\includegraphics{Logo} % University/department logo - uncomment to place it
+ 
+\vfill
+\end{center}
+\end{titlepage}
+
+%----------------------------------------------------------------------------------------
+%	DECLARATION PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{declaration}
+\addchaptertocentry{\authorshipname} % Add the declaration to the table of contents
+\noindent I, \authorname, declare that this thesis titled, \enquote{\ttitle} and the work presented in it are my own. I confirm that:
+
+\begin{itemize} 
+\item This work was done wholly or mainly while in candidature for a research degree at this University.
+\item Where any part of this thesis has previously been submitted for a degree or any other qualification at this University or any other institution, this has been clearly stated.
+\item Where I have consulted the published work of others, this is always clearly attributed.
+\item Where I have quoted from the work of others, the source is always given. With the exception of such quotations, this thesis is entirely my own work.
+\item I have acknowledged all main sources of help.
+\item Where the thesis is based on work done by myself jointly with others, I have made clear exactly what was done by others and what I have contributed myself.\\
+\end{itemize}
+ 
+\noindent Signed:\\
+\rule[0.5em]{25em}{0.5pt} % This prints a line for the signature
+\noindent Date:\\
+\rule[0.5em]{25em}{0.5pt} % This prints a line to write the date
+\end{declaration}
+
+\cleardoublepage
+
+%----------------------------------------------------------------------------------------
+%	QUOTATION PAGE
+%----------------------------------------------------------------------------------------
+
+\vspace*{0.2\textheight}
+
+\noindent\enquote{\itshape Learning is a peculiar compound of memory, imagination, scientific habit,
+accurate observation, all concentrated, through a prolonged period, on the
+analysis of the remains of literature. The result of this sustained mental
+endeavour is not a book, but a man.}\bigbreak
+
+\hfill Mark Pattison
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{abstract}
+\addchaptertocentry{\abstractname} % Add the abstract to the table of contents
+The Thesis Abstract is written here (and usually kept to just this page). The page is kept centered vertically so can expand into the blank space above the title too\ldots
+\end{abstract}
+
+%----------------------------------------------------------------------------------------
+%	ACKNOWLEDGEMENTS
+%----------------------------------------------------------------------------------------
+
+\begin{acknowledgements}
+\addchaptertocentry{\acknowledgementname} % Add the acknowledgements to the table of contents
+
+I gratefully acknowledge my supervisor, Prof Egmont Rohwer, who had the faith in
+me to invite me to take on the project, and the patience to wait for me to
+respond and the patience to wait for me to finish. I am extremely grateful for
+the funding he supplied at the beginning of the project, when funding was a real
+problem.
+
+Dok Fanie (Dr SJ van der Walt) who was appointed as my co-supervisor, but was
+also my predecessor, was willing to lend an ear and encourage, supply new ideas.
+
+The various Deans who allowed me to re-register every year. 
+
+I acknowledge my fellow students,
+\begin{itemize} \item Kobie Smit lent a kind
+ear to the laments, and helped me feel less alone.
+\item Marc Bouwer, whose youthful energy proved to be highly contagious, spent
+hours in front of the whiteboard with me, helping to clarify thoughts and
+understanding basic science.
+\item Elize Smit, who set me such a good example of academic performance. Thank goodness I didn't try to follow it. 
+\item Linda Pretorius, whose PhD challenges made me grateful for the simplicity of my project. 
+\item Nadine Broodryk for all the conversations.
+\item MY office mates, in no particular order: Sifiso Nsibande, Madelien Wooding, Kedibone Mashala, Portia
+Makhubela, Chiedza Munyeza, Amanda \ldots, Margaux Lim-a-Tock,  
+\end{itemize}
+
+My father, Danie Malan, spent a lot of energy and time on being an instrument
+maker for me.
+
+My mother, Retha Malan, made sure that feeding and dressing myself during this
+time was as simple as possbile.
+
+Of course the project would not have been possible without the assistance from
+the technical team at the University of Pretoria:
+
+\begin{itemize}
+\item 
+Our instrument maker, Nico van Vuuren, whose excellent work inspired me to
+create designs worthy of that quality of work.
+
+\item My thanks to David Masemula, who maintained the supply of gas cylinders.
+
+\item Yvette Naudé has been a most kind and helpful lab manager.
+
+\item Naomi Steenkamp is the most quietly effective financial administrator known to
+man. Through her services purchasing supplies was a painless exercise.
+\item Annetjie Kok and Ria Swart were our kindest
+
+\item Antoinette ??insert surname of the Centre for Microscopy and Microanalysis at
+the University of Pretoria provided invaluable aid in performing the SEM images.
+
+\end{itemize}
+
+For Sunil Patel, who, in true hacker spirit, made the \LaTeX template this
+document is based on freely avaiilable.
+
+Our commercial suppliers also need acknowledgement. Beyers at Chemetrix, who
+spent effort in keeping our outdated HP instrumentation running. For Agilent,
+who supplied us with an excellent used intrument at a nominal cost. Restek, for
+free columns. Reynard Heymans from FLIR recorded thermal videos of the
+instrument in action without asking for a cent of money. For Neil Frame from
+D.C. Wort, who supplied me with free material and offered valuable advice.
+
+For Barbara Lotze, for whose support I will be eternally grateful. 
+
+My mental health team who kept me sane. Johan Erasmus, whose professional
+psychological help first guided me through clinical depression, and then was
+crucial in getting me unstuck. Maria Ramaahlo at the Disability Unit was the
+first person to offer concrete help with ADHD. Dr GP Grobler, my competent
+psychiatrist, always offered interesting conversations, despite his limited
+time. whom I had . Dr Zuleikha Ahmed of Student Support treated me with the
+utmost kindness, even when I was extremely angry. Dr Erna Gerryts, whose
+conversations brought me back to reality. And of course the innumerable staff
+members of Virgin Active Health Clubs who kept the gym going. 
+
+ "Works well when under constant supervision and cornered like a rat in a trap."
+
+
+Sasol Fuel, who saw the need for expertise, and started acting as a major
+funding source. This freed up so many resources.
+
+The financial assistance of the South African National Energy Research Institute
+towards this research is hereby acknowledged. Opinions expressed and conclusions
+arrived at, are those of the author and are not necessarily to be attributed to
+SANERI.
+
+\end{acknowledgements}
+
+%----------------------------------------------------------------------------------------
+%	LIST OF CONTENTS/FIGURES/TABLES PAGES
+%----------------------------------------------------------------------------------------
+
+\tableofcontents % Prints the main table of contents
+
+\listoffigures % Prints the list of figures
+
+\listoftables % Prints the list of tables
+
+%----------------------------------------------------------------------------------------
+%	ABBREVIATIONS
+%----------------------------------------------------------------------------------------
+
+\begin{abbreviations}{ll} % Include a list of abbreviations (a table of two columns)
+
+\textbf{EROEI} & \textbf{E}nergy \textbf{r}eturned \textbf{o}n \textbf{e}nergy \textbf{i}nvested.\\
+\textbf{LCA} & \textbf{L}ife \textbf{C}ycle \textbf{A}nalysis \\
+\textbf{LAH} & \textbf{L}ist \textbf{A}bbreviations \textbf{H}ere\\
+\textbf{WSF} & \textbf{W}hat (it) \textbf{S}tands \textbf{F}or\\
+\textbf{UNFCCC} & \textbf{U}nited \textbf{N}ations \textbf{F}ramework \textbf{C}onvention on \textbf{C}limate \textbf{C}hange \\
+\textbf{IPCC} & \textbf{I}ntergovernmental \textbf{P}anel on \textbf{C}limate \textbf{C}hange \\
+\textbf{CCGT} & \textbf{C}ombined \textbf{c}ycle \textbf{g}as \textbf{t}urbine \\ 
+
+\end{abbreviations}
+
+%----------------------------------------------------------------------------------------
+%	PHYSICAL CONSTANTS/OTHER DEFINITIONS
+%----------------------------------------------------------------------------------------
+
+
+
+\begin{constants}{lr@{${}={}$}l} % The list of physical constants is a three column table
+
+% The \SI{}{} command is provided by the siunitx package, see its documentation for instructions on how to use it
+
+Constant Name & $Symbol$ & $Constant Value$ with units\\
+
+
+\end{constants}
+%----------------------------------------------------------------------------------------
+%	SYMBOLS
+%----------------------------------------------------------------------------------------
+
+\begin{symbols}{lll} % Include a list of Symbols (a three column table)
+
+$a$ & distance & \si{\meter} \\
+$P$ & power & \si{\watt} (\si{\joule\per\second}) \\
+%Symbol & Name & Unit \\
+
+\addlinespace % Gap to separate the Roman symbols from the Greek
+
+$\omega$ & angular frequency & \si{\radian} \\
+
+\end{symbols}
+
+%----------------------------------------------------------------------------------------
+%	DEDICATION
+%----------------------------------------------------------------------------------------
+
+\dedicatory{For/Dedicated to/To my\ldots} 
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - CHAPTERS
+%----------------------------------------------------------------------------------------
+
+\mainmatter % Begin numeric (1,2,3...) page numbering
+
+\pagestyle{thesis} % Return the page headers back to the "thesis" style
+
+% Include the chapters of the thesis as separate files from the Chapters folder
+% Uncomment the lines as you write the chapters
+
+%\include{Chapters/Chapter0}
+\include{Chapters/Chapter1}
+\include{Chapters/Chapter2} 
+\include{Chapters/Chapter3}
+\include{Chapters/Chapter4} 
+\include{Chapters/Chapter5} 
+\include{Chapters/Chapter6} 
+%\include{Chapters/Chapter7} 
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - APPENDICES
+%----------------------------------------------------------------------------------------
+
+%\appendix % Cue to tell LaTeX that the following "chapters" are Appendices
+
+% Include the appendices of the thesis as separate files from the Appendices folder
+% Uncomment the lines as you write the Appendices
+
+%\include{Appendices/AppendixA}
+%\include{Appendices/AppendixB}
+%\include{Appendices/AppendixC}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\printbibliography[heading=bibintoc]
+
+%----------------------------------------------------------------------------------------
+
+\end{document}  
