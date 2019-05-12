@@ -48,8 +48,6 @@ headsepline, % Uncomment to get a line under the header
 \addbibresource{RSI2018-bib.bib} % The filename of the bibliography
 \addbibresource{example.bib}
 
-\usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
-
 % Packages added by Niel:
 \usepackage{hyphenat}
 \usepackage{xspace}
@@ -60,12 +58,19 @@ headsepline, % Uncomment to get a line under the header
 \usepackage{textcomp}
 \usepackage[modulo]{lineno}
 \usepackage{quotchap}
+
+
+% Not added by Niel, but needs to be after lineno
+\usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
+
 \linenumbers
+
 
 
 
 % New definitions:
 \newcommand\nox{\texorpdfstring{NO\textsubscript{x}}{NOx}\xspace}
+\def\dotsign{\xleaders\hbox to .2em{\d{}}\hfill\d{}}
 
 %----------------------------------------------------------------------------------------
 %	MARGIN SETTINGS
@@ -125,31 +130,49 @@ headsepline, % Uncomment to get a line under the header
 \HRule \\[0.4cm] % Horizontal line
 {\huge \bfseries \ttitle\par}\vspace{0.4cm} % Thesis title
 \HRule \\[1.5cm] % Horizontal line
+
+by \\
  
-\begin{minipage}[t]{0.4\textwidth}
-\begin{flushleft} \large
-\emph{Author:}\\
+% \begin{minipage}[t]{\textwidth}
+\Large
 %\label{\href{http://www.johnsmith.com}}{\authorname} % Author name - remove the \href bracket to remove the link
-{\authorname}
-\end{flushleft}
-\end{minipage}
-\begin{minipage}[t]{0.4\textwidth}
-\begin{flushright} \large
-\emph{Supervisor:} \\
+\vspace{1em}
+\textbf{\authorname}
+\vspace{1em}
+
+% \end{minipage}
+
+Submitted in partial fulfilment of the requirements for the degree \\
+
+% \begin{minipage}[t]{\textwidth}
+\Large
+%\label{\href{http://www.johnsmith.com}}{\authorname} % Author name - remove the \href bracket to remove the link
+\vspace{1em}
+\textbf{\degreename}
+\vspace{1em}
+
+% \end{minipage}
+
+
+%\begin{minipage}[t]{0.4\textwidth}
+%\begin{flushright} \large
+%\emph{Supervisor:} \\
 %\label{\href{http://www.jamessmith.com}}{\supname} % Supervisor name - remove the \href bracket to remove the link  
-{\supname}
-\end{flushright}
-\end{minipage}\\[3cm]
+%{\supname}
+%\end{flushright}
+%\end{minipage}\\[3cm]
+ 
+%\vfill
+
+%\large \textit{A thesis submitted in fulfillment of the requirements\\ for the degree of \degreename}\\[0.3cm] % University requirement text
+%\textit{in the}\\[0.4cm]
+%\groupname\\\deptname\\[2cm] % Research group name and department name
+In the Faculty of Natural \& Agricultural Sciences\\ University of Pretoria \\ Pretoria \\ 
  
 \vfill
 
-\large \textit{A thesis submitted in fulfillment of the requirements\\ for the degree of \degreename}\\[0.3cm] % University requirement text
-\textit{in the}\\[0.4cm]
-\groupname\\\deptname\\[2cm] % Research group name and department name
- 
-\vfill
-
-{\large \today}\\[4cm] % Date
+{\large 15 July 2019}\\[4cm] % Date
+%{\large \today}\\[4cm] % Date
 %\includegraphics{Logo} % University/department logo - uncomment to place it
  
 \vfill
@@ -162,22 +185,25 @@ headsepline, % Uncomment to get a line under the header
 
 \begin{declaration}
 \addchaptertocentry{\authorshipname} % Add the declaration to the table of contents
-\noindent I, \authorname, declare that this thesis titled, \enquote{\ttitle} and the work presented in it are my own. I confirm that:
 
-\begin{itemize} 
-\item This work was done wholly or mainly while in candidature for a research degree at this University.
-\item Where any part of this thesis has previously been submitted for a degree or any other qualification at this University or any other institution, this has been clearly stated.
-\item Where I have consulted the published work of others, this is always clearly attributed.
-\item Where I have quoted from the work of others, the source is always given. With the exception of such quotations, this thesis is entirely my own work.
-\item I have acknowledged all main sources of help.
-\item Where the thesis is based on work done by myself jointly with others, I have made clear exactly what was done by others and what I have contributed myself.\\
-\end{itemize}
+\noindent I, \authorname, declare that the thesis, which I hereby submit for the
+degree PhD (Chemistry) at the University of Pretoria, is my own work and has not
+previously been submitted by for a degree at this or any other tertiary
+institution.
+
+\vspace{2em} 
  
-\noindent Signed:\\
-\rule[0.5em]{25em}{0.5pt} % This prints a line for the signature
-\noindent Date:\\
-\rule[0.5em]{25em}{0.5pt} % This prints a line to write the date
+\makebox[.5\linewidth][l]{SIGNATURE: \dotsign\smallskip}\\
+
+\makebox[.5\linewidth][l]{DATE: \dotsign\smallskip}\\
+ 
+%\noindent SIGNATURE: 
+%\rule[0.5em]{25em}{0.5pt} % This prints a line for the signature
+
+%\noindent DATE:
+%\rule[0.5em]{25em}{0.5pt} % This prints a line to write the date
 \end{declaration}
+
 
 \cleardoublepage
 
@@ -319,6 +345,11 @@ SANERI.
 \textbf{UNFCCC} & \textbf{U}nited \textbf{N}ations \textbf{F}ramework \textbf{C}onvention on \textbf{C}limate \textbf{C}hange \\
 \textbf{IPCC} & \textbf{I}ntergovernmental \textbf{P}anel on \textbf{C}limate \textbf{C}hange \\
 \textbf{CCGT} & \textbf{C}ombined \textbf{c}ycle \textbf{g}as \textbf{t}urbine \\ 
+\textbf{HPLC} & \textbf{H}igh \textbf{p}erformance \textbf{l}iquid \textbf{c}chromatography \\ 
+\textbf{GC} & \textbf{G}as \textbf{c}chromatography \\ 
+\textbf{SFC} & \textbf{S}upercirtical \textbf{f}luid \textbf{c}hromatography \\ 
+\textbf{CCGT} & \textbf{C}ombined \textbf{c}ycle \textbf{g}as \textbf{t}urbine \\ 
+\textbf{CCGT} & \textbf{C}ombined \textbf{c}ycle \textbf{g}as \textbf{t}urbine \\ 
 
 \end{abbreviations}
 
@@ -376,7 +407,8 @@ $\omega$ & angular frequency & \si{\radian} \\
 \include{Chapters/Chapter4} 
 \include{Chapters/Chapter5} 
 \include{Chapters/Chapter6} 
-%\include{Chapters/Chapter7} 
+\include{Chapters/Chapter7} 
+\include{Chapters/Chapter8}
 %----------------------------------------------------------------------------------------
 %	THESIS CONTENT - APPENDICES
 %----------------------------------------------------------------------------------------
