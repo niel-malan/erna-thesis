@@ -1,0 +1,57 @@
+OVERALL.  A really well written couple of chapters Niel.  You are right, I did learn something!  Your writing is very clear and, apart from a few things I've pointed out below, it reads like a book.  Clear, clean prose.  Better than most oter thesis drafts I've seen.  I like the template too.  LaTeX I'm guessing?  The header at the start of Ch. 2 about Ideal Gas Law is a nice touch!
+
+General comments to take or leave.
+
+1. You use the personal pronoun quite a bit.  I understand why, but you should check that your department allows this.  When I wrote my thesis in Sheffield, they had strict requirements that theses had to be written in the third person (i.e. no "I" or "we").
+
+2. There are numerous places where you seem to get your pluralities confused.  I'm gusessing this is due to some perculiarity between Afrikaans and English on just this issue, as the rest of your grammar is very good.
+
+Here are some examples from the first couple of pages of Ch.1.
+
+Line 213/214
+Line 238
+Line 274/275
+Line 278/279
+
+All have similar issues.  As an example, on the last one of these (Line 278/279) you write "At this altitude the wind is strong and steady, which rapidly carries the gases and remaining aerosols away and disperses it."  Here, "gases" is the subject (plural) and hence, in my mind, you should write "...which rapidly carries the gases and remaining aerosols away and disperses THEM"  I'm not going to list all the occasions where I noticed this (unless you want me to!), but the same issue is legion throughout.  
+
+3. In both the first two chapters, I felt like I was reading an introductory text to the subject - this is good!  It was interesting and informative.  However, I felt a bit frustrated that two chapters into the thesis I still didn't know what work *you* had done and what scientific problem you were addressing.  Maybe that comes in an 'Abstract' earlier in the text?  By the end of Ch.1 and Ch.2 (Line 1030 and 1420) I finally heard something about what the subject of your thesis might be related tobut only a couple of sentences.  In my opinion, if you haven't discussed it in some kind of summary before this point, then perhaps you could consider doing so. 
+
+4. The only part I didn't understand was section 2.2.3 (Why Carbon Dioxide?).  Maybe its due to my ignorance as a chemist, but I didn't find that this section actually adressed its title, and to be honest, I didn't understand the details of the discussion.  The section seemed to set out to discuss what a super-critical fluid was.  It was the only section of the first two chapters where I started to feel lost.  As you write in such detail about this topic, I'm guessing it is going to be integral to what comes later.  I'm not sure my lack of understanding is your fault, but rather more likely is my lack of knowledge of chemistry in general.
+
+5. While the text is fine, the paragraphs appeared to be *very* short throughout.   This seems to be the new BBC web style - one or two sentences per paragraph - so perhaps I shouldn't complain.  The single sentence paragraph on Line 238/239 starts wtih "However...".  Hence it is connected with the previous sentence and to my mind, the two paragraphs should be combined.  Line 302 is another similar example.  Line 779 is a further example.  There are many more, but if you're happy, I'm happy!!
+
+6. No reference to Thomas Newcomen?  I'm disappointed!!!  I was in Dartmouth in the UK last week and got my photo next to the plaque to him there.  My home town of Barnsley had one of the few surviving and working Newcomen Beam Engines in existence (http://www.elsecar-heritage.com/newcomen-beam-engine).
+
+7. It is good practice when you introduce ANY equation to define all terms immediately afterwards.  i.e. "v=d/t where v is the velocity, d is the distance, and t is the time".  It may be obvious to a chemist, but I was struggling to recall what some of your terms were in various places.
+
+8. Section 1.4.3.  This seems a very subjective view that you commit to without providing any evidence!!!  I would recommend either skipping this section or saying a few more words about it.
+
+Minor stuff/typos/etc.
+
+Ch.1
+
+Line 228/229.  A repetition of line 218/219.
+Line 236.  "...light HAS..."
+Line 289.  "...dilution IS..."
+Line 338.  Delete "of".  "...because the biosphere..."
+Line 372.  Delete "only".  "...research has confirmed..."
+Line 471.  "...metabolizing HAS a..."
+Line 493.  "Greek" not "greek"??
+Line 500.  "...of an engine scales..."
+Line 541.  "...using a pV diagram..."
+Line 560.  Add words "These are summarised below."
+Line 598.  Delete "is".  "...mixture combusts."
+Line 653.  "...comes from different sources and has different effects" (pollution is singular).
+Line 670.  "One of the products of pyro-synthesis is soot".  Soot is comprised of..."
+Line 677.  "...engines ARE a relatively..."
+Line 686.  "...varioius reasons, such AS boosting..."
+Line 689.  "...compounds WERE shown..." or "...compounds HAVE BEEN shown..."
+Line 999.  "...bounds ON efficiency...." ??
+Line 1000  "...most efficient type of engine...."
+Line 1079  ???
+Line 1224  "If there IS more..."
+Line 1338  "...used for SFC WERE the ...." ("detectors" is plural)
+Line 1359  "During periods of history when....
+Line 1385-1390.  Two paragraphs in 5 lines?
+
