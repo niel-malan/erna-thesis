@@ -69,3 +69,8 @@ thermocouple
 thermocouples
 exchanger
 desolvate
+ramped
+isothermal
+emissivity
+uncooled
+bolometer
