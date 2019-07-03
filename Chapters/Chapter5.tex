@@ -418,7 +418,7 @@ video.
 	\includegraphics[width=0.8\textwidth]{Figures/ThermalImageSetup}
 	\decoRule
 	
-\caption[A photography of the setup used to record the thermal video]{This
+\caption[A photograph of the setup used to record the thermal video]{This
 photograph shows the setup used to record the termal video.}
 	
 	\label{fig:ThermalImageSetup}
@@ -639,6 +639,7 @@ capillary. }
 
 
 \subsection{Cold spots}
+\label{sec:ColdSpots}
 
 For fastest temperature programming the heating element should be as light as
 possible, and carry the largest necessary current. In practice, the current
@@ -667,10 +668,11 @@ offering a large contact area so that hot spots do not develop.
 
 Each end of the coaxial heater therefore ended in a heated block. Each block was
 heated by four \SI{100}{\watt} Hotset\texttrademark{}electrical cartridge
-heaters, with dimensions of \SI{6.5 x 40}{\milli\metre}. In previous iterations
-of the design a single \SI{200}{\watt} heater cartridge was used but this did
-not provide enough power, and for best performance required an interference fit,
-which made assembly and disassembly difficult.
+heaters, with dimensions of \SI{6.5 x 40}{\milli\metre}. The cartridge heaters
+were switched on and off by solid state relays controlled from the computer. The
+temperature of the block was monitored through a thermocouple and the amount of
+power to the heaters was controlled by pulse width modulation (PWM) implemented
+in software. \todo
  
 \subsection{Cold column}
 
@@ -729,34 +731,58 @@ cryo-cooling function: because the coolant is in direct contact with the parts
 that need to be cooled, the cooling is rapid, and because the coolant is applied
 where it is needed, only a small quantity is required.
 
-\subsubsection{Cryogen supply}
-
-
+The carbon dioxide for cooling the coaxial heater was introduced through the
+same heated block that provided the electrical connection. (See Section
+\ref{sec:ColdSpots}.) A T-piece design allowed the liquid carbon dioxide to be
+admitted to the end of the coaxial heater, which was brazed to the block. The
+column exited the block through a micro-union brazed to the block, and the
+liquid carbon dioxide entered along the side of the T (Figure
+\ref{fig:ManifoldDims} and Figure \ref{fig:ManifoldAssy}.  A metering valve
+allowed the flow rate of the coolant to be adjusted, and a solenoid valve could
+switch the flow on or off under computer control.
 
 \begin{figure}
 	\centering
 	\includegraphics[angle=90, origin=c, width=0.8\textwidth]{./Figures/ManifoldDimensions.pdf}
 	\decoRule
-
-\caption[Manifold dimensions.]{Dimensions of the heated T-piece blocks}
-	
+	\caption[Manifold dimensions.]{Dimensions of the heated T-piece blocks}	
 	\label{fig:ManifoldDims}
 \end{figure}
 
 \begin{figure}
 	\centering
 	\includegraphics[angle=90, origin=c, width=0.8\textwidth]{./Figures/ManifoldAssemby.pdf}
-	\decoRule
-	
-\caption[Manifold assembly.]{Internal construction and assembly of the heated T-piece blocks}
-	
+	\decoRule	
+	\caption[Manifold assembly.]{Internal construction and assembly of the heated T-piece blocks}
 	\label{fig:ManifoldAssy}
 \end{figure}
 
-\todo{Drawing of heat exchanger}
+
+\subsubsection{Cryogen supply}
+
+Experience taught that for repeatable cooling, the source of liquid carbon
+dioxide had to be near the solenoid valve. If this was not the case, when the
+valve was opened initially only carbon dioxide gas would be admitted, followed
+by a mixture of gas and liquid, and only finally liquid. To solve this problem
+we installed a reservoir for liquid carbon dioxide on top of the GC. The problem
+of filling a receptacle with liquid carbon dioxide was described in Section
+\ref{sec:CO2Pump}. The final design of the reservoir therefore took the form of
+a coil of copper tube immersed in a circulating coolant (Figure
+\ref{fig:CryogenReservoir}). Mounting the reservoir above the cut-off valve
+allows the liquid to collect at the bottom and allow gas to collect at the top,
+so that when the valve opens the flow into the coaxial heater contains only
+liquid.
+
+\begin{figure}
+	\centering
+	\includegraphics[angle=90, origin=c, width=0.8\textwidth]{./Figures/CryogenReservoir.pdf}
+	\decoRule
+	\caption[Coolant reservoir]{Cut-away drawing of coolant reservoir.}	
+	\label{fig:CryogenReservoir}
+\end{figure}
+
 
 \subsection{Column mounting}
-
 
 The T-piece blocks described elsewhere\todo{refer to section/page describing
 T-piece block} acted as a mounting point for the coaxial heater. The block is
@@ -772,20 +798,11 @@ adjustable alignment of the T-piece blocks and the inlet/detector.
 Through a few iterations a parallel-rail design was developed. These rails were
 held in place in the Varian 3300 oven by friction, so that they could be
 adjusted and removed as necessary, yet was stiff enough to transfer the
-necessary forces without deflecting. Figure \ref{fig:RailsDrawing} shows a
-technical drawing of the rails as designed. 
-
-\begin{todo}
-
-Make sure all the information in this paragraph is captured: The pointed ends of
+necessary forces without deflecting. The pointed ends of
 the rails pressed against a solid aluminium plate used as the floor of the oven,
 and the top, adjustable points pressed against pressure plates which pressed
-against the roof of the oven. This formed a complete, rigid structure that could
-be installed in the Varian 3300 GC oven without making any modifications to the
-oven. The column could then be installed in the oven by putting the T-piece
-mounting blocks on the cars.
-
-\end{todo}
+against the roof of the oven. Figure \ref{fig:RailsDrawing} shows a
+technical drawing of the rails as designed. 
 
 \begin{figure}
 	\centering
@@ -816,23 +833,23 @@ the design.
 	\centering
 	\includegraphics[angle=90, origin=c, width=\textwidth]{Figures/CarDrawing1.pdf}
 	\decoRule	
-\caption[Technical drawing of coaxial heater mounting.]{A technical drawing of the T-piece block mounting.} 
+	\caption[Technical drawing of coaxial heater mounting.]{A technical drawing of the T-piece block mounting.} 
 	\label{fig:CarsDrawing1}
 \end{figure}
 
 \begin{figure}
 	\centering
-	\includegraphics[angle=90, origin=c, scale=0.75]{Figures/CarDrawing2.pdf}
+	\includegraphics[angle=90, origin=c, width=\textwidth]{Figures/CarDrawing2.pdf}
 	\decoRule	
-\caption[Technical drawing of coaxial heater mounting.]{A technical drawing of the T-piece block mounting.} 
+	\caption[Technical drawing of coaxial heater mounting.]{A technical drawing of the T-piece block mounting.} 
 	\label{fig:CarsDrawing2}
 \end{figure}
 
 \begin{figure}
 	\centering
-	\includegraphics[angle=90, origin=c, scale=0.75]{Figures/CarDrawing3.pdf}
+	\includegraphics[angle=90, origin=c, width=\textwidth]{Figures/CarDrawing3.pdf}
 	\decoRule	
-\caption[Technical drawing of coaxial heater mounting.]{A technical drawing of the T-piece block mounting.} 
+	\caption[Technical drawing of coaxial heater mounting.]{A technical drawing of the T-piece block mounting.} 
 	\label{fig:CarsDrawing3}
 \end{figure}
 
@@ -841,6 +858,18 @@ Use caption package to suppress labelling of continued figures \\.
 https://tex.stackexchange.com/questions/64231/how-can-i-create-a-continued-figure-caption}
 
 \subsection{Heating control}
+
+The amount of power supplied to the heater was controlled by a bank of six
+transistors in parallel to distribute the heat dissipation.
+
+\subsubsection{Temperature monitoring}
+
+Independent of the amount of power dissipated in the coaxial heater, the current
+through the reference resistor was compared to the current through the column.
+This ratio corresponds to the resistance of the coaxial heater. This resistance
+is a function of the temperature of the heater.
+
+\subsubsection{Loop tuning}
 
 \section{Detector}
 
