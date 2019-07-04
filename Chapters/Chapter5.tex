@@ -712,24 +712,30 @@ through the oven heaters, thereby keeping the oven at the required temperature.
 While the cryo-cooling function can cool down an oven to cryo-trap analytes,
 there are two reasons why it is not a suitable method for practical trapping in
 SFC×GC. The first reason is the quantity of coolant required: doing SFC×GC runs
-revealed that about \SI{15}{\kilogram} of carbon dioxide was consumed per
-run. A standard cylinder of carbon dioxide contains \SI{33}{\kilogram}, which
-implies that a new cylinder would be required every two runs. Such a rate of use
-is much too high for the intended application of the instrument. The second
-reason using the GC oven's cryo-cooling function was not suitable for SFC×GC is
-that it is much too slow. Cooling the column in an air bath has the same
-drawbacks of low conductivity and low heat capacity as heating it (see Section
-\ref{sec:RampRates}.
+revealed that about \SI{15}{\kilogram} of carbon dioxide was consumed per run. A
+standard cylinder of carbon dioxide contains \SI{33}{\kilogram}, which implies
+that a new cylinder would be required every two runs. Such a rate of use is much
+too high for the intended application of the instrument. The second reason using
+the GC oven's cryo-cooling function was not suitable for SFC×GC is that it is
+much too slow. The time spent on cooling the oven and the column is time that
+can not be spent doing separations, and cooling a conventional GC oven takes a
+lot of time: the Varian 3300's cryo-cooling function took \SI{30}{\second} to
+cool the column down to a low starting temperature. A commercial
+forced-convection system (``GC Chaser'' supplied by Zip Scientfic) improves cool
+down time of an Agilent 6890 GC oven, taking 7 minutes instead of 16, cooling
+down the oven from \SI{350}{\celsius} to to \SI{30}{\celsius} Cooling the
+column in an air bath has the same drawbacks of low conductivity and low heat
+capacity as heating it (see Section \ref{sec:RampRates}.
 
 A system was therefore developed by which liquid carbon dioxide is injected from
 one end into the space between the column and its coaxial heater. The other end
 is open to the atmosphere. When the pressure of the carbon dioxide drops from
 \SI{55}{atm} to \SI{1}{atm}, the liquid starts boiling, absorbing large
 quantities of heat from the surrounding column and coaxial heater, so that their
-temperatures decrease rapidly. This system solves the two problems posed by the
-cryo-cooling function: because the coolant is in direct contact with the parts
-that need to be cooled, the cooling is rapid, and because the coolant is applied
-where it is needed, only a small quantity is required.
+temperatures decrease rapidly. This system solves the speed and coolant quantity
+problems: because the coolant is in direct contact with the parts that need to
+be cooled, the cooling is rapid, and because the coolant is applied where it is
+needed, only a small quantity is required.
 
 The carbon dioxide for cooling the coaxial heater was introduced through the
 same heated block that provided the electrical connection. (See Section
@@ -860,16 +866,84 @@ https://tex.stackexchange.com/questions/64231/how-can-i-create-a-continued-figur
 \subsection{Heating control}
 
 The amount of power supplied to the heater was controlled by a bank of six
-transistors in parallel to distribute the heat dissipation.
+transistors in parallel to distribute the heat dissipation. The final control
+signal is a voltage set either by a potentiometer from the front panel, or by
+the computer. An operational amplifier adjusts the current through the coaxial
+heater circuit so that a portion of the voltage applied to the coaxial heater is
+equal to the set-point voltage. By varying the set-point voltage the current
+through the coaxial heater can be controlled to give any desired temperature.
 
 \subsubsection{Temperature monitoring}
 
 Independent of the amount of power dissipated in the coaxial heater, the current
 through the reference resistor was compared to the current through the column.
 This ratio corresponds to the resistance of the coaxial heater. This resistance
-is a function of the temperature of the heater.
+is a function of the temperature of the heater. Through the calibration
+procedure described earlier, the temperature of the coaxial heater can be
+calculated. The computer can do this fast enough so that a temperature
+measurement is available to continuously feed to a control system. 
 
-\subsubsection{Loop tuning}
+\subsubsection{PID tuning}
+
+A proportional-integral-derivative (PID) controller was used to calculate the
+amount of power necessary to keep the temperature of the coaxial heater as close
+to the temperature set point as possible. The temperature set-point, in turn,
+was given by the desired chromatographic temperature ramp.
+
+The process of determining the best calculation by the PID is called
+\textit{tuning}, and usually consists of determining the values of a few
+parameters. The tuning of PID controllers is a complex sub-discipline of process
+engineering, and outside the scope of this project, but for practical purposes
+we used a privately-published step-by-step tuning method \autocite{Peacock2008}
+which is a version of the Cohen-Coon tuning method.
+
+Figure \ref{fig:LoopTuning} shows the effect of an improved loop tuning. 
+
+\begin{figure}
+	\centering
+	\includegraphics[angle=90, origin=c, width=\textwidth]{Figures/LoopTuningGraph.pdf}
+	\decoRule	
+	\caption[Effect of controller tuning]{An illustration of effective PID
+	controller tuning. The trace (a) represents the set point change over time and
+	includes a step change. (b) Before tuning the temperature overshoots and then
+	undershoots the step change in the set point. (c) After the controller has been
+	tuned the overshoot in response to a step change in the set point is minimized. }
+	\label{fig:LoopTuning} 
+\end{figure}
+
+A properly tuned heater helps to improve the repeatability of the chromatography
+through reliable temperature programs and prevents damage to the column due
+overheating during set point overshoots.
+
+\subsubsection{Heating rates}
+
+As discussed in Section \ref{sec:RampRate}, for fast temperature-programmed gas
+chromatography the ramp rate needs to be in the order of thousands of degrees
+Celsius per minute.
+
+\begin{figure}
+	\centering
+	\includegraphics[angle=90, origin=c, width=\textwidth]{Figures/high_rate_heating.pdf}
+	\decoRule
+		
+	\caption[Heating rate illustration]{A graph of 9 identical, consecutive
+	temperature ramps overlaid. The heating rate is \SI{4000}{C\degree\per\minute}.
+	The temperature follows the set point faithfully up to \SI{350}{\celsius}.}
+
+	\label{fig:LoopTuning} 
+\end{figure}
+
+\subsubsection{Cooling rates}
+
+The project did not demand a precise knowledge of, or control over, the cooling
+rate of the column. The only requirement was that cooling should be as fast as
+possible. The cooling rate could be adjusted to some extent through the metering
+valve, and an optimum cooling rate of \SI{5100}{C\degree\per\min} was achieved
+with a carbon dioxide flow rate of around \SI{30}{\gram\per\min}. This allowed
+the column to be cooled down from \SI{350}{\celsius} to \SI{-20}{\celsius} in
+about 2 seconds. At this rate the portion of the cycle that is not used for
+separation is dominated by fraction collection, and further cooling rate
+increases will not significantly reduce run times.
 
 \section{Detector}
 
