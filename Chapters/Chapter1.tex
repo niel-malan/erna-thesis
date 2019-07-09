@@ -472,7 +472,7 @@ is delivered by an engine running on the Carnot cycle. This describes a
 hypothetical engine that uses only reversible processes to extract useful work
 from the temperature difference between two reservoirs of heat. It has been
 shown that the Carnot cycle offers the maximum possible heat extraction, and
-that the maximum efficiency (\eta_{C}\)) is determined solely by the temperature
+that the maximum efficiency (\(\eta_{C}\)) is determined solely by the temperature
 difference between the hot (\(T_h\)) and the cold (\(T_c\)) reservoirs.
 
 \begin{equation}
@@ -480,7 +480,7 @@ difference between the hot (\(T_h\)) and the cold (\(T_c\)) reservoirs.
 \label{eqn:Carnot}
 \end{equation}
 
-The Carnot cycle, however can only deliver an infinitesimal amount of work,
+The Carnot cycle, however, can only deliver an infinitesimal amount of work,
 because the heat transfer must be reversible, and therefore infinitesimal. A
 more realistic maximum efficiency is given by the Chambadal-Novikov efficiency
 (\(\eta_{CN}\)) \autocite{Hoffmann2008}:
@@ -511,16 +511,21 @@ vapour causes the temperature of the compressed air to rise, and consequently
 the pressure. If this, now hot, gas is allowed to expand in an expandable
 vessel, the motion of the vessel can be captured to perform useful work. Once
 the useful work is extracted, the vessel can be collapsed again to expel the
-exhausted air, and re-filled with a compressed air/fuel vapour mixture. This completes
-the cycle. The expandable vessel is usually in the form of a cylinder and
-piston, with the piston connected to a crank that drives a shaft that transfers
-the work from the engine to the machine being powered. 
+exhausted air, and re-filled with a compressed air/fuel vapour mixture. This
+completes the cycle. The expandable vessel is usually in the form of a cylinder
+and piston, with the piston connected to a crank that drives a shaft that
+transfers the work from the engine to the machine being powered.
 
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{Figures/otto-cycle}
 \decoRule
-\caption[The Otto cycle]{The pV diagram of the thermodynamic Otto cycle}
+
+\caption[The Otto cycle]{The pV diagram of the thermodynamic Otto cycle. The
+isochoric heat addition step (BC) corresponds to the burning of the homogeneous
+air-fuel mixture. Work is extracted from the engine during the adiabatic
+expansion CD \autocite{Wolfram|Alpha2019Otto}. }
+
 \label{fig:otto-cycle}
 \end{figure}
 
@@ -536,7 +541,7 @@ The theoretical efficiency of the Otto Cycle is given by
 
 where \(r\) is the \textit{compression ratio}, \( \frac{V_1}{V_2} \), and
 \(\gamma\) is the heat capacity ratio, which can considered a constant for the
-purposes of this discussion.
+purposes of this discussion \autocite{Wolfram|Alpha2019Otto}.
 
 This means that the efficiency of an Otto engine can be improved by increasing
 the degree of compression of the intake air before combustion. 
@@ -558,11 +563,16 @@ The theoretical cycle used to analyse the performance of the Diesel Engine is
 called the Diesel Cycle. (See figure \ref{fig:diesel-cycle})
 
 \begin{figure}
-\centering
-\includegraphics[width=\textwidth]{Figures/diesel-cycle}
-\decoRule
-\caption[The Diesel cycle]{The pV diagram of the thermodynamic Diesel cycle}
-\label{fig:diesel-cycle}
+	\centering
+	\includegraphics[width=\textwidth]{Figures/diesel-cycle}
+	\decoRule
+
+	\caption[The Diesel cycle]{The pV diagram of the thermodynamic Diesel cycle. The
+	isobaric process BC corresponds to the combustion of the finely divided fuel
+	particles in air. Work is extracted from the engine both during this process and
+	during the adiabatic process CD. \autocite{Wolfram|Alpha2019Diesel}}
+
+	\label{fig:diesel-cycle}
 \end{figure}
 
 The Diesel cycle differs from the Otto cycle in the heat addition step. In the
@@ -580,12 +590,14 @@ of the homogeneous mixture in the Otto cycle. Hence the rising temperature is
 balanced by the motion of the engine, and the heat addition is essentially
 isobaric.
 
+The efficiency of the Diesel cycle is given by Equation \ref{eqn:diesel-efficiency}
+
 \begin{equation}
 	\eta = 1 - \frac{1}{r^{(\gamma - 1 )}}(\frac{\alpha^{\gamma}-1}{\gamma(\alpha-1)})
 \label{eqn:diesel-efficiency}
 \end{equation}
  
-where \(\alpha \) is the \textit{cut-off ratio}. 
+where \(\alpha\) is the \textit{cut-off ratio} and \(\gamma\) is the compression ratio.
 
 The term \( \frac{\alpha^{\gamma}-1}{\gamma(\alpha-1)} \) is always larger
 than \(1 \), and therefore, when we compare equation \ref{eqn:diesel-efficiency}
@@ -598,8 +610,10 @@ However, at high compression ratios Otto engines start suffering from
 smoothly. The shock waves from this detonation will damage the engine and lead
 to faster wear. (The \textit{octane number} of a fuel indicates the compression
 ratio it can accommodate.) Because Diesel engines do not suffer from this
-problem, they are usually designed to for higher compression ratios
-than Otto engines and therefore are more efficient.
+problem, they can, and usually are, designed to operate at higher compression
+ratios than Otto engines.  Otto engines normally operate with a compression
+ration of up to 9:1, where as Diesel engines have compression ratios of up to
+25:1. This makes Diesel engines significantly more efficient than Otto engines. 
 
 \subsubsection{Gas turbines and the Brayton Cycle}
 
@@ -634,16 +648,25 @@ manufactured \autocite[Chapter 10]{Cummins1989}.
 	\centering
 	\includegraphics[width=\textwidth]{Figures/brayton-cycle}
 	\decoRule
-	\caption[The Brayton cycle]{The pV diagram of the thermodynamic Brayton cycle}
-\label{fig:brayton-cycle}
+	
+	\caption[The Brayton cycle]{The pV diagram of the thermodynamic Brayton cycle.
+	In the gas turbine the continuous combustion of the injected fuel and free
+	expansion of the air through a turbine means that the heat addition (BC) is
+	isobaric. Work is extracted during the adiabatic expansion process CD
+	\autocite{Wolfram|Alpha2019Brayton}.}
+	
+	\label{fig:brayton-cycle}
 \end{figure}
 
-The efficiency of the Brayton cycle is given by equation \ref{eqn:brayton-efficiency}
+The efficiency of the Brayton cycle is given by equation
+\ref{eqn:brayton-efficiency} 
 
 \begin{equation}
 	\eta = 1 - \frac{T_{1}}{T_{2}} = 1 - (\frac{ P_{1} }{ P_{2} })^{(\frac{\gamma-1}{\gamma})}
 \label{eqn:brayton-efficiency}
 \end{equation}
+
+where \(\gamma\) is the compression ratio \autocite{Wolfram|Alpha2019Brayton}.
 
 Because the fuel is continuously added to the compressed air and the combustion
 takes place in a heterogeneous mixture, gas turbines do not suffer from
@@ -732,8 +755,9 @@ have regulations in place to limit and reduce this pollution. Engine and fuel
 manufacturers are working hard to reduce this pollution.
 
 The noxious pollution from internal combustion engines can be reduced by various
-ways, but there are three complementary approaches: fuel formulation, cleanup
-and engine management.
+improvements, but there are three complementary approaches: fuel formulation
+\autocite{Gertler1999}, cleanup \autocite{Braun2018} and engine management
+\autocite{Reif2015}.
 
 \subsubsection{Fuel formulation}
 
@@ -760,7 +784,7 @@ engine system, noxious pollution can be reduced.
 The oldest engine management technology is the oxygen or `lambda' sensor, which
 measures the oxygen in the exhaust gases. Such a sensor, coupled to an
 engine-management computer, allows the me\-ter\-ing of the exact amount of fuel
-need\-ed for op\-ti\-mum combustion.
+need\-ed for op\-ti\-mum combustion \autocite{Frauhammer2014}.
 
 A newer technology is known as exhaust gas recirculation. This mixes the intake
 air of the engine with exhaust gases, effectively diluting the oxygen. This
@@ -1045,7 +1069,7 @@ produce synthesis gas, which can be the converted to a mix of fuel products in
 the well-known Fischer-Tropsch catalytic process. Such a  fuel could be called a
 bio-fuel, but it's production would be difficult to reconcile with the
 principles of \textit{green chemistry}, described in Section
-\ref[sec:GreenChemistry].
+\ref{sec:GreenChemistry}.
 
 \subsection{Refined vegetable oil: ``Green diesel''}
 
