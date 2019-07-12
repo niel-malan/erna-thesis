@@ -1,9 +1,7 @@
 % Chapter 5
 
-\begin{savequote}[45mm]
-There are no significant technical limitations
-to column temperature programming in the
-order of a few hundred degrees per minute and
+\begin{savequote}[60mm] There are no significant technical limitations to column
+temperature programming in the order of a few hundred degrees per minute and
 equally rapid cool-down rates.
 \qauthor{Wolfgang Bertsch, pessimist, 1997}
 \end{savequote}
@@ -17,7 +15,6 @@ This thesis discusses the development of a comprehensively coupled
 biodiesel. The discussion on the experimental work divides naturally into two
 parts: the previous chapter discusses the supercritical fluid chromatography
 (SFC) and this chapter discusses the gas chromatography (GC).
-
 
 \section{Speed of analysis}
 
@@ -342,7 +339,7 @@ for a unity-gain amplifier $g = 1$, and $\frac{\displaystyle
 V_{col}}{\displaystyle V_{ref}} = dV/V_b$.
 
 
-\subsection{Assumptions}
+\section{Calibration}
 
 The assumption is that the temperature is a function of the resistance of the
 column, or $T = f(R_{col})$. Because $R_{col}=m(^{dV}/_{V_b}) + c$, we can say
@@ -700,17 +697,33 @@ half-way between the inlet end and the detector end of the coaxial heater.
 
 When the system was set up as it would be in use, the coaxial heater was cooled
 down, and a power ramp applied. The temperature of the thermocouple was
-recorded, together with the volatages \(dV\) and \(Vb\). A curve could then be
+recorded, together with the voltages \(dV\) and \(Vb\). A curve could then be
 plotted of thermocouple temperature \(T_{TC}\) against the voltage ratio
-\(frac{dV}{Vb}\). This revealed the shape of the function \(T(\frac{dV}{Vb})\),
+\(frac{dV}{Vb}\) (Figure \ref{fig:CalibrationCurve}). This revealed the shape of the function \(T(\frac{dV}{Vb})\),
 and completed the first step of the calibration.
 
-The second step of a calibration is to establish a measurement result from an
-indication. It would be tradtional to fit a mathematical function such as a
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\textwidth]{./Figures/2019_07_12 B-spline fit CPlot.pdf}
+	\decoRule
+	\caption[Calibration curve of the coaxial heater]{Calibration curve for the coaxial heater.}	
+	\label{fig:CalibrationCurve}
+\end{figure}
+
+The second step of a calibration is to establish a \textbf{measurement result} from an
+\textbf{indication}. It would be traditional to fit a mathematical function such as a
 polynomial to the curve, but a numerical method was chosen instead. We fitted a
 B-spline to the curve, and extracted coordinates on the curve from this. An
 interpolation function was then used to obtain the measurement result \(T\) from
 the indication \(dV/V_b\).
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\textwidth]{./Figures/2019_07_12 B-spline fit PPlot.pdf}
+	\decoRule
+	\caption[Measurement curve of the coaxial heater]{Measurement curve for the coaxial heater.}	
+	\label{fig:MeasurementCurve}
+\end{figure}
 
 The calibration could be checked by setting the current through the coaxial
 heater to a minimum, at which not enough heat is generated to affect its
@@ -1094,6 +1107,16 @@ list of three-element lists, with $^1$D retention time, $^2$D retention time,
 and detector signal as the elements of the inner lists. The Mathematica
 functions \texttt{List3DPlot[]} and \texttt{ContourPlot[]} could then be used to
 plot 3D chromatograms or contour plots respectively.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\textwidth]{./Figures/Interpretation.png}
+	\decoRule
+	\caption[A 2D SFC×GC chromatogram]{A 2D SFC×GC chromatogram}	
+	\label{fig:MeasurementCurve}
+\end{figure}
+
+
 
 \todos
 
