@@ -1,12 +1,12 @@
 % Chapter 3
 
-\begin{savequote}[45mm]
-In a book that I took from a shelf \ldots
-\qauthor{Ancient proverb}
+\begin{savequote}[60mm]
+The nice thing about standards is that you have so many to choose from.
+\qauthor{Andrew S. Tanenbaum}
 \end{savequote}
 
 
-\chapter{Literature survey} % Main chapter title
+\chapter[Biodiesel standards]{Biodiesel, technical standards and chemical analysis} % Main chapter title
 
 \label{Chapter3} % For referencing this chapter elsewhere, use \ref{Chapter3}
 
@@ -16,20 +16,323 @@ Paris Exhibition in 1998 \todo{autocite Diesel peanut oil} that ran on peanut
 oil. But the development of the petroleum industry late in the 19th century
 ensured an ample supply of fossil fuel for these engines.
 
-The development of the diesel engine was of course not ``As we plunge into the seeking of
-solutions to our dilemma, we must never forget that \textit{an engine and the
-fuel it consumes are inseparable partners}; the one cannot progress without the
-full cooperation of the other. `` 
+The development of the diesel engine happened in parallel with the developing
+diesel fuel, for, as Cummins said \autocite{Cummins1989}``\ldots we must never
+forget that \textit{an engine and the fuel it consumes are inseparable
+partners}; the one cannot progress without the full cooperation of the other.''
+The first invention of an engine presupposes a supply of fuel, but the drive
+towards lower costs and higher efficiency then opens up the quest for more
+fuels. Technically, engine builders would then have to test each new fuel in
+their engines and approve of it. But fuel suppliers would like to see their
+fuels used in as many engines as possible. This convergence of interests gives
+rise to the establishment of \textit{technical standards}.
+
+A technical standard or just \textit{standard} is a ``document, established by
+consensus and approved by a recognized body, that provides, for common and
+repeated use, rules, guidelines or characteristics for activities or their
+results, aimed at the achievement of the optimum degree of order in a given
+context'' \autocite{Hatto2010}. 
+
+Standards are not mandatory, nor do they provide the `best' way of doing
+something. The great strength of standards are their reliability.
+``Standards exist principally to provide a reliable basis on which common
+expectations can be shared regarding specific characteristics of a product,
+service or process'' \autocite{BSI2016}.
+
+Standards are published by \textit{standards organizations}, which might
+be national or international in character, or might be established to serve a
+certain industry. Standards organizations are often known by their
+abbreviations, and a few of them are listed in Table
+\ref{tab:StandardsOrganizations}. The authors of these standards documents are
+usually \keyword{technical committees}, comprised of individuals from a wide
+variety of stakeholder organizations, who work towards consensus.
+
+\begin{table}
+	\caption{A few well-known standards organizations}
+	\label{tab:StandardsOrganizations}
+	\centering
+	\begin{tabular}{l l l}
+	\toprule
+	\tabhead{Abbreviation} & \tabhead{Name} & \tabhead{Country of origin} 		\\
+	\midrule
+	SABS 	& South African Bureau of Standards 		& South Africa	\\
+	ISO		& International Organization for Standardization & International \\
+	CEN 	& European Committee for Standardization 	& Europe		\\
+	ASTM 	& ASTM International 						& USA			\\
+	BSI	 	& British Standards Institution 			& UK			\\
+	IEC 	& International Electrotechnical Commission & International \\
+	DIN 	& German Institute for Standardization 		& Germany 		\\
+	ANSI 	& American National Standards Institute 	& USA 			\\
+	UL 		& Underwriter's Laboratory 					& USA 			\\
+	ITU 	&International Telecommunication Union		& International \\
+	\bottomrule\\
+	\end{tabular}
+\end{table}
+
+Standards have a unique publication system. They are not published by publishing
+houses, but by the standards organizations themselves, who sell the documents
+directly to end users. Each standard is usually also better known by its number
+than by its title. For example, if I were to mention the document entitled
+``Quality management systems — Requirements'' few people would know that I'm
+talking about the well-known quality system standard usually known as ISO 9001.
+
+The South African national standards body is the South African Bureau of
+Standards (SABS), which was established by an act of parliament,
+ Standards Act, 1945 (Act No. 24 of 1945)), as amended by the Standards Act, Act
+ No. 8 of 2008 \autocite{Act8-2008}. The SABS issues South African National
+ Standards.
+
+Standards organizations not only write standards, they might also
+\keyword{adopt} them. Adoption happens when a suitable standard has already been
+issued by another standards organization. Standards very often refer to other
+standards, and standards are often based on published research. While standards
+are not mandatory, some legislation might refer to 
+
+The desire for engine designers for access to a reliable fuel and for fuel
+suppliers to have the largest possible market lead them to cooperate in the
+development of standards for fuels. In South Africa the relevant standard for
+diesel fuel is SANS 342, and the US equivalent is ASTM D975.
+
+Biodiesel is chemically very different from diesel, and therefore the technical
+standards of biodiesel needs to be different from the standards for diesel.
+
+\todo{Normative vs informative}
+
+\section{SANS 1935: An overview}
+
+The current South African standard applicable to biodiesel is ``South African
+National Standard 1935 Automotive biodiesel — Fatty Acid Methyl Esters (FAME)
+for diesel engines — Requirements and test methods.'' \autocite{SANS1935} This
+is an adoption of the European Committee for Standardization's (CEN) standard EN
+14214 \autocite{EN14214}. In the USA is the equivalent standard is ASTM D 7651,
+which is largely similar but of different heritage.
+
+SANS 1935 consists of a 18 pages. The first two pages are unnumbered: for the
+purposes of this discussion they will be numbered in small Roman numerals.
+
+\begin{description}
 
 
+\item[p(i)]{The first page is a title page, following the usual format for SABS
+standards. The top line of the page contains the ISBN (978-0-626-26349-2), and
+in large type the standard number (SANS 1935:2011). Then follows in capital
+letters ``South African National Standards'', and below that the title
+``Automotive biodiesel --- FFatty Acid Methyl Esters (FAME) for diesel engines
+--- Requirements and test methods''. At the bottom edge of the page we find the
+SABS logo and some contact information.}
 
-\section{SANS 1935}
+\item[p(ii)]{The second page is an informational page. It starts with a table of
+changes, which was at the time of writing still empty. Then follows a foreword,
+in which the committee who approved the standard is acknowledged (National
+Committee SABS SC 1018A). It also gives the date of publication (December 2011)
+and states that it supersedes SANS 1935:2004. Then there's very significant
+line, which states that the standard is referenced in the Petroleum Products Act
+\autocite{Act120-1997}. }
+	
+\item[p1]{Contains the Table of Contents} 
 
-\subsection{Subsection 1}
+\item[p2]{Is left blank}
 
-\subsection{Subsection 2}
+\item[p3]{Paragraph 1: This paragraph describes the scope of the standard, which
+is that it applies to biodiesel as an automotive fuel.} 
 
-\section{SFC}
+\item[p3]{Paragraph 2:
+This paragraph lists all the normative standards required to comply with to
+comply with SANS 1935. Thirty-five standards are listed.} 
+
+\item[p4]{Continues the list of normative references}
+
+\item[p5]{Paragraph 3: This paragraph contains a list of definitions. The most
+important one is this: ``biodiesel [is a] fuel comprised of methyl esters of
+long chain fatty acids derived from vegetable oils.'' This is a very specific
+description of biodiesel. It eliminates animal fats as a source of fatty acids,
+and it excludes methyl esters. But a note reads ``Consideration for the
+inclusion of ethyl esters, animal fats and C8 – C12 carbon chains should be
+taken later.'' The significance of ethyl esters is that methyl esters are not
+usually carbon neutral. The methanol used in the transesterification reaction is
+usually obtained from the petrochemical industry, whereas ethanol from
+fermentation (See Section \ref{sec:BioEthanol}) could be carbon neutral. The
+definition also rules out hydrotreated vegetable oil or Fischer-Tropsch diesel
+derived from biomass.}
+
+\item[p5]{Paragraph 4: This paragraph lists requirements} 
+
+\item[p5]{Paragraph 4.1: Discusses general requirements. According to these
+requirements biodiesel is a homogeneous liquid, free of adulterants or
+colourants, to which additives might be added. It prescribes testing for
+oxidative stability and cold-flow properties}
+
+\item[p6]{Paragraph 4.2: This paragraph is about physical and chemical
+properties and states that biodiesel shall comply to the requirements of Table
+1}
+
+\item[p7]{Paragraph 4.3: This paragraph concerns methods of test. It states that
+test methods shall be  one of the test methods listed in Table 1.}
+
+\item[p7]{Paragraph 4.4 concerns disputes. It comes into effect when there is a
+dispute about product quality between, say, a biodiesel manufacturer and a
+biodiesel distributor. The contents of this paragraph prescribes which reference
+method shall be used.}
+
+\item[p7-p8]{These pages contain Table 1. The table has three columns. The first
+column names a property, the second column states the numerical values it should
+comply to, and the third column specify which test metod should be used to
+determine that value.}
+
+\item[p9]{Paragraph 5 describes a few simple rules for packing and marking biodiesel.}
+
+\item[p10-p11]{Annex A describes a method for the calculation of iodine value,
+which might be used instead of a measurement.}
+
+\item[p12]{Annex B prescribes how samples for testing must be taken.}
+
+\item[p13]{Annex C gives a list of values for calculating precision.}
+
+\item[p14]{Annex D provides an approved method for correcting density
+measurements. The prescribed tests requires density to be measured at
+\SI{15}{\celsius}, which be might inconvenient. Instead, a different test may be
+made at a more convenient temperature, and a correction applied. }
+
+\item[p15]{Annex E is informative and recommends the implementation of quality
+management systems. It is followed by a bibliography.}
+
+\item[p16]{The final page contains information about the SABS and its services.}
+
+\end{description} 
+
+\section{SANS 1935: Properties, requirements and methods.}
+
+On examining SANS 1935, it quickly becomes clear that the core of the document
+is Table 1. This table has three columns. The first column lists a
+\keyword{property}, the second column specifies a numerical value the property
+has to conform to, the \keyword{requirement}, and the third column prescribes
+the \keyword{test method} that must be used to obtain the value.
+
+In the following discussion each of the requirements will be discussed, in order
+of increasing relevance to this thesis, grouped by method of determination.
+
+\section{SANS 1935: Physical methods}
+
+\subsection{Density}
+
+The density of biodiesel is required to be
+\SIrange{860}{900}{\kilogram\per\cubic\metre} at at temperature of
+\SI{15}{\celsius} The metods that can be used is described in ISO 3675 and ISO
+12185. If ISO 3675 is used at a temperature other than the specified one, a
+temperature correction is applied, as described in Annex D.
+
+ISO 12185 prescribes the measurement of density by using an electronic
+instrument known as the oscillating tube density meter. This measures the
+density of a liquid by measuring the frequency of a tube filled with the liquid
+that's oscillating freely. The frequency depends on the weight of the filled
+tube, and therefore on the density of the liquid. These devices are easy to use
+and very accurate. They are temperature controlled
+
+ISO 3675 prescribes the use of a hydrometer, which is an instrument that
+measures density by measuring the buoyant force on a floating indicator.
+According to the law of Archimedes, the buoyant force on a body immersed in a
+liquid is equal to the weight of the displaced liquid. If the liquid is denser,
+the force is greater. Therefore, in a denser liquid a floating indicator would
+float with more of the indicator above the surface of the liquid
+
+\subsection{Kinematic viscosity}
+
+The viscosity of a fluid is a measure of its resistance to flow when a force is
+applied to it. Kinematic viscosity is the resistance of the flow to the force of
+gravity. This flow of course depends on the density of the liquid, so that It is
+important that the fuel for a diesel engine have the right viscosity, because
+
+SANS 1935 requires that kinematic viscosity be in the \SIrange{3.5}{5.0}. The
+measurement is specified by ISO 3104, which is a capillary method.
+
+\section{SANS 1935: Aggregate properties: Specialized instrumentation}
+
+Some of the requirements specified in SANS 1935 are not values that have direct
+correspondence to physical or chemical quantities usually used in science. 
+
+\subsection{Cetane number}
+
+The cetane number is a number that indicates the ease of ignition of a fuel in a
+diesel engine. A higher number indicates easier ignition. SANS 1935 prescribes
+the test method of ISO 5165.
+
+Cetane is a synonym for hexadecane, and is a liquid compound that ignites easily
+when injected into a diesel engine. In contrast, its highly branched isomer
+2,2,4,4,6,8,8-heptamethylnonane (also called isocetane) ignites less easily. The
+intuitively-understood ``ease of combustion" can be quantified as the
+\keyword{ignition delay}, the time between the moment when the fuel is injected
+in to the engine and moment the ignition starts. A mixture of the two compounds
+will have an ignition delay somewhere between that of the two compounds.
+
+The cetane number is obtained by measuring the ignition delay in a  highly
+specialized test engine. This is a single-piston, four-stroke engine that has a
+combustion chamber of variable volume, which gives it a variable compression
+ratio. While running on the fuel under test, the compression ratio is changed
+until a prescribed ignition delay is achieved. Then the cetane/isocetane mixture
+that will give the same ignition delay at that compression ratio is found. If
+the fuel under test has the same ignition delay as a pure cetane, it is assigned
+the cetane number of 100. If it has an ignition delay that is the same as
+isocetane, then the cetane number 0 is assigned, and if it has the same ignition
+delay as a 50:50 cetane:isocetane mixture, then it is assigned the cetane number
+of 50.
+
+Cetane number gives limited insight into the chemical properties of the fuel, or
+indeed, engine performance. But it is a trusted measure of the suitability of a
+fuel for use in a diesel engine. 
+
+\subsection{Flash point}
+
+Fuels are, naturally, flammable, and different fuels are flammable to different
+degrees. A fuel's \keyword{flash point} can be used to quantify its degree of
+flammability. The flash point is the temperature at which a fuel's vapour will
+ignite when it comes in contact with a flame. 
+
+The measurement of flash point is not primarily concerned with the performance
+of the fuel inside the engine, but is important to know because it determines
+how the fuel can be safely be handled during transport and storage
+\autocite{WFCC2009}.
+
+The flash points of liquids are established by standardized tests in automated
+apparatus.
+
+\subsection{Oxidation stability}
+
+Fossil fuels for diesel engines are largely composed of alkanes, which are
+chemically very inert. This means that they can be stored for long periods
+without significant degradation.
+
+Biodiesel, by contrast, are by definition (\autocite[Paragraph 4.1.1]{SANS1935})
+mostly composed of fatty acids by definition, which are not inherently stable.
+This instability has been known since antiquity as fatty food going
+\keyword{rancid}. 
+
+
+In particular, double bonds in the fatty acids are liable to reactions with
+atmospheric oxygen. \todo{The first reaction hydro-oxidation}
+
+\todo{The reaction products are short-chain fatty acids, soaps, sludges.}
+
+The oxidative stability is measured by the Rancimat, an automated instrument. 
+
+\subsection{Cold filter plugging point}
+
+\section{SANS 1935: Chemical properties: Classical determination}
+
+\subsection{Sulfated ash}
+
+\subsection{Carbon residue}
+
+\subsection{Total contamination}
+
+\section{SANS 1935: Chemical properties: Electrochemical determination}
+
+\section{SANS 1935: Chemical properties: Spectroscopic determination}
+
+\section{SANS 1935: Chemical properties: Chromatographic determination}
+
+\section{Petroleum Products Act}
+
+SANS 1935 is referred to in the Petroleum Products act, which makes it illegal. 
 
 \section{Fast Gas Chromatography}
 
