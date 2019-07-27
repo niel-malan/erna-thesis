@@ -304,21 +304,69 @@ without significant degradation.
 Biodiesel, by contrast, are by definition (\autocite[Paragraph 4.1.1]{SANS1935})
 mostly composed of fatty acids by definition, which are not inherently stable.
 This instability has been known since antiquity as fatty food going
-\keyword{rancid}. 
+\keyword{rancid}. In particular, double bonds in the fatty acids are liable to
+reactions with atmospheric oxygen \autocite(Velasco2010). These are free radical
+reactions, illustrated in Figure \ref{fig:RancidRadical}.
 
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Figures/1281px-Lipid_peroxidation.svg.png}
+\decoRule
 
-In particular, double bonds in the fatty acids are liable to reactions with
-atmospheric oxygen. \todo{The first reaction hydro-oxidation}
+\caption[The peroxidation of lipids.]{The peroxidation of lipids. By Tim
+Vickers, after \autocite{Young2001}. - w:Image:Lipid peroxidation v2.png, Public
+Domain, https://commons.wikimedia.org/w/index.php?curid=1728531}
+
+\label{fig:RancidRadical}
+\end{figure}
+
 
 \todo{The reaction products are short-chain fatty acids, soaps, sludges.}
 
-The oxidative stability is measured by the Rancimat, an automated instrument. 
+The oxidative stability is measured by the Rancimat, an automated instrument. It
+works by bubbling a stream of hot air through a sample of biodiesel. This air is
+then passed through a conductivity measuring cell filled with distilled water.
+The conductivity of the water increases when volatile acids dissolves in it. At
+the beginning of the test period there are very few acids dissolved swept into
+the water, so the conductivity remains low. As the sample oxidizes and produce
+acids, the conductivity of the water slowly increases. But the oxidation
+reaction is \keyword{autocatalytic}, which means that the products of the
+oxidation reaction accelerates the oxidation. The result of the autocatalysis is
+that on the conductivity curve there is a sudden increase in conductivity. The
+time taken until this point is reached is called the \keyword{induction period}.
+
+SANS 1935 requires a minimum induction period of 6 minutes at 110
+\SI{110}{\celsius}. Paragraph 4.1.2 permits the addition of antioxidants.
 
 \subsection{Cold filter plugging point}
+
+The flow of liquids depend on the temperatures. Most obviously, their densities
+depend on the temperature. But liquids can freeze, which will also influence
+their flows. Inside an engine at operating temperature the temperature of the
+fuel will be high enough, but the biodiesel needs to be pumped to the engine
+from the fuel tank, passing through a fuel filter on the way. If crystals of
+fuel form at low temperatures, these crystals might plug the pores in the
+filter, which could lead to fuel starvation in the engine. It is therefore
+important that the biodiesel must be able to be pumped through the engine's fuel
+filter at all expected temperatures.
+
+For this purpose SANS 1935 specifies a \keyword{cold filter plugging point}. It
+is the lowest temperature at which a given volume of biodiesel still passes
+through a standardized filtration device in a specified time when cooled under
+certain conditions. This is an entirely practical test: no fundamental
+physical property is measured.
 
 \section{SANS 1935: Chemical properties: Classical determination}
 
 \subsection{Sulfated ash}
+
+Ash is the solids remaining after the complete combustion of a fuel. This means
+
+\keyword{Sulfated ash} is the residue remaining after the lubricating oil sample has been
+carbonized, and the residue subsequently treated with sulfuric acid and heated
+to constant mass.
+
+
 
 \subsection{Carbon residue}
 
