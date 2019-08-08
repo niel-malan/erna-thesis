@@ -182,7 +182,8 @@ determine that value.}
 \item[p9]{Paragraph 5 describes a few simple rules for packing and marking biodiesel.}
 
 \item[p10-p11]{Annex A describes a method for the calculation of iodine value,
-which might be used instead of a measurement.}
+from chromatographic data. This calculation might be used instead of a
+measurement.}
 
 \item[p12]{Annex B prescribes how samples for testing must be taken.}
 
@@ -296,6 +297,7 @@ The flash points of liquids are established by standardized tests in automated
 apparatus.
 
 \subsection{Oxidation stability}
+\label{sec:Rancimat}
 
 Fossil fuels for diesel engines are largely composed of alkanes, which are
 chemically very inert. This means that they can be stored for long periods
@@ -305,12 +307,12 @@ Biodiesel, by contrast, are by definition (\autocite[Paragraph 4.1.1]{SANS1935})
 mostly composed of fatty acids by definition, which are not inherently stable.
 This instability has been known since antiquity as fatty food going
 \keyword{rancid}. In particular, double bonds in the fatty acids are liable to
-reactions with atmospheric oxygen \autocite(Velasco2010). These are free radical
+reactions with atmospheric oxygen \autocite{Velasco2010}. These are free radical
 reactions, illustrated in Figure \ref{fig:RancidRadical}.
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth]{Figures/1281px-Lipid_peroxidation.svg.png}
+\includegraphics[width=\textwidth]{Figures/1281px-Lipid_peroxidation.png}
 \decoRule
 
 \caption[The peroxidation of lipids.]{The peroxidation of lipids. By Tim
@@ -356,32 +358,265 @@ through a standardized filtration device in a specified time when cooled under
 certain conditions. This is an entirely practical test: no fundamental
 physical property is measured.
 
+\subsection{Copper strip corrosion}
+
+Storage systems and engines parts are made of metals, and therefore susceptible
+to corrosion under adverse conditions. Chemical conditions that make corrosion
+more likely include acidity, water, and oxygen, but corrosion is a complex
+process, so it is very difficult to predict which combination of factors will
+result in unacceptable corrosion.
+
+SANS 1935 prescribes ISO 2160 as the test for corrosiveness. In this test a
+strip of pure copper metal is polished and then immersed in a sample of the
+biodiesel at \SI{50}{\celsius} for \SI{3}{\hour}. The degree of corrosion is
+judged by visually comparing it to a standard card, and then assigning it to a
+class.
+
 \section{SANS 1935: Chemical properties: Classical determination}
 
-\subsection{Sulfated ash}
+\subsection{Sulphated ash}
 
-Ash is the solids remaining after the complete combustion of a fuel. This means
+Ash is the solids remaining after the complete combustion of a fuel. This is
+measure of the solids that will remain after use. Ash might originate from
+suspended solids, soluble metallic soaps, and residual biodiesel catalyst. These
+metals
 
-\keyword{Sulfated ash} is the residue remaining after the lubricating oil sample has been
-carbonized, and the residue subsequently treated with sulfuric acid and heated
-to constant mass.
-
-
+It would not be practical to actually combust the sample and weigh the residue,
+because the ash might be carried away, either as volatile species or as a finely
+divided aerosol. Therefore the sample is oxidized using sulphuric acid, and then
+heated to drive off the sulphuric acid. What remains is metal oxides, which can
+be weighed.
 
 \subsection{Carbon residue}
 
+When a mixture of organic compounds is heated under conditions of low oxygen, it
+can form coke. Coke is a material that is practically pure carbon. Pure carbon
+will combust (\todo{delta H}), but the reaction is kinetically limited, so it
+will only combust slowly under conditions of high temperature and a large excess
+of oxygen. If a fuel tends to form coke inside an engine, it can cause problems
+in operation. Vegetable oil as diesel fuel, for example, tend to form coke on
+the injectors \autocite{Walt1982}. This coking can cause problems with
+injection, which would affect engine performance.
+
+The test method prescribed for testing for carbon residue is ISO 10370. This
+involves heating a sample of biodiesel to high temperature in a crucible in air,
+using standardized apparatus. Most of the sample burns off, leaving a residue.
+The weight of the residue is determined.
+
+Carbon residue is not a scientific measure: it has been found to correlate with
+properties of oils in the petroleum industry.
+
 \subsection{Total contamination}
+
+Ideally, biodiesel should be a homogeneous liquid. Some undissolved material can
+be tolerated, but too much can plug filters.
+
+SANS 1935 specifies the test SANS 52662, which is synonymous with EN 12662. In
+this test total contamination is determined by filtering a sample of the
+biodiesel being tested on glass-fibre filter, and determining the mass of the
+retained material.
+
+\subsection{Acid value}
+
+The end products of oxidation of biodiesel (see Section\ref{sec:Rancimat})
+includes free organic acids, so the acidity of biodiesel is a good indicator of
+its quality. Measuring the acidity gives an indication of how much the biodiesel
+has already oxidized, whereas the oxidation stability (measured by Rancimat)
+indicates how well the biodiesel will withstand oxidation on storage.
+
+SANS 1935 specifies the test described in SANS 54104, which is equivalent to EN
+1410414. This test is a titration of a sample of biodiesel dissolved in a
+mixture solvents with alcoholic KOH. A glass pH electrode is used to follow the
+titration.
+
+\subsection{Iodine value}
+
+As discussed above (see Section \ref{sec:Rancimat}) the oxidation of biodiesel
+is a major quality concern. The tendency of biodiesel to oxidize correlates with
+the number of double bonds in the fatty acids, or their \keyword{degree of
+unsaturation}.
+
+% t AOCS method Cd 1d-92 using cyclohexane-acetic acid (also used by the
+% European standard EN 14111) as solvent system are based on the Wijs solution.
+
+The degree of unsaturation has long been measured by the \keyword{iodine value},
+dating from 1884 \autocite{Knothe2007}. Halogens will rapidly add to double
+bonds, so that when a mixture of fatty acids is treated with a known excess of
+iodating reagent, the remaining iodine can be titrated to determine the amount
+of iodine absorbed by the fatty acids. The iodine value is the mass of iodine
+absorbed by 100 mass units of fat or oil.
+
+The relevance of including iodine value in biodiesel standards has been
+questioned \autocite{Knothe2002}, because all the information regarding
+unsaturation of the fatty acids in biodiesel is contained in chromatographic
+data which need to be obtained in other requirements. SANS 1935 seems to
+acknowledge this, because Annex A allows that the iodine value can be calculated
+from chromatographic results (see Section \ref{sec:ChromDetUnsat}).
+
+Because determining iodine value is a mature technology and therefore relatively
+simple, it is tempting to think of it as a test that might be useful to small
+biodiesel producers. Unfortunately the iodine value is determined by the
+feedstock, so that there is unlikely to be any significant variation in iodine
+values, no matter the production process.
+
+The prescribed method for the requirement is SANS 54111 (or, equivalently, EN
+14111). In this method a known excess of Wijs's reagent (iodine chloride in
+acetic acid) is added to a weighed sample. The reaction mixture is then treated
+with potassium iodide, which converts the excess ICl to I\textsubscript{2},
+which is then titrated with potassium thiosulfate. The titration is followed
+potentiometrically and the equivalence point determined from the titration
+curve.
 
 \section{SANS 1935: Chemical properties: Electrochemical determination}
 
+\subsection{Water content.}
+
+The compounds that comprise biodiesel are much more polar than those of
+petrodiesel. Therefore, much more water can dissolve in biodiesel than can
+dissolve in petrodiesel. This water has several deleterious effects on the
+quality of biodiesel. It encourages the growth of micro-organisms, allows
+hydrolysis, and increases corrosivity
+
+The level of water specified in the requirements of SANS 1935 is lower than the
+solubility of water, and therefore refers to dissolved water. Free, visible
+water is excluded by paragraph 4.1.4.
+
+The method specified by SANS 1935 for the determination of water in biodiesel is
+ISO 12937. This standard prescribes the well-known Karl Fischer titration used
+for the determination of water in solvents. This is a \keyword{coulometric}
+titration, which means that electricity is used as titrant. The amount of charge
+(current integrated over time)
+
+
+
 \section{SANS 1935: Chemical properties: Spectroscopic determination}
 
-\section{SANS 1935: Chemical properties: Chromatographic determination}
+\subsection{Group I metals}
 
-\section{Petroleum Products Act}
+The most common catalysts in biodiesel production are sodium or potassium
+hydroxides (NaOH and KOH) or alkoxides (CH\textsubscript{3}ONa and
+CH\textsubscript{3}OK). These catalysts are polar and will dissolve in the
+glycerol byproduct of biodiesel production. But some may remain in the biodiesel
+itself, and needs to be removed. This cleanup can be done by washing with water,
+adsorbent columns, or selective membranes.
+
+SANS 54108 is the method specified for the determination of sodium, and SANS
+54109 the method specified for potassium. Both are flame atomic absorption
+spectroscopy methods. Alternatively, EN 14538 may be used to determine sodium
+and potassium simultaneously with calcium and magnesium (see
+Section\label{sec:GroupIIMetals}).
+
+\subsection{Group II metals}
+\label{sec:GroupIIMetals}
+
+Fatty acids neutralized by alkali and alkaline earth metal hydroxides form
+\keyword{soaps}. If these metals are present in the feedstock, as catalyst, or
+in washing water they can form soaps with the fatty acids in the biodiesel.
+These soaps can form deposits in engines that can affect operations. For
+example, deposits of calcium soaps have been reported to cause injectors to
+stick \autocite{Pischinger2000}.
+
+SANS 1935 prescribes EN 14538 as the method for determining Group II metals.
+This is an optical emission spectroscopy method: a sample of the biodiesel is
+diluted in kerosene, and injected into a inductively coupled argon plasma. The
+emissions at certain wavelengths are compared to the emissions of solvent
+containing known concentrations of the metals.
+
+\subsection{Phosphorus}
+
+The low levels of phosphorus expected to be present in biodiesel should not
+affect a diesel engine's performance, but it can have a detrimental effect on
+the exhaust treatment system by forming ash that can clog filters and reactive
+species that can reduce catalyst effectiveness.
+ 
+SANS 54107 is the prescribed method for determining phosphorus in biodiesel. A
+sample of biodiesel is dissolved in xylene, and the solution introduced in
+aerosol form into an inductively coupled argon plasma. The high temperature of
+the plasma causes phosphorus atoms and/or ions to emit radiation. This emission
+is measured at a certain wavelength, and compared to emissions from solutions
+with known concentrations.
+
+\subsection{Sulfur}
+
+The amount of sulfur in biodiesel is limited not because it affects the fuel's
+performance, but because the fuel must be compatible with emission control
+systems and not be more polluting in terms of sulfur emissions than petrodiesel.
+Most biodiesel feedstocks are naturally low in sulfur and are therefore unlikely
+to exceed the limits.
+
+There are two prescribed tests for sulfur. ISO 20846 is a UV fluorescence
+method, while ISO 20884 is an X-ray fluorescence methods. The quantum-mechanical
+mechanism is the same for both methods: a chemical species absorbs energy from a
+photon which puts it in an activated state. The species then returns to a state
+of lower energy, emitting a photon of different energy.
+In the case of ISO 20846 the species is gaseous SO\textsubscript{2} (obtained by
+combusting the sample), and the activating photons are from the ultraviolet part
+of the electromagnetic spectrum. In the case of ISO 20884 the chemical species
+are the bound form of the sulfur as found in the biodiesel, and the activating
+photons are from the X-ray region of the electromagnetic spectrum.
+
+\section{SANS 1935: Chemical properties: Chromatographic determination}
+\label{sec:ChromDet}
+
+\subsection{Methanol content}
+
+Methanol in biodiesel increases its flash point, and it is an indicator of poor
+production process control.
+
+SANS 1935 requires a maximum mass fraction fo \SI{0.2}{\percent}. The prescribed
+test method is contained in SANS 54110, and involves heating a sealed vial
+partly filled with biodiesel to \SI{80}{\celsius}. A portion of the headspace
+vapour is taken and injected into a gas chromatograph. The amount of methanol is
+quantified by comparing the methanol peak to either an internal or external
+standard.
+
+\subsection{Ester content and Linolenic acid methyl ester content}
+
+As prescribed in Paragraph 3 of SANS 1935, biodiesel must consist of fatty acid
+methyl esters. The first line of Table 1 quantifies this requirement as a
+minimum of \SI{96.5}{\percent} mass fraction. At the same time, there is a
+requirement that methyl linoleate do not exceed \SI{12}{\percent}, because this
+compounds detracts greatly from oxidative stability. Both compounds can be
+determined by the same chromatographic method.
+
+The specified method is SANS 54103. This document refers to ISO 5508:1990, which
+has been withdrawn and superceded by ISO 12966-4:2015. ISO 5508 and ISO 12966
+describe gas chromatographic methods for the determination of FAMEs. ISO 5508 is
+obsolete: it gives conditions for packed GC columns and thermal conductivity
+detectors, two technologies which are now rarely found in the chromatography
+lab. Both methods, however, requires polar stationary phases. ISO 5508 
+
+\subsection{Glyceride content}
+\label{sec:Glycerides}
+
+
+\subsection{Free Glycerol}
+
+Free glycerol is one of the products of the transesterification of plant oils to
+produce biodiesel. It is a polar compound, which naturally separates from
+non-polar biodiesel, and any excess remaining dissolved in the biodiesel is
+removed during the washing step. Free glycerol contributes to injector coking. 
+
+Inappropriate processing may leave excess free glycerol in the biodiesel, and therefore
+
+Free glycerol can be determined by the same chromatographic procedure prescribed
+for the determination of the other glycerides in SANS 54105 (see Section
+\ref{sec:Glycerides}, but SANS 1935 also offers the option of SANS 54016. This
+standard uses a liquid-liquid extraction of biodiesel with a mixture of ethanol,
+water, and hexane. The free glycerol transfers quantitatively to the bottom
+layer, which is then analyzed with a gas chromatographic method.
+
+\subsection{Polyunsaturated methyl esters}
+\label{sec:ChromDetUnsat}
+
+\section{Referring documents}
+
+\subsection{Petroleum Products Act}
 
 SANS 1935 is referred to in the Petroleum Products act, which makes it illegal. 
 
 \section{Fast Gas Chromatography}
 
 \todo{autocite Blumberg 1997}
+
+\todos
