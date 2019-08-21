@@ -455,6 +455,29 @@ KOMA-script documentation for details.}]{fancyhdr}
 }
 
 %----------------------------------------------------------------------------------------
+%	ETHICS DECLARATION PAGE DESIGN
+%----------------------------------------------------------------------------------------
+
+\newcommand{\ethicsname}{Ethics statement}
+\providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\ethicsname}{Ethics statement} % Declaration of Authorship text for English countries
+\providecaptionname{german,ngerman,austrian,naustrian}{\ethicsname}{Ethik-Erklärung} % Declaration of Authorship text for Germanic countries
+
+\ifbool{consistentlayout}{
+	\DeclareDocumentEnvironment{ethicsdeclaration}{}{
+		\addchap*{\ethicsname}
+		}{}%
+}{
+	\DeclareDocumentEnvironment{ethicsdeclaration}{}{
+		\checktoopen
+		\tttypeout{\ethicsname}
+		\thispagestyle{plain}
+		\null\vfil
+		{\noindent\huge\bfseries\ethicsname\par\vspace{10pt}}
+	}{}
+}
+
+
+%----------------------------------------------------------------------------------------
 %	DEDICATION PAGE DESIGN
 %----------------------------------------------------------------------------------------
 
