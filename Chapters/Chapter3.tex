@@ -596,6 +596,55 @@ lab. Both methods, however, requires polar stationary phases. ISO 5508
 \subsection{Glyceride content}
 \label{sec:Glycerides}
 
+Glycerol (propane-1,2,3-triol) is the ``backbone'' of the oil molecules that
+constitute the feedstock for biodiesel production. Each hydroxyl group can form
+an ester bond with a fatty acid, and when all three have a fatty acid bound to
+it is a `fat molecule'. IUPAC recommends that such a molecule is called a
+tri-O-acylglycerol\autocite[Nic2009], but by long-established custom they are
+called triglycerides. The conversion of a triglyceride to FAMEs is a stepwise
+process, with one ester bond at a time being methanolized. This means that
+during the reaction process, there will also be di- and monoglycerides (di- and
+mono-O-acylglycerols) in the reaction mixture. If the reaction is not well
+controlled then these glycerides will be found in the final product.
+
+The presence of glycerides is of course an indicator of an incomplete
+transesterification reaction, but it has further negative effects. In
+particular, during cold weather, or in petroleum-blended biodiesel, some
+dissolved impurities might precipitate, in particular the monoglycerides
+\autocite{Dunn2009,Plata2015}. This precipitate might block filters or otherwise
+interfere with engine performance.
+
+SANS 1935 specifies that the mono-, di- and triglyceride content of biodiesel
+must determined with a procedure compliant with SANS 54105 (or, equivalently, EN
+14105). In this method, the biodiesel sample is treated with MSTFA
+(2,2,2-Trifluoro-N-methyl-N-(trimethylsilyl)acetamide)
+
+
+MSTFA figure
+
+\chemfig{-[:138]N-[:84]=^[:156]N-[:228]=[:300](-[:240](-[:180]N(-[:240]%
+)-[:120](-[:60]N(-[:120])-)=[:180]O)=[:300]O)-[:12]\phantom{N}}
+
+MSTFA is a \keyword{derivatization reagent}: It reacts with the hydroxyl
+hydrogen atoms in the glycerides to dimethylsilyl derivatives. The molecule is
+then much more inert and will not interact with the column and the stationary
+phase, yielding peaks with better shapes. 
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Figures/MSTFA.png}
+\decoRule
+
+\caption[MSTFA]{N-methyl-N-(trimethylsilyl)-trifluoroacetamide (MSTFA)}
+
+\label{fig:MSTFA}
+\end{figure}
+
+The trifluoroacetamide group is a good leaving group, and upon nucleophilic
+attack by the hydroxyl oxygen its bond with the trimethylsilyl group breaks,
+leaving the TMS bound to the oxygen. The labile hydrogen atom is now replaced by
+the TMS group, which is inert and will not interact with polar entities in the
+stationary phase or column, which will lead to improved peak shapes. 
 
 \subsection{Free Glycerol}
 
@@ -612,6 +661,7 @@ for the determination of the other glycerides in SANS 54105 (see Section
 standard uses a liquid-liquid extraction of biodiesel with a mixture of ethanol,
 water, and hexane. The free glycerol transfers quantitatively to the bottom
 layer, which is then analyzed with a gas chromatographic method.
+
 
 \subsection{Polyunsaturated methyl esters}
 \label{sec:ChromDetUnsat}
