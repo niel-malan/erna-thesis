@@ -10,6 +10,9 @@ The nice thing about standards is that you have so many to choose from.
 
 \label{Chapter3} % For referencing this chapter elsewhere, use \ref{Chapter3}
 
+\section{Introduction to standards}
+\label{Sec:Intro}
+
 The fact that vegetable oil can be used to fuel Diesel engines has been known
 since the earliest days. Rudolf Diesel himself had exhibited an engine at the
 Paris Exhibition in 1998 \todo{autocite Diesel peanut oil} that ran on peanut
@@ -99,8 +102,6 @@ diesel fuel is SANS 342, and the US equivalent is ASTM D975.
 
 Biodiesel is chemically very different from diesel, and therefore the technical
 standards of biodiesel needs to be different from the standards for diesel.
-
-\todo{Normative vs informative}
 
 \section{SANS 1935: An overview}
 
@@ -578,7 +579,7 @@ quantified by comparing the methanol peak to either an internal or external
 standard.
 
 \subsection{Ester content and Linolenic acid methyl ester content}
-
+\label{sec:EsterContent}
 As prescribed in Paragraph 3 of SANS 1935, biodiesel must consist of fatty acid
 methyl esters. The first line of Table 1 quantifies this requirement as a
 minimum of \SI{96.5}{\percent} mass fraction. At the same time, there is a
@@ -591,7 +592,7 @@ has been withdrawn and superceded by ISO 12966-4:2015. ISO 5508 and ISO 12966
 describe gas chromatographic methods for the determination of FAMEs. ISO 5508 is
 obsolete: it gives conditions for packed GC columns and thermal conductivity
 detectors, two technologies which are now rarely found in the chromatography
-lab. Both methods, however, requires polar stationary phases. ISO 5508 
+lab. Both methods, however, requires polar stationary phases. 
 
 \subsection{Glyceride content}
 \label{sec:Glycerides}
@@ -600,7 +601,7 @@ Glycerol (propane-1,2,3-triol) is the ``backbone'' of the oil molecules that
 constitute the feedstock for biodiesel production. Each hydroxyl group can form
 an ester bond with a fatty acid, and when all three have a fatty acid bound to
 it is a `fat molecule'. IUPAC recommends that such a molecule is called a
-tri-O-acylglycerol\autocite[Nic2009], but by long-established custom they are
+tri-O-acylglycerol\autocite{Nic2009}, but by long-established custom they are
 called triglycerides. The conversion of a triglyceride to FAMEs is a stepwise
 process, with one ester bond at a time being methanolized. This means that
 during the reaction process, there will also be di- and monoglycerides (di- and
@@ -617,25 +618,23 @@ interfere with engine performance.
 SANS 1935 specifies that the mono-, di- and triglyceride content of biodiesel
 must determined with a procedure compliant with SANS 54105 (or, equivalently, EN
 14105). In this method, the biodiesel sample is treated with MSTFA
-(2,2,2-Trifluoro-N-methyl-N-(trimethylsilyl)acetamide)
-
-
-MSTFA figure
-
-\chemfig{-[:138]N-[:84]=^[:156]N-[:228]=[:300](-[:240](-[:180]N(-[:240]%
-)-[:120](-[:60]N(-[:120])-)=[:180]O)=[:300]O)-[:12]\phantom{N}}
+(2,2,2-Trifluoro-N-methyl-N-(trimethylsilyl)acetamide) before injecting it into
+a GC column.
 
 MSTFA is a \keyword{derivatization reagent}: It reacts with the hydroxyl
-hydrogen atoms in the glycerides to dimethylsilyl derivatives. The molecule is
+hydrogen atoms in the glycerides to trimethylsilyl derivatives. The molecule is
 then much more inert and will not interact with the column and the stationary
 phase, yielding peaks with better shapes. 
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth]{Figures/MSTFA.png}
+\includegraphics[width=\textwidth]{Figures/Derivitization.pdf}
 \decoRule
 
-\caption[MSTFA]{N-methyl-N-(trimethylsilyl)-trifluoroacetamide (MSTFA)}
+\caption[Derivitization]{The derivitization of a diglyceride with
+N-methyl-N-(trimethylsilyl)-trifluoroacetamide (MSTFA). During GC the inert
+trimethylsilyl group does not interact with the stationary phase or its support,
+and the volatile trifluoroacetamide elutes with the solvent front.}
 
 \label{fig:MSTFA}
 \end{figure}
@@ -653,27 +652,87 @@ produce biodiesel. It is a polar compound, which naturally separates from
 non-polar biodiesel, and any excess remaining dissolved in the biodiesel is
 removed during the washing step. Free glycerol contributes to injector coking. 
 
-Inappropriate processing may leave excess free glycerol in the biodiesel, and therefore
+Inappropriate processing may leave excess free glycerol in the biodiesel, and
+therefore determining free glycerol is an important quality-control step.
 
 Free glycerol can be determined by the same chromatographic procedure prescribed
 for the determination of the other glycerides in SANS 54105 (see Section
 \ref{sec:Glycerides}, but SANS 1935 also offers the option of SANS 54016. This
 standard uses a liquid-liquid extraction of biodiesel with a mixture of ethanol,
 water, and hexane. The free glycerol transfers quantitatively to the bottom
-layer, which is then analyzed with a gas chromatographic method.
+layer, which is then analyzed with a gas chromatographic method. The benefit of
+this method is that chromatogram is very simple: the glycerol is the only
+analyte peak in the chromatogram, which greatly simplfies quantification.
 
+The column specified in this method is a PLOT column, \textit{i.e.} a Porous
+Layer Open Tubular column, which is a capillary coated on the inside with a
+layer of particles coated with the stationary phase, in this case a polyethylene
+glycol.
 
 \subsection{Polyunsaturated methyl esters}
 \label{sec:ChromDetUnsat}
 
-\section{Referring documents}
 
-\subsection{Petroleum Products Act}
+The degree of unsaturation of the constituent fatty acids are the main
+determinant of the oxidative stability of biodiesel. SANS 1935 limits the amount
+of highly unsaturated FAMEs by two lines in Table 1. In particular, the amount
+of methyl linoleate is limited to less than \SI{12}{\percent} mass fraction, and
+the amount of polyunsaturated fatty acid methyl esters with four or more double
+bonds are limited to less than \SI{1}{\percent} mass fraction.
 
-SANS 1935 is referred to in the Petroleum Products act, which makes it illegal. 
+\subsubsection{Linolenic acid methyl ester}
 
-\section{Fast Gas Chromatography}
+The determination of the amount of methyl linoleate (C18:3) is SANS 54103, determined
+at using the same method as prescribed for total esters (see \ref{sec:EsterContent}), so the 
 
-\todo{autocite Blumberg 1997}
+\subsubsection{Highly unsaturated fatty acid methyl esters}
+
+Polyunsatured fatty acids (PUFAs) with more than four double bonds are not
+commonly found in plant oils, but are found in algae. Fish that feed on algae
+accumulate these oils, so that they are also found in fish oils, but fish oils
+are not a sustainable resource and should not be used for
+fuel\autocite{Kitessa2014}. These compounds are highly oxidatively unstable, and are
+therefore undesirable in biodiesel.
+
+The method prescribed for the determination of PUFA FAMEs is EN 15779. This
+method uses a capillary column with a wax stationary phase.
+
+\subsection{Conclusion: room for innovation.}
+
+The diversity of biodiesel quality control metods makes it hard to have a single
+method that does everything\todo{Language}. \todo(autocite 5-in-1 biodiesel)
+
+To comply with SANS 1935, a biodiesel producer will have to submit samples of
+biodiesel to at least four different kinds of chromatographic analysis: 
+
+\begin{itemize}
+  \item EN 14105 for free and total glycerol
+  \item EN 14103 for FAME and methyl linoleate content
+  \item EN 14110 for residual methanol 
+  \item EN 15779 for highly unsaturated FAMEs
+  \item (Optionally) EN 14106
+\end{itemize}
+
+This might prove costly, and there has been at least one innovation to reduce
+the number of instruments required \autocite{McCurry2009}.
+
+As was emphasized in the introduction to this chapter (see Section
+\ref{Sec:Intro}), standards are not `the best' way of determining a certain
+desirable property of biodiesel, it is merely a trusted method. As improved
+methods are developed and become trustworthy, they can be adopted as
+alternatives. As far as biodiesel is concerned, it seems that there is ample
+room for chromatographers to innovate and develop improved methods and
+instrumentation.
+
+
+%\section{Referring documents}
+
+%\subsection{Petroleum Products Act}
+
+%SANS 1935 is referred to in the Petroleum Products act, which makes it illegal. 
+
+%\section{Fast Gas Chromatography}
+
+%\todo{autocite Blumberg 1997}
 
 \todos
