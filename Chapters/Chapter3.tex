@@ -15,9 +15,9 @@ The nice thing about standards is that you have so many to choose from.
 
 The fact that vegetable oil can be used to fuel Diesel engines has been known
 since the earliest days. Rudolf Diesel himself had exhibited an engine at the
-Paris Exhibition in 1998 \todo{autocite Diesel peanut oil} that ran on peanut
-oil. But the development of the petroleum industry late in the 19th century
-ensured an ample supply of fossil fuel for these engines.
+Paris Exhibition in 1998 \autocite{Knothe2010} that ran on peanut oil. But the
+development of the petroleum industry late in the 19th century ensured an ample
+supply of fossil fuel for these engines.
 
 The development of the diesel engine happened in parallel with the developing
 diesel fuel, for, as Cummins said ``\ldots we must never forget that \textit{an
@@ -39,7 +39,7 @@ consensus and approved by a recognized body, that provides, for common and
 repeated use, rules, guidelines or characteristics for activities or their
 results, aimed at the achievement of the optimum degree of order in a given
 context'' \autocite{Hatto2010}. Standards are used in many aspects of
-industrialized societies, from implantable medical devices \autocite(ISO2019) to
+industrialized societies, from implantable medical devices \autocite{ISO2019} to
 coffins and caskets \autocite{SABS1993}. Standards are often associated with
 products, but also apply to procedures \autocite{ISO2015} and systems
 \autocite{ISO2017}.
@@ -219,7 +219,8 @@ has to conform to, the \keyword{requirement}, and the third column prescribes
 the \keyword{test method} that must be used to obtain the value.
 
 In the following discussion each of the requirements will be discussed, in order
-of increasing relevance to this thesis, grouped by method of determination (See Figure).
+of increasing relevance to this thesis, grouped by method of determination (See
+Figure \ref{fig:MindMap}).
 
 
 \begin{figure}
@@ -231,7 +232,7 @@ of increasing relevance to this thesis, grouped by method of determination (See 
 biodiesel assessed by SANS 1935 is grouped for the purpose of discussion in this
 chapter.}
 
-\label{fig:RancidRadical}
+\label{fig:MindMap}
 \end{figure}
 
 \section{SANS 1935: Physical properties}
@@ -270,46 +271,68 @@ applied, as described in Annex D.
 \subsection{Kinematic viscosity}
 
 The viscosity of a fluid is a measure of its resistance to flow when a force is
-applied to it. Kinematic viscosity is the resistance of the flow to the force of
-gravity. This flow of course depends on the density of the liquid, so that It is
-important that the fuel for a diesel engine have the right viscosity, because
+applied to it. Kinematic viscosity is the resistance to flow of a liquid when
+the force of gravity is applied to it. This flow of course depends on the
+density of the liquid, so that kinematic viscosity is determined by measuring
+the liquid's viscosity and dividing it by its density. It is important that the
+fuel for a diesel engine have the right viscosity, because the fuel must be
+finely divided for rapid combustion. The size of the droplets of fuel in the
+spray produced by the engine's injectors is strongly influenced by the fuel's viscosity. 
 
 SANS 1935 requires that kinematic viscosity be in the \SIrange{3.5}{5.0}. The
-measurement is specified by ISO 3104, which is a capillary method.
+measurement is specified by ISO 3104, which uses a capillary viscometer: the
+time taken for a fixed volume of liquid to flow through a capillary. This time
+is them multiplied by an instrument-specific factor to yield the kinematic
+viscosity.
 
-\section{SANS 1935: Aggregate properties: Specialized instrumentation}
+\section[SANS 1935: Aggregate properties: Specialized in\-stru\-mentation]{SANS
+1935: Aggregate properties: \\ Specialized in\-stru\-mentation}
 
 Some of the requirements specified in SANS 1935 are not values that have direct
-correspondence to physical or chemical quantities usually used in science. 
+correspondence to physical or chemical quantities usually used in science, but
+are measures that have proved useful in practice.
 
 \subsection{Cetane number}
 
-The cetane number is a number that indicates the ease of ignition of a fuel in a
-diesel engine. A higher number indicates easier ignition. SANS 1935 prescribes
-the test method of ISO 5165.
-
-Cetane is a synonym for hexadecane, and is a liquid compound that ignites easily
-when injected into a diesel engine. In contrast, its highly branched isomer
-2,2,4,4,6,8,8-heptamethylnonane (also called isocetane) ignites less easily. The
+For a diesel engine to operate according to design the fuel must combust in a
+reliable manner. The cetane number is a number that indicates the ease of
+ignition of a fuel in a diesel engine. Cetane is a synonym for hexadecane, and
+is a liquid compound that ignites easily when injected into a diesel engine. In
+contrast, its highly branched isomer 2,2,4,4,6,8,8-heptamethylnonane (also
+called isocetane, see Figure \ref{fig:Cetane}) ignites less easily. The
 intuitively-understood ``ease of combustion" can be quantified as the
-\keyword{ignition delay}, the time between the moment when the fuel is injected
-in to the engine and moment the ignition starts. A mixture of the two compounds
-will have an ignition delay somewhere between that of the two compounds.
+\keyword{ignition delay}, the time between the moment the fuel is injected in to
+the engine and the moment the ignition starts. A mixture of the two compounds
+will have an ignition delay somewhere between that of the two compounds. A
+higher number indicates easier ignition.
 
-The cetane number is obtained by measuring the ignition delay in a  highly
-specialized test engine. This is a single-piston, four-stroke engine that has a
-combustion chamber of variable volume, which gives it a variable compression
-ratio. While running on the fuel under test, the compression ratio is changed
-until a prescribed ignition delay is achieved. Then the cetane/isocetane mixture
-that will give the same ignition delay at that compression ratio is found. If
-the fuel under test has the same ignition delay as a pure cetane, it is assigned
-the cetane number of 100, and if its ignition delay is the same as isocetane,
-then the cetane number 0 is assigned. Ignition delays between two extremes
-assign a proportional cetane number to the fuel.
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{Figures/cetane.pdf}
+\decoRule
+
+\caption[Cetane and isocetane]{The chemical structures of the C16 hydrocarbon
+isomers cetane and isocetane.}
+\label{fig:Cetane}
+\end{figure}
+
+SANS 1935 prescribes the test method of ISO 5165. The cetane number is obtained
+by measuring the ignition delay in a highly specialized test engine. The engine
+is equipped with the necessary instrumentation to measure ignition delay. It is
+a single-piston, four-stroke engine that has a combustion chamber of variable
+volume, which gives it a variable compression ratio. While running on the fuel
+under test, the compression ratio is changed until a prescribed ignition delay
+is achieved. Then the cetane/isocetane mixture that will give the same ignition
+delay at that compression ratio is found. If pure cetane will give the
+prescribed ignition delay, then the cetane number 100 is assigned. If pure
+isocetane gives the prescribed ignition delay, then the cetane number 0 is
+assigned. If it is found that a 50:50 cetane:isocetane mixture produces the
+prescribed ignition delay, then the cetane number of 50 is assigned.
 
 Cetane number gives limited insight into the chemical properties of the fuel, or
 indeed, engine performance. But it is a trusted measure of the suitability of a
-fuel for use in a diesel engine. 
+fuel for use in a diesel engine and is therefore included in the standard.
+Biodiesel from common feedstocks usually easily meets the cetane specifications.
 
 \subsection{Flash point}
 
@@ -323,41 +346,46 @@ of the fuel inside the engine, but is important to know because it determines
 how the fuel can be safely be handled during transport and storage
 \autocite{WFCC2009}.
 
-The flash points of liquids are established by standardized tests in automated
-apparatus.
+SANS 1935 specifies that either ISO 2719 (Procedure A) or ISO 3679 be used for
+determining the flash point. It seems that this aspect of SANS 1935 is out of
+date, because ISO 2719:2002 has been withdrawn and revised by ISO 2719:2016,
+which adds a Procedure C, specifically for FAME. ISO 2719 specifies the use of a
+Pensky-Martin closed-cup test, and automated device in which a temperature ramp
+heats an enclosed amount of liquid, while an ignition source is periodically
+introduced. The temperature at which the vapour ignites is the flash point. ISO
+3679's test procedure works on a similar principle, but the device uses a
+smaller volume of liquid, and the liquid and its vapour are considered to be in
+thermal equilibrium.
 
 \subsection{Oxidation stability}
 \label{sec:Rancimat}
 
 Fossil fuels for diesel engines are largely composed of alkanes, which are
 chemically very inert. This means that they can be stored for long periods
-without significant degradation.
-
-Biodiesel, by contrast, are by definition (\autocite[Paragraph 4.1.1]{SANS1935})
-mostly composed of fatty acids, which are not inherently stable.
-This instability has been known since antiquity as fatty food going
-\keyword{rancid}. In particular, double bonds in the fatty acids are liable to
-reactions with atmospheric oxygen \autocite{Velasco2010}. These are free radical
-reactions, illustrated in Figure \ref{fig:RancidRadical}.
+without significant degradation. Biodiesel, in contrast, is by definition
+\autocite[Paragraph 4.1.1]{SANS1935} mostly composed of fatty acids, which are
+less inert than alkanes. This instability has been known since antiquity as
+fatty food going \keyword{rancid}. In particular, double bonds in the fatty
+acids are liable to reactions with atmospheric oxygen \autocite{Velasco2010}.
+These are free radical reactions, illustrated in Figure \ref{fig:RancidRadical}.
+The hydroperoxides that form are highly reactive and can react with other fuel
+compounds to form polymers, soaps and acids.
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth]{Figures/1281px-Lipid_peroxidation.png}
+\includegraphics[width=0.8\textwidth]{Figures/1281px-Lipid_peroxidation.png}
 \decoRule
 
 \caption[The peroxidation of lipids.]{The peroxidation of lipids. By Tim
-Vickers, after \autocite{Young2001}. - w:Image:Lipid peroxidation v2.png, Public
-Domain, https://commons.wikimedia.org/w/index.php?curid=1728531}
+Vickers, after \autocite{Young2001}. Public Domain,
+\url{https://commons.wikimedia.org/w/index.php?curid=1728531}}
 
 \label{fig:RancidRadical}
 \end{figure}
 
-
-\todo{The reaction products are short-chain fatty acids, soaps, sludges.}
-
 The oxidative stability is measured by the Rancimat, an automated instrument. It
 works by bubbling a stream of hot air through a sample of biodiesel. This air is
-then passed through a conductivity measuring cell filled with distilled water.
+then passed through a conductivity measuring cell filled with deionized water.
 The conductivity of the water increases when volatile acids dissolves in it. At
 the beginning of the test period there are very few acids swept into the water,
 so the conductivity remains low. As the sample oxidizes and produce acids, the
@@ -368,73 +396,77 @@ conductivity curve there is a sudden increase in conductivity. The time taken
 until this point is reached is called the \keyword{induction period}.
 
 SANS 1935 requires a minimum induction period of 6 minutes at
-\SI{110}{\celsius}. Paragraph 4.1.2 permits the addition of antioxidants.
+\SI{110}{\celsius}. Paragraph 4.1.2 permits the addition of antioxidants,
+compounds that prevent oxidation.
 
 \subsection{Cold filter plugging point}
 
-The flow of liquids depend on the temperature. Most obviously, their viscosities
-depend on the temperature. But liquids can freeze, which will also influence
-their flows. The operating temperature of a diesel engine is so high that the
-temperature of the fuel will be high enough to guarantee adequate flow, but the
-biodiesel needs to be pumped to the engine from the fuel tank, passing through a
-fuel filter on the way. If crystals of fuel form at low temperatures, these
-crystals might plug the pores in the filter, which could lead to fuel starvation
-in the engine. It is therefore important that the biodiesel must be able to be
-pumped through the engine's fuel filter at all expected temperatures.
+The flow of a liquid depends on its temperature. Most obviously, its viscosity
+depend on the temperature. But a liquid can freeze, which will also influence
+its flow. The operating temperature of a diesel engine is so high that the
+temperature of the fuel in the engine will be high enough to guarantee adequate
+flow for injection, but the biodiesel needs to be pumped from the fuel tank,
+through a fuel filter, to the engine. If crystals of fuel form at low
+temperatures, these crystals might plug the pores in the filter, which could
+lead to fuel starvation in the engine. It is therefore important that the
+biodiesel must be able to be pumped through the engine's fuel filter at all
+expected temperatures.
 
-For this purpose SANS 1935 specifies a \keyword{cold filter plugging point}. It
-is the lowest temperature at which a given volume of biodiesel still passes
-through a standardized filtration device in a specified time when cooled under
-certain conditions. This is an entirely practical test: no fundamental
-physical property is measured.
+For this purpose SANS 1935 specifies a \keyword{cold filter plugging point},
+measured according to SANS 50116. It is the lowest temperature at which a given
+volume of biodiesel still passes through a standardized filtration device in a
+specified time when cooled under certain conditions. 
 
 \subsection{Copper strip corrosion}
 
-Storage systems and engines parts are made of metals, and therefore susceptible
-to corrosion under adverse conditions. Chemical conditions that make corrosion
-more likely include acidity, water, and oxygen, but corrosion is a complex
-process, so it is very difficult to predict which combination of factors will
-result in unacceptable corrosion.
+Many fuel storage  and transfer systems parts and engines parts are made of
+metals, and under adverse conditions those parts are susceptible to corrosion.
+Chemical conditions that make corrosion more likely include acidity, water, and
+oxygen, but corrosion is a complex process, so it is very difficult to predict
+which combination of factors will result in unacceptable corrosion.
 
 SANS 1935 prescribes ISO 2160 as the test for corrosiveness. In this test a
 strip of pure copper metal is polished and then immersed in a sample of the
 biodiesel at \SI{50}{\celsius} for \SI{3}{\hour}. The degree of corrosion is
-judged by visually comparing it to a standard card, and then assigning it to a
-class.
+judged by visually comparing it to a standard card and then assigning it to a
+corrosion class.
 
 \section{SANS 1935: Chemical properties: Classical determination}
 
-\subsection{Sulphated ash}
+\subsection{Sulfated ash}
 
 Ash is the solids remaining after the complete combustion of a fuel. This is
 measure of the solids that will remain after use. Ash might originate from
-suspended solids, soluble metallic soaps, and residual biodiesel catalyst. These
-metals
+suspended solids, soluble metallic soaps, and residual catalyst that form
+refractory oxides during combustion. In addition to wear and deposits in the
+fuel system associated with ash, it also impairs modern diesel particulate
+filters.
 
-It would not be practical to actually combust the sample and weigh the residue,
-because the ash might be carried away, either as volatile species or as a finely
-divided aerosol. Therefore the sample is oxidized using sulphuric acid, and then
-heated to drive off the sulphuric acid. What remains is metal oxides, which can
-be weighed.
+SANS 1935 specifies ISO 3987 for the determination of sulfated ash. For the
+determination of ash it would not be practical to actually combust the sample
+and weigh the residue, because the ash might be carried away, either as volatile
+species or as a finely divided aerosol. Therefore the sample is oxidized using
+sulphuric acid, and then heated to drive off the sulphuric acid. What remains is
+metal oxides, which can be weighed.
 
 \subsection{Carbon residue}
 
 When a mixture of organic compounds is heated under conditions of low oxygen, it
-can form coke. Coke is a material that is practically pure carbon. Pure carbon
-will combust (\todo{delta H}), but the reaction is kinetically limited, so it
-will only combust slowly under conditions of high temperature and a large excess
-of oxygen. If a fuel tends to form coke inside an engine, it can cause problems
-in operation. Vegetable oil as diesel fuel, for example, tend to form coke on
-the injectors \autocite{Walt1982}. This coking can cause problems with
-injection, which would affect engine performance.
+can form coke. Coke is a material that is practically pure carbon. Pure, solid
+carbon will combust, but the reaction is kinetically limited, so it will only
+combust slowly under conditions of high temperature and a large excess of
+oxygen. If a fuel tends to form coke inside an engine, it can cause problems in
+operation. Vegetable oil as diesel fuel, for example, tend to form coke on the
+injectors \autocite{vanderWalt1982}. This coking can cause problems with injection,
+which would affect engine performance. Carbon residue is not a scientific
+measure: from long experience it has been found to correlate with coking
+tendencies of oils in the petroleum industry, and so found its way into the
+biodiesel standard.
 
 The test method prescribed for testing for carbon residue is ISO 10370. This
 involves heating a sample of biodiesel to high temperature in a crucible in air,
 using standardized apparatus. Most of the sample burns off, leaving a residue.
-The weight of the residue is determined.
-
-Carbon residue is not a scientific measure: it has been found to correlate with
-properties of oils in the petroleum industry.
+The mass of the residue is determined and reported.
 
 \subsection{Total contamination}
 
@@ -443,19 +475,19 @@ be tolerated, but too much can plug filters.
 
 SANS 1935 specifies the test SANS 52662, which is synonymous with EN 12662. In
 this test total contamination is determined by filtering a sample of the
-biodiesel being tested on glass-fibre filter, and determining the mass of the
+biodiesel being tested through a glass-fibre filter, and determining the mass of the
 retained material.
 
 \subsection{Acid value}
 
-The end products of oxidation of biodiesel (see Section\ref{sec:Rancimat})
-includes free organic acids, so the acidity of biodiesel is a good indicator of
-its quality. Measuring the acidity gives an indication of how much the biodiesel
-has already oxidized, whereas the oxidation stability (measured by Rancimat)
+The end products of oxidation of biodiesel includes free organic acids, so the
+acidity of biodiesel is a good indicator of its quality. Measuring the acidity
+gives an indication of how much the biodiesel has already oxidized, whereas the
+oxidation stability (measured by Rancimat, see Section\ref{sec:Rancimat})
 indicates how well the biodiesel will withstand oxidation on storage.
 
 SANS 1935 specifies the test described in SANS 54104, which is equivalent to EN
-1410414. This test is a titration of a sample of biodiesel dissolved in a
+14104. This test is a titration of a sample of biodiesel dissolved in a
 mixture solvents with alcoholic KOH. A glass pH electrode is used to follow the
 titration.
 
@@ -469,12 +501,12 @@ unsaturation}.
 % t AOCS method Cd 1d-92 using cyclohexane-acetic acid (also used by the
 % European standard EN 14111) as solvent system are based on the Wijs solution.
 
-The degree of unsaturation has long been measured by the \keyword{iodine value},
-dating from 1884 \autocite{Knothe2007}. Halogens will rapidly add to double
-bonds, so that when a mixture of fatty acids is treated with a known excess of
-iodating reagent, the remaining iodine can be titrated to determine the amount
-of iodine absorbed by the fatty acids. The iodine value is the mass of iodine
-absorbed by 100 mass units of fat or oil.
+The degree of unsaturation of oils and fats have long been measured by the
+\keyword{iodine value}, dating from 1884 \autocite{Knothe2007}. Halogens will
+rapidly add to double bonds, so that when a mixture of fatty acids is treated
+with a known excess of iodating reagent, the remaining iodine can be titrated to
+determine the amount of iodine absorbed by the fatty acids. The iodine value is
+the mass of iodine absorbed by 100 mass units of fat or oil.
 
 The relevance of including iodine value in biodiesel standards has been
 questioned \autocite{Knothe2002}, because all the information regarding
@@ -505,10 +537,10 @@ curve.
 \subsection{Water content.}
 
 The compounds that comprise biodiesel are much more polar than those of
-petrodiesel. Therefore, much more water can dissolve in biodiesel than can
+petro\-diesel. Therefore, much more water can dissolve in biodiesel than can
 dissolve in petrodiesel. This water has several deleterious effects on the
 quality of biodiesel. It encourages the growth of micro-organisms, allows
-hydrolysis, and increases corrosivity
+hydrolysis, and accelerates corrosion.
 
 The level of water specified in the requirements of SANS 1935 is lower than the
 solubility of water, and therefore refers to dissolved water. Free, visible
@@ -517,8 +549,9 @@ water is excluded by paragraph 4.1.4.
 The method specified by SANS 1935 for the determination of water in biodiesel is
 ISO 12937. This standard prescribes the well-known Karl Fischer titration used
 for the determination of water in solvents. This is a \keyword{coulometric}
-titration, which means that electricity is used as titrant. The amount of charge
-(current integrated over time)
+titration, which means that electricity is used as titrant. The titration curve
+is a plot of oxidation potential of a platinum electrode against the amount of
+charge (current integrated over time). 
 
 
 
@@ -531,13 +564,16 @@ hydroxides (NaOH and KOH) or alkoxides (CH\textsubscript{3}ONa and
 CH\textsubscript{3}OK). These catalysts are polar and will dissolve in the
 glycerol byproduct of biodiesel production. But some may remain in the biodiesel
 itself, and needs to be removed. This cleanup can be done by washing with water,
-adsorbent columns, or selective membranes.
+adsorbent columns, or selective membranes \autocite{Atadashi2011}.
 
 SANS 54108 is the method specified for the determination of sodium, and SANS
 54109 the method specified for potassium. Both are flame atomic absorption
-spectroscopy methods. Alternatively, EN 14538 may be used to determine sodium
-and potassium simultaneously with calcium and magnesium (see
-Section\label{sec:GroupIIMetals}).
+spectroscopy methods: a sample of the biodiesel is aspirated into a gas flame,
+where the sodium and potassium are atomized. The atoms will absorb light at
+certain wavelengths, and measuring the amount of light absorbed will give a
+measure of the amount. Alternatively, EN 14538 may be used to determine sodium
+and potassium simultaneously with calcium and magnesium (see Section
+\ref{sec:GroupIIMetals}).
 
 \subsection{Group II metals}
 \label{sec:GroupIIMetals}
@@ -552,15 +588,19 @@ stick \autocite{Pischinger2000}.
 SANS 1935 prescribes EN 14538 as the method for determining Group II metals.
 This is an optical emission spectroscopy method: a sample of the biodiesel is
 diluted in kerosene, and injected into a inductively coupled argon plasma. The
-emissions at certain wavelengths are compared to the emissions of solvent
-containing known concentrations of the metals.
+emission intensities at certain wavelengths are compared to the emission
+intensities of solvents containing known concentrations of the metals.
 
 \subsection{Phosphorus}
 
-The low levels of phosphorus expected to be present in biodiesel should not
-affect a diesel engine's performance, but it can have a detrimental effect on
-the exhaust treatment system by forming ash that can clog filters and reactive
-species that can reduce catalyst effectiveness.
+Phosphorus expected in biodiesel should not affect a diesel engine's
+performance, but it can have a detrimental effect on the exhaust treatment
+system by forming ash that can clog filters and reactive species that can reduce
+catalyst effectiveness. Trace levels of phosphorus will be expected in
+biodiesel, in the form of natural phospholipids. Normal biodiesel feedstock and
+production methods should yield acceptable phosphorus concentration, but
+inorganic phosphorus might be present in biodiesel produced from used cooking
+oil.
  
 SANS 54107 is the prescribed method for determining phosphorus in biodiesel. A
 sample of biodiesel is dissolved in xylene, and the solution introduced in
@@ -607,17 +647,16 @@ standard.
 \label{sec:EsterContent}
 As prescribed in Paragraph 3 of SANS 1935, biodiesel must consist of fatty acid
 methyl esters. The first line of Table 1 quantifies this requirement as a
-minimum of \SI{96.5}{\percent} mass fraction. At the same time, there is a
-requirement that methyl linoleate do not exceed \SI{12}{\percent}, because this
-compounds detracts greatly from oxidative stability. Both compounds can be
-determined by the same chromatographic method.
+minimum of \SI{96.5}{\percent} mass fraction. 
 
 The specified method is SANS 54103. This document refers to ISO 5508:1990, which
-has been withdrawn and superceded by ISO 12966-4:2015. ISO 5508 and ISO 12966
+has been withdrawn and superseded by ISO 12966-4:2015. ISO 5508 and ISO 12966
 describe gas chromatographic methods for the determination of FAMEs. ISO 5508 is
 obsolete: it gives conditions for packed GC columns and thermal conductivity
 detectors, two technologies which are now rarely found in the chromatography
-lab. Both methods, however, requires polar stationary phases. 
+laboratory. Both methods, however, require polar stationary phases. The quantity of
+esters is determined by integrating all the peaks in a certain retention time
+window and comparing it to the peak area of an internal standard.
 
 \subsection{Glyceride content}
 \label{sec:Glycerides}
@@ -625,8 +664,8 @@ lab. Both methods, however, requires polar stationary phases.
 Glycerol (propane-1,2,3-triol) is the ``backbone'' of the oil molecules that
 constitute the feedstock for biodiesel production. Each hydroxyl group can form
 an ester bond with a fatty acid, and when all three have a fatty acid bound to
-it is a `fat molecule'. IUPAC recommends that such a molecule is called a
-tri-O-acylglycerol\autocite{Nic2009}, but by long-established custom they are
+it is an `oil molecule'. IUPAC recommends that such a molecule is called a
+tri-O-acylglycerol \autocite{Nic2009}, but by long-established custom they are
 called triglycerides. The conversion of a triglyceride to FAMEs is a stepwise
 process, with one ester bond at a time being methanolized. This means that
 during the reaction process, there will also be di- and monoglycerides (di- and
@@ -665,7 +704,7 @@ and the volatile trifluoroacetamide elutes with the solvent front.}
 \end{figure}
 
 The trifluoroacetamide group is a good leaving group, and upon nucleophilic
-attack by the hydroxyl oxygen its bond with the trimethylsilyl group breaks,
+attack by the hydroxyl oxygen its bond with the trimethylsilyl (TMS) group breaks,
 leaving the TMS bound to the oxygen. The labile hydrogen atom is now replaced by
 the TMS group, which is inert and will not interact with polar entities in the
 stationary phase or column, which will lead to improved peak shapes. 
@@ -685,18 +724,17 @@ for the determination of the other glycerides in SANS 54105 (see Section
 \ref{sec:Glycerides}, but SANS 1935 also offers the option of SANS 54016. This
 standard uses a liquid-liquid extraction of biodiesel with a mixture of ethanol,
 water, and hexane. The free glycerol transfers quantitatively to the bottom
-layer, which is then analyzed with a gas chromatographic method. The benefit of
+layer, which is then analysed with a gas chromatographic method. The benefit of
 this method is that chromatogram is very simple: the glycerol is the only
-analyte peak in the chromatogram, which greatly simplfies quantification.
+analyte peak in the chromatogram, which greatly simplifies quantification.
 
-The column specified in this method is a PLOT column, \textit{i.e.} a Porous
-Layer Open Tubular column, which is a capillary coated on the inside with a
-layer of particles coated with the stationary phase, in this case a polyethylene
-glycol.
+The column specified in SANS 54106 method is a PLOT column, \textit{i.e.} a
+Porous Layer Open Tubular column, which is a capillary lined on the inside with
+a layer of particles coated with the stationary phase, in this case a polar
+polyethylene glycol. 
 
 \subsection{Polyunsaturated methyl esters}
 \label{sec:ChromDetUnsat}
-
 
 The degree of unsaturation of the constituent fatty acids are the main
 determinant of the oxidative stability of biodiesel. SANS 1935 limits the amount
@@ -716,26 +754,25 @@ Polyunsatured fatty acids (PUFAs) with more than four double bonds are not
 commonly found in plant oils, but are found in algae. Fish that feed on algae
 accumulate these oils, so that they are also found in fish oils, but fish oils
 are not a sustainable resource and should not be used for
-fuel\autocite{Kitessa2014}. These compounds are highly oxidatively unstable, and are
-therefore undesirable in biodiesel.
+fuel\autocite{Kitessa2014}. These compounds are highly oxidatively unstable, and
+are therefore undesirable in biodiesel.
 
 The method prescribed for the determination of PUFA FAMEs is EN 15779. This
 method uses a capillary column with a wax stationary phase.
 
 \subsection{Conclusion: room for innovation.}
 
-The diversity of biodiesel quality control metods makes it hard to have a single
-method that does everything\todo{Language}. \todo(autocite 5-in-1 biodiesel)
-
-To comply with SANS 1935, a biodiesel producer will have to submit samples of
-biodiesel to at least four different kinds of chromatographic analysis: 
+The diversity of chromatographic biodiesel quality control methods causes the
+compliance with SANS 1935 to be expensive. To comply, a biodiesel producer will
+have to submit samples of biodiesel to at least four different kinds of
+chromatographic analysis:
 
 \begin{itemize}
   \item EN 14105 for free and total glycerol
   \item EN 14103 for FAME and methyl linoleate content
   \item EN 14110 for residual methanol 
   \item EN 15779 for highly unsaturated FAMEs
-  \item (Optionally) EN 14106
+  \item (Optionally) EN 14106 for free glycerol
 \end{itemize}
 
 This might prove costly, and there has been at least one innovation to reduce

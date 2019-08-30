@@ -1,0 +1,143 @@
+<map version="1.0.1">
+<!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
+<node COLOR="#0033ff" CREATED="1563888453846" ID="ID_566355721" MODIFIED="1567099345599">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      SANS 1935
+    </p>
+    <p>
+      Properties
+    </p>
+  </body>
+</html>
+</richcontent>
+<edge COLOR="#0033ff" WIDTH="4"/>
+<font BOLD="true" NAME="LM Roman 12" SIZE="18"/>
+<node COLOR="#00b439" CREATED="1563888767683" HGAP="110" ID="ID_597085471" MODIFIED="1567099360594" POSITION="left" TEXT="Aggregate" VSHIFT="-82">
+<edge COLOR="#00b439" WIDTH="2"/>
+<font BOLD="true" NAME="LM Roman 12" SIZE="18"/>
+<node COLOR="#990000" CREATED="1563888788337" HGAP="28" ID="ID_1399824382" MODIFIED="1567098720094" TEXT="Cetane number" VSHIFT="-16">
+<edge COLOR="#990000" WIDTH="1"/>
+<font BOLD="true" NAME="LM Roman 12" SIZE="18"/>
+</node>
+<node COLOR="#990000" CREATED="1563888797214" HGAP="31" ID="ID_219246771" MODIFIED="1567098720094" TEXT="Flash point" VSHIFT="3">
+<edge COLOR="#990000" WIDTH="1"/>
+<font BOLD="true" NAME="LM Roman 12" SIZE="18"/>
+</node>
+<node COLOR="#990000" CREATED="1563888802174" HGAP="39" ID="ID_268852022" MODIFIED="1567098720093" TEXT="Oxidation stability" VSHIFT="9">
+<edge COLOR="#990000" WIDTH="1"/>
+<font BOLD="true" NAME="LM Roman 12" SIZE="18"/>
+</node>
+<node COLOR="#990000" CREATED="1567092867311" HGAP="34" ID="ID_1851266780" MODIFIED="1567098720093" TEXT="Cold filter plugging point" VSHIFT="13">
+<edge COLOR="#990000" WIDTH="1"/>
+<font BOLD="true" NAME="LM Roman 12" SIZE="18"/>
+</node>
+</node>
+<node COLOR="#00b439" CREATED="1563888487183" HGAP="146" ID="ID_996696735" MODIFIED="1567099376463" POSITION="right" STYLE="fork" TEXT="Physical" VSHIFT="18">
+<edge COLOR="#00b439" WIDTH="2"/>
+<font BOLD="true" NAME="LM Roman 12" SIZE="18"/>
+<node COLOR="#990000" CREATED="1563888972103" HGAP="35" ID="ID_683399014" MODIFIED="1567098720093" TEXT="Density" VSHIFT="-7">
+<edge COLOR="#990000" WIDTH="1"/>
+<font BOLD="true" NAME="LM Roman 12" SIZE="18"/>
+</node>
+<node COLOR="#990000" CREATED="1563889005979" HGAP="30" ID="ID_767617027" MODIFIED="1567098720092" TEXT="Kinematic viscosity" VSHIFT="9">
+<edge COLOR="#990000" WIDTH="1"/>
+<font BOLD="true" NAME="LM Roman 12" SIZE="18"/>
+</node>
+</node>
+<node COLOR="#00b439" CREATED="1563888629568" HGAP="64" ID="ID_1789397075" MODIFIED="1567099355525" POSITION="right" TEXT="Chemical" VSHIFT="-73">
+<edge COLOR="#00b439" WIDTH="2"/>
+<font BOLD="true" NAME="LM Roman 12" SIZE="18"/>
+<node COLOR="#990000" CREATED="1563888708811" HGAP="67" ID="ID_1979024177" MODIFIED="1567099390090" TEXT="Classical" VSHIFT="22">
+<edge COLOR="#990000" WIDTH="1"/>
+<font BOLD="true" NAME="LM Roman 12" SIZE="18"/>
+<node COLOR="#111111" CREATED="1563889095456" HGAP="21" ID="ID_1839157271" MODIFIED="1567098720092" TEXT="Gravimetric" VSHIFT="-9">
+<edge COLOR="#111111" WIDTH="thin"/>
+<font BOLD="true" NAME="LM Roman 12" SIZE="18"/>
+<node COLOR="#111111" CREATED="1567095828502" ID="ID_1710525867" MODIFIED="1567098720092" TEXT="Sulphated ash" VSHIFT="-4">
+<edge COLOR="#111111" WIDTH="thin"/>
+<font BOLD="true" NAME="LM Roman 12" SIZE="18"/>
+</node>
+<node COLOR="#111111" CREATED="1567095842059" HGAP="25" ID="ID_900818314" MODIFIED="1567098720092" TEXT="Carbon residue" VSHIFT="-9">
+<edge COLOR="#111111" WIDTH="thin"/>
+<font BOLD="true" NAME="LM Roman 12" SIZE="18"/>
+</node>
+<node COLOR="#111111" CREATED="1567095851874" HGAP="22" ID="ID_1619594135" MODIFIED="1567098720092" TEXT="Total contamination" VSHIFT="-8">
+<edge COLOR="#111111" WIDTH="thin"/>
+<font BOLD="true" NAME="LM Roman 12" SIZE="18"/>
+</node>
+</node>
+<node COLOR="#111111" CREATED="1563889100891" ID="ID_1740736159" MODIFIED="1567098720091" TEXT="Volumetric" VSHIFT="9">
+<edge COLOR="#111111" WIDTH="thin"/>
+<font BOLD="true" NAME="LM Roman 12" SIZE="18"/>
+<node COLOR="#111111" CREATED="1567095871375" ID="ID_600664924" MODIFIED="1567098720091" TEXT="Acid value" VSHIFT="-5">
+<edge COLOR="#111111" WIDTH="thin"/>
+<font BOLD="true" NAME="LM Roman 12" SIZE="18"/>
+</node>
+<node COLOR="#111111" CREATED="1567095882208" ID="ID_1330364929" MODIFIED="1567098720091" TEXT="Iodine value" VSHIFT="7">
+<edge COLOR="#111111" WIDTH="thin"/>
+<font BOLD="true" NAME="LM Roman 12" SIZE="18"/>
+</node>
+</node>
+</node>
+<node COLOR="#990000" CREATED="1563888677839" HGAP="63" ID="ID_1272481236" MODIFIED="1567099388610" TEXT="Electrochemical" VSHIFT="14">
+<edge COLOR="#990000" WIDTH="1"/>
+<font BOLD="true" NAME="LM Roman 12" SIZE="18"/>
+<node COLOR="#111111" CREATED="1567096007497" ID="ID_1231728461" MODIFIED="1567098720091" TEXT="Water content" VSHIFT="-7">
+<edge COLOR="#111111" WIDTH="thin"/>
+<font BOLD="true" NAME="LM Roman 12" SIZE="18"/>
+</node>
+</node>
+<node COLOR="#990000" CREATED="1563888723231" HGAP="37" ID="ID_1426444002" MODIFIED="1567099397442" TEXT="Spectroscopic " VSHIFT="27">
+<edge COLOR="#990000" WIDTH="1"/>
+<font BOLD="true" NAME="LM Roman 12" SIZE="18"/>
+<node COLOR="#111111" CREATED="1567096037792" HGAP="30" ID="ID_1599995397" MODIFIED="1567098720091" TEXT="Group I metals" VSHIFT="-8">
+<edge COLOR="#111111" WIDTH="thin"/>
+<font BOLD="true" NAME="LM Roman 12" SIZE="18"/>
+</node>
+<node COLOR="#111111" CREATED="1567096045726" HGAP="32" ID="ID_1999177565" MODIFIED="1567098720090" TEXT="Group II metals" VSHIFT="-5">
+<edge COLOR="#111111" WIDTH="thin"/>
+<font BOLD="true" NAME="LM Roman 12" SIZE="18"/>
+</node>
+<node COLOR="#111111" CREATED="1567096061921" HGAP="31" ID="ID_230635001" MODIFIED="1567098720090" TEXT="Phosphorus">
+<edge COLOR="#111111" WIDTH="thin"/>
+<font BOLD="true" NAME="LM Roman 12" SIZE="18"/>
+</node>
+<node COLOR="#111111" CREATED="1567096074392" HGAP="31" ID="ID_719418774" MODIFIED="1567098720090" TEXT="Sulfur" VSHIFT="11">
+<edge COLOR="#111111" WIDTH="thin"/>
+<font BOLD="true" NAME="LM Roman 12" SIZE="18"/>
+</node>
+</node>
+<node COLOR="#990000" CREATED="1563888736329" HGAP="71" ID="ID_1567934970" MODIFIED="1567099402834" TEXT="Chromatographic" VSHIFT="18">
+<edge COLOR="#990000" WIDTH="1"/>
+<font BOLD="true" NAME="LM Roman 12" SIZE="18"/>
+<node COLOR="#111111" CREATED="1567096095353" HGAP="33" ID="ID_563028947" MODIFIED="1567098720089" TEXT="Methanol content" VSHIFT="-14">
+<edge COLOR="#111111" WIDTH="thin"/>
+<font BOLD="true" NAME="LM Roman 12" SIZE="18"/>
+</node>
+<node COLOR="#111111" CREATED="1567096121994" HGAP="44" ID="ID_1098024563" MODIFIED="1567098720089" TEXT="Ester content" VSHIFT="-11">
+<edge COLOR="#111111" WIDTH="thin"/>
+<font BOLD="true" NAME="LM Roman 12" SIZE="18"/>
+</node>
+<node COLOR="#111111" CREATED="1567096107859" HGAP="49" ID="ID_1082563524" MODIFIED="1567098720088" TEXT="Free glycerol">
+<edge COLOR="#111111" WIDTH="thin"/>
+<font BOLD="true" NAME="LM Roman 12" SIZE="18"/>
+</node>
+<node COLOR="#111111" CREATED="1567096149638" HGAP="39" ID="ID_758303428" MODIFIED="1567099525148" TEXT="Unsaturated methyl esters" VSHIFT="-2">
+<edge COLOR="#111111" WIDTH="thin"/>
+<font BOLD="true" NAME="LM Roman 12" SIZE="18"/>
+<node CREATED="1567096245165" ID="ID_180586856" MODIFIED="1567098720087" TEXT="Methyl linoleate" VSHIFT="-9">
+<font BOLD="true" NAME="LM Roman 12" SIZE="18"/>
+</node>
+<node CREATED="1567096257878" HGAP="27" ID="ID_470878612" MODIFIED="1567098720085" TEXT="Polyunsaturated " VSHIFT="8">
+<font BOLD="true" NAME="LM Roman 12" SIZE="18"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+</map>
