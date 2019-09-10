@@ -433,6 +433,36 @@ KOMA-script documentation for details.}]{fancyhdr}
 }
 
 %----------------------------------------------------------------------------------------
+%	PREFACE PAGE DESIGN
+%----------------------------------------------------------------------------------------
+
+\usepackage{xcolor}
+\colorlet{mdtRed}{red!50!black}
+\newcommand{\prefacename}{Preface}
+\providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish} {\prefacename}{Preface} % Acknowledgement text for English countries
+\providecaptionname{german,ngerman,austrian,naustrian}{\acknowledgementname}{Vorwort} % Preface text for Germanic countries
+
+\ifbool{consistentlayout}{
+	\DeclareDocumentEnvironment{preface}{}{%
+		\tttypeout{\prefacename}
+		\addchap*{\prefacename}
+	}
+}
+{
+	\DeclareDocumentEnvironment{preface}{}{%
+		\checktoopen
+		\tttypeout{\prefacename}
+		\thispagestyle{plain}
+		\begin{center}{\huge\textit{\prefacename}\par}\end{center}
+	}
+	{
+		\vfil\vfil\null
+	}
+}
+
+
+
+%----------------------------------------------------------------------------------------
 %	DECLARATION PAGE DESIGN
 %----------------------------------------------------------------------------------------
 
