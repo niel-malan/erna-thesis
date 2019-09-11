@@ -80,12 +80,42 @@ temperatures. This means that they might degrade during chromatographic
 separation at high temperature, especially if the run times are long. Because
 SFC operates at low temperatures, the labile compounds are less likely to degrade. 
 
-\section{CG of FAME}
+\section[Benefits of fast GC]{Benefits of fast temperature programming GC for FAME analysis}
 
 As discussed in Section \label{sec:ChromDet}, FAME can be separated by gas
-chromatography using a relatively non-polar columns using high-temperature
-programs.
- 
+chromatography using a relatively non-polar columns with high-temperature
+programs. For this purpose column manufacturers supply special 'high
+temperature' columns, which address two aspects of column lifetime: mechanical
+degradation and stationary phase degradation. 
+
+Fused silica has a high \keyword{tensile strength}, but also a low
+\keyword{fracture toughness}. This means that it is strong enough to resist the
+forces involved in its use as a column, but very liable to fracture if it gets
+damaged. Very small flaws, less than a micron in depth, will cause fused silica
+(or any other glass) to fracture under loads far under what would be expected
+from it's tensile strength. Such flaws can be caused by mechanical scratches or
+reaction with atmospheric water. Therefore the fused silica capillary is coated
+in a layer of polyimide, which protects it from environmental damage. The
+strength of the a capillary column therefore depends strongly on the integrity
+of the polyimide coating. The polyimide, like all resins and polymers, degrade
+faster at higher temperatures, so the longer the column spends at high
+temperature, the shorter the overall mechanical lifetime of the column will be.
+Temperature programs that minimize the time spent at high temperature will
+therefore contribute to longer column lifetimes.
+
+Column mechanical lifetime can also be improved by using metal capillaries.
+Metals are not afflicted by brittle fracture the way fused silica is, but they
+don't offer the chemical inertness of fused silica. But technologies have been
+developed to deactivate metal surfaces \autocite{Smith2002}, which made metal
+columns a modern possibility. Column manufacturers offer metal columns
+specifically designed for biodiesel analysis.
+
+Column manufacturers' high-temperature columns also minimize stationary phase
+degradation by using highly cross-linked resins, or polymers with backbones
+resistant to certain degradation mechanisms \autocite{Day2003}.
+
+\todo{Include column bleed mechanism?}
+
 Short columns and fast temperature programs have a beneficial side effect:
 reduced \keyword{column bleed}. Any resin- or polymer-based stationary phase
 degrades over time, and this degradation is faster at higher temperatures
@@ -97,5 +127,66 @@ column bleed of a \SI{30}{\metre} column. (It should be noted that the column
 lifetime will not be longer, just that the increase in baseline signal from
 column bleed will be lower.)
 
+Another durability benefit of the coaxial stainless steel heater is that the
+outer surface of the capillary column is protected from mechanical damage by
+being encased. During development of the coaxial heater there were occasions
+where the column was accidentally overheated by poorly-controlled resistive
+heating. Even though the polyimide coating had been completely charred away and
+the capillary was fragile, the column was intact and still provided good
+separations.
 
+Using carbon dioxide as coolant also protects the polyimide coating from
+oxidative damage by purging the column environment of oxygen.
+
+An aspect of fast temperature programming with such a temperature range as we're
+using (\SIrange{-30}{400}{\celsius}) is \keyword{thermal shock}. Thermal shock
+occurs when an object is subjected to a rapid change in temperature. Under such
+non-equilibrium conditions different parts of the object will have different
+temperatures. The material that the object is made of has a certain
+\keyword{coefficient of thermal expansion}, which means that the relative sizes
+of parts of the object will differ. This will cause stress between the parts,
+and if the stress exceeds the strength of the material, the material might
+fracture. Fused silica has a low coefficient of expansion \todo{autocite}, and
+therefore low thermal shock, and the amount of material in a capillary is
+relatively small, so we have never seen a column fail due to thermal shock.
+
+Apart from thermal shock, there is also \keyword{thermal fatigue}. ``Thermal
+fatigue (TF) is the gradual deterioration and eventual cracking of a material by
+alternate heating and cooling during which free thermal expansion is partially
+or completely constrained'' \autocite{Rao2001}. The expansion of the portion of
+the fused silica column subjected to alternate heating and cooling is not
+constrained, and the part of the fused silica column that is constrained (in the
+sealing ferrules) is not subjected to alternate heating and cooling (it is held
+at constant temperature in the heated T-piece block) therefore we do not expect
+thermal fatigue. We did not explicitly test for the occurrence of thermal
+fatigue, but we have not observed column failure due to thermal expansion.
+
+One failure of the coaxial heater could be attributed to corrosion. The joint
+between the coaxial heater and the heated T-piece block is brazed, and there was
+a failure of the thin-walled stainless steel tube near that joint, in the
+portion heated during the brazing operation. Visual inspection seemed to
+indicate thinning caused by corrosion. Acid flux was used, which might have
+contributed to the corrosion.
+
+\section{Experimental}
+
+
+\subsection{Samples}
+
+Various samples of vegetable oil for were obtained from supermarkets. (See Table \ref{tab:OilSamples})
+
+\begin{table}
+	\caption{Oils used for FAME analysis}
+	\label{tab:OilSamples}
+	\centering
+	\begin{tabular}{l l l}
+	\toprule
+	\tabhead{Abbreviation} & \tabhead{Name} & \tabhead{Country of origin} 		\\
+	\midrule
+	Oilve oil 	& 	Oilve oil 	& South Africa	\\
+	Coconut oil	&  	Oilve oil & International \\
+	Sunflower oil	& European Committee for Standardization 	& Europe		\\
+	\bottomrule\\
+	\end{tabular}
+\end{table}
 
