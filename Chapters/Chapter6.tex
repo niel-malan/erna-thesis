@@ -59,7 +59,7 @@ phase.
 
 \caption[Separation of FAME by GC]{This figure shows that when separating FAME
 by GC, using specialized column, separation is primarily by fatty acid chain
-length, and secondarily by number of double bonds.The peaks elute }
+length, and secondarily by number of double bonds. Reproduced by permission of Restek Corporation.}
 
 \label{fig:co2fill}
 \end{figure}
@@ -110,8 +110,8 @@ developed to deactivate metal surfaces \autocite{Smith2002}, which made metal
 columns a modern possibility. Column manufacturers offer metal columns
 specifically designed for biodiesel analysis.
 
-Column manufacturers' high-temperature columns also minimize stationary phase
-degradation by using highly cross-linked resins, or polymers with backbones
+Column manufacturers also minimize sta\-tion\-ary phase degradation by using
+improved technologies like cross-linked resins, or polymers with backbones
 resistant to certain degradation mechanisms \autocite{Day2003}.
 
 \todo{Include column bleed mechanism?}
@@ -165,8 +165,41 @@ One failure of the coaxial heater could be attributed to corrosion. The joint
 between the coaxial heater and the heated T-piece block is brazed, and there was
 a failure of the thin-walled stainless steel tube near that joint, in the
 portion heated during the brazing operation. Visual inspection seemed to
-indicate thinning caused by corrosion. Acid flux was used, which might have
-contributed to the corrosion.
+indicate thinning caused by corrosion. An acid flux was used during the brazing,
+which might have contributed to the corrosion, especially in the presence of
+water from condensation of atmospheric water vapour during the cooling of the
+column.
+
+\subsection{GC Retention time precision}
+
+To estimate the retention time variance, two aliphatic compounds (dodecane and
+hexadecane) were added to the mobile phase at low concentration. These compounds
+are not retained on the silica at all, and are therefore present in all the GC
+runs at the same concentration, and all the peaks should therefore be identical.
+Variance in peak retention, -area, and -height therefore indicate the
+repeatability of the fast GC system. Variability of retention time is summarize
+in Table \ref{tab:RetentionTimeVariance}
+
+\begin{table}
+
+\caption{\label{tab:RetentionTimeVariance}A summary of retention time repeataility of alkanes
+separated on the fast temperature programmed chromatograph.}
+
+
+\begin{tabular}{lllll}
+Compound & n & t\textsubscript{r} (s) & S.D. of t\textsubscript{r} (s)& R.S.D. of t\textsubscript{r} (\%)\\
+\hline
+Dodecane & 73 & 5.07 & 0.023 & 0.46\\
+Hexadecane & 73 & 6.58 & 0.052 & 0.78\\
+\end{tabular}
+
+\end{table}
+
+The peak widths were about
+\SI{500}{\milli\second}, so the \SI{20}{\milli\second} standard deviation for
+hexadecane means that the variation in retention time is only about
+\SI{10}{\percent} of the peak width. The relative standard deviations (RSD) of
+retention times were similar to those obtained in GC×GC\cite{Shellie2002}.
 
 \section{Experimental}
 
@@ -181,12 +214,50 @@ Various samples of vegetable oil for were obtained from supermarkets. (See Table
 	\centering
 	\begin{tabular}{l l l}
 	\toprule
-	\tabhead{Abbreviation} & \tabhead{Name} & \tabhead{Country of origin} 		\\
+	\tabhead{Oil} & \tabhead{Brand}  		\\
 	\midrule
-	Oilve oil 	& 	Oilve oil 	& South Africa	\\
-	Coconut oil	&  	Oilve oil & International \\
-	Sunflower oil	& European Committee for Standardization 	& Europe		\\
+	Oilve oil 	& 	Hojiblanca	\\
+	Flax seed oil &  	Lemke \\
+	Sunflower oil	& Pick n Pay 	& Europe		\\
 	\bottomrule\\
 	\end{tabular}
 \end{table}
 
+\subsection{Sample reparation}
+
+Fatty acids in oils might be either free or bound to glycerol. To quantitatively
+convert them to FAME therefore requires that the bound FA be transesterified,
+and the FFA esterified. Both transesterification and esterification can be
+achieved by acid catalyst, but this reaction is quite slow. Basic catalysts can
+rapidly transesterify acyl glycerols, but will not esterify FFA.
+
+The method we used involved first treating the oil sample with sodium hydroxide
+dissolved in dry methanol. The methanol acts as a solvent but also provides an
+excess of methanol so that the transesterification reaction is driven to
+completion. Then an excess of acid is added, which neutralizes the base and
+esterifies any free fatty acids. Then an organic solvent and water are added,
+which provides two phases. The nonpolar   FAME dissolves in the organic layer,
+and the polar glycerol and salts dissolve in the water layer.
+
+\subsection{Method}
+
+This method is based on an official method \autocite{AOCS2017}, modified in two
+respects. First, the acidic catalyst boron trifluoride is replace by sulphuric
+acid \todo{autocite christie}, and second, heptane is used instead of heptane.
+
+\begin{enumerate}
+\item Transfer \num{4} drops of melted sample to a \SI{20}{\milli\litre} glass stoppered test tube. Add a few boiling stones 
+\item Add \SI{2}{\milli\litre} NaOH/Methanol solution (0.5N) and boil for \SI{11}{\min} under reflux. 
+\item Add \SI{2}{\milli\litre} H\textsubscript{2}SO\textsubscript{4}/Methanol solution via condenser and
+boil for \SI{2}{\minute} 
+\item  Add \SI{2}{\milli\litre} hexane via the condenser and boil for \SI{1}{\minute}.
+\item Remove the test tube from the heat source and leave to cool. 
+\item Allow phases to separate.
+\item Transfer the hexane layer to a vial and use for injection.
+\end{enumerate}
+
+\subsection{SFC}
+
+The SFC separation used no modifier. 
+
+\todos
