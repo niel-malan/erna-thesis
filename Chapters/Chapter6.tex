@@ -212,18 +212,19 @@ Various samples of vegetable oil for were obtained from supermarkets. (See Table
 	\caption{Oils used for FAME analysis}
 	\label{tab:OilSamples}
 	\centering
-	\begin{tabular}{l l l}
+	\begin{tabular}{l l}
 	\toprule
 	\tabhead{Oil} & \tabhead{Brand}  		\\
 	\midrule
-	Oilve oil 	& 	Hojiblanca	\\
-	Flax seed oil &  	Lemke \\
-	Sunflower oil	& Pick n Pay 	& Europe		\\
+	Olive oil 		& Hojiblanca	\\
+	Flax seed oil 	& Lemke 		\\
+	Sunflower oil	& Pick n Pay 	\\
+	Coconut oil  	& Credé Organic \\
 	\bottomrule\\
 	\end{tabular}
 \end{table}
 
-\subsection{Sample reparation}
+\subsection{Sample preparation}
 
 Fatty acids in oils might be either free or bound to glycerol. To quantitatively
 convert them to FAME therefore requires that the bound FA be transesterified,
@@ -246,18 +247,120 @@ respects. First, the acidic catalyst boron trifluoride is replace by sulphuric
 acid \todo{autocite christie}, and second, heptane is used instead of heptane.
 
 \begin{enumerate}
-\item Transfer \num{4} drops of melted sample to a \SI{20}{\milli\litre} glass stoppered test tube. Add a few boiling stones 
-\item Add \SI{2}{\milli\litre} NaOH/Methanol solution (0.5N) and boil for \SI{11}{\min} under reflux. 
-\item Add \SI{2}{\milli\litre} H\textsubscript{2}SO\textsubscript{4}/Methanol solution via condenser and
-boil for \SI{2}{\minute} 
-\item  Add \SI{2}{\milli\litre} hexane via the condenser and boil for \SI{1}{\minute}.
-\item Remove the test tube from the heat source and leave to cool. 
+  
+\item Transfer \num{4} drops of melted sample to a \SI{20}{\milli\litre} glass
+stoppered test tube. Add a few boiling stones
+
+\item Add \SI{2}{\milli\litre} NaOH/Methanol solution (0.5N) and boil for
+\SI{11}{\min} under reflux.
+
+\item Add \SI{2}{\milli\litre} H\textsubscript{2}SO\textsubscript{4}/Methanol
+solution via condenser and boil for \SI{2}{\minute}
+
+\item  Add \SI{2}{\milli\litre} hexane via the condenser and boil for
+\SI{1}{\minute}.
+
+\item Remove the test tube from the heat source and leave to cool.
+
 \item Allow phases to separate.
+
 \item Transfer the hexane layer to a vial and use for injection.
+
 \end{enumerate}
 
 \subsection{SFC}
 
-The SFC separation used no modifier. 
+The SFC separation used no modifier. \SI{0.5}{\micro\litre} of the hexane layer
+was injected as described in Section \todo{Section}. The column was five bare
+silica columns in series. \todo{S}. 10-second fractions of the SFC eluate were
+collected and transferred to the GC inlet via a linear restrictor.
+
+
+\subsection{GC}
+
+The fast temperature program ramped the GC column temperature from
+\SI{-20}{\celsius} to \SI{350}{\celsius} in \SI{10}{s}
+(\SI{2200}{\celsius\per\second}), then maintaining \SI{350}{\celsius} for
+\SI{2}{\second}. Then the cooling system would activate and cool the column to
+\SI{-20}{\celsius} or below, ready to trap the next SFC fraction.
+
+In this way a series of GC chromatograms of SFC fractions were recorded, which
+could be assembled into a 2D chromatogram. Figure \ref{fig:2DCanola} shows
+a 2D chromatogram of a sample of FAME prepared from canola oil. This 2D
+chromatogram consists of 132 fast GC chromatograms collected in approximately 90
+minutes.
+
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Figures/Interpretation.png}
+\decoRule
+
+\caption[SFC×GC of canola oil]{A 2D chromatogram of FAMEs derived from
+canola oil. It is clear that the oil consists mostly of unsaturated fatty
+acids.}
+
+\label{fig:2DCanola}
+\end{figure}
+
+This chromatogram is very simple to interpret. In the SFC dimension, separation
+is by number of double bonds. This means that FAMEs without double bonds elute
+first in this dimension, followed by FAMEs with one, two and three double bonds
+respectively. There is good resolution between the peaks in the SFC dimension. 
+
+In the GC dimension separation is by chain length. Because these FAMEs are of
+natural origin, we expect their chains to have an even number of carbon atoms.
+From the literature \todo{canola oleic} we know that oleic acid (C18:1) makes up
+the greatest part of canola oil, and that therefore the major peak in the
+chromatogram is a C18 FAME. This allows us to easily identify the peaks for C16,
+C18, C20 and C22. 
+
+By inspecting this chromatogram we can confirm that canola oil is a viable
+biodiesel feedstock: The unsaturated compounds have mostly a single double bond,
+which should make it oxidatively stable, and the number of unsaturated FAMEs are
+low, which means that it will most likely have suitable cold-flow properties,
+because unsaturated FAMEs have higher freezing points than saturated FAMEs.
+
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Figures/Sunflower.png}
+\decoRule
+
+\caption[SFC×GC of sunflower oil]{A 2D chromatogram of FAMEs derived from
+sunflower oil. It is clear that the oil consists mostly of unsaturated fatty
+acids.}
+
+\label{fig:2DSunflower}
+\end{figure}
+
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Figures/Coconut.png}
+\decoRule
+
+\caption[SFC×GC of coconut oil]{A 2D chromatogram of FAMEs derived from
+coconut oil. It is clear that the oil consists mostly of saturated fatty
+acids.}
+
+\label{fig:2DCoconut}
+\end{figure}
+
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Figures/Flax44.png}
+\decoRule
+
+\caption[SFC×GC of flax seed oil]{A 2D chromatogram of FAMEs derived from
+flax seed oil. It is clear that the oil consists mostly of highly unsaturated fatty
+acids.}
+
+\label{fig:2DFlax}
+\end{figure}
+
+
+
 
 \todos
