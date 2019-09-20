@@ -48,10 +48,23 @@ headsepline, % Uncomment to get a line under the header
 \addbibresource{RSI2018-bib.bib} % The filename of the bibliography
 \addbibresource{example.bib}
 
+% Set up hyperref for creating a non-default PDF starting page . This must be done before \usepackage, because that sets defaults that cannot be overwritten.
+\usepackage{zref-abspage,zref-user} 
+\makeatletter
+\AtBeginDocument{%
+  \zref@refused{chap:pdfstartpage}%
+  \hypersetup{%
+    pdfstartpage=\zref@extractdefault{chap:pdfstartpage}{abspage}{1}%
+  }%
+}
+\makeatother
+
+
 % Packages added by Niel:
 \usepackage{hyphenat}
 \usepackage{xspace}
 \usepackage{hyperref}
+\usepackage{bookmark}
 \usepackage{}
 \usepackage[]{todo}
 \usepackage{eurosym} 
@@ -60,6 +73,13 @@ headsepline, % Uncomment to get a line under the header
 \usepackage{quotchap}
 \usepackage{caption}
 \usepackage{chemfig}
+\usepackage{zref-abspage,zref-user}
+
+
+ \makeatletter
+ \hypersetup{,}
+ \makeatother
+
 
 % Not added by Niel, but needs to be after lineno
 \usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
