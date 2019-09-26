@@ -1,8 +1,11 @@
 % Chapter 6
 
-\begin{savequote}[45mm]
-Coconut oil for your skin \ldots
-\qauthor{Polynesian proverb}
+\begin{savequote}[45mm] I'm really into coconut oil for everything. I cook it,
+eat it, put it in my hair, and use it as body lotion. I put it on my face, too -
+day cream, night cream, whatever. I love the smell. It reminds me of the beach.
+I'm not particular on what brand as long as it's organic.
+
+\qauthor{Juliette Lewis}
 \end{savequote}
 
 \chapter{Investigating biodiesel feedstock by SFC×GC} % Main chapter title
@@ -312,17 +315,16 @@ respectively. There is good resolution between the peaks in the SFC dimension.
 
 In the GC dimension separation is by chain length. Because these FAMEs are of
 natural origin, we expect their chains to have an even number of carbon atoms.
-From the literature \todo{canola oleic} we know that oleic acid (C18:1) makes up
-the greatest part of canola oil, and that therefore the major peak in the
-chromatogram is a C18 FAME. This allows us to easily identify the peaks for C16,
-C18, C20 and C22. 
+From the literature we know that oleic acid (C18:1) is the most common fatty
+acid in canola oil \autocite{JFAOWHOCAC2019}, and that therefore the major peak
+in the chromatogram is a C18 FAME. This allows us to easily identify the peaks
+for C16, C18, C20 and C22 in the GC dimension.
 
 By inspecting this chromatogram we can confirm that canola oil is a viable
 biodiesel feedstock: The unsaturated compounds have mostly a single double bond,
 which should make it oxidatively stable, and the number of unsaturated FAMEs are
 low, which means that it will most likely have suitable cold-flow properties,
 because unsaturated FAMEs have higher freezing points than saturated FAMEs.
-
 
 \begin{figure}
 \centering
@@ -398,28 +400,47 @@ acids.}
 \label{fig:2DCoconut}
 \end{figure}
 
+
+
+
+\begin{table}
+	\caption{Fatty acid profile of coconut oil according to the FAO \autocite{JFWCAC2002}}
+	\label{tab:CoconutFAO}
+	\centering
+\begin{tabular}{c|c|c}
+\toprule
+	\tabhead{Fatty acid} & \tabhead{Lower} &   	\autocite{Upper}	\\
+	\midrule
+C6:0	&ND&	0.7	\\
+C8:0	&4.6	&10\\
+C10:0	&5	&8	\\
+C12:0	&45.1	&53.2	\\
+C14:0	&16.8	&21	\\
+C16:0	&7.5	&10.2	\\
+C16:1	&ND	&	\\
+C17:0	&ND	&	\\
+C17:1	&ND	&	\\
+C18:0	&2	&4	\\
+C18:1	&5	&10	\\
+C18:2	&1	&2.5	\\
+C18:3	&ND	&0.2	\\
+C20:0	&ND	&0.2	\\
+C20:1	&ND	&0.2	\\
+C20:2	&ND	&	\\
+C22:0	&ND	&	\\
+C22:1	&ND	&	\\
+C22:2	&ND	&	\\
+C24:0	&ND	&	\\
+C24:1	&ND	&	\\
+	\bottomrule\\
+\end{tabular}
+\end{table}
+
+
 Figure \ref{fig:2DFlax} shows an SFC×GC chromatogram of FAMEs obtained from flax
-seed oil. 
+seed oil. This oil is obtained from the seeds of the annual plant \textit{Linum
+usitatissimum}, and was sold as an edible oil.
 
-CouncilEurope2007
-
-
-The fatty acid fraction of the oil has the following
-composition:
-— caproic acid (C6:0) (RRt 0.11): not more than 1.5 per cent,
-— caprylic acid (C8:0)(RRt 0.23): 5.0 per cent to 11.0 per cent,
-— capric acid (C10:0) (RRt 0.56): 4.0 per cent to 9.0 per cent,
-— lauric acid (C12:0) (RRt 0.75): 40.0 per cent to 50.0 per cent,
-— myristic acid (C14:0) (RRt 0.85): 15.0 per cent to 20.0 per cent,
-— palmitic acid (C16:0) (RRt 0.93): 7.0 per cent to 12.0 per cent,
-
-— stearic acid (C18:0) (RRt 1.00): 1.5 per cent to 5.0 per cent,
-— oleic acid and isomers (C) (RRt 1.01): 4.0 per cent to 10.0 per
-cent,
-— linoleic acid (C) (RRt 1.03): 1.0 per cent to 3.0 per cent,
-— linolenic acid (C) (RRt 1.06): not more than 0.2 per cent,
-— arachidic acid (C) (RRt 1.10): not more than 0.2 per cent,
-— eicosenoic acid (C) (RRt 1.11): not more than 0.2 per cent.
 
 \begin{figure}
 \centering
@@ -433,7 +454,29 @@ acids.}
 \label{fig:2DFlax}
 \end{figure}
 
+The chromatogram shows that the largest FA component of this oil is linolenic
+acid (C18:3). This immediately shows that the flax seed oil would not be a
+suitable feedstock for biodiesel: SANS 1935 limits the linolenic acid fraction
+to less than \SI{12}{\percent} (See section \ref{sec:ChromDetUnsat}).
 
+Flax seed oil only recently became considered a food or a food supplement: the
+1911 edition of the Encyclopaedia Britannica does only mention it as a food to
+say ``The oil is to some extent used as food in Russia and in parts of Poland
+and Hungary" \autocite{Linseed1911}. This is not surprising, because the oil
+goes rancid very quickly, leaving it unpalatable.
 
+Until recently the more common name for the oil has been \keyword{linseed oil}
+and it was mostly used for industrial purposes, particularly paint and varnish.
+The ``oil'' of artists' ``oil paints'' is most most commonly refined and
+prepared linseed oil. This oil is classed as a \keyword{drying oil}, because a
+layer of this oil exposed to air becomes solid, or ``dry". This is the result of
+the high degree of unsaturation of the oil, which rapidly causes oxygen-mediated
+polymerization, which over time lets the oil become more viscous and eventually
+solid, making it a suitable base for paint.
+
+\section{Conclusion}
+
+The SFC×GC of FAMES derived from a variety of vegetable oils gives intuitively
+valuable information on their fatty acid profiles.
 
 \todos
