@@ -13,9 +13,10 @@ I'm not particular on what brand as long as it's organic.
 \label{Chapter6} % For referencing this chapter elsewhere, use \ref{Chapter6}
 \zlabel{chap:pdfstartpage} % For hyperref: this makes this the default page to open when the PDF opens.
 \todo{Move zlabel{chap:pdfstartpage} to appropriate chapter. Remove before publication}
-
+\todo{Remove usepackage{stampinclude} before publication.}
 
 \section{Introduction}
+
 
 Biodiesel is composed of a mixture of methyl esters of fatty acids obtained from
 plant oils. To comply with the relevant standard, SANS 1935, \autocite{SANS1935}
@@ -187,14 +188,16 @@ in Table \ref{tab:RetentionTimeVariance}
 
 \begin{table}
 
-\caption{\label{tab:RetentionTimeVariance}A summary of retention time repeataility of alkanes
+	\caption{\label{tab:RetentionTimeVariance}A summary of retention time repeataility of alkanes
 separated on the fast temperature programmed chromatograph.}
-
-\begin{tabular}{lllll}
-Compound & n & t\textsubscript{r} (s) & S.D. of t\textsubscript{r} (s)& R.S.D. of t\textsubscript{r} (\%)\\
-\hline
-Dodecane & 73 & 5.07 & 0.023 & 0.46\\
-Hexadecane & 73 & 6.58 & 0.052 & 0.78\\
+	\centering
+	\begin{tabular}{lllll}
+	\toprule
+	\tabhead{Compound} & \tabhead{n} & \tabhead{t\textsubscript{r} (s)} & \tabhead{S.D. of t\textsubscript{r} (s)}	& \tabhead{R.S.D. of t\textsubscript{r} (\%)} \\
+	\midrule
+	Dodecane 			& 73 		& 5.07 								& 0.023 									& 0.46\\
+	Hexadecane			& 73 		& 6.58 								& 0.052 									& 0.78\\
+	\bottomrule
 \end{tabular}
 
 \end{table}
@@ -205,7 +208,7 @@ variation in retention time is only about \SI{10}{\percent} of the peak width.
 The relative standard deviations (RSD) of retention times were similar to those
 obtained in GC×GC\cite{Shellie2002}.
 
-\section[Sutdy of biodiesel by SFC×GC]{Study of potential biodiesel feedstock by SFC×GC}
+\section[Study of biodiesel by SFC×GC]{Study of potential biodiesel feedstock by SFC×GC}
 
 \subsection{Samples}
 
@@ -221,8 +224,8 @@ Various samples of vegetable oil for were obtained from supermarkets. (See Table
 	\midrule
 	Canola			& Spar			& \textit{Brassica napus}		\\
 	Sunflower oil	& Pick n Pay 	& \textit{Helianthus annuus}	\\
-	Coconut oil  	& Credé Organic & \textit{Cocos nucifera}		\\
-	Flax seed oil 	& Lemke 		& \textit{Linum usitatissimum}	\\
+	Coconut oil  	& Lemcke 		& \textit{Cocos nucifera}		\\
+	Flax seed oil 	& Lemcke 		& \textit{Linum usitatissimum}	\\
 	Olive oil 		& Hojiblanca	& \textit{Olea europaea}		\\
 	\bottomrule\\
 	\end{tabular}
@@ -431,9 +434,9 @@ to less than \SI{12}{\percent} (See section \ref{sec:ChromDetUnsat}).
 Flax seed oil only recently became considered a food or a food supplement: the
 1911 edition of the Encyclopaedia Britannica only mentions it as a food by
 saying ``The oil is to some extent used as food in Russia and in parts of Poland
-and Hungary" \autocite{Linseed1911}, and remarks that the edible oil is cold
-pressed. This is not surprising, because the oil goes rancid very quickly,
-leaving it unpalatable. 
+and Hungary" \autocite{Linseed1911}, and remarks that the oil is edible when itg
+is cold pressed. This is not surprising, because the oil goes rancid very
+quickly, leaving it unpalatable.
 
 Historically the more common name for the oil has been \keyword{linseed oil} and
 it was mostly used for industrial purposes, particularly paint and varnish.
@@ -442,13 +445,21 @@ disagreeable sharp taste and smell.'' The ``oil'' of artists' ``oil paints'' is
 most most commonly refined and prepared linseed oil. This oil is classed as a
 \keyword{drying oil}, because a layer of this oil exposed to air becomes solid,
 or ``dry". This is the result of the high degree of unsaturation of the oil,
-which rapidly causes oxygen-mediated polymerization. Exposed to air over time
-the oil become more viscous and eventually solid, making it a suitable base for
-paint, particularly if the oil has been pre-treated.
+which rapidly causes oxygen-mediated polymerization. Exposure to air over time
+makes the oil become more viscous and eventually solid, making it a suitable
+base for paint, particularly if the oil has been pre-treated.
+
+\section{Biodiesel blends}
+
+
 
 \section{Conclusion}
 
-The SFC×GC of FAMES derived from a variety of vegetable oils gives intuitively
+The SFC×GC of FAMEs derived from a variety of vegetable oils provides intuitively
 valuable information on their fatty acid profiles.
+
+The FAME content of biodiesel blends can be evaluated directly, without any
+sample pre-treatment: the petroleum fraction and the biodiesel fraction of a B50
+blend are separated completely separated on the SFC dimension.
 
 \todos
