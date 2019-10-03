@@ -73,11 +73,7 @@ headsepline, % Uncomment to get a line under the header
 \usepackage{caption}
 \usepackage{chemfig}
 \usepackage{zref-abspage,zref-user}
-
-
- \makeatletter
- \hypersetup{,}
- \makeatother
+\usepackage{stampinclude}
 
 
 % Not added by Niel, but needs to be after lineno
@@ -459,6 +455,18 @@ $\omega$ & angular frequency & \si{\radian} \\
 \mainmatter % Begin numeric (1,2,3...) page numbering
 
 \pagestyle{thesis} % Return the page headers back to the "thesis" style
+
+
+%----------------------------------------------------------------------------------------
+
+% Define some commands to keep the formatting separated from the content 
+\newcommand{\keyword}[1]{\textbf{#1}}
+\newcommand{\tabhead}[1]{\textbf{#1}}
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\file}[1]{\texttt{\bfseries#1}}
+\newcommand{\option}[1]{\texttt{\itshape#1}}
+
+%----------------------------------------------------------------------------------------
 
 % Include the chapters of the thesis as separate files from the Chapters folder
 % Uncomment the lines as you write the chapters
