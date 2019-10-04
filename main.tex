@@ -22,6 +22,20 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
+
+\RequirePackage{snapshot}
+\makeatletter
+\def\snap@providesfile#1[#2]{%
+  \wlog{File: #1 #2}%
+  \if\expandafter\snap@graphic@test\expanded{#2}@@\@nil
+    \snap@record@graphic#1\relax #2 (type ??)\@nil
+  \else
+    \expandafter\xdef\csname ver@#1\endcsname{#2}%
+  \fi
+  \endgroup
+}
+\makeatother
+
 \documentclass[
 11pt, % The default document font size, options: 10pt, 11pt, 12pt
 %oneside, % Two side (alternating margins) for binding by default, uncomment to switch to one side
@@ -73,8 +87,10 @@ headsepline, % Uncomment to get a line under the header
 \usepackage{caption}
 \usepackage{chemfig}
 \usepackage{zref-abspage,zref-user}
-\usepackage{stampinclude}
+%\usepackage{stampinclude}
 
+% Command to generate list of files used in logfile
+%\listfiles
 
 % Not added by Niel, but needs to be after lineno
 \usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
@@ -125,6 +141,7 @@ headsepline, % Uncomment to get a line under the header
 }
 
 \begin{document}
+
  
 \frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
 
