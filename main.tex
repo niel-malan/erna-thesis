@@ -87,6 +87,7 @@ headsepline, % Uncomment to get a line under the header
 \usepackage{caption}
 \usepackage{chemfig}
 \usepackage{zref-abspage,zref-user}
+\usepackage{refcheck}
 %\usepackage{stampinclude}
 
 % Command to generate list of files used in logfile
@@ -142,6 +143,8 @@ headsepline, % Uncomment to get a line under the header
 
 \begin{document}
 
+% Added to avoid error reported by pdfTeX
+\pdfsuppresswarningpagegroup=1
  
 \frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
 
