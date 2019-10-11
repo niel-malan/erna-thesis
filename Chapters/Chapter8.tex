@@ -7,7 +7,12 @@ In a book that I took from a shelf \ldots
 
 \chapter{Conclusion} % Main chapter title
 
+\zlabel{chap:pdfstartpage} % For hyperref: this makes this the default page to open when the PDF opens.
+\todo{Move zlabel{chap:pdfstartpage} to appropriate chapter. Remove before publication}
+\todo{Remove usepackage{stampinclude} before publication.}
+
 \label{Chapter8} % For referencing this chapter elsewhere, use \ref{Chapter8}
+
 
 %----------------------------------------------------------------------------------------
 %	SECTION 1
@@ -21,28 +26,66 @@ It has been shown that an SFC×GC instrument can be built using mainly 20th cent
 
 \subsection{Chapter \ref{Chapter1}: \nameref{Chapter1} }
 
-Chapter \ref{Chapter1} offers a broad view of the context in which biodiesel
-will find an application in a future with a sustainable economy.
+The molecular basis of sustainability \autocite{Anastas2016} demands that
+chemists discuss sustainability in terms of compounds. Chapter \ref{Chapter1}
+opens with the idea that energy is an essential component of industrialized
+societies, but that choosing of fossil fuels as our source of energy causes
+pollution, which threatens to nullify the benefits they bring. It describes the
+process which causes carbon dioxide to be a major emittant, and how its
+interaction with planetary radiation makes it a pollutant. The concept of
+``carbon footprint'' is introduced, which allows the comparison of activities in
+terms of their carbon pollution, which allows decision makers to select the
+least polluting option. The discussion then focuses on internal-combustion
+engines, which is a major source of carbon and noxious pollution, and it is
+shown that higher-efficiency engines have lower carbon footprints. A discussion
+of ways to reduce the carbon footprint of internal combustion engines shows
+that, in the cases where they cannot be replaced by electric motors, a reduction
+of carbon footprint can be obtained by preferring large, high-performance Diesel
+engines fuelled by biodiesel. The discussion concludes with the idea that the
+success of such engines will demand high quality biodiesel, and that
+chromatography will plary a central role in ensuring that quality.
 
 \subsection{Chapter \ref{Chapter2}: \nameref{Chapter2} }
 
-Chapter \ref{Chapter2} introduces carbon dioxide as a renewable resource, and 
+Chapter \ref{Chapter2} starts with a discussion of the chemical industry and the
+need to move towards ``green'' chemistry. It introduces carbon dioxide as a
+renewable resource, discusses its various uses in industry, and then focuses on
+its application in extraction and chromatography. It describes how carbon
+dioxide becomes a solvent at high pressures and densities, and then introduces
+supercritical fluid chromatography (SFC). Fractions of eluate from SFC can be
+analysed by gas chromatography, and if a suitable set of criteria is met, then
+the combination is called SFC×GC.
 
 \subsection{Chapter \ref{Chapter3}: \nameref{Chapter3} }
 
-Chapter \ref{Chapter3} discusses the technical standards with which biodiesel must comply 
+As discussed in Chapter \ref{Chapter1}, a reliable high-performance engine
+requires a reliable fuel. Chapter \ref{Chapter3} discusses the concepts of
+technical standards, which establishes requirements with which fuels must
+comply. The discussion then focuses on the technical standard SANS 1935, which
+lists the requirements that biodiesel offered for sale in South Africa must
+comply with, concluding with the 
 
 \subsection{Chapter \ref{Chapter4}: \nameref{Chapter4} }
 
 Chapter \ref{Chapter4} explains the experimental equipment used for
-chromatography using high-pressure carbon dioxide as a mobile phase.
+chromatography using high-pressure carbon dioxide as a mobile phase. It starts
+with describing the mobile phase, how it is stored and pumped, how modifier is
+added, and how the sample is injected. It describes problems with designing the
+restrictor that maintains the pressure, and concludes with remarks about using a
+gas chromatograph as a detector.
 
 \subsection{Chapter \ref{Chapter5}: \nameref{Chapter5} }
 
-Chapter \ref{Chapter5} discusses the development of a fast
-temperature-programmed gas chromatograph, based on a resistive heater coaxial to
-the capillary column, that uses precisely-applied evaporating carbon dioxide as
-powerful coolant to reduce time between GC runs to a minimum.
+Chapter \ref{Chapter5} opens with a discussion on the time aspect of
+comprehensive SFC×GC chromatography, and shows that for practical analysis the
+GC dimension must be \textit{fast}. The theory of fast GC is discussed, which
+leads to the the need for fast temperature programming. The design of a
+resistively heated coaxial heater is described, including its calibration and
+control. The discussion then covers the need for a cold column, and the design
+of coaxial cooling using boiling liquid carbon dioxide is described. Next, the
+discussion covers the design of hardware to mount the coaxial heater in a
+conventional GC oven. The chapter concludes with a description of the detector
+and the data flow from signal to final chromatogram.
 
 \subsection{Chapter \ref{Chapter6}: \nameref{Chapter6} }
 
@@ -58,16 +101,41 @@ dimension.
 
 \section{Strengths of the SFC×GC}
 
+\subsection{Length of SFC column}
+
+We could separate paraffins, olefins and aromatics, using the long column.
+
 \section{Limitations of this SFC×GC design}
 
 \subsection{}
 
 \section{Suggested design improvements}
 
+\subsection{Four-wire resistance measurement}
+
+The resistive heater had a design that depended on measuring the resistance of
+the thin-walled stainless steel tube. The resistance was measured by comparing
+the potential difference between the ends of the heater with the potential
+difference over a reference resistor carrying an identical current. The circuit
+that carried the current also measured the potential difference. Because the
+current was high, the circuit had to be constructed in such a way that it no
+other significant resistance in it, which meant that care had to be taken to
+used heavy-guage cable and only use soldered joints. 
+
+These troubles could have been avoided if the current circuit and the measuring
+circuit were separated, using 'four wire' resistance measurement. In such a
+design the potential difference is measure using a circuit that connects
+directly to the voltmeter. The voltmeter has a high input impedance, which means
+that the current that the circuit carries is low, and stray resistances will
+play much less of a role. Also, this would have made it possible to use bolted
+joints on the current-carrying circuit, which could have simplifed operations.
+
+\subsection{Legs heating and cooling integrated in detector and inlet}
+
+
+\subsection{Siltek-treated coaxial heater}
+
 
 \todo{Discuss material that passes through column during trapping.}
 
-\subsection{Four-wire resistance measurement}
-\subsection{Legs heating and cooling integrated in detector and inlet}
-\subsection{Siltek-treated coaxial heater}
-
+\todos
