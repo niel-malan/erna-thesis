@@ -1,6 +1,6 @@
 % Chapter 6
 
-\begin{savequote}[45mm] I'm really into coconut oil for everything. I cook it,
+\begin{savequote}[80mm] I'm really into coconut oil for everything. I cook it,
 eat it, put it in my hair, and use it as body lotion. I put it on my face, too -
 day cream, night cream, whatever. I love the smell. It reminds me of the beach.
 I'm not particular on what brand as long as it's organic.
@@ -16,13 +16,14 @@ I'm not particular on what brand as long as it's organic.
 
 
 Biodiesel is composed of a mixture of methyl esters of fatty acids obtained from
-plant oils. To comply with the relevant standard, SANS 1935, \autocite{SANS1935}
-(see Chapter \ref{Chapter3}), it must consists of a mass fraction of
-\SI{96.5}{\percent} or more of fatty acid methyl esters (FAME), and it must have
-less than a certain amount of specific unsaturated fatty acids methyl esters.
+plant oils. To comply with the relevant technical standard, SANS 1935,
+\autocite{SANS1935} (see Chapter \ref{Chapter3}), it must consists of a mass
+fraction of \SI{96.5}{\percent} or more of fatty acid methyl esters (FAME), and
+it must have less than a certain amount of specific unsaturated fatty acids
+methyl esters.
 
 The prescribed methods for determining the quantities of the compounds are
-chromatographic, but the method for  determining the amount of FAMEs is a
+chromatographic, but the method for  determining the total amount of FAMEs is a
 completely different method from that for determining the amount of
 \textit{unsaturated} FAMEs. Both these methods generate complex chromatograms
 that need highly skilled and experienced chromatographers to interpret. Each
@@ -33,29 +34,29 @@ the \keyword{fatty acid profile}.
 
 There is no doubt that the use of artificial intelligence and other
 technological innovation for interpreting chromatograms will grow, but the
-paradox of automation (automation helps you least when you need it most
-\autocite{Strauch2018, Bainbridge1983}) predicts that as biodiesel production
-grows, with the implied increase in complexity as feedstocks differentiate, the
-analytical chemist will need better tools, methods and instruments, in addition
-to better automatic data analysis.
+paradox of automation\footnote{Automation helps you least when you need it most
+\autocite{Strauch2018, Bainbridge1983}} predicts that as biodiesel production
+grows, feedstocks proliferate, and complexity increase, the analytical chemist
+will need better tools, methods, and instruments, in addition to better
+automatic data analysis.
 
 Comprehensively coupled chromatography offers a way to better exploit chemistry
-for improved analytical separations. It does this in three ways: the first is
+for improved analytical separations. It does this in three ways: the first is by
 increasing the peak capacity of the system, the second is by improved
 sensitivity, and the third is by generating patterns in the data.
 
 \section{SFC of FAMEs}
 
 The power of comprehensive chromatography is unlocked by orthogonality.
-Orthogonality is the difference is separation mechanism in the two dimensions
-\autocite{Marriott2012}. When FAMES are chromatographically separated
-by a system using pure carbon dioxide as a mobile phase and unmodified silica as
+Orthogonality is the difference in separation mechanism between the two
+dimensions \autocite{Marriott2012}. When FAMES are chromatographically separated
+by a system using neat carbon dioxide as a mobile phase and unmodified silica as
 a stationary phase, then the separation is according to the number of double
 bonds, independent of chain length \autocite{Robertson1991, Smith1994,
-Smith2001}. This stands in strong contrast to the separation of FAMEs by GC, where
-the major separation is according to volatility, which can be adjusted, but not
-overridden, by changing the polarity (or other chemical aspect) of the mobile
-phase (see Figure \ref{fig:RestekFAMEsGC}) 
+Smith2001}. This stands in strong contrast to the separation of FAMEs by GC,
+where the major separation is according to volatility, which can be adjusted,
+but not overridden, by changing the polarity (or other chemical aspect) of the
+mobile phase. (See Figure \ref{fig:RestekFAMEsGC}.)
 
 \begin{figure}
 \centering
@@ -64,7 +65,7 @@ phase (see Figure \ref{fig:RestekFAMEsGC})
 
 \caption[Separation of FAME by GC]{This figure shows that when separating FAMEs
 by GC, using specialized column, separation is primarily by fatty acid chain
-length, and secondarily by number of double bonds. Reproduced by permission of Restek Corporation.}
+length, and secondarily by number of double bonds. Reproduced with permission of Restek Corporation.}
 
 \label{fig:RestekFAMEsGC}
 \end{figure}
@@ -80,9 +81,10 @@ phases modified with silver ions was neither necessary nor attempted.
 As discussed in Section \ref{sec:Rancimat}, fatty acids are not stable at high
 temperatures. This means that they might degrade during chromatographic
 separation at high temperature, especially if the run times are long. Because
-SFC operates at low temperatures, the labile compounds are less likely to degrade. 
+SFC operates at low temperatures, the unstable compounds are less likely to
+degrade.
 
-\section[Benefits of fast GC]{Benefits of fast temperature programming GC for FAME analysis}
+\section[Coaxial heater performance.]{Performance of the coaxial heater.}
 
 As discussed in Section \ref{sec:ChromDet}, FAMEs can be separated by gas
 chromatography using a relatively non-polar columns with high-temperature
@@ -90,6 +92,7 @@ programs. For this purpose column manufacturers supply special 'high
 temperature' columns, which address two aspects of column lifetime: mechanical
 degradation and stationary phase degradation. 
 
+\subsection{Column lifetime}
 Fused silica has a high \keyword{tensile strength}, but also a low
 \keyword{fracture toughness}. This means that it is strong enough to resist the
 forces involved in its use as a column, but very liable to fracture if it gets
@@ -124,10 +127,10 @@ degrades over time, and this degradation is faster at higher temperatures
 \autocite[p. 66]{Mcnair2019}. It is observed as a rise in baseline during the
 high temperature part of a temperature program. Various stationary phase
 technologies can be employed to reduce column bleed, but it should be obvious
-that a \SI{1}{\metre} column will have \num{1/30}th of the
-column bleed of a \SI{30}{\metre} column. (It should be noted that the column
-lifetime will not be longer, just that the increase in baseline signal from
-column bleed will be lower.)
+that a \SI{1}{\metre} column will have \num{1/30}th of the column bleed of a
+\SI{30}{\metre} column with the same stationary phase. (It should be noted that
+the column lifetime will not be necessary be longer, just that the increase in
+baseline signal from column bleed will be lower.)
 
 Another durability benefit of the coaxial stainless steel heater is that the
 outer surface of the capillary column is protected from mechanical damage by
@@ -139,20 +142,23 @@ the capillary was fragile, the column was intact and still provided separations.
 Using carbon dioxide as coolant also protects the polyimide coating from
 oxidative damage by purging the column environment of oxygen.
 
+\subsection{Thermal shock}
 An aspect of fast temperature programming with such a temperature range as used
 in this study (\SIrange{-30}{400}{\celsius}) is \keyword{thermal shock}. Thermal
 shock occurs when an object is subjected to a rapid change in temperature. Under
 such non-equilibrium conditions different parts of the object will have
 different temperatures. The material that the object is made of has a certain
 \keyword{coefficient of thermal expansion}, which means that the relative sizes
-of parts of the object will differ. This will cause stress between the parts,
-and if the stress exceeds the strength of the material, the material will
-fracture. Fused silica has a low coefficient of expansion
-(\SI{0.55e-6}{\per\kelvin}, compared to the \SI{9.0e-6}{\per\kelvin} of soda
-lime glass or the \SI{4.0e-6}{\per\kelvin} of borosilicate glass) and
-therefore experiences low thermal shock. The amount of material in a capillary is
-also relatively small, so we have never seen a column fail due to thermal shock.
+of the parts of the object at different temperatures will differ. This will
+cause stress between the parts, and if the stress exceeds the strength of the
+material, the material will fracture. Fused silica has a low coefficient of
+expansion (\SI{0.55e-6}{\per\kelvin}, compared to the \SI{9.0e-6}{\per\kelvin}
+of soda lime glass or the \SI{4.0e-6}{\per\kelvin} of borosilicate glass) and
+therefore experiences low thermal shock. The amount of material in a capillary
+is also relatively small, so we have never seen a column fail due to thermal
+shock.
 
+\subsection{Thermal fatigue}
 Apart from thermal shock, there is also \keyword{thermal fatigue}. ``Thermal
 fatigue (TF) is the gradual deterioration and eventual cracking of a material by
 alternate heating and cooling during which free thermal expansion is partially
@@ -164,14 +170,14 @@ at constant temperature in the heated T-piece block) therefore we do not expect
 thermal fatigue. We did not explicitly test for the occurrence of thermal
 fatigue, but we have not observed column failure due to thermal fatigue.
 
+\subsection{Corrosion}
 One failure of the coaxial heater could be attributed to corrosion. The joint
 between the coaxial heater and the heated T-piece block is brazed, and there was
 a failure of the thin-walled stainless steel tube near that joint, in the
 portion heated during the brazing operation. Visual inspection seemed to
 indicate thinning caused by corrosion. An acid flux was used during the brazing,
 which might have contributed to the corrosion, especially in the presence of
-water from condensation of atmospheric water vapour during the cooling of the
-column.
+water condensed from the atmosphere during the cooling of the column.
 
 \subsection{GC Retention time precision}
 
@@ -232,17 +238,19 @@ Various samples of vegetable oil for were obtained from supermarkets. (See Table
 
 Fatty acids in oils might be either free or bound to glycerol. To quantitatively
 convert them to FAME therefore requires that the bound FA be transesterified,
-and the FFA esterified. Both transesterification and esterification can be
-achieved by acid catalyst, but this reaction is quite slow. Basic catalysts can
-rapidly transesterify acyl glycerols, but will not esterify FFA.
+and the free fatty acids esterified. Both transesterification and esterification
+can be achieved by acid catalyst, but this reaction is quite slow. Basic
+catalysts can rapidly transesterify acyl glycerols, but will not esterify free
+fatty acids.
 
 The method we used involved first treating the oil sample with sodium hydroxide
 dissolved in dry methanol. The methanol acts as a solvent but also provides an
 excess of methanol so that the transesterification reaction is driven to
-completion. Then an excess of acid is added, which neutralizes the base and
-esterifies any free fatty acids. Then an organic solvent and water are added,
-which provides two phases. The nonpolar   FAME dissolves in the organic layer,
-and the polar glycerol and salts dissolve in the water layer.
+completion. On completion of the reaction an excess of acid is added, which
+neutralizes the base and esterifies any free fatty acids. Then an organic
+solvent and water are added, which provides two phases: the nonpolar FAMEs
+dissolve in the organic layer, and the polar glycerol and salts dissolve in the
+water layer.
 
 \subsubsection{Method}
 
@@ -266,7 +274,7 @@ solution via condenser and boil for \SI{2}{\minute}
 
 \item Remove the test tube from the heat source and leave to cool.
 
-\item Allow phases to separate.
+\item Allow the phases to separate.
 
 \item Transfer the hexane layer to a vial and use for injection.
 
@@ -277,9 +285,13 @@ solution via condenser and boil for \SI{2}{\minute}
 A \SI{0.5}{\micro\litre} volume of the hexane layer was injected into the
 unmodified carbon dioxide mobile phase, as described in Section
 \ref{sec:SFCInjection}. The column was five bare silica columns in series as
-described in Section \ref{sec:SFCColumn}. The modulation period was 10 seconds,
-and the fractions of the SFC eluate were transferred to the GC inlet via a
-linear restrictor and collected on the cold column.
+described in Section \ref{sec:SFCColumn}. 
+
+\subsection{Modulation}
+
+The modulation period was 10 seconds, and the fractions of the SFC eluate were
+transferred to the GC inlet via a linear restrictor and collected on the cold
+column. 
 
 \subsection{GC}
 
@@ -295,6 +307,7 @@ a 2D chromatogram of a sample of FAME prepared from canola oil. This 2D
 chromatogram consists of 132 fast GC chromatograms collected in approximately 90
 minutes.
 
+\subsection{Results and discussion}
 
 \begin{figure}
 \centering
@@ -342,9 +355,9 @@ acids, with a high proportion of linoleic acid (C18:2)}
 
 Figure \ref{fig:2DSunflower} is an SFC×GC chromatogram of sunflower oil. The GC
 chromatogram indicates a high concentration of linoleic acid (C18:2). The
-literature indicates that the main, traditional cultivar of sunflower
-produced in South Africa is of the high-linoleic type, with a fatty acid profile
-of \SI{69}{\percent} linoleic acid, \SI{20}{\percent} oleic acid, and
+literature indicates that the main, traditional cultivar of sunflower produced
+in South Africa is of the high-linoleic type, with a fatty acid profile of
+\SI{69}{\percent} linoleic acid, \SI{20}{\percent} oleic acid, and
 \SI{11}{percent} saturated fats \autocite {JFAOWHOCAC2019}.
 
 This sunflower oil chromatogram was compared to a fatty acid profile obtained by
@@ -355,7 +368,7 @@ plotted on a 3D bar chart (See Figure \ref{fig:2DSunflowerBarChart}). The axes
 of the bar chart was chosen as to plot the fatty acid profile information in a
 similar space and scale as the chromatogram (Figure \ref{fig:2DSunflower}). It
 can be seen that the bar chart shows the same information as the chromatogram.
-The information from the bar chart has been obtained from a 1D chromatogram by
+The information in the bar chart has been obtained from a 1D chromatogram by
 integrating peaks, calculating amounts of FAMEs from peak areas, and then
 plotting those amounts in the bar chart, whereas the SFC×GC chromatogram is a
 plot of FID response and involves no data processing.
@@ -423,15 +436,15 @@ acids.}
 \label{fig:2DFlax}
 \end{figure}
 
-The chromatogram shows that the largest FA component of this oil is linolenic
-acid (C18:3). This immediately shows that the flax seed oil would not be a
-suitable feedstock for biodiesel: SANS 1935 limits the linolenic acid fraction
-to less than \SI{12}{\percent} (See section \ref{sec:ChromDetUnsat}).
+The chromatogram shows that the largest fatty acid component of this oil is
+linolenic acid (C18:3). This immediately shows that the flax seed oil would not
+be a suitable feedstock for biodiesel: SANS 1935 limits the linolenic acid
+fraction to less than \SI{12}{\percent} (See section \ref{sec:ChromDetUnsat}).
 
 Flax seed oil only recently became considered a food or a food supplement: the
 1911 edition of the Encyclopaedia Britannica only mentions it as a food by
 saying ``The oil is to some extent used as food in Russia and in parts of Poland
-and Hungary" \autocite{Linseed1911}, and remarks that the oil is edible when itg
+and Hungary" \autocite{Linseed1911}, and remarks that the oil is edible when it
 is cold pressed. This is not surprising, because the oil goes rancid very
 quickly, leaving it unpalatable.
 
@@ -439,7 +452,7 @@ Historically the more common name for the oil has been \keyword{linseed oil} and
 it was mostly used for industrial purposes, particularly paint and varnish.
 As the encyclopedia puts it: ``Commercial linseed oil has a peculiar, rather
 disagreeable sharp taste and smell.'' The ``oil'' of artists' ``oil paints'' is
-most most commonly refined and prepared linseed oil. This oil is classed as a
+most commonly refined and prepared linseed oil. This oil is classed as a
 \keyword{drying oil}, because a layer of this oil exposed to air becomes solid,
 or ``dry". This is the result of the high degree of unsaturation of the oil,
 which rapidly causes oxygen-mediated polymerization. Exposure to air over time
@@ -460,7 +473,7 @@ the blend relative to the retention of the petrodiesel hydrocarbons
 
 On a polar stationary phase like bare silica with a non-polar stationary phase
 like carbon dioxide, the hydrocarbons from petrodiesel are not expected to be
-separated. As we've seen in the previous section, FAMEs are retained and
+retained. As we've seen in the previous section, FAMEs are retained and
 separated under such conditions. When we inject a blend of biodiesel and
 petrodiesel on SFC×GC, we therefore expect the biodiesel portion to be
 completely separated from the petrodiesel portion.
@@ -505,6 +518,8 @@ A total of 371 fast GC chromatograms were collected to compile the 2D chromatogr
 
 \subsection{Results}
 
+Figure \ref{fig:B50} shows the 2D chromatogram obtained. 
+
 \begin{figure}
 	\centering
 	\includegraphics[width=0.8\textwidth]{Figures/B50.png}
@@ -512,12 +527,11 @@ A total of 371 fast GC chromatograms were collected to compile the 2D chromatogr
 	
 \caption[Biodiesel separated from petrodiesel.]{The separation of the biodiesel
 fraction and the petroleum fraction of a biodiesel blend. SFC: Neat
-CO\textsubscript{2} at 200 bar on 5 × \SI{150}{\milli\metre} ×
+CO\textsubscript{2} at 200 bar on Restek Pinnacle DB Silica column, 5 × \SI{150}{\milli\metre} ×
 \SI{4.6}{\milli\metre}, \SI{3}{\micro\metre} particles. GC: Hydrogen carrier on
 OV-5 \SI{1}{\metre} × \SI{0.25}{\milli\metre} × \SI{0.25}{\micro\metre},
 temperature program \SI{-20}{\celsius} to \SI{250}{\celsius} at
 \SI{1800}{\celsius\per\minute} hold for \SI{6}{\second}. GC runs: 371.}
-
 
 	
 	\label{fig:B50} 
@@ -525,9 +539,31 @@ temperature program \SI{-20}{\celsius} to \SI{250}{\celsius} at
 
 \subsection{Discussion}
 
-Figure \ref{fig:B50} shows the 2D chromatogram obtained. As 
+It can be clearly seen that the blend has been separated into two distinct
+groups of compounds. At a retention time in the \textsuperscript{1}D (SFC)
+dimension of about \SI{160}{\second} the hydrocarbons from the petrodiesel part
+of the blend elutes. To those familiar with petrochemical chromatography the
+characteristic unresolved complex mixture (``hydrocarbon hump'') topped by
+alkane peaks will be instantly recognizable as a petroleum product.
 
+Between the \textsuperscript{1}D retention times of \SI{300}{\second} and
+\SI{480}{\second} the peaks of the FAMEs are seen, clearly separated by number
+of double bonds in the SFC dimension, and by volatility in the GC dimension.
 
+As an aside, it is worth pointing out that the hydrocarbons from the petrodiesel
+fraction of the blend were also separated on the SFC dimension. Because of the
+very low capacity factor (k' = \num{0.03125}), the separation is
+chromatographically not useful, but since hydrocarbons are normally considered
+to be unretained on silica, it shows the power of long packed columns in SFC. We
+expect the elution order of the hydrocarbon compounds to be paraffins, olefins
+and aromatics.
+
+This separation shows that SFC×GC can be used to investigate the biodiesel
+component of petrodiesel/biodiesel blends without sample pretreatment or
+specialized columns.
+
+The capability can find application in quality control of blends and in tax
+enforcement.\todo{Expand tax explanation.}
 
 \section{Conclusion}
 
