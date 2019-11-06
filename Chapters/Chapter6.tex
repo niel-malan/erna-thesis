@@ -26,16 +26,12 @@ The prescribed methods for determining the quantities of the compounds are
 chromatographic, but the method for  determining the total amount of FAMEs is a
 completely different method from that for determining the amount of
 \textit{unsaturated} FAMEs. Both these methods generate complex chromatograms
-that need highly skilled and experienced chromatographers to interpret. Each
-peak in the chromatogram has a retention time and area. The retention time
-serves to identify the quantity of a compound, and the peak area serves to
-indicate its quantity. The relative amounts of the different FAMES is know as
-the \keyword{fatty acid profile}.
+that need highly skilled and experienced chromatographers to interpret. 
 
 There is no doubt that the use of artificial intelligence and other
 technological innovation for interpreting chromatograms will grow, but the
 paradox of automation\footnote{Automation helps you least when you need it most
-\autocite{Strauch2018, Bainbridge1983}} predicts that as biodiesel production
+\autocite{Strauch2018, Bainbridge1983}.} predicts that as biodiesel production
 grows, feedstocks proliferate, and complexity increase, the analytical chemist
 will need better tools, methods, and instruments, in addition to better
 automatic data analysis.
@@ -78,13 +74,23 @@ elucidation of lipid structures, as reviewed as early as 1966
 \autocite{Morris1966}. Nevertheless, in this chapter the use of stationary
 phases modified with silver ions was neither necessary nor attempted.
 
-As discussed in Section \ref{sec:Rancimat}, fatty acids are not stable at high
-temperatures. This means that they might degrade during chromatographic
-separation at high temperature, especially if the run times are long. Because
-SFC operates at low temperatures, the unstable compounds are less likely to
-degrade.
+%As discussed in Section \ref{sec:Rancimat}, fatty acids are not stable at high
+%temperatures. This means that they might degrade during chromatographic
+%separation at high temperature, especially if the run times are long. Because
+%SFC operates at low temperatures, the unstable compounds are less likely to
+%degrade.
+
+The utterly different retention behaviours of FAMEs on silica with a carbon
+dioxide mobile phase and on GC offers high orthogonality, which promises to make
+comprehensive coupling highly worthwhile.
 
 \section[Coaxial heater performance.]{Performance of the coaxial heater.}
+
+Practical SFC×GC depends on reliably repeating fast temperature programs on a
+capillary gas chromatography column. The effect of these conditions on the
+column will be discussed in the following sections.
+
+\subsection{Column lifetime}
 
 As discussed in Section \ref{sec:ChromDet}, FAMEs can be separated by gas
 chromatography using a relatively non-polar columns with high-temperature
@@ -92,7 +98,7 @@ programs. For this purpose column manufacturers supply special 'high
 temperature' columns, which address two aspects of column lifetime: mechanical
 degradation and stationary phase degradation. 
 
-\subsection{Column lifetime}
+\subsubsection{Mechanical degradation}
 Fused silica has a high \keyword{tensile strength}, but also a low
 \keyword{fracture toughness}. This means that it is strong enough to resist the
 forces involved in its use as a column, but very liable to fracture if it gets
@@ -117,10 +123,22 @@ developed to deactivate metal surfaces \autocite{Smith2002}, which makes metal
 columns a modern possibility. Column manufacturers offer metal columns
 specifically designed for biodiesel analysis.
 
+Another durability benefit of the stainless steel coaxial heater is that the
+outer surface of the capillary column is protected from mechanical damage by
+being encased. During development of the coaxial heater there were occasions
+where the column was accidentally overheated by poorly-controlled resistive
+heating. Even though the polyimide coating had been completely charred away and
+the capillary was fragile, the column was intact and still provided separations.
+
+Using carbon dioxide as a between-program coolant also protects the polyimide
+coating from oxidative damage by purging the column environment of oxygen.
+
+\subsubsection{Stationary phase degradation}
 Column manufacturers also minimize sta\-tion\-ary phase degradation by using
 improved technologies like cross-linked resins, or polymers with backbones
 resistant to certain degradation mechanisms \autocite{Day2003}.
 
+\subsubsection{Column bleed}
 Short columns and fast temperature programs have another beneficial side effect:
 reduced \keyword{column bleed}. Any resin- or polymer-based stationary phase
 degrades over time, and this degradation is faster at higher temperatures
@@ -131,16 +149,6 @@ that a \SI{1}{\metre} column will have \num{1/30}th of the column bleed of a
 \SI{30}{\metre} column with the same stationary phase. (It should be noted that
 the column lifetime will not be necessary be longer, just that the increase in
 baseline signal from column bleed will be lower.)
-
-Another durability benefit of the coaxial stainless steel heater is that the
-outer surface of the capillary column is protected from mechanical damage by
-being encased. During development of the coaxial heater there were occasions
-where the column was accidentally overheated by poorly-controlled resistive
-heating. Even though the polyimide coating had been completely charred away and
-the capillary was fragile, the column was intact and still provided separations.
-
-Using carbon dioxide as coolant also protects the polyimide coating from
-oxidative damage by purging the column environment of oxygen.
 
 \subsection{Thermal shock}
 An aspect of fast temperature programming with such a temperature range as used
@@ -179,7 +187,7 @@ indicate thinning caused by corrosion. An acid flux was used during the brazing,
 which might have contributed to the corrosion, especially in the presence of
 water condensed from the atmosphere during the cooling of the column.
 
-\subsection{GC Retention time precision}
+\subsection{GC retention time precision}
 
 To estimate the retention time variance, two aliphatic compounds (dodecane and
 hexadecane) were added to the SFC mobile phase at low concentration. These
@@ -209,9 +217,14 @@ The peak widths were about \SI{500}{\milli\second}, so the
 \SI{20}{\milli\second} standard deviation for hexadecane means that the
 variation in retention time is only about \SI{10}{\percent} of the peak width.
 The relative standard deviations (RSD) of retention times were similar to those
-obtained in GC×GC\cite{Shellie2002}.
+obtained in GC×GC \autocite{Shellie2002}.
 
 \section[Study of biodiesel by SFC×GC]{Study of potential biodiesel feedstock by SFC×GC}
+
+Biodiesel can be produced form any combination of a variety of vegetable oils.
+Indeed, to ensure conformance to standards might make it necessary to produce
+biodiesel from blends or combinations of oils. But as a gentle introduction it
+is instructive to start by analysing single vegetable oils.
 
 \subsection{Samples}
 
@@ -243,7 +256,7 @@ can be achieved by acid catalyst, but this reaction is quite slow. Basic
 catalysts can rapidly transesterify acyl glycerols, but will not esterify free
 fatty acids.
 
-The method we used involved first treating the oil sample with sodium hydroxide
+The method used involved first treating the oil sample with sodium hydroxide
 dissolved in dry methanol. The methanol acts as a solvent but also provides an
 excess of methanol so that the transesterification reaction is driven to
 completion. On completion of the reaction an excess of acid is added, which
@@ -289,9 +302,10 @@ described in Section \ref{sec:SFCColumn}.
 
 \subsection{Modulation}
 
-The modulation period was 10 seconds, and the fractions of the SFC eluate were
-transferred to the GC inlet via a linear restrictor and collected on the cold
-column. 
+The modulation period was \SI{10}{\second}, and the fractions of the SFC eluate
+were transferred to the GC inlet via a linear restrictor and collected on the
+cold column. \SI{3}{\second} after the collection period ended the vent valve
+opened for \SI{1}{\second} to vent excess pressure from the GC inlet.
 
 \subsection{GC}
 
@@ -359,6 +373,11 @@ literature indicates that the main, traditional cultivar of sunflower produced
 in South Africa is of the high-linoleic type, with a fatty acid profile of
 \SI{69}{\percent} linoleic acid, \SI{20}{\percent} oleic acid, and
 \SI{11}{percent} saturated fats \autocite {JFAOWHOCAC2019}.
+
+\todo{Edit paragraph in new context}Each peak in the chromatogram has a
+retention time and area. The retention time serves to identify the compound, and
+the peak area indicates its quantity. The relative amounts of the different
+FAMES is know as the \keyword{fatty acid profile}.
 
 This sunflower oil chromatogram was compared to a fatty acid profile obtained by
 a professional oil analysis laboratory\footnote{Precision Oil Laboratories,
@@ -505,7 +524,7 @@ for \SI{4}{\second}, and then opened to release excess pressure for
 \subsection{GC}
 
 The column used in the fast gas chromatograph was an OV-5 column, which has a
-stationary phase comprised of \SI{5}{\percent}diphenyl, \SI{95}{\percent}
+stationary phase comprised of \SI{5}{\percent} diphenyl, \SI{95}{\percent}
 dimethylpolysiloxane. It was \SI{1}{\metre} long, with an internal diameter of
 \SI{0.25}{\milli\metre}. The thickness of the stationary phase was
 \SI{0.25}{\micro\metre}.
@@ -549,6 +568,8 @@ alkane peaks will be instantly recognizable as a petroleum product.
 Between the \textsuperscript{1}D retention times of \SI{300}{\second} and
 \SI{480}{\second} the peaks of the FAMEs are seen, clearly separated by number
 of double bonds in the SFC dimension, and by volatility in the GC dimension.
+When compared to Figure \ref{fig:2DSunflower}, one can surmise that the
+feedstock for the biodiesel was sunflower oil.
 
 As an aside, it is worth pointing out that the hydrocarbons from the petrodiesel
 fraction of the blend were also separated on the SFC dimension. Because of the
@@ -562,8 +583,31 @@ This separation shows that SFC×GC can be used to investigate the biodiesel
 component of petrodiesel/biodiesel blends without sample pretreatment or
 specialized columns.
 
-The capability can find application in quality control of blends and in tax
-enforcement.\todo{Expand tax explanation.}
+Being able to determine the biodiesel content of biodiesel blends may prove
+useful in at least two scenarios: 
+
+The first is in monitoring blending. Biodiesel, essentially a mixture of esters,
+is quite polar compared to petrodiesel, essentially a mixture of hydrocarbons.
+This means that blending might not a matter of just pumping the relevant volumes
+of the respective fuels into a tank and relying on diffusion. Being able to
+determine the amount of biodiesel in a blend will provide assurance that the
+blend is homogenous and should perform according to expectations. While such a
+test is perhaps better performed with a spectroscopic method, SFC×GC can provide
+information for calibration, and will of course be invaluable during trouble
+shooting.
+
+The second application of SFC×GC is for taxation. In some political environments
+fuels might be taxed according to their biologically-derived content, for
+example to promote agriculture or to meet carbon emissions targets. Sometimes
+biological content is mandated. The most reliable way to differentiate between
+organic matter derived from biological sources and organic matter derived from
+fossil sources is radiometry, where the content of radioactive
+\textsuperscript{14}C is determined. (Organic material from fossil sources
+contains no \textsuperscript{14}C.) The technical standard ASTM D6866 provides
+an approved method. But this requires specialized equipment and trained staff,
+whereas fuel laboratories more often have experience with chromatographic
+techniques and might find SFC×GC a useful alternative technique to prove that a
+blend contains the stated amount of biodiesel.
 
 \section{Conclusion}
 
@@ -573,4 +617,10 @@ valuable information on their fatty acid profiles.
 The FAME content of biodiesel blends can be evaluated directly, without any
 sample pre-treatment: the petroleum fraction and the biodiesel fraction of a B50
 blend are separated completely separated on the SFC dimension.
+
+Comprehensively coupled chromatography offers better analytical separations in three ways. 
+
+Biodiesel is by no means a challenging chromatographic sample. The
+chromatographic space created by SFC×GC is almost entirely empty in the provided
+examples. 
 
