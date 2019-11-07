@@ -1,0 +1,143 @@
+Hi Niel,
+
+OK, chapter 3 reading has just concluded.  Your writing really is a 
+pleasure to read, even when the topic is outside my own scientific 
+comfort area.
+
+Very nice.  I found fewer typos/grammar corrections.  Also I learned 
+some things - chemistry is everywhere eh?
+
+Line 1028: singular/plural.  "*IS* their reliability"
+Line 1050: sentence truncated???
+Line 1066: delete " a "
+P39/P40: Do you *really* need to list all these 16 points summarising 
+the pages??  Just reference the document as an alternative?  I didn't 
+learn anything, and if I had to look them up, I'd likely go straight to 
+the actual source material.
+Line 1740: Replace "measures" with "measured"
+Line 1765: singluar/plural.  "*HAS* the right"
+Section 3.5.2.  I have first hand experience of the flash point of 
+cooking oil/lard.
+Line 2019: "of" not "fo"
+Section 3.9.3: At my last medical, and a few years ago, I was warned for 
+too high a blood triglyceride content...
+Line 2079: "...chromatogram is very simple...".  I found the wording 
+here to be a bit jarring - reword?
+Line 2085: singular/plural.  "*are* the main"
+Line 2093: sentence truncated???
+Line 2098: missing space after "fuel"
+Line 2098: Replace "These compounds are..." with "PUFA compounds are..." ???
+Line 2116: singular/plural. "*they are* mearly"
+
+Having line numbers in the .pdf is VERY helpful - it should be compulsory!!!
+
+Summary of this chapter is that I learnt that chemistry, and 
+particularly chemical testing/standards are entirely pervasive of all 
+technological systems.  Of course, somehow being aware that dirty fuel 
+will clog injectors and filters is a bit different from realising and 
+appreciating all the tests and *science* involved in mitigating such 
+potential problems.
+
+I'm glad the medication is helping - you seem well on track.  Keep 
+working hard - you're getting there!  More comments will follow as time 
+allows.
+
+Mick
+
+PS I've just booked flights for a combined trip to 
+Arecibo/UK/Switzerland in Jan and Feb next year.  Work/Personal/Work but 
+it should be a fun trip, and involves the ionospheric work with SUPIM, 
+plus some of the new work I've been doing on stratospheric ozone.
+
+PPS Work on the house progresses slowly.  We have a (partial) kitchen 
+once more, as well as a leaking sink.  I think it is a good omen to have 
+build a leaking vessel, before we hopefully build a water-tight one!!!
+
+On 10/07/2019 03:24 AM, Niel Malan wrote:
+> Hi Mick,
+> 
+> Good to hear from you! I'm glad you got the heating going again before winter!  It must be
+> quite an adventure, rebuilding a partially burned-out house.
+> 
+> Mr Thesis is still keeping me out of mischief. Almost done with the results chapter, then a
+> conclusion. Writing is going OK now, much easier now and a few months ago, with adequate
+> medication for the ADHD.
+> 
+> This weekend I took a break from writing to work on systems. I had a directory full of various
+> images files with subdirectories in various stages of development, and it got to be a
+> confusing mess. So I started building a GNU Make file that can help keep track of figures and
+> where they came from. In principle, one should be able to automatically re-make a figure if
+> the data file it comes form has been edited. I got the first phase working last night, just
+> copying updated image files to the right directory for LaTeX to find them. It was quite
+> satisfying, watching it do its work. I really miss coding ...
+> 
+> I'm keeping the whole thing on Github, no so much for sharing as for disaster recovery.
+> https://github.com/niel-malan/erna-thesis
+> 
+> Starting to love Git. It makes it easy to experiment if one knows any mishap can be easily
+> fixed. I've needed it too. A Mathematica file got corrupted, and I could just check out an
+> earlier, working version.
+> 
+> Thank you again for offering to read. Your previous comments have proved really useful. I've
+> attached three chapters for your perusal.
+> 
+> As regards the singular/plural problem you mentioned: If you can just mention where you see
+> such instances, I'll be able to fix them. You don't need to offer corrections. They just don't
+> pop out for me. I've been learning to pay more attention to it, and it seems to be a general
+> problem in South African English. It's so common that people learn to filter it out, it seems.
+> 
+> I hope everything keeps going smoothly with your house rebuilding, and that the  dinghy
+> building can start on schedule.
+> 
+> Regards
+> Niel
+> 
+> On 4 Oct 2019 at 22:33, Mick  Denton wrote:
+> 
+>> Hi Niel,
+>>
+>> Greetings from Boulder!  How are you faring?  I'm back to some kind of
+>> normality here.  The heating/gas is now reconnected at home and we may
+>> even have plasterboard on the walls in the living room before too long.
+>> The next stage after that is to fit a new kitchen with the plan still
+>> being to have everything back to 'normal' after the fire, by Christmas
+>> time.  At that point, we may go for 'intensive dinghy building' over the
+>> New Year :-)
+>>
+>> Anyway, I hope all is well.  If you have more thesis chapters that you'd
+>> like me to look over, then send them along.  Now is a good time and I
+>> need distracting from all the DIY!!!
+>>
+>> Take it easy,
+>>
+>> Mick
+>> -- 
+>>
+>>
+>> -------------------------------------------------------------
+>> Michael H. Denton
+>> Research Scientist
+>> Space Science Institute
+>> 4765 Walnut Street Suite B
+>> Boulder, Colorado 80301
+>> USA
+>> Email: mdenton@spacescience.org
+>> -------------------------------------------------------------
+>>
+> 
+> 
+> 
+
+-- 
+
+
+-------------------------------------------------------------
+Michael H. Denton
+Research Scientist
+Space Science Institute
+4765 Walnut Street Suite B
+Boulder, Colorado 80301
+USA
+Email: mdenton@spacescience.org
+-------------------------------------------------------------
+
