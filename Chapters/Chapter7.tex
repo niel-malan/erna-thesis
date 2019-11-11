@@ -12,7 +12,7 @@ It is a bad plan that admits of no modification.
 \section{Introduction}
 
 In the previous chapter the SFC×GC was run with neat carbon dioxide as mobile
-phase for the SFC dimension. Carbon dioxide as a mobile phase is compatible with
+phase for the SFC separation. Carbon dioxide as a mobile phase is compatible with
 a flame ionization (FID) detector: under the conditions found in the
 hydrogen-rich portion of the flame the carbon dioxide cannot be reduced to
 methane, the first step in the process that produces the ions that gives the FID
@@ -21,12 +21,12 @@ additives\footnote{Modifiers are added to the carbon dioxide to manipulate the
 solubility of the analytes in the mobile phase, in exactly the same way that
 mixtures of solvents are used in, say, gradient elution in HPLC. Additives are
 added in small amounts, and manipulate the interaction of the analyte with the
-stationary phase.} These modifiers are usually organic compounds, and in the FID
+stationary phase.}. These modifiers are usually organic compounds, and in the FID
 flame they produce ions. Because the modifiers are present in much higher
 quantities than the analytes, in an FID they will produce many more ions than
 than the analyte, and therefore the analyte signal will be swamped by the
-modifier signal. The introduction of the use of organic additives and modifiers
-to the carbon dioxide mobile phase thereby rendered SFC incompatible
+modifier signal. Mixing organic additives and modifiers
+with the carbon dioxide mobile phase therefore renders SFC incompatible
 with flame ionization as a detection method. Therefore, most modern SFC
 chromatographs use optical detectors, most commonly UV spectrophotometry
 borrowed from HPLC.
@@ -39,31 +39,35 @@ exploiting the versatility of carbon dioxide as a mobile phase:
 
 \item While SFC is compatible with optical detection (carbon dioxide is does not
 absorb visible or ultraviolet radiation), there is a wide range of potential
-modifiers that are not.
+modifiers that are not compatible with spectrophotometric detection because they
+absorb strongly in the UV, but might have chemical properties useful for
+manipulating SFC separations.
 
-\item Optical detectors can only detect analytes with chromophores.
+\item Optical detectors can only detect analytes with chromophores, and the
+intensity of the signal depends strongly on the species.
 
 \item Optical detectors have a limited dynamic range, which complicates quantification. 
 
 \end{itemize}
 
-In comparison, the FID can detect practically any organic compound in a huge
-concentration range.
+In comparison, the FID can detect practically any organic compound over a wide
+concentration range, giving a signal proportional to the mass of the compound.
 
 If only there were a way to separate the the modifiers from the analytes before
 detection \ldots
 
 When GC is comprehensively coupled to SFC, the modulator will focus each
-fraction of SFC eluate, and then separate all the compounds in it, analytes and
-modifiers included. If the modifiers are less volatile than the analytes then
-the peaks corresponding to the modifiers will elute before the analyte, and the
-analyte can be detected or quantified using and FID.
+fraction of SFC eluate, and then the GC will separate all the compounds in the
+fraction, analytes and modifiers included. If the modifiers are less volatile
+than the analytes then the modifiers will elute before the analyte, and the
+analyte can be detected or quantified using an FID, and the signal from the
+modifier can be ignored.
 
-Of course it is quite likely that the peak from the modifiers will be
-\keyword{overloaded}. Both the detector and the column may be overloaded. If the
-\emph{detector} is overloaded, then it just means that the detector no longer
-responds linearly to the amount of material on the column --- this might include
-responding with its maximum output, leaving flat-topped peaks. If the
+Of course it is quite likely that the peak from the modifiers will
+\keyword{overload} the GC. Both the detector and the column may be overloaded.
+If the \emph{detector} is overloaded, then it just means that the detector no
+longer responds linearly to the amount of material on the column --- this might
+include responding with its maximum output, leaving flat-topped peaks. If the
 \emph{column} is overloaded, then the peaks will \keyword{front}: they will be
 asymmetrical, with the side of the peak towards earlier elution times having a
 lower slope than the side of the peak towards later elution times. The side of
@@ -73,7 +77,7 @@ The requirement that the modifiers added to the SFC mobile phase be volatile (so
 that they can elute before the analyte) is not too onerous a restriction. Higher
 volatility correlates with lower diffusivity, so that the preferred
 high-diffusivity modifiers for SFC  would also tend to be be volatile enough to
-elute early.
+elute early on GC. 
 
 A practical SFC×GC chromatograph opens up the field for the use of carbon
 dioxide with modifier as a mobile phase for analysing complex mixtures found in
@@ -83,10 +87,10 @@ biodiesel production, biodiesel quality control, and compliance monitoring.
 
 In this section a SFC×GC chromatogram is presented that shows that methanol
 added as a modifier to the SFC mobile phase does not interfere with the fast GC
-any more than any solvent interferes in the usual 1D GC. The separation space
-therefore gains in control over elution in the SFC dimension at the cost of
-losing on the GC the capability to separate compounds more volatile than
-methanol.
+any more than a sample's solvent interferes in the usual 1D GC. The 2D
+separation space of SFC×GC therefore gains in control over elution in the SFC
+dimension at the cost of losing the capability to detect compounds
+more volatile than methanol on the GC dimension.
 
 \subsection{Sample}
 
@@ -108,16 +112,16 @@ Silica) connected in series.
 \subsection{Modulation}
 
 Each fraction collected from the SFC was \SI{5}{\second} of flow time. After the
-flow from the SFC had been stopped, \SI{3}{\second} was allowed for the vapour
-in the inlet to be swept into the cold (\SI{-20}{\celsius}) column where it would
-be trapped, and then the inlet vent valve was opened for \SI{1}{\second} to
-relieve excess inlet pressure.
+flow from the SFC had been stopped, \SI{3}{\second} was allowed for the last
+vapour in the inlet to be swept into the cold (\SI{-20}{\celsius}) column to be
+trapped, and then the inlet vent valve was opened for \SI{1}{\second} to relieve
+excess inlet pressure.
 
 \subsection{GC}
 
 The GC column was a Restek Rxi-5Sil MS \SI{0.250}{\milli\metre} x
-\SI{1}{\metre}. The hydrogen carrier gas had flow rate of
-\SI{11.6}{\milli\litre\per\minute}.
+\SI{0.25}{\micro\meter} × \SI{1}{\metre}. The hydrogen carrier gas flowed at a
+rate of \SI{11.6}{\milli\litre\per\minute}.
 
 For each fast GC program the temperature was ramped from \SI{-20}{\celsius} to
 \SI{320}{\celsius} in \SI{10.3}{\second} (\SI{33}{\celsius\per\second}) and kept
@@ -129,7 +133,7 @@ chromatogram.
 
 \subsection{Results and discussion}
 
-The chromatogram obtained from this run is shown in Figure \ref{fig:Modifier}.
+The chromatogram obtained for this run is shown in Figure \ref{fig:Modifier}.
 Note the unusual orientation of the chromatogram, chosen to best show the data:
 In the SFC dimension the later elution times are closer to the reader.
 
@@ -174,18 +178,18 @@ The chromatogram shows the hydrocarbon ``hump'' in the GC dimension and the
 separation of the aromatics in the SFC dimension, as discussed in Section
 \ref{sec:B50Discuss}. It can be seen that the 'solvent peak' of the modifier
 interferes with the more volatile of the hydrocarbons, but the rest of the
-separation space is available for separations. 
+separation space is available for separation. 
 
 \subsection{Conclusion}
 
-Adding modifiers to SFC exploits the versatility of carbon dioxide as a mobile
-phase, but adding solvents to 1D SFC precludes the use of the universal flame
-ionization detector (FID) because the modifier signal will swamp the analyte
-signal.
+Adding modifiers to SFC expands the versatility of carbon dioxide as a mobile
+phase, but in 1D SFC the use of modifiers precludes the use of the universal
+flame ionization detector (FID) because the modifier signal will swamp the
+analyte signal.
 
-Adding GC-FID as a second dimension separation allows the use of any volatile
+Adding GC-FID as a \textsuperscript{2}D separation allows the use of any volatile
 modifier to manipulate retention in the SFC dimension, including modifiers that
-might not be UV-transparent. Any modifiers present in the fraction collected
+might not be UV-transparent. Modifiers present in the fraction collected
 by the modulator elute like the customary solvent peak in the GC dimension.
 This means that the signal from the modifier does not interfere with the signal
 of the analyte, having been separated by the GC column.
@@ -193,3 +197,4 @@ of the analyte, having been separated by the GC column.
 The example shown above shows that SFC×GC will reliably separate any modifiers
 used in the SFC dimension from the analytes, allowing the FID to be used as a
 detector for gradient-elution SFC separations.
+
