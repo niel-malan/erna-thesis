@@ -113,7 +113,17 @@ information would be expected.
 
 \section{Limitations of this SFC×GC design}
 
-\subsection{}
+\subsection{Cooling control}
+The fast GC temperature was poorly controlled in the \SIrange{-20}{50}{\celsius}
+region of the temperature ramps, because the coaxial heater was not isolated. It
+was mounted in a GC oven, together with the heated T-piece blocks. The heat
+leaking from these uninsulated blocks accumulated in the oven, until the oven
+reached a temperature of about \SI{50}{\celsius}. Once the coolant flow stopped
+the temperature of the coaxial heater would immediate rise to the temperature of
+the oven.
+
+This was not a problem in the chosen biodiesel application, but better control
+over the beginning of the temperature ramp would be necessary 
 
 \section{Suggested design improvements}
 
