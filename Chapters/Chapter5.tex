@@ -113,9 +113,22 @@ pick a value for that is likely to be satisfactory for most conditions, keep it
 fixed, and then find an acceptable compromise between the other two. In the
 development of the SFC×GC we decided to work with a fixed sample capacity: we
 chose a capillary column with a \SI{0.25}{\milli\metre} internal diameter and a
-\SI{0.25}{\micro\metre} stationary phase.
+\SI{0.25}{\micro\metre} stationary phase. 
 
+With the sample capacity held constant, it is now possible to search for
+compromise conditions that give adequate resolution in the shortest possible
+time.
 
+The \keyword{efficiency} of a column is given by the relationship \(E =
+\frac{t_R}{\sigma} \), where \(t_R\) is the retention time of a peak, and
+\(\sigma\) is its standard deviation. The efficiency is a measure of how much
+the peak spread during its transport through the column relative to distance it
+travelled, using time as a proxy for distance. Efficiency is related to the more
+traditional but less intuitive \keyword{number of plates} \(N\) through the
+expression \(N = E^2\).
+
+The theory of fast chromatography has been developed in a series of papers by
+Blumberg \autocite{Blumberg1997}.
 
 \begin{todo}
 The theory of fast gas chromatography has been well developed
@@ -391,7 +404,7 @@ resistors. Because the current \(I\) through the circuit is the same for both
 
 \(R_{col} = R_{ref}\frac{V_{col}}{V_{ref}}\)
 
-The voltage drop across $R_{ref}$ is too small to be directly digitized,
+The voltage drop across $R_{ref}$ is too small to be directly digitized,Ma
 therefore it is amplified by an amplifier with gain $g$, so that $V_b =
 gV_{ref}$. $V_b$ is measured, as is $dV$, the potential difference between the
 supply and the amplifier output. We can show that the coaxial heater resistance
