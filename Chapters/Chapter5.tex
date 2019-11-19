@@ -98,26 +98,46 @@ chromatographic run times.
 
 \section{Fast gas chromatography theory}
 
-Every chromatographer has met the chromatographer's trilemma (See Figure
-\ref{fig:trilemma}): Any chromatographic method that involves decisions about
-speed, resolution, and capacity can maximize only one at a time\footnote{This
-trilemma applies only to capillary chromatography. When using packed columns,
-the capacity can be readily increased by using a column with a larger diameter
-and a larger amount of packing.}. The fastest chromatography will have low
-capacity and low resolution, the chromatography giving the highest resolution
-will be slow and have low capacity, and the chromatogram of a sample with a high
-concentration of analyte will be slow and have low resolution
-\autocite{Klee2002}. One way the chromatographer can ease the grip of the
-trilemma is to decide what factor is least important for the current problem,
-pick a value for that is likely to be satisfactory for most conditions, keep it
-fixed, and then find an acceptable compromise between the other two. In the
-development of the SFC×GC we decided to work with a fixed sample capacity: we
-chose a capillary column with a \SI{0.25}{\milli\metre} internal diameter and a
-\SI{0.25}{\micro\metre} stationary phase. 
+Improving the speed of chromatographic separations is an aspect of
+\keyword{optimization}. Optimization can be defined as ``the action of making
+the best or most effective use of a situation or resource'' \autocite{OUP2019}.
+The ``making the most effective use" means that optimization has a
+\keyword{goal}, which can be characterized by a numerical \keyword{criterion}
+while subject to to some \keyword{constraints}. The amount of ``resources'' that
+are used are the \keyword{optimizing parameters}.
 
-With the sample capacity held constant, it is now possible to search for
-compromise conditions that give adequate resolution in the shortest possible
-time.
+There are two kinds of optimization in chromatography: selectivity and kinetic.
+This classification does not concern the goals of the optimization, but the
+parameters. \keyword{Selectivity optimization} is the process of selecting the
+best combination of stationary phase and analyte. The parameters are the
+different stationary phases and derivitization methods available.
+\keyword{Kinetic optimization} is the process of selecting the best combination
+of carrier gas, temperature, flow rate, column length, column diameter, and
+stationary phase thickness. This differentiation between selectivity
+optimization and kinetic optimization is not made on theoretical grounds, but
+practical reasons: selectivity optimization often involves the discrete and
+expensive parameter of selecting a column, whereas the parameters involved in
+kinetic optimization can be adjusted continuously and inexpensively. This
+discussion will only cover kinetic optimization.
+
+Every chromatographer involved in an optimization has met the chromatographer's
+trilemma (See Figure \ref{fig:trilemma}): Any chromatographic method that
+involves decisions about speed, resolution, and capacity can maximize only one
+at a time\footnote{This trilemma applies only to capillary chromatography. When
+using packed columns, the capacity can be readily increased by using a column
+with a larger diameter and a larger amount of packing.}. The fastest
+chromatography will have low capacity and low resolution, the chromatography
+giving the highest resolution will be slow and have low capacity, and the
+chromatogram of a sample with a high concentration of analyte will be slow and
+have low resolution \autocite{Klee2002}. One way the chromatographer can ease
+the grip of the trilemma is to decide what factor is least important for the
+current problem, pick a value for that is likely to be satisfactory for most
+conditions, keep it fixed, and then find an acceptable compromise between the
+other two. In the development of the SFC×GC we decided to work with a fixed
+sample capacity: we chose a capillary column with a \SI{0.25}{\milli\metre}
+internal diameter and a \SI{0.25}{\micro\metre} stationary phase. With the
+sample capacity held constant, it is now possible to optimize the system so that
+it gives adequate resolution in the shortest possible time.
 
 The \keyword{efficiency} of a column is given by the relationship \(E =
 \frac{t_R}{\sigma} \), where \(t_R\) is the retention time of a peak, and
@@ -125,7 +145,66 @@ The \keyword{efficiency} of a column is given by the relationship \(E =
 the peak spread during its transport through the column relative to distance it
 travelled, using time as a proxy for distance. Efficiency is related to the more
 traditional but less intuitive \keyword{number of plates} \(N\) through the
-expression \(N = E^2\).
+expression \(N = E^2\). The length of the column (\(L\)), divided by the square
+of the efficiency gives the \keyword{plate height} (\(H\)). Plate height is a
+measure of how much each unit of length of the column contributes to the
+separation: a lower \(H\) means that the column is more effective. The value of
+\(H\) in chromatographic theory is that equations can be developed that express
+\(H\) as functions of the adjustable parameters of kinetic optimization. Such
+functions help predict suitable chromatographic conditions and set limits to the
+expected performance of the column.
+
+When doing chromatography, any optimization goal must contain resolution as part
+of the criteria; the purpose of the activity is the separation of chemical
+compounds. Traditionally, the first optimization taught is the optimization of
+\(H\) as criterion, with the rate at which the carrier gas passes through the
+column as the variable parameter. The rate can be characterized by either the
+average gas velocity (\(\overline{u}\)) or the gas flow rate (\(F\)).
+Traditionally \(\overline{u}\) have been used, because it can be conveniently
+calculated from simple measurements: \(\overline{u} = L/t_m\), where \(t_m\) is
+the \keyword{void time}, which can be conveniently determined by measuring the
+retention time of an unretained compound. In modern gas chromatographs \(F\) can
+be continuously controlled by electronic pneumatic control (EPC) systems, and
+has become a more convenient parameter.
+
+Blumberg has developed the theory of optimized flow rate
+\autocite{Blumberg1999}. He found that the function that describes plate height
+in terms of flow rate can be simplified to two cases: a high-pressure drop and a
+low-pressure drop. (A high pressure drop is defined as the case when the
+difference in pressure between the inlet and outlet is much greater than the
+outlet pressure, \(\Delta{p} \gg p_o\)). When the pressure drop is low 
+
+\(H = \frac{\displaystyle b}{\displaystyle F}+(c_1+c_2)F \)
+
+and when the pressure drop is high
+
+\(H = \frac{\displaystyle 9}{\displaystyle 8} \left(\frac{b}{F}+c_{1}F \right)+C_{2}\sqrt{F}\)
+
+When the amount of stationary phase is small, also known as the \keyword{thin-film case}, then \(c_2 = 0\) and \(C_2 = 0\), and
+
+\(H = \frac{\displaystyle b}{\displaystyle F} + c_{1} F \) 
+
+for the low pressure drop case and 
+
+\(H = \frac{\displaystyle 9}{\displaystyle 8} \left(\frac{b}{F}+c_{1}F \right)\)
+
+for the high pressure drop case. The low pressure drop case will be immediately
+recognized as the \keyword{van Deemter equation}, and the high-pressure drop
+case differs from it only by a factor of \num{0.125}. (See Figure
+\ref{fig:VanDeemter})
+
+\begin{figure}
+\centering
+\includegraphics[width=0.75\textwidth]{Figures/VanDeemter.pdf}
+\decoRule
+\caption[A plot of H \textit{vs.} F]{A plot of H \textit{vs.} F.}
+\label{fig:VanDeemter}
+\end{figure}
+
+It is clear that the function has a minimum, and the flow at this minimum can be
+called \(F_{Hmin}\). This flow is called efficiency-optimized flow, EOF.
+
+\todo{SOF}
 
 The theory of fast chromatography has been developed in a series of papers by
 Blumberg \autocite{Blumberg1997}.
