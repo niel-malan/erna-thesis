@@ -120,6 +120,16 @@ expensive parameter of selecting a column, whereas the parameters involved in
 kinetic optimization can be adjusted continuously and inexpensively. This
 discussion will only cover kinetic optimization.
 
+
+\begin{figure}
+\centering
+\includegraphics[width=0.75\textwidth]{Figures/Triangle.pdf}
+\decoRule
+\caption[Schematic diagram of a the chromatographer's trilemma.]{The chromatographer's trilemma.}
+\label{fig:trilemma}
+\end{figure}
+
+
 Every chromatographer involved in an optimization has met the chromatographer's
 trilemma (See Figure \ref{fig:trilemma}): Any chromatographic method that
 involves decisions about speed, resolution, and capacity can maximize only one
@@ -162,7 +172,7 @@ column as the variable parameter. The rate can be characterized by either the
 average gas velocity (\(\overline{u}\)) or the gas flow rate (\(F\)).
 Traditionally \(\overline{u}\) have been used, because it can be conveniently
 calculated from simple measurements: \(\overline{u} = L/t_m\), where \(t_m\) is
-the \keyword{void time}, which can be conveniently determined by measuring the
+the \keyword{void time}, which is easily determined by measuring the
 retention time of an unretained compound. In modern gas chromatographs \(F\) can
 be continuously controlled by electronic pneumatic control (EPC) systems, and
 has become a more convenient parameter.
@@ -180,7 +190,8 @@ and when the pressure drop is high
 
 \(H = \frac{\displaystyle 9}{\displaystyle 8} \left(\frac{b}{F}+c_{1}F \right)+C_{2}\sqrt{F}\)
 
-When the amount of stationary phase is small, also known as the \keyword{thin-film case}, then \(c_2 = 0\) and \(C_2 = 0\), and
+When the layer of stationary phase is thin, also known as the \keyword{thin-film
+case}, then \(c_2 = 0\) and \(C_2 = 0\), and
 
 \(H = \frac{\displaystyle b}{\displaystyle F} + c_{1} F \) 
 
@@ -201,116 +212,74 @@ case differs from it only by a factor of \num{0.125}. (See Figure
 \label{fig:VanDeemter}
 \end{figure}
 
-It is clear that the function has a minimum, and the flow at this minimum can be
-called \(F_{Hmin}\). This flow is called efficiency-optimized flow, EOF.
+It is clear that the function has a minimum, and the flow rate at this minimum
+can be called \(F_{Hmin}\). This flow is called \keyword{efficiency-optimized
+flow}, EOF. A remarkable feature of this theoretical result is that it is
+independent of column length \autocite(Blumberg1999). In contrast, the
+\keyword{efficiency optimized velocity} (EOV) depends on the column length when
+the pressure drop is high \autocite{Blumberg1997}. Because \(E =
+\sqrt{frac{L}{H}} \) it means that any necessary resolution can be obtained by
+making the column as long as necessary. This theoretical result is supported by
+experiment: the world record for the longest capillary column is
+\SI{1300}{\metre}. ``This column produced excellent resolution of a petroleum
+sample, but took 3 hours to elute methane and 3 days to elute the last peak''
+\autocite{Ferguson2013}. Reducing the column length while keeping EOF will
+reduce the column efficiency, although the plate height will remain constant.
 
-\todo{SOF}
+In this study the aim is to reduce the time it takes to complete a run, and
+therefore the question is not what the best possible efficiency is, but what the
+shortest time is in which a specified efficiency can be obtained. The remarkably
+simple theoretical result is that under \keyword{speed-optimized flow} (SOF),
+\(F = \sqrt{2}F_{Hmin}\). Because this flow is faster than the EOF, \(H\) is
+larger, but this can be compensated for by increasing \(N\), which is
+implemented by using a longer column. For a given solute, column diameter,
+stationary phase and carrier gas there is no flow that will yield a faster
+separation that will not reduce the efficiency of the column. The remaining
+parameters that can be manipulated to optimize speed are column diameter and
+carrier gas diffusion. Therefore improving separation speed leads towards
+narrow-bore capillary columns, and using hydrogen as a carrier gas.
 
-The theory of fast chromatography has been developed in a series of papers by
-Blumberg \autocite{Blumberg1997}.
+The theoretical study of optimization gives great insight, but for practical
+purposes the use of online method translation calculators is recommended
+\autocite{Restek2014}. The improvement possible in separation speed by using
+method translation calculations is remarkable, but still falls short of the
+speed that is needed for comprehensively coupled chromatography.
 
-\begin{todo}
-The theory of fast gas chromatography has been well developed
-\autocite{Blumberg1997}, and 
-\end{todo}
+SOF improves the speed of analysis by finding the combination of parameters
+\(F\) and \(L\) that will give the fastest separation under the constraint of
+constant \(H\). If the constraint is relaxed, a faster separation can be
+achieved. Assuming that it is not possible to optimize the selectivity further,
+which means that the stationary phase cannot be changed, there are only two ways
+to relax the plate height constraint: \keyword{selective detection} and
+\keyword{sample preparation}. In selective detection a detector is chosen that
+only responds to the analytes, and not to any interfering compounds. For
+example, an \keyword{electron capture detector} (ECD) responds strongly to
+halides, so a GC-ECD chromatogram of a soil extract will be much simpler than
+the equivalent GC-FID chromatogram, which means that the GC-ECD analysis of
+chlorinated pesticides in soil will be much faster than the GC-FID analysis.
+Sample preparation allows the efficiency constraint to be relaxed by simplifying
+the sample chemically. For example, a sample might be passed through a
+\keyword{solid phase extraction} (SPE) cartridge before it is injected into the
+chromatograph. Interfering compounds are retained in the cartridge, which
+simplifies the sample. A simpler sample requires lower efficiency, so the SOF
+will be higher.
 
-\begin{figure}
-\centering
-\includegraphics[width=0.75\textwidth]{Figures/Triangle.pdf}
-\decoRule
-\caption[Schematic diagram of a the chromatographer's trilemma.]{The chromatographer's trilemma.}
-\label{fig:trilemma}
-\end{figure}
+The high speed chromatography that is used in GC×GC is possible because any
+fraction collected from the \oneD separation is considerably simpler than the
+original sample, and therefore the efficiency constraint is relaxed, which
+allows a much higher SOF and therefore a very fast \twoD separation. Even at
+SOF, there might still be excess efficiency, which could be traded for higher
+speed. Since \(E^2 = \frac{H}{L} \), this higher speed can be obtained by
+increasing the flow beyond SOF (decreasing \(H\)), or by using a shorter column
+(decreasing \(L\). Optimizing for the best speed/efficiency ratio using column
+length and flow as parameters, shows that flow nearer the SOF combined with
+shorter columns give the best performance \autocite{Klee2002, Reed1999}.
 
-%\todo{We avoided the trilemma by not bothering with optimizing column capacity. Sample
-%capacity in capillary GC is a function of film thickness and column diameter. We
-%decided to use the workhorse of GC, the \SI{0.25}{\milli\metre} internal
-%%diameter column with a \SI{0.25}{\micro\metre} film thickness. The stationary
-%phase was a proprietary cross-linked polysiloxane polymer (Restek
-%Rxi\textregistered{}-5Sil MS), designed to mimic the behaviour of a
-%\SI{5}{\percent} diphenyl/\SI{95}{\percent} dimethyl polysiloxane stationary
-%phase. With the phase ratio/column capacity fixed, the remaining trade-off is
-%between speed and resolution.}
+\section{The General Elution problem.}
 
-%The experienced chromatographer will know that there is only one optimum flow
-%rate, the minimum of the Van Deemter curve \(\hat{h}=\frac{B}{u}+{C}{u}\), or under
-%conditions of high pressure drop, the equivalent equation by Blumberg
-%\autocite{Blumberg1997} \(\hat{h}=\frac{B}{\bar{u}^2} + C_1\bar{u}^2 +
-%C_2\bar{u}\).
+The theory developed above. 
 
-% Any attempt to increase the
-% speed will lead to lower resolution: If the mobile phase flow rate is at an
-% optimum, a shorter column will yield a lower void time, but the number of plates
-% will be lower so the separation will not have the time to complete, resulting in
-% decreased resolution. If the column length is kept constant but the flow is
-% increased, the plate height will be greater, so the same length of column will
-%have fewer plates, and hence decreased resolution.
-
-If two peaks are satisfactorily separated on given column, it is not possible to
-run a faster chromatogram with higher resolution.  This can be seen by examining
-the resolution equation \autocite{Sandra1989}
-
-\[ R_s = \left(\frac{\sqrt{N}}{4}\right)\left(\frac{\alpha-1}{\alpha}\right)\left(\frac{k_2}{1+k_2}\right) \]
-
-Where the \(N\) is the \keyword{number of plates}, \(\alpha\) is the
-\keyword{selectivity}, and \(k_2\) is the \keyword{retention factor}.
-
-\(N\) is can be calculated from \(N = \frac{L}{H} \), where \(L\) is the
-\keyword{column length}, and \(H\) is the \keyword{plate height}.
-
-Therefore \( R_s \propto \sqrt{\frac{L}{H}} \), and obviously reducing the
-length of the column will reduce the resolution \(R_s\). 
-
-\( H \) depends on gas flow, in a relationship described by the \keyword{Van
-Deemter Equation} \( H = \frac{B}{\bar{u}} + {C}{\bar{u}} \) or, under
-conditions of high pressure drop, the equivalent equation by Blumberg
-\autocite{Blumberg1997} \( H = \frac{B}{\bar{u}^2} + C_1\bar{u}^2 +
-C_2\bar{u}\), where \(\bar{u}\) is the average linear gas velocity in the
-column, and the coefficients \(B\), \(C\), \(C_1\), and \(C_2\) are constants
-relating to geometry and diffusion.
-These equations do have minima, but under most experimental conditions the flow
-will be at such a rate that increasing the flow will increase the plate height.
-Hence, increasing the flow while keeping the same column length will decrease
-the resolution \( R_s \).
-
-% \[t_{R2} =16 {R_s}^2(\frac{\alpha}{\alpha - 1})^2 (\frac{(k_2 + 1)^3}{k_{2}^2)} \frac{H}{\bar{u}} \]
-% where \[t_{R2}\] and \( \bar{u} \) is the average linear gas velocity.
-
-For this reason, the chromatographic separation of compounds with limited
-selectivity requires a long run time. For example, the official methods of
-separating the fatty acid methyl esters (FAMEs) found in biodiesel require
-columns \SI{100}{\metre} long \autocite{AOCS2017} and run times of hours. These
-systems have just enough theoretical plates to separate the chemically very
-similar FAMEs
-
-For any given column and sample, the only way to make GC separations faster is
-to generate excess resolution. Fewer theoretical plates will then be necessary
-to obtain an optimal resolution. Excess resolution can be obtained by increasing
-the selectivity $\alpha$, or by selective detection (\textit{e.g.} an electron
-capture detector). In practical terms this means using a column with a different
-stationary phase or a different detector. A non-chromatographic way to generate
-excess resolution is often termed \keyword{sample clean-up}. While usually
-considered part of sample preparation, it is an additional, pre-chromatographic
-separation step that removes non-analyte compounds, so that only relevant
-compounds need to be separated from each other.
-
-%\begin{equation} 
-%N_{req} = 16R^2_s\left[\frac{1+k}{k}\right]^2\left[\frac{\alpha}{\alpha-1}\right]^2
-%\label{eqn:Nreq}
-%\end{equation}
-
-In SFC×GC excess resolution is generated in the \textsuperscript{1}D SFC
-separation. Separating compounds by their group types first
-\autocite{Venter2006} is a kind of sample preparation step, so that the
-\textsuperscript{2}D GC separation --- in which separation is dominated by
-volatility --- needs only resolve chemically similar peaks. The excess
-resolution generated by the \textsuperscript{1}D SFC separation can be traded
-for faster chromatography using shorter columns, higher flow rates, temperature
-programming, or a combination of the above. Fortunately, the literature shows
-that deciding which approach to follow does not invoke a dilemma, and the
-recommendations are quite clear. It has been shown showed that superior
-resolution is obtained when shorter columns are used rather than higher flow
-rates \autocite{Klee2002}. In her thesis Gail Reed \autocite{Reed1999} compared
+In her thesis Gail Reed \autocite{Reed1999} compared
 shorter columns against faster flow, and showed that shorter columns produce
 superior results over faster flow.
 Then she concluded:
