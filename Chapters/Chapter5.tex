@@ -10,11 +10,11 @@ equally rapid cool-down rates.
 
 \label{Chapter5} % For referencing this chapter elsewhere, use \ref{Chapter5}
 
-This thesis discusses the development of a comprehensively coupled
+The topic of this thesis is the development of a comprehensively coupled
 (supercritical fluid × gas) chromatograph and its application to the analysis of
 biodiesel. The discussion on the experimental work divides naturally into two
-parts: the previous chapter discusses the supercritical fluid chromatography
-(SFC) and this chapter discusses the gas chromatography (GC).
+parts: the topic of the previous chapter is supercritical fluid chromatography
+(SFC) and of this chapter is chromatography (GC).
 
 \section{Speed of analysis}
 
@@ -27,28 +27,28 @@ it meets the following criteria (as discussed in Section \ref{sec:SFCxGC}):
 \end{enumerate} 
 
 In principle, such a coupling could be implemented by manually or mechanically
-collecting equal-sized fractions from a \oneD chromatograph, and then injecting
-a portion of each fraction into a different (\twoD) chromatograph. In practice,
-such an approach would be slow, labour-intensive, expensive, and error-prone.
-But reliable devices were invented that can repeatedly collect and re-inject
-fractions of eluate. These devices became known as \keyword{modulators} and made
-comprehensively coupled chromatography practical. In continuous flow coupling,
-such as that found in GC×GC, the collection and injection happens while the
-\oneD separation is running uninterrupted. In stopped-flow coupling, as used in
-the SFC×GC chromatography described here, the \oneD SFC separation is stopped
-once a fraction has been collected, the fraction is separated on the \twoD
-column, and then the SFC separation is restarted and the next fraction
-collected.
+collecting equal-sized fractions from a first \oneD chromatograph, and then
+injecting a portion of each fraction into a different (\twoD) chromatograph. In
+practice, such an approach would be slow, labour-intensive, expensive, and
+error-prone. But reliable devices that can repeatedly collect and re-inject
+fractions of eluate were invented. These devices became known as
+\keyword{modulators} and made comprehensively coupled chromatography practical.
+In continuous flow coupling, such as that found in GC×GC, the collection and
+injection happens during the uninterrupted \oneD separation. In stopped-flow
+coupling, as used in the SFC×GC chromatography described here, the \oneD SFC
+separation is stopped once a fraction has been collected, the fraction is
+separated on the \twoD column, and then the SFC separation is restarted and the
+next fraction collected.
 
-The rate at which fractions are collected from the \oneD separation is
-determined by the peak width on the \oneD chromatogram. To get adequate peak
-detection in the \oneD chromatogram, each \oneD peak should be subjected to at
-least \num{3} \twoD separations \autocite{Murphy1998}. Therefore, a peak
+The rate at which fractions of the \oneD are collected separation is determined
+by the peak width on the \oneD chromatogram. To get adequate peak detection in
+the \oneD chromatogram, each \oneD peak should be subjected to at least \num{3}
+\twoD separations \autocite{Murphy1998}, but more is better. Therefore, a peak
 \SI{3}{s} wide should have a collection rate of of not less than \SI{1}{\hertz}.
 The rate at which fractions of the \oneD separation is collected is known as the
-\keyword{modulation rate}, and its inverse is the \keyword{modulation period}.
-In continuous-flow coupling (\textit{e.g.} as found in GC×GC), the \twoD
-separation should be completed in a time less than the modulation period.
+\keyword{modulation rate}, and its inverse is the \keyword{modulation period}
+(\(P_M\)). In continuous-flow coupling (\textit{e.g.} as found in GC×GC), the
+\twoD separation should be completed in a time less than the modulation period.
 Evidently, this means that the \twoD separation should be faster than the \oneD
 separation.
 
@@ -71,16 +71,16 @@ as short as possible.
 
 The time it takes for a stopped-flow SFC×GC run can be calculated from
 
-\[t_{T} = t_{SFC} ( 1 + \frac{t_{stopped}}{t_{m}} ) \]
+\[t_{T} = t_{SFC} ( 1 + \frac{t_{stopped}}{P_{M}} ) \]
 
 where \(t_T\) is the total time, \(t_{SFC}\) is the time the unmodulated SFC run
-would take, \(t_m\) is the \keyword{modulation period}, and \(t_{stopped}\) is
+would take, \(P_M\) is the \keyword{modulation period}, and \(t_{stopped}\) is
 the duration of the SFC stopped-flow state, during which the GC run is
 completed. Under continuous-flow conditions \( t_{stopped}=0 \), so that \(t_{T}
 = t_{SFC}\), and applies to GC×GC.
 
 Examining the expression shows that we can decrease \(t_T\) by increasing
-\(t_m\), but there is limit to this: if the modulation time becomes too long,
+\(P_M\), but there is limit to this: if the modulation time becomes too long,
 the separation obtained in the \oneD separation will be lost. So, the only way
 to decrease the total run times is to reduce \(t_{stopped}\), the GC run time.
 For example, if a typical SFC run takes \SI{20}{\minute}, and fractions are
@@ -103,23 +103,22 @@ Improving the speed of chromatographic separations is an aspect of
 the best or most effective use of a situation or resource'' \autocite{OUP2019}.
 The ``making the most effective use" means that optimization has a
 \keyword{goal}, which can be characterized by a numerical \keyword{criterion}
-while subject to to some \keyword{constraints}. The amount of ``resources'' that
-are used are the \keyword{optimizing parameters}.
+while subject to to some \keyword{constraints}. The relative and variable amount
+of ``resources'' used are the \keyword{optimizing parameters}.
 
 There are two kinds of optimization in chromatography: selectivity and kinetic.
-This classification does not concern the goals of the optimization, but the
-parameters. \keyword{Selectivity optimization} is the process of selecting the
-best combination of stationary phase and analyte. The parameters are the
-different stationary phases and derivitization methods available.
+\keyword{Selectivity optimization} is the process of selecting the best
+combination of stationary phase and analyte. The parameters are the different
+stationary phases and derivitization methods available.
 \keyword{Kinetic optimization} is the process of selecting the best combination
 of carrier gas, temperature, flow rate, column length, column diameter, and
 stationary phase thickness. This differentiation between selectivity
 optimization and kinetic optimization is not made on theoretical grounds, but
 practical reasons: selectivity optimization often involves the discrete and
 expensive parameter of selecting a column, whereas the parameters involved in
-kinetic optimization can be adjusted continuously and inexpensively. This
-discussion will only cover kinetic optimization.
-
+kinetic optimization can often be adjusted continuously and inexpensively.
+Selectivity optimization tends to focus on chemical parameters; kinetic
+chemistry tends to focus on physical parameters
 
 \begin{figure}
 \centering
@@ -130,18 +129,18 @@ discussion will only cover kinetic optimization.
 \end{figure}
 
 
-Every chromatographer involved in an optimization has met the chromatographer's
-trilemma (See Figure \ref{fig:trilemma}): Any chromatographic method that
-involves decisions about speed, resolution, and capacity can maximize only one
-at a time\footnote{This trilemma applies only to capillary chromatography. When
-using packed columns, the capacity can be readily increased by using a column
-with a larger diameter and a larger amount of packing.}. The fastest
-chromatography will have low capacity and low resolution, the chromatography
-giving the highest resolution will be slow and have low capacity, and the
-chromatogram of a sample with a high concentration of analyte will be slow and
-have low resolution \autocite{Klee2002}. One way the chromatographer can ease
-the grip of the trilemma is to decide what factor is least important for the
-current problem, pick a value for that is likely to be satisfactory for most
+Every chromatographer involved in a kinetic optimization has met the
+chromatographer's trilemma (See Figure \ref{fig:trilemma}): Any chromatographic
+method that involves decisions about speed, resolution, and capacity can
+maximize only one at a time\footnote{This trilemma applies only to capillary
+chromatography. When using packed columns, the capacity can be readily increased
+by using a column with a larger diameter and a larger amount of packing.}. The
+fastest chromatography will have low capacity and low resolution, the
+chromatography giving the highest resolution will be slow with low capacity, and
+the chromatograpy of a sample with a high concentration of analyte will be slow
+and have low resolution \autocite{Klee2002}. One way the chromatographer can
+ease the grip of the trilemma is to decide what factor is least important for
+the current problem, pick a value for that is likely to be satisfactory for most
 conditions, keep it fixed, and then find an acceptable compromise between the
 other two. In the development of the SFC×GC we decided to work with a fixed
 sample capacity: we chose a capillary column with a \SI{0.25}{\milli\metre}
@@ -151,18 +150,18 @@ it gives adequate resolution in the shortest possible time.
 
 The \keyword{efficiency} of a column is given by the relationship \(E =
 \frac{t_R}{\sigma} \), where \(t_R\) is the retention time of a peak, and
-\(\sigma\) is its standard deviation. The efficiency is a measure of how much
-the peak spread during its transport through the column relative to distance it
-travelled, using time as a proxy for distance. Efficiency is related to the more
-traditional but less intuitive \keyword{number of plates} \(N\) through the
-expression \(N = E^2\). The length of the column (\(L\)), divided by the square
-of the efficiency gives the \keyword{plate height} (\(H\)). Plate height is a
-measure of how much each unit of length of the column contributes to the
-separation: a lower \(H\) means that the column is more effective. The value of
-\(H\) in chromatographic theory is that equations can be developed that express
-\(H\) as functions of the adjustable parameters of kinetic optimization. Such
-functions help predict suitable chromatographic conditions and set limits to the
-expected performance of the column.
+\(\sigma\) is its standard deviation \autocite{Blumberg2018}. The efficiency is
+a measure of how much the peak spread during its transport through the column
+relative to distance it travelled, using time as a proxy for distance.
+Efficiency is related to the more traditional but less intuitive \keyword{number
+of plates} \(N\) through the expression \(N = E^2\). The length of the column
+(\(L\)), divided by the square of the efficiency gives the \keyword{plate
+height} (\(H\)). Plate height is a measure of how much each unit of length of
+the column contributes to the separation: a lower \(H\) means that the column is
+more effective. The value of \(H\) in chromatographic theory is that equations
+can be developed that express \(H\) as functions of the adjustable parameters of
+kinetic optimization. Such functions help predict suitable chromatographic
+conditions and set limits to the expected performance of the column.
 
 When doing chromatography, any optimization goal must contain resolution as part
 of the criteria; the purpose of the activity is the separation of chemical
@@ -215,7 +214,7 @@ case differs from it only by a factor of \num{0.125}. (See Figure
 It is clear that the function has a minimum, and the flow rate at this minimum
 can be called \(F_{Hmin}\). This flow is called \keyword{efficiency-optimized
 flow}, EOF. A remarkable feature of this theoretical result is that it is
-independent of column length \autocite(Blumberg1999). In contrast, the
+independent of column length \autocite{Blumberg1999}. In contrast, the
 \keyword{efficiency optimized velocity} (EOV) depends on the column length when
 the pressure drop is high \autocite{Blumberg1997}. Because \(E =
 \sqrt{frac{L}{H}} \) it means that any necessary resolution can be obtained by
@@ -228,18 +227,19 @@ reduce the column efficiency, although the plate height will remain constant.
 
 In this study the aim is to reduce the time it takes to complete a run, and
 therefore the question is not what the best possible efficiency is, but what the
-shortest time is in which a specified efficiency can be obtained. The remarkably
-simple theoretical result is that under \keyword{speed-optimized flow} (SOF),
-\(F = \sqrt{2}F_{Hmin}\). Because this flow is faster than the EOF, \(H\) is
-larger, but this can be compensated for by increasing \(N\), which is
-implemented by using a longer column. For a given solute, column diameter,
-stationary phase and carrier gas there is no flow that will yield a faster
-separation that will not reduce the efficiency of the column. The remaining
-parameters that can be manipulated to optimize speed are column diameter and
-carrier gas diffusion. Therefore improving separation speed leads towards
-narrow-bore capillary columns, and using hydrogen as a carrier gas.
+shortest time is in which a specified efficiency can be maintained. The
+remarkably simple theoretical result is that under \keyword{speed-optimized
+flow} (SOF), \(F = \sqrt{2}F_{Hmin}\) \autocite{Blumberg1997}. Because this flow
+is faster than the EOF, \(H\) is larger, but this can be compensated for by
+increasing \(N\), which is implemented by using a longer column. For a given
+solute, column diameter, stationary phase and carrier gas there is no flow that
+will yield a faster separation that will not reduce the efficiency of the
+column. 
 
-The theoretical study of optimization gives great insight, but for practical
+The remaining parameters that can be manipulated to optimize speed are
+column diameter and carrier gas diffusion. Therefore improving separation speed
+leads towards narrow-bore capillary columns, and using hydrogen as a carrier
+gas. The theoretical study of optimization gives great insight, but for practical
 purposes the use of online method translation calculators is recommended
 \autocite{Restek2014}. The improvement possible in separation speed by using
 method translation calculations is remarkable, but still falls short of the
@@ -247,22 +247,23 @@ speed that is needed for comprehensively coupled chromatography.
 
 SOF improves the speed of analysis by finding the combination of parameters
 \(F\) and \(L\) that will give the fastest separation under the constraint of
-constant \(H\). If the constraint is relaxed, a faster separation can be
-achieved. Assuming that it is not possible to optimize the selectivity further,
-which means that the stationary phase cannot be changed, there are only two ways
-to relax the plate height constraint: \keyword{selective detection} and
-\keyword{sample preparation}. In selective detection a detector is chosen that
-only responds to the analytes, and not to any interfering compounds. For
-example, an \keyword{electron capture detector} (ECD) responds strongly to
-halides, so a GC-ECD chromatogram of a soil extract will be much simpler than
-the equivalent GC-FID chromatogram, which means that the GC-ECD analysis of
-chlorinated pesticides in soil will be much faster than the GC-FID analysis.
-Sample preparation allows the efficiency constraint to be relaxed by simplifying
-the sample chemically. For example, a sample might be passed through a
-\keyword{solid phase extraction} (SPE) cartridge before it is injected into the
-chromatograph. Interfering compounds are retained in the cartridge, which
-simplifies the sample. A simpler sample requires lower efficiency, so the SOF
-will be higher.
+constant \(H\). If the constraint on \(H\) is relaxed, a faster separation can
+be achieved. Assuming that it is not possible to optimize the selectivity
+further, which means that the stationary phase cannot be changed, there are only
+two ways to relax the plate height constraint: \keyword{selective detection} and
+\keyword{sample cleanup}. In selective detection a detector is chosen that only
+responds to the analytes, and not to any interfering compounds. For example, an
+\keyword{electron capture detector} (ECD) responds strongly to halides, so a
+GC-ECD chromatogram of a soil extract will be much simpler than the equivalent
+GC-FID chromatogram, which means that the GC-ECD analysis of chlorinated
+pesticides in soil will be much faster than the GC-FID analysis.
+GC-MS using \keyword{single ion monitoring} (SIM) also enables faster
+chromatography by simplifying the chromatogram. Sample cleanup allows the
+efficiency constraint to be relaxed by simplifying the sample chemically. For
+example, a sample might be passed through a \keyword{solid phase extraction}
+(SPE) cartridge before it is injected into the chromatograph. Interfering
+compounds are retained in the cartridge, which simplifies the sample. A simpler
+sample requires lower efficiency, so the SOF will be higher.
 
 The high speed chromatography that is used in GC×GC is possible because any
 fraction collected from the \oneD separation is considerably simpler than the
@@ -271,69 +272,85 @@ allows a much higher SOF and therefore a very fast \twoD separation. Even at
 SOF, there might still be excess efficiency, which could be traded for higher
 speed. Since \(E^2 = \frac{H}{L} \), this higher speed can be obtained by
 increasing the flow beyond SOF (decreasing \(H\)), or by using a shorter column
-(decreasing \(L\). Optimizing for the best speed/efficiency ratio using column
-length and flow as parameters, shows that flow nearer the SOF combined with
-shorter columns give the best performance \autocite{Klee2002, Reed1999}.
+(decreasing \(L\). Optimizing with the goal of the best speed/efficiency ratio
+using column length and flow as parameters, theory and experiment shows that
+flow nearer the SOF combined with shorter columns give better performance
+\autocite{Klee2002, Reed1999} than flow much faster than SOF combined with
+longer columns.
 
 \section{The General Elution problem.}
 
-The theory developed above. 
+The theory developed above is for kinetic optimization: it assumes a single
+\keyword{retention factor}, \(k'\). This means that the optimization is focused
+on the kinetic conditions required to optimally separate two compounds eluting
+after each other, which have similar retention behaviour. If a sample were to
+contain only these two compounds, then all would be well. But if another pair of
+compounds, with a mutually similar retention behaviour but retention behaviour
+very different from the first pair were to be separated, the optimum conditions
+will be very different. So not all the compounds in complex mixture can be
+optimally separated with a single set of conditions. This is known as the
+\keyword{general elution problem} \autocite[p. 779]{Skoog2007}. The general
+elution problem makes speed and resolution mutually exclusive: a fast
+chromatogram will not meet satisfy resolution constraints, and a fully resolved
+chromatogram will not satisfy speed constraints.
 
-In her thesis Gail Reed \autocite{Reed1999} compared
-shorter columns against faster flow, and showed that shorter columns produce
-superior results over faster flow.
-Then she concluded:
+The solution to the general elution problem is to adjust the conditions during
+the run so that the retention factors \(k'\) stay constant during the run. This
+strategy is implemented in LC by \keyword{gradient elution}, and in GC by
+\keyword{temperature programming}. In isothermal GC less volatile compounds
+exhibit higher \(k'\) than less volatile compounds. If kinetic conditions are
+optimized for the more volatile compounds, then they will elute optimally, but
+the heavier compounds will elute with with excess resolution. If, after the
+elution of the more volatile compounds, the temperature is increased, then
+\(k'\) of the less volatile compounds will increase, so that the selectivity
+conditions now match the optimized kinetic conditions, and the elution will be
+optimal. By careful programming the temperature can be controlled so that the
+selectivity conditions optimally match the kinetic conditions, and all the
+compounds elute under optimum conditions. The technology for temperature
+programming in GC is mature, and every column manufacturer specifies temperature
+limits for isothermal and ramped temperature programs for every stationary
+phase.
 
-\begin{quotation}
 
-``Fast temperature programming should be used for fast GC rather than a smaller
-internal diameter. Fast temperature programming has been largely underutilized;
-however, new instrumentation will make it possible to more fully exploit fast
-temperature programming rates. Fast temperature programming rates allow for the
-use of short columns with normal internal diameters and film thicknesses which
-makes sample capacity less of a problem for this mode of fast GC compared to
-other means of fast GC.''
+In GC×GC the general elution problem appears in the form of
+\keyword{wrap-around}, defined as ``the occurence of second dimension peaks in
+subsequent modulation sequences, caused by second-dimension retention times that
+exceed the modulation period of a comprehensive two-dimensional system''
+\autocite{Mariott2012}. In GC×GC the \twoD separation is isothermal, but because
+GC separations are predominantly determined by volatility, in the \twoD
+separation the retention factors have similar values and wrap-around is just a
+nuisance. In SFC×GC, where the group-type separation on the \oneD column yields
+fractions that contain compounds with a wide range of volatilities
+\autocite{Venter1999a}, isothermal GC will have unacceptable wrap-around and
+temperature programming is necessary for successful SFC×GC.
 
-\end{quotation}
-
-In line with this recommendation, the fast GC described in this chapter used a
-short GC column (\SI{1}{\metre} long) that used a correspondingly fast
-temperature program.
-
-\section{Temperature programming}
-
-\todo{Chromatography theory only applies to isothermal/isocratic condition}
-
-Temperature programming is, of course, not necessary only for fast
-chromatography, but has long been implemented to avoid the \keyword{general
-elution problem} \autocite[p. 779]{Skoog2007}. This problem can be summarized as
-follows: in separations of complex mixtures, it becomes unlikely that one set
-acceptable operating conditions (temperature, flow and stationary phase) will
-give satisfactory (fast enough with acceptable resolution) separations for all
-the compounds of interest. As discussed above, there is only one optimum flow,
-and it is impractical to change the stationary phase during a run, so the only
-parameter to change is the temperature.
-
-The technology for temperature programming in GC is mature, and every column
-manufacturer specifies temperature limits for isothermal and ramped temperature
-programs for every stationary phase.
+Guided by the theory described above, the fast GC used as the \twoD  separation
+in the SFC×GC chromatograph was designed to use a short GC column
+(\SI{1}{\metre} long) with flow higher than SOF that follows a correspondingly
+fast temperature program.
 
 \section{Temperature ramp rates}
 \label{sec:RampRates}
+
 Early experimenters realized the importance of temperature control in GC, and
 used vapour baths \autocite{Desty1957} or oil baths \autocite{Eggertsen1956} to
 control temperature in their experiments, but they quickly realized that leaks
-could allow oil into the column. Oil that entered the column would then
-contaminate the stationary phase, rendering it useless. Therefore, in the
-modern, conventional gas chromatograph the column is heated in an air bath with
-very precise temperature control.
+or cracks could allow oil into the column. Oil that entered the column would
+then contaminate the stationary phase, rendering it useless.  If air is used to
+transfer heat to the column, the gas pressure inside the column is higher than
+the atmospheric air pressure outside the column, so leaks let carrier gas escape
+but does not allow contaminants to enter. Therefore, in the modern gas
+chromatograph the convention is to control the temperature of GC columns by
+keeping them immersed in an air bath with a precisely controlled temprature.
 
-Blumberg and Klee \autocite{Blumberg2000} recommend that a good initial
-temperature ramp rate is 10 C\textdegree{} per void time ($t_m$). For long
-columns the void times are long, and the ramp rates can be low. As illustration,
-Figure \ref{fig:RampRate7890B} shows the temperature ramp rates of a
-state-of-the-art chromatograph. By contrast, for short, narrow-bore columns, the
-ramp rate needs to be thousands of Celsius degrees per minute.
+If when developing a chromatographic method, at what rate must the temperature
+of a column increase so that the selectivity conditions match the kinetic
+conditions? Blumberg and Klee \autocite{Blumberg2000} recommend that a good
+initial temperature ramp rate is 10 C\textdegree{} per void time ($t_m$). For
+long columns the void times are long, and the ramp rates can be low. As
+illustration, Figure \ref{fig:RampRate7890B} shows the temperature ramp rates of
+a state-of-the-art chromatograph. By contrast, for short, narrow-bore columns,
+the ramp rate needs to be thousands of degrees cper minute.
 
 \begin{figure}
 	\centering
@@ -414,11 +431,12 @@ the collinear heating element be wrapped in close contact with the column.
 
 For the work presented in this thesis, a coaxial heater was used. This heater is
 in the form of a thin-walled stainless-steel tube that carries the electric
-current. It was made of a \SI{940}{\milli\metre} length of 304 stainless steel
-with d an outside diameter of 1.06 mm and an inside diameter of 0.80 mm. The
-column was threaded inside the stainless steel tube, which put it in close
-contact with the heater, giving reliable heat transfer. The coaxial heater can be
-coiled to fit inside a conventional GC oven.
+current. It was made of a \SI{940}{\milli\metre} length of SAE 304 stainless
+steel with an outside diameter of \SI{1.06}{\milli\metre} and an inside diameter
+of \SI{0.80}{\milli\metre}. The column was threaded inside the stainless steel
+tube, which put it in close contact with the heater, giving reliable heat
+transfer.
+The coaxial heater can be coiled to fit inside a conventional GC oven.
 
 This coaxial design has the advantage that the column can be changed without
 changing the resistive heater. This means that there is no need to re-calibrate
@@ -452,11 +470,11 @@ resistors. Because the current \(I\) through the circuit is the same for both
 
 \(R_{col} = R_{ref}\frac{V_{col}}{V_{ref}}\)
 
-The voltage drop across $R_{ref}$ is too small to be directly digitized,Ma
+The voltage drop across $R_{ref}$ is too small to be directly digitized,
 therefore it is amplified by an amplifier with gain $g$, so that $V_b =
 gV_{ref}$. $V_b$ is measured, as is $dV$, the potential difference between the
 supply and the amplifier output. We can show that the coaxial heater resistance
-\(R_{col}\) is a function of the voltage ratio \(frac{dV}{V_b}\).
+\(R_{col}\) is a function of the voltage ratio \(\frac{dV}{V_b}\).
 
 First, 
 \[ V_{sup} = V_{col} + V_{ref} \] 
@@ -512,14 +530,17 @@ play a role:
 \subsubsection{Resistivity's dependence on temperature}
 
 The resistance of a metal increases with temperature. This means that if one
-section of the coaxial heater should get hotter than the rest, it's resistance
+section of the coaxial heater gets hotter than the rest, its resistance
 will increase. If the current were to remain constant, more power would be
 dissipated in this section (\(P=I^2R\)). If more power is dissipated, the
 temperature will increase, leading to a higher resistivity, leading to higher
-power dissipation, leading to a higher temperature, in a runaway cycle. In the
-case of the supply voltage being held constant a higher resistance in one section
-would mean a lower current overall, but still a higher power dissipation in the
-section with higher temperature.
+power dissipation, leading to a higher temperature, in a runaway cycle. In
+contrast, if the coaxial heater was made of a material of which the resistivity
+decreases with an increase in temperature, the temperature along the length of
+the heater would be stabilized by negative feedback. In the case of the supply
+voltage being held constant a higher resistance in one section would mean a
+lower current overall, but still a higher power dissipation in the section with
+higher temperature.
 
 \subsubsection{Thermal conduction}
 
@@ -568,16 +589,19 @@ opportunity to get empirical confirmation.
 can be captured in a photographic process. At near-ambient temperatures objects
 emit copious amounts of infrared radiation, and higher the temperature, the more
 is emitted. (See Equation \ref{eq:1}.) Specialized optics and sensors allow the
-capture of that radiation in a camera, which can produce an image of a scene
+capture of that radiation in a camera than can produce an image of a scene
 that shows objects based on their surface temperature. The technological
 capability of thermal imaging has improved markedly over the past years.
 
 Using a FLIR{\texttrademark} T660 thermal imaging camera we obtained a video of
-the coaxial heater executing a temperature ramp. This camera uses a \num{640 x 480}
-focal plane uncooled bolometer array as a detector, which is sensitive to
-radiation in the range \SI{7.5}{\micro\metre} to \SI{14}{\micro\metre}.
-Figure \ref{fig:ThermalImageSetup} shows the setup used to record the thermal
-video.
+the coaxial heater executing three consecutive temperature ramps. This camera
+uses a \num{640 x 480} focal plane uncooled bolometer array as a detector, which
+is sensitive to radiation in the range \SI{7.5}{\micro\metre} to
+\SI{14}{\micro\metre}. Figure \ref{fig:ThermalImageSetup} shows the setup used
+to record the thermal video. To get reliable temperature information from a
+thermal image requires calibration or a precise knowledge about the material's
+\keyword{emissivity}. In the absence of such calibration, the obtained
+temperature measurement is more useful if seen as relative rather than absolute.
 
 \begin{figure}
 	\centering
@@ -590,10 +614,11 @@ photograph shows the setup used to record the termal video.}
 	\label{fig:ThermalImageSetup}
 \end{figure}
 
-Figure \ref{fig:ThermalImage} is a frame from the video, analysed to give
-estimates of the temperatures on spots on the coaxial heater. The maximum
-temperature difference between any two points is \SI{17.5}{\celsius}, and there
-are no marked gradients.
+The video showed that the three consecutive temperature runs heated the coaxial
+heater in similar ways. Figure \ref{fig:ThermalImage} is a frame from the video,
+analysed to give estimates of the temperatures on spots on the coaxial heater.
+The maximum temperature difference between any two points is
+\SI{17.5}{\celsius}, and there are no marked gradients.
 
 \begin{figure}
 	\centering
@@ -607,9 +632,9 @@ spots.}
 	\label{fig:ThermalImage}
 \end{figure}
 
-This examination of the uniformity of the coaxial heater helped to dispell fears
+This examination of the uniformity of the coaxial heater helped to dispel fears
 that unexpected temperature gradients would interfere with the fast gas
-chromatography. The final proof would b
+chromatography. 
 
 \subsection{Temperature calibration}
 
@@ -623,7 +648,8 @@ coaxial heater, it means comparing the results of the temperature as measured by
 the coaxial heater with a standard temperature.
 
 The problems of measuring a temperature inside a tube with a bore of
-\SI{0.8}{\milli\metre} are not trivial.
+\SI{0.8}{\milli\metre} are not trivial, and to solve them we examined the
+available technologies to find the optimum solution.
 
 The following temperature measurement technologies exist:
 \begin{itemize}
@@ -638,7 +664,9 @@ The following temperature measurement technologies exist:
 \end{itemize}
 
 Liquid-in-glass thermometry would not be applicable because of the size of the
-devices, and because they don't give a desirable electrical signal. 
+devices, and because they don't give a desirable electrical signal. Sealed
+liquid or gas sensing elements are also too bulky, and like bimetallic sensors
+are best used where only an on/of electric signal is required.
 
 In recent years the technology for measuring temperature by radiant energy
 methods have improved markedly and has become affordable, in the form of thermal
@@ -663,7 +691,8 @@ Thermistor and semiconductor devices could be made small enough, but all
 commercially available packages are too large. Besides, the temperature range
 used in GC (\SI{-50}{\celsius} to \SI{400}{\celsius}) does not fall inside the
 operating temperature range specified by manufacturers of semiconductor devices
-(\SI{-55}{\celsius} to \SI{125}{\celsius} for military applications).
+(\SI{-55}{\celsius} to \SI{125}{\celsius} for military applications)
+\autocite{nullD1996}.
 
 Thermoelectric temperature measurement then remains, and was used to calibrate
 the coaxial heater. In particular, the \keyword{Seebeck effect} was exploited,
@@ -672,20 +701,20 @@ conductor will generate an electrical potential along the gradient. Therefore, a
 circuit of two dissimilar metallic conductors will generate a voltage when there
 is a temperature gradient along the conductors. The voltage generated is a
 function of the temperature difference between the hot junction of the two
-metals and their cold junctions at the voltmeter. Such a pair of dissimilar
-conductors used to generate a voltage is known as a \keyword{thermocouple}, and
-this technology is mature and widely used in industry. Standard thermocouples
-are constructed from well-characterized alloys that generate predictable
-voltages for given junction temperatures. Pairs of thermocouple alloys that have been
-standardized are known as 'types', of which the general-purpose Type K
-suited our purpose best. Thermocouple wire can be purchased in varying gauges, down to
-\SI{25}{\micro\metre} in diameter, and the signal processing for thermocouple
-signals have been standardized. Thermocouple junctions can be made by welding,
-crimping, soft soldering, hard soldering, bolting, or simply twisting the wires
-together \autocite{McGee1988}. Because the temperature range to be
-measured was ({-}50 \si{\celsius} to 400 \si{\celsius}) soft soldering is not a
-viable choice, because soft solders have melting points around
-\SI{200}{\celsius}. The possibility of corrosion and mechanical vibration
+metals and their cold junctions at the voltmeter input. Such a pair of
+dissimilar conductors used to generate a voltage is known as a
+\keyword{thermocouple}, and this technology is mature and widely used in
+industry. Standard thermocouples are constructed from well-characterized alloys
+that generate predictable voltages for given junction temperatures. Pairs of
+thermocouple standardized alloys are known as 'types', of which the
+general-purpose Type K suited our purpose best. Thermocouple wire can be
+purchased in a range of gauges, down to \SI{25}{\micro\metre} in diameter, and the
+signal processing for thermocouple signals have been standardized. Thermocouple
+junctions can be made by welding, crimping, soft soldering, hard soldering,
+bolting, or simply twisting the wires together \autocite{McGee1988}. Because the
+temperature range to be measured was ({-}50 \si{\celsius} to 400 \si{\celsius})
+soft soldering is not a viable choice, because soft solders have melting points
+around \SI{200}{\celsius}. The possibility of corrosion and mechanical vibration
 suggest that twisting the wires together will not form a reliable joint, and of
 course there are no sub-millimetre bolts on the market.
 
@@ -709,9 +738,12 @@ Welding is the process of joining two metal parts by melting a portion of each
 part, allowing the molten metals first to mix, and then to solidify. This
 creates a permanent joint between the two metals. Welding is widely practised as
 an industrial process in applications ranging from shipbuilding to
-microelectronics.
+microelectronics. Previous work in our laboratories used capacitive discharge
+spot welding to melt the spot where two wires crossed. These thermocouples were
+found to be too fragile for the intended application, so a method was developed
+to yielded a more robust thermocouple.
 
-Various sources of heating can be used, and we decided to use electricity. A
+In the laboratory electricity is the most convenient sourc of heat. A
 \SI{24}{\volt} direct current, adjustable bench power supply was used to supply
 the current. The two wires of the thermocouple were twisted together, and the
 twisted pair was connected to one pole of the power supply. A carbon electrode
@@ -725,13 +757,13 @@ sustain the arc. The current would then stop, leaving a spherical welded bead at
 the end of the wires. (See Figure \ref{fig:WeldingSteps}.) The process could be
 repeated as often as necessary to obtain a bead of the desired size.
 
-It is worth noting that it is necessary to form an arc: if the carbon
-electrode happened to touch the wire so that a current flowed directly from the
-wire to the carbon electrode the wire would rapidly heat up over its length, and
-melt. It is also interesting to note that it seemed necessary to have a roughly
-broken carbon electrode surface: a polished surface would not generate an arc,
-or even make electrical contact with the wires. This might be because the
-graphite used for the electrode was formulated for use in pencils.
+It is worth noting that it is necessary to form an arc: if the carbon electrode
+happens to touch the wire so that a current flows directly from the wire to the
+carbon electrode the wire rapidly heats up over its length and melts. It is also
+interesting that it seems necessary to have a roughly broken carbon electrode
+surface: a polished surface would not generate an arc, or even make electrical
+contact with the wires. This might be because the graphite used for the
+electrode was formulated for use in pencils.
 
 The apparatus used to do the welding is depicted in Figure
 \ref{fig:FineWireWelder}, and Figure \ref{fig:TCWeldMicro} shows the image seen
@@ -783,14 +815,14 @@ of a twisted wire ready to be welded. The black carbon electrode is
 \subsection{Thermocouple probe construction}
 
 To measure the temperature inside the coaxial heater required the thermocouple
-had to be inserted into the coaxial heater. For this a fused silica capillary
-with an inside diameter of \SI{0.25}{\milli\metre} and an outside diameter of
+to be inserted into the coaxial heater. For this a fused silica capillary with
+an inside diameter of \SI{0.25}{\milli\metre} and an outside diameter of
 \SI{0.4}{\milli\metre} was used to construct a probe. (These capillaries were
 readily available, in the form of discarded chromatographic columns.) A narrower
 capillary was used to draw the wires through the probe capillary, in a process
 described in Figure \ref{fig:FineWireThermocouple}. The wires could then be
-welded to form a thermocouple, and then drawn into the probe capillary to the
-desired position.
+welded to form a thermocouple, and then drawn to the desired position in the
+probe capillary.
 
 \begin{figure}
 	\centering
@@ -824,8 +856,8 @@ data sheet explains its application concisely: ``The AD595 is a complete
 instrumentation amplifier and thermocouple cold junction compensator on a
 monolithic chip. It combines an ice point reference with a pre-calibrated
 amplifier to produce a high level (10 mV/°C) output directly from a thermocouple
-signal.'' \autocite{AD595} The output of the AD595 can be directly digitized and
-fed to the computer.
+signal.'' \autocite{AD595} The output signal of the AD595 can be directly
+digitized for computer recording.
 
 \subsection{Calibration procedure}
 
@@ -838,26 +870,27 @@ and, in a second step, uses this information to establish a relation for
 obtaining a \textbf{measurement result} from an indication.''
 
 In the first step of calibration, the \textbf{quantity values} used in the
-calibration was the temperature value of the thermocouple probe as provided by
+calibration were the temperature value of the thermocouple probe as provided by
 the thermocouple voltage, the AD595 amplifier, the digitization and the
 subsequent calculations according to the AD595 data sheet. The
 \textbf{measurement standards} were the known responses of the thermocouple
 \autocite{Ripple1995}, the amplifier and the digitization system. The
 \textbf{indication} was the voltage ratio \(\frac{dV}{Vb}\). As this was a first
-attempt a calibration, \textbf{measurement uncertainties} were omitted.
+attempt a calibration, \textbf{measurement uncertainties} were assumed to be
+negligible.
 
-To calibrate the coaxial heater, the heater and its assembly was installed in
-the oven of the Varian 3300 GC, as it would be when in use. The detector was
-removed, and the thermocouple probe was threaded through the detector stem,
-through the heated T-piece block, and into the coaxial heater. The probe was
-inserted so far that the thermocouple junction was about half-way between the
-inlet end and the detector end of the coaxial heater. When the system was set up
-as it would be during use, the coaxial heater was cooled down, and a power ramp
-applied. The temperature of the thermocouple was recorded, together with the
-voltages \(dV\) and \(Vb\). A curve could then be plotted of thermocouple
-temperature \(T_{TC}\) against the voltage ratio \( \frac{dV}{V_b} \) (Figure
-\ref{fig:CalibrationCurve}). This revealed the shape of the function
-\(T(\frac{dV}{Vb})\), and completed the first step of the calibration.
+In preparation for calibration the coaxial heater was installed in the oven of
+the Varian 3300 GC as it would be when in use. The detector was removed, and the
+thermocouple probe was threaded through the detector stem, through the heated
+T-piece block, and into the coaxial heater until the thermocouple junction was
+about half-way between the inlet end and the detector end of the coaxial heater.
+When the system was set up as it would be during use, the coaxial heater was
+cooled down, and a power ramp applied. The temperature of the thermocouple was
+recorded, together with the voltages \(dV\) and \(Vb\). A curve could then be
+plotted of thermocouple temperature \(T_{TC}\) against the voltage ratio \(
+\frac{dV}{V_b} \) (Figure \ref{fig:CalibrationCurve}). This revealed the shape
+of the function \(T(\frac{dV}{Vb})\), and completed the first step of the
+calibration.
 
 \begin{figure}
 	\centering
@@ -887,8 +920,13 @@ The calibration could be checked by setting the current through the coaxial
 heater to a minimum, at which not enough heat is generated to affect its
 temperature. Then the oven of the Varian 3300 GC could be set to a range of
 different temperatures. Once equilibrium was reached the reported temperature of
-the coaxial heater and the air bath temperature could be compared, and
-adjustments could be made to the calibration
+the coaxial heater and the air bath temperature could be compared and the
+calibration adjusted.
+
+The technique of constructing a long, thin thermocouple probe allowed the
+calibration of the coaxial heater, which makes it possible to translate
+chromatographic methods. The probe has also proven useful in other applications,
+for example proving overheating in a GC-MS transfer line.
 
 \subsection{Cold spots}
 \label{sec:ColdSpots}
@@ -916,27 +954,28 @@ therefore designed in the form of an externally heated block. This block was
 kept at a higher temperature than the highest expected temperature of the
 chromatographic temperature program. This prevented the formation of cold spots
 in the coaxial heater, which might lead to cold spots in the column, while also
-offering a large contact area so that hot spots do not develop. Each end of the
-coaxial heater therefore ended in one of two heated blocks, where it was brazed
-in place. Each block had a brass tail, to which an electric feed-wire was
+providing a large contact area so that hot spots do not develop. Each end of the
+coaxial heater was fitted into one of two heated blocks, where it was brazed in
+place. Each block had a brass tail, to which an electric feed-wire was
 soft-soldered. Each block was heated by four \SI{100}{\watt}
 Hotset\texttrademark{} electrical cartridge heaters, with dimensions of \SI{6.5
 x 40}{\milli\metre}. The cartridge heaters were switched on and off by solid
 state relays controlled from the computer. The temperature of the block was
-monitored through a thermocouple mounted in blind hole and the amount of power to
-the heaters was controlled by pulse width modulation (PWM) implemented in
-software.
+monitored through a thermocouple mounted in a blind hole in the block and the
+amount of power to the heaters was controlled by \keyword{pulse width
+modulation} (PWM) implemented in software.
  
 \subsection{Cold column}
 \label{sec:ColdColumn}
 
-In a cold GC stationary phase, the retention factor \(k'\) is very high. This
-means that the analytes migrate slowly relative to the mobile phase. The lower
-the temperature, the higher \(k'\) becomes, so that for very low temperatures
-the migration of the analyte becomes negligible. In effect, the analytes are
-'trapped'. This trapping, also called \keyword{cryo-trapping} or
-\keyword{cryo-focusing} is useful in various aspects of gas chromatography, such
-as two-stage thermal desorption or thermal modulation in GC×GC. 
+In a cold GC stationary phase, the retention factor \(k'\) of a particular
+compound can be very high. This means that the analytes migrate slowly relative
+to the mobile phase. The lower the temperature, the higher \(k'\) becomes, so
+that for very low temperatures the migration of the analyte becomes negligible.
+In effect, the analytes are 'trapped'. This trapping, also called
+\keyword{cryo-trapping} or \keyword{cryo-focusing} is useful in various aspects
+of gas chromatography, such as two-stage thermal desorption or thermal
+modulation in GC×GC.
 
 %In one such
 %application a programmable temperature vaporizing inlet (PTV) was used to trap
@@ -948,52 +987,49 @@ stage of a two-stage modulator. (The stop valve described in Section
 \ref{sec:stopflow} represents the first stage.) The column was cooled down to
 very low temperatures, which trapped any analytes eluting from the first
 dimension in a narrow band on the GC column. Once the required amount of
-fraction had been collected, the eluate flow from the first dimension was be
+fraction had been collected, the eluate flow from the first dimension was
 stopped by closing the stop valve. Then the temperature ramp of the fast GC
 would start. As the coaxial heater warmed up the column the values of \(k`\)
-would decrease, and the analytes would start migrating.
+would decrease, and the narrow analyte band would start migrating.
 
-The first SFC×GC chromatograph cooled the column by using the cryo-cooling
-function of the Varian 3300 GC \autocite{Venter2004, Venter2003}. The purpose of
-this function is to cool the GC column to sub-ambient temperatures, and is
-needed when analysing volatile compounds. In such cases the \(k'\) values
-at or near room temperature are too low to provide adequate retention, and the
-cryo-cooling function permits temperature programs to start at sub-ambient
-temperatures.
+The first SFC×GC chromatograph cooled the column by using the oven cryo-cooling
+capability of the Varian 3300 GC \autocite{Venter2004, Venter2003}. The purpose
+is to cool the GC column to sub-ambient temperatures, normally needed when
+analysing volatile compounds. In such cases the \(k'\) values at or near room
+temperature are too low to provide adequate retention, and the cryo-cooling
+function permits temperature programs to start at sub-ambient temperatures.
 
-The Varian 3300 cryo-cooling function works by injecting liquid carbon dioxide
-into the column oven. The evaporating liquid carbon dioxide absorbs energy from the
-air, which lowers the temperature of the air in the oven. A control system
-controls the amount of carbon dioxide admitted and the amount of heat added
-through the oven heaters, thereby keeping the oven at the required temperature.
+The Varian 3300 cryo-cools its oven by injecting liquid carbon dioxide into the
+oven's air circulation fan. The evaporating liquid carbon dioxide absorbs energy
+from the air, which lowers the temperature of the air in the oven. A control
+system controls the amount of carbon dioxide admitted and the amount of heat
+added through the oven heaters, thereby keeping the oven at the required
+temperature.
 
 The cryo-cooling function can cool down the oven to cryo-trap analytes, but
-there are two reasons why it is not a suitable method for practical trapping in
-SFC×GC. The first reason is the quantity of coolant required: doing SFC×GC runs
-revealed that about \SI{15}{\kilogram} of carbon dioxide was consumed per run. A
-standard cylinder of carbon dioxide contains \SI{33}{\kilogram}, which implies
-that a new cylinder would be required every two runs. Such a rate of use is much
-too high for the intended application of the instrument. The second reason using
-the GC oven's cryo-cooling function was not suitable for SFC×GC is that it is
-much too slow. The time spent on cooling the oven and the column is time that
-cannot be spent doing separations, and cooling a conventional GC oven takes a
-lot of time: the Varian 3300's cryo-cooling function took \SI{30}{\second} to
+there are two reasons why it is not suitable for practical trapping in SFC×GC.
+The first reason is the quantity of coolant required: doing SFC×GC runs revealed
+that about \SI{15}{\kilogram} of carbon dioxide was consumed per run. A standard
+cylinder of carbon dioxide contains \SI{33}{\kilogram}, which implies that a new
+cylinder would be required every two runs. Such a rate of use is much too high
+for the intended application of the instrument. The second reason using is that
+it is much too slow. The time spent on cooling the oven and the column is time
+that cannot be spent doing separations, and cooling a conventional GC oven takes
+a lot of time: the Varian 3300's cryo-cooling function took \SI{30}{\second} to
 cool the column down to a low starting temperature. A commercial
 forced-convection system (``GC Chaser'' supplied by Zip Scientific) improves the
 cool down time of an Agilent 6890 GC oven, taking 7 minutes instead of 16,
-cooling down the oven from \SI{350}{\celsius} to \SI{30}{\celsius}. Cooling the
-column in an air bath has the same drawbacks of low conductivity and low heat
-capacity as air-bath heating has (see Section \ref{sec:RampRates}).
+cooling down the oven from \SI{350}{\celsius} to \SI{30}{\celsius}.
+Cooling the column in an air bath has the same drawbacks of low conductivity and
+low heat capacity as air-bath heating has (see Section \ref{sec:RampRates}).
 
-\todo{Cite Calidus ultrafast GC}
-
-A system was therefore developed by which liquid carbon dioxide is injected from
-one end into the space between the column and its coaxial heater. The other end
-is open to the atmosphere. When the valve opens the pressure of the carbon
-dioxide drops from \SI{55}{atm} in the cylinder to \SI{1}{atm} in the atmosphere
-and the liquid starts to boil, absorbing large quantities of heat from the
-surrounding column and coaxial heater in the process, so that their temperatures
-decrease rapidly. This system solves the speed and coolant quantity problems:
+A system was therefore developed that injected liquid carbon dioxide into one
+end of the space between the column and its coaxial heater, with the other end
+open to the atmosphere. When the valve opens the space rapidly fills with liquid
+carbon dioxide, while the pressure drops from \SI{55}{atm} in the cylinder to
+\SI{1}{atm} at the outlet. The liquid boils, absorbing large quantities of heat
+from the column and coaxial heater in the process, so that their temperatures
+decrease rapidly. This system solves the speed and coolant consumption problems:
 because the coolant is in direct contact with the parts that need to be cooled,
 the cooling is rapid, and because the coolant is applied where it is needed,
 only a small quantity is required.
@@ -1005,12 +1041,12 @@ admitted to the end of the coaxial heater, which was brazed to the block. A
 micro-union brazed to the block sealed the column's exit port, and the liquid
 carbon dioxide entered along the side of the T (Figure \ref{fig:ManifoldDims}
 and Figure \ref{fig:ManifoldAssy}). A metering valve allowed the flow rate of
-the coolant to be adjusted, and a solenoid valve could switch the flow on or off
-under computer control.
+the coolant to be adjusted, and a computer-controlled solenoid valve switched
+the flow on or off.
 
 \subsubsection{Cryogen supply}
 
-The carbon dioxide for cooling was supplied as by Afrox, in high-pressure
+The carbon dioxide for cooling was supplied by Afrox, in high-pressure
 cylinders each containing 33kg of technical grade carbon dioxide. Each cylinder
 was internally equipped with a \keyword{dip tube}, a tube that extends from the
 valve at the top of the cylinder to the bottom of the cylinder. This ensures
@@ -1022,11 +1058,11 @@ valve was opened initially only carbon dioxide gas would be admitted, followed
 by a mixture of gas and liquid, and only finally liquid. (This is similar to the
 common experience of opening a water tap after a municipal water supply
 interruption: a lot of gurgling and spitting before a reliable stream of water
-flows from the tap.) Such unreliable coolant flow leads to unreliable cooling.
+flows from the tap.) Such unreliable coolant flow gives unreliable cooling.
 To solve this problem we installed a reservoir for liquid carbon dioxide on top
 of the GC. The problem of filling a receptacle with liquid carbon dioxide was
-described in Section \ref{sec:CO2Pump}. The final design of the reservoir took
-the form of a coil of copper tube immersed in a circulating coolant (Figure
+described in Section \ref{sec:CO2Pump}, so the final design of the reservoir
+took the form of a coil of copper tube immersed in a circulating coolant (Figure
 \ref{fig:CryogenReservoir}). Mounting the reservoir above the cut-off valve
 allows the liquid to collect at the bottom and allow gas to collect at the top,
 so that when the valve opens the flow into the coaxial heater contains only
@@ -1034,24 +1070,24 @@ liquid.
 
 \subsection{Column mounting}
 
-The T-piece blocks described above (see Section \ref{sec:ColdSpots}, Section
-\ref{sec:ColdColumn} and Figure \ref{fig:ManifoldAssy}) acted as electrical
-connection for the coaxial heater and as injection point for coolant. The block
+The T-piece blocks described in Section \ref{sec:ColdSpots} and Section
+\ref{sec:ColdColumn} above and also depicted in Figure \ref{fig:ManifoldAssy}) acted as electrical
+connections for the coaxial heater and as injection point for coolant. The block
 is heavy compared to the coaxial heater and column, and also has to absorb the
 forces of the coolant inlet tube and the electrical connections. The column runs
-from the heated inlet/detector to the heated T-piece block, and in between it
+from the heated inlet/detector to a heated T-piece block, and in between it
 should not be exposed to any low-temperature cold spots, therefore the gap
 between the T-piece block and the inlet/detector should be quite small, but the
 gap cannot be zero, because electrical isolation needs to be maintained.
-Also fused-silica capillary columns are fragile, and misalignment causes them to
+Also, fused-silica capillary columns are fragile and misalignment causes them to
 break. Therefore, mechanically stiff and accurate mounting was needed for the
 T-piece blocks, to allow the precise but adjustable alignment of the T-piece
 blocks with the inlet/detector.
 
 The final design for mounting the T-piece blocks was a pair of parallel rails.
 These rails were held in place in the Varian 3300 oven by friction, so that they
-could be adjusted and removed as necessary, yet was stiff enough to transfer the
-necessary forces without deflecting. The pointed ends of the rails pressed
+could be adjusted and removed as necessary, yet were stiff enough to transfer
+the necessary forces without deflecting. The pointed ends of the rails pressed
 against a solid aluminium plate used as the floor of the oven, and at the top
 adjustable points pressed against pressure plates which pressed against the roof
 of the oven. Figure \ref{fig:RailsDrawing} shows a technical drawing of the
@@ -1064,7 +1100,7 @@ commercially available material that met these requirements was found in the
 form of \keyword{silicon mica}, a composite material of mica and a silicone
 resin. This material has a continuous operating temperature of at least
 \SI{500}{\celsius}, making it ideally suited to GC applications. The silicon
-mica is also machinable, and can easily be shaped to the required design. 
+mica is also machinable and can easily be shaped to the required design. 
 
 The T-piece blocks were mounted on a pair of cars riding on the round-bar rails.
 Each car was designed as a sandwich of plates of stainless steel and silicon
@@ -1092,9 +1128,9 @@ Independent of the amount of power dissipated in the coaxial heater, the current
 through the reference resistor was compared to the current through the column.
 This ratio corresponds to the resistance of the coaxial heater. This resistance
 is a function of the temperature of the heater. Through the calibration
-procedure described earlier, the temperature of the coaxial heater can be
+procedure described above the temperature of the coaxial heater can be
 calculated. The computer can do this fast enough so that a temperature
-measurement is available to continuously feed to a control system. 
+measurement is available to continuously feed to a control system.
 
 \subsubsection{PID tuning}
 
@@ -1146,8 +1182,8 @@ Celsius per minute.
 	\label{fig:4000K/min} 
 \end{figure}
 
-Figure \ref{fig:4000K/min} illustrates heating ramps executed by the coaxial
-heater. The heating rate was \SI{4000}{C\degree\per\minute}, and there are no
+Figure \ref{fig:4000K/min} contains heating ramps executed by the coaxial
+heater. The heating rate was \SI{4000}{\celsius\per\minute}, and there are no
 significant differences between the 9 consecutive ramps.
 
 \subsubsection{Cooling rates}
@@ -1160,7 +1196,7 @@ carbon dioxide flow rate of around \SI{30}{\gram\per\min}. This allowed the
 column to be cooled down from \SI{350}{\celsius} to \SI{-20}{\celsius} in about
 2 seconds. At this rate the portion of the chromatographic cycle that is not
 used for separation is dominated by fraction collection, and further cooling
-rate increases will not significantly reduce run times.
+rate increases will not significantly reduce sample throughput.
 
 \section{Detector}
 
