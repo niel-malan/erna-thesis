@@ -14,7 +14,7 @@ The topic of this thesis is the development of a comprehensively coupled
 (supercritical fluid × gas) chromatograph and its application to the analysis of
 biodiesel. The discussion on the experimental work divides naturally into two
 parts: the topic of the previous chapter is supercritical fluid chromatography
-(SFC) and of this chapter is chromatography (GC).
+(SFC) and of this chapter it is gas chromatography (GC).
 
 \section{Speed of analysis}
 
@@ -33,18 +33,18 @@ practice, such an approach would be slow, labour-intensive, expensive, and
 error-prone. But reliable devices that can repeatedly collect and re-inject
 fractions of eluate were invented. These devices became known as
 \keyword{modulators} and made comprehensively coupled chromatography practical.
-In continuous flow coupling, such as that found in GC×GC, the collection and
-injection happens during the uninterrupted \oneD separation. In stopped-flow
+In continuous flow coupling, such as that found in GC×GC, the fraction collection and
+\twoD injection happens during the uninterrupted \oneD separation. In stopped-flow
 coupling, as used in the SFC×GC chromatography described here, the \oneD SFC
 separation is stopped once a fraction has been collected, the fraction is
 separated on the \twoD column, and then the SFC separation is restarted and the
 next fraction collected.
 
-The rate at which fractions of the \oneD are collected separation is determined
+The rate at which fractions of the \oneD separation are collected is determined
 by the peak width on the \oneD chromatogram. To get adequate peak detection in
-the \oneD chromatogram, each \oneD peak should be subjected to at least \num{3}
-\twoD separations \autocite{Murphy1998}, but more is better. Therefore, a peak
-\SI{3}{s} wide should have a collection rate of of not less than \SI{1}{\hertz}.
+the \oneD chromatogram, at least \num{3} fractions of each \oneD peak should be
+collected \autocite{Murphy1998}, but more is better. For examples, if the peaks
+are \SI{3}{s} wide the collection rate should not be less than \SI{1}{\hertz}.
 The rate at which fractions of the \oneD separation is collected is known as the
 \keyword{modulation rate}, and its inverse is the \keyword{modulation period}
 (\(P_M\)). In continuous-flow coupling (\textit{e.g.} as found in GC×GC), the
@@ -55,41 +55,41 @@ separation.
 In stopped-flow coupling, the duration of the \twoD separation is largely
 decoupled from the peak width of the of \oneD separation and, by implication,
 the \oneD modulation period. In terms of the third criterion of comprehensive
-coupling listed above, as long as the resolution obtained in the \oneD is not
-lost during the stopped-flow period, the duration of the \twoD separation can be
-as long as it needs to be. In SFC the longitudinal diffusion is low, so that in
-principle the \twoD GC runs in SFC×GC need not be remarkably fast. In practice,
-however, \keyword{sample throughput} of a chromatographic method needs to be
-acceptable. One of the major determinants of sample throughput is \keyword{run
-time}, the time it takes from when the sample is injected until the the final
-compound has eluted. The judgement of what is acceptable depends strongly on
-context: for finding the proverbial biomarker for Alzheimer's disease a very
-long run time might be acceptable, but for routine analysis of a commodity
-biodiesel acceptable run times would probably be short. Therefore, when
-developing a practical SFC×GC chromatograph the aim should be to make run times
-as short as possible. 
+coupling listed above, as long as the resolution obtained in the \oneD
+separation is not lost during the stopped-flow period, the duration of the \twoD
+separation can be as long as it needs to be. In SFC the longitudinal diffusion
+is low, so that in principle the \twoD GC runs in SFC×GC need not be remarkably
+fast. In practice, however, \keyword{sample throughput} of a chromatographic
+method needs to be acceptable. One of the major determinants of sample
+throughput is \keyword{run time}, the time it takes from when the sample is
+injected until the the final compound has eluted. The judgement of what is
+acceptable depends strongly on context: for finding the proverbial biomarker for
+Alzheimer's disease very long run times might be acceptable, but for routine
+analysis of a commodity biodiesel acceptable run times would probably be short.
+Therefore, when developing a practical SFC×GC chromatograph the aim should be to
+make run times as short as possible.
 
 The time it takes for a stopped-flow SFC×GC run can be calculated from
 
-\[t_{T} = t_{SFC} ( 1 + \frac{t_{stopped}}{P_{M}} ) \]
+\[t_{T} = t_{^{1}D} ( 1 + \frac{t_{stopped}}{P_{M}} ) \]
 
-where \(t_T\) is the total time, \(t_{SFC}\) is the time the unmodulated SFC run
-would take, \(P_M\) is the \keyword{modulation period}, and \(t_{stopped}\) is
-the duration of the SFC stopped-flow state, during which the GC run is
-completed. Under continuous-flow conditions \( t_{stopped}=0 \), so that \(t_{T}
-= t_{SFC}\), and applies to GC×GC.
+where \(t_T\) is the total time, \(t_{^{1}D}\) is the run time the unmodulated
+\oneD run would take, \(P_M\) is the \keyword{modulation period}, and
+\(t_{stopped}\) is the duration of the SFC stopped-flow state, during which the
+\oneD run is completed. With continuous-flow coupling (as in GC×GC) \(
+t_{stopped}=0 \), so that \(t_{T} = t_{^{1}D}\).
 
 Examining the expression shows that we can decrease \(t_T\) by increasing
-\(P_M\), but there is limit to this: if the modulation time becomes too long,
+\(P_M\), but there is limit to this: if the modulation period becomes too long,
 the separation obtained in the \oneD separation will be lost. So, the only way
 to decrease the total run times is to reduce \(t_{stopped}\), the GC run time.
 For example, if a typical SFC run takes \SI{20}{\minute}, and fractions are
 collected for every \SI{5}{\second} of SFC run, it means there will be \( 20
 \times 60 / 5 = 240 \) fractions collected. Each of these fractions must be
 injected into a GC chromatograph. If each GC run took \SI{1}{\minute}, the
-SFC×GC run would last \SI{240}{\minute} = \SI{4}{\hour}. This is a very long
-run time, and in the context of commodity biodiesel analysis the sample
-throughput of such a chromatograph would probably be judged unacceptable. 
+SFC×GC run would last \SI{240}{\minute} = \SI{4}{\hour}. This is a very long run
+time, and in the context of commodity biodiesel analysis the sample throughput
+of such a chromatograph would probably be judged unacceptable.
 
 Reducing the run time of the \twoD GC chromatography in SFC×GC means applying
 the concepts of \keyword{fast chromatography}. Fast chromatography is the
@@ -101,24 +101,25 @@ chromatographic run times.
 Improving the speed of chromatographic separations is an aspect of
 \keyword{optimization}. Optimization can be defined as ``the action of making
 the best or most effective use of a situation or resource'' \autocite{OUP2019}.
-The ``making the most effective use" means that optimization has a
+``Making the most effective use" means that optimization has a
 \keyword{goal}, which can be characterized by a numerical \keyword{criterion}
 while subject to to some \keyword{constraints}. The relative and variable amount
-of ``resources'' used are the \keyword{optimizing parameters}.
+of ``resources'' used are \keyword{optimizing parameters}.
 
 There are two kinds of optimization in chromatography: selectivity and kinetic.
-\keyword{Selectivity optimization} is the process of selecting the best
-combination of stationary phase and analyte. The parameters are the different
-stationary phases and derivitization methods available.
-\keyword{Kinetic optimization} is the process of selecting the best combination
-of carrier gas, temperature, flow rate, column length, column diameter, and
-stationary phase thickness. This differentiation between selectivity
-optimization and kinetic optimization is not made on theoretical grounds, but
-practical reasons: selectivity optimization often involves the discrete and
-expensive parameter of selecting a column, whereas the parameters involved in
-kinetic optimization can often be adjusted continuously and inexpensively.
-Selectivity optimization tends to focus on chemical parameters; kinetic
-chemistry tends to focus on physical parameters
+The difference between them is not the goals of the optimization, but how the
+optimizing parameters are selected. \keyword{Selectivity optimization} is the
+process of selecting the best combination of stationary phase and analyte. The
+optimization parameters are the different stationary phases and derivitization
+methods available. \keyword{Kinetic optimization} is the process of selecting
+the best combination of carrier gas, temperature, flow rate, column length,
+column diameter, and stationary phase thickness. This differentiation between
+selectivity optimization and kinetic optimization is not made on theoretical
+grounds, but practical reasons: selectivity optimization often involves the
+discrete and expensive parameter of selecting a column, whereas the parameters
+involved in kinetic optimization can often be adjusted continuously and
+inexpensively. Selectivity optimization is guided by chemical knowledge; kinetic
+is optimization is guided by \keyword{chromatographic rate theory}.
 
 \begin{figure}
 \centering
@@ -149,32 +150,33 @@ sample capacity held constant, it is now possible to optimize the system so that
 it gives adequate resolution in the shortest possible time.
 
 The \keyword{efficiency} of a column is given by the relationship \(E =
-\frac{t_R}{\sigma} \), where \(t_R\) is the retention time of a peak, and
-\(\sigma\) is its standard deviation \autocite{Blumberg2018}. The efficiency is
-a measure of how much the peak spread during its transport through the column
-relative to distance it travelled, using time as a proxy for distance.
-Efficiency is related to the more traditional but less intuitive \keyword{number
-of plates} \(N\) through the expression \(N = E^2\). The length of the column
-(\(L\)), divided by the square of the efficiency gives the \keyword{plate
-height} (\(H\)). Plate height is a measure of how much each unit of length of
-the column contributes to the separation: a lower \(H\) means that the column is
-more effective. The value of \(H\) in chromatographic theory is that equations
-can be developed that express \(H\) as functions of the adjustable parameters of
-kinetic optimization. Such functions help predict suitable chromatographic
-conditions and set limits to the expected performance of the column.
+\frac{t_R}{\sigma} \), where \(t_R\) is the \keyword{retention time} of a peak,
+and \(\sigma\) is its standard deviation, related to the \keyword{peak width}
+\autocite{Blumberg2018}. The efficiency is a measure of how much the peak spread
+during its transport through the column relative to distance it travelled, using
+time as a proxy for distance. Efficiency is related to the more traditional but
+less intuitive \keyword{number of plates} \(N\) through the expression \(N =
+E^2\). The length of the column (\(L\)), divided by the square of the efficiency
+gives the \keyword{plate height} (\(H\)). Plate height is a measure of how much
+each unit of length of the column contributes to the separation: a lower \(H\)
+means that the separation is more effective. The value of \(H\) in chromatographic
+theory is that equations can be developed that express \(H\) as functions of the
+adjustable parameters of kinetic optimization. Such functions help predict
+suitable chromatographic conditions and set limits to the expected performance
+of the separation.
 
 When doing chromatography, any optimization goal must contain resolution as part
-of the criteria; the purpose of the activity is the separation of chemical
-compounds. Traditionally, the first optimization taught is the optimization of
-\(H\) as criterion, with the rate at which the carrier gas passes through the
-column as the variable parameter. The rate can be characterized by either the
-average gas velocity (\(\overline{u}\)) or the gas flow rate (\(F\)).
-Traditionally \(\overline{u}\) have been used, because it can be conveniently
-calculated from simple measurements: \(\overline{u} = L/t_m\), where \(t_m\) is
-the \keyword{void time}, which is easily determined by measuring the
-retention time of an unretained compound. In modern gas chromatographs \(F\) can
-be continuously controlled by electronic pneumatic control (EPC) systems, and
-has become a more convenient parameter.
+of the criteria; after all, the purpose of the activity is the separation of
+chemical compounds. Traditionally, the first optimization taught is the
+optimization of \(H\) as criterion, with the rate at which the carrier gas
+passes through the column as the variable parameter. The rate can be
+characterized by either the average gas velocity (\(\overline{u}\)) or the gas
+flow rate (\(F\)). Traditionally \(\overline{u}\) have been used, because it can
+be conveniently calculated from simple measurements: \(\overline{u} = L/t_m\),
+where \(t_m\) is the \keyword{void time}, which is easily determined by
+measuring the retention time of an unretained compound. In modern gas
+chromatographs \(F\) can be continuously controlled by electronic pneumatic
+control (EPC) systems, and has become a more convenient parameter.
 
 Blumberg has developed the theory of optimized flow rate
 \autocite{Blumberg1999}. He found that the function that describes plate height
@@ -188,6 +190,8 @@ outlet pressure, \(\Delta{p} \gg p_o\)). When the pressure drop is low
 and when the pressure drop is high
 
 \(H = \frac{\displaystyle 9}{\displaystyle 8} \left(\frac{b}{F}+c_{1}F \right)+C_{2}\sqrt{F}\)
+
+where \(c_1\), \(c_1\) and \(C_2\) are constants independent of \(F\).
 
 When the layer of stationary phase is thin, also known as the \keyword{thin-film
 case}, then \(c_2 = 0\) and \(C_2 = 0\), and
@@ -212,58 +216,61 @@ case differs from it only by a factor of \num{0.125}. (See Figure
 \end{figure}
 
 It is clear that the function has a minimum, and the flow rate at this minimum
-can be called \(F_{Hmin}\). This flow is called \keyword{efficiency-optimized
-flow}, EOF. A remarkable feature of this theoretical result is that it is
-independent of column length \autocite{Blumberg1999}. In contrast, the
-\keyword{efficiency optimized velocity} (EOV) depends on the column length when
-the pressure drop is high \autocite{Blumberg1997}. Because \(E =
-\sqrt{frac{L}{H}} \) it means that any necessary resolution can be obtained by
-making the column as long as necessary. This theoretical result is supported by
-experiment: the world record for the longest capillary column is
-\SI{1300}{\metre}. ``This column produced excellent resolution of a petroleum
-sample, but took 3 hours to elute methane and 3 days to elute the last peak''
-\autocite{Ferguson2013}. Reducing the column length while keeping EOF will
-reduce the column efficiency, although the plate height will remain constant.
+\(H\) can be called \(F_{Hmin}\). This flow is called
+\keyword{efficiency-optimized flow}, EOF. A remarkable feature of this
+theoretical result is that it is independent of column length
+\autocite{Blumberg1999}. In contrast, the \keyword{efficiency optimized
+velocity} (EOV) depends on the column length when the pressure drop is high
+\autocite{Blumberg1997}. Because \(E = \sqrt{\frac{L}{H}} \) it means that any
+necessary resolution can be obtained by making the column as long as necessary.
+This theoretical result is supported by experiment: the world record for the
+longest capillary column is \SI{1300}{\metre}. ``This column produced excellent
+resolution of a petroleum sample, but took 3 hours to elute methane and 3 days
+to elute the last peak'' \autocite{Ferguson2013}. Reducing the column length
+while keeping EOF will reduce the column efficiency, although the plate height
+will remain constant.
 
 In this study the aim is to reduce the time it takes to complete a run, and
 therefore the question is not what the best possible efficiency is, but what the
 shortest time is in which a specified efficiency can be maintained. The
 remarkably simple theoretical result is that under \keyword{speed-optimized
 flow} (SOF), \(F = \sqrt{2}F_{Hmin}\) \autocite{Blumberg1997}. Because this flow
-is faster than the EOF, \(H\) is larger, but this can be compensated for by
+is higher than the EOF, \(H\) is larger, but this can be compensated for by
 increasing \(N\), which is implemented by using a longer column. For a given
 solute, column diameter, stationary phase and carrier gas there is no flow that
-will yield a faster separation that will not reduce the efficiency of the
-column. 
+will yield a faster separation without reducing the efficiency of the separation.
 
-The remaining parameters that can be manipulated to optimize speed are
-column diameter and carrier gas diffusion. Therefore improving separation speed
-leads towards narrow-bore capillary columns, and using hydrogen as a carrier
-gas. The theoretical study of optimization gives great insight, but for practical
-purposes the use of online method translation calculators is recommended
-\autocite{Restek2014}. The improvement possible in separation speed by using
-method translation calculations is remarkable, but still falls short of the
-speed that is needed for comprehensively coupled chromatography.
+The remaining parameters that can be manipulated to kinetically optimize for
+speed are column diameter and carrier gas diffusion. The theoretical details
+will not be discussed here, but it will be clear that optimizing for separation
+speed tends towards the selection of narrow-bore capillary columns and using
+hydrogen as a carrier gas. The theoretical study of optimization gives great
+insight into which parameters to choose, but the actual calculation can be
+tedious, so for practical purposes the use of online method translation
+calculators is recommended \autocite{Restek2014}. The improvement possible in
+separation speed by using method translation calculations is remarkable, but
+still falls short of the speed that is needed for comprehensively coupled
+chromatography.
 
 SOF improves the speed of analysis by finding the combination of parameters
 \(F\) and \(L\) that will give the fastest separation under the constraint of
 constant \(H\). If the constraint on \(H\) is relaxed, a faster separation can
 be achieved. Assuming that it is not possible to optimize the selectivity
-further, which means that the stationary phase cannot be changed, there are only
-two ways to relax the plate height constraint: \keyword{selective detection} and
-\keyword{sample cleanup}. In selective detection a detector is chosen that only
-responds to the analytes, and not to any interfering compounds. For example, an
-\keyword{electron capture detector} (ECD) responds strongly to halides, so a
-GC-ECD chromatogram of a soil extract will be much simpler than the equivalent
-GC-FID chromatogram, which means that the GC-ECD analysis of chlorinated
-pesticides in soil will be much faster than the GC-FID analysis.
-GC-MS using \keyword{single ion monitoring} (SIM) also enables faster
-chromatography by simplifying the chromatogram. Sample cleanup allows the
-efficiency constraint to be relaxed by simplifying the sample chemically. For
+further (for example because the stationary phase cannot be changed), there are
+only two ways to relax the plate height constraint: \keyword{selective
+detection} and \keyword{sample cleanup}. In selective detection a detector is
+chosen that only responds to the analytes, and not to any interfering compounds.
+For example, an \keyword{electron capture detector} (ECD) responds strongly to
+halides, so a GC-ECD chromatogram of a soil extract will be much simpler than
+the equivalent GC-FID chromatogram, which means that the GC-ECD analysis of
+chlorinated pesticides in soil can be much faster than the equivalent GC-FID
+analysis. GC-MS using \keyword{single ion monitoring} (SIM) also enables faster
+chromatography by simplifying the chromatogram. In sample cleanup the efficiency
+constraint can be relaxed because the sample becomes chemically simpler. For
 example, a sample might be passed through a \keyword{solid phase extraction}
 (SPE) cartridge before it is injected into the chromatograph. Interfering
 compounds are retained in the cartridge, which simplifies the sample. A simpler
-sample requires lower efficiency, so the SOF will be higher.
+sample requires lower efficiency, so the SOF can be higher.
 
 The high speed chromatography that is used in GC×GC is possible because any
 fraction collected from the \oneD separation is considerably simpler than the
@@ -272,13 +279,13 @@ allows a much higher SOF and therefore a very fast \twoD separation. Even at
 SOF, there might still be excess efficiency, which could be traded for higher
 speed. Since \(E^2 = \frac{H}{L} \), this higher speed can be obtained by
 increasing the flow beyond SOF (decreasing \(H\)), or by using a shorter column
-(decreasing \(L\). Optimizing with the goal of the best speed/efficiency ratio
-using column length and flow as parameters, theory and experiment shows that
-flow nearer the SOF combined with shorter columns give better performance
-\autocite{Klee2002, Reed1999} than flow much faster than SOF combined with
-longer columns.
+(decreasing \(L\)). Optimization with the goal of the best speed/efficiency
+ratio using column length and flow as optimizing parameters, theory and
+experiment shows that flow nearer the SOF combined with shorter columns give
+better performance \autocite{Klee2002, Reed1999} than flow much faster than SOF
+combined with longer columns.
 
-\section{The General Elution problem.}
+\section{The General Elution Problem.}
 
 The theory developed above is for kinetic optimization: it assumes a single
 \keyword{retention factor}, \(k'\). This means that the optimization is focused
@@ -298,19 +305,18 @@ The solution to the general elution problem is to adjust the conditions during
 the run so that the retention factors \(k'\) stay constant during the run. This
 strategy is implemented in LC by \keyword{gradient elution}, and in GC by
 \keyword{temperature programming}. In isothermal GC less volatile compounds
-exhibit higher \(k'\) than less volatile compounds. If kinetic conditions are
+exhibit higher \(k'\) than more volatile compounds. If kinetic conditions are
 optimized for the more volatile compounds, then they will elute optimally, but
-the heavier compounds will elute with with excess resolution. If, after the
-elution of the more volatile compounds, the temperature is increased, then
-\(k'\) of the less volatile compounds will increase, so that the selectivity
-conditions now match the optimized kinetic conditions, and the elution will be
-optimal. By careful programming the temperature can be controlled so that the
-selectivity conditions optimally match the kinetic conditions, and all the
-compounds elute under optimum conditions. The technology for temperature
-programming in GC is mature, and every column manufacturer specifies temperature
-limits for isothermal and ramped temperature programs for every stationary
-phase.
-
+the heavier compounds will elute with with excess resolution. If --- after the
+elution of the more volatile compounds --- the temperature of the column is
+increased, then \(k'\) of the less volatile compounds will increase, so that the
+selectivity conditions will now match the optimized kinetic conditions, and
+their elution will be optimal. By careful programming the temperature can be
+continuously controlled so that the selectivity conditions always match the
+kinetic conditions, and all the compounds elute under optimum conditions. The
+technology for \keyword{temperature programming} in GC is mature, and every
+column manufacturer specifies temperature limits for isothermal and ramped
+temperature programs for every stationary phase.
 
 In GC×GC the general elution problem appears in the form of
 \keyword{wrap-around}, defined as ``the occurence of second dimension peaks in
@@ -321,8 +327,8 @@ GC separations are predominantly determined by volatility, in the \twoD
 separation the retention factors have similar values and wrap-around is just a
 nuisance. In SFC×GC, where the group-type separation on the \oneD column yields
 fractions that contain compounds with a wide range of volatilities
-\autocite{Venter1999a}, isothermal GC will have unacceptable wrap-around and
-temperature programming is necessary for successful SFC×GC.
+\autocite{Venter1999a}, isothermal GC will have unacceptable wrap-around.
+Therefore, temperature programming is necessary for successful SFC×GC.
 
 Guided by the theory described above, the fast GC used as the \twoD  separation
 in the SFC×GC chromatograph was designed to use a short GC column
@@ -341,16 +347,22 @@ transfer heat to the column, the gas pressure inside the column is higher than
 the atmospheric air pressure outside the column, so leaks let carrier gas escape
 but does not allow contaminants to enter. Therefore, in the modern gas
 chromatograph the convention is to control the temperature of GC columns by
-keeping them immersed in an air bath with a precisely controlled temprature.
+keeping them immersed in an air bath with a precisely controlled temperature. 
 
-If when developing a chromatographic method, at what rate must the temperature
-of a column increase so that the selectivity conditions match the kinetic
-conditions? Blumberg and Klee \autocite{Blumberg2000} recommend that a good
-initial temperature ramp rate is 10 C\textdegree{} per void time ($t_m$). For
-long columns the void times are long, and the ramp rates can be low. As
+A temperature program is traditionally described using a series of
+\keyword{ramps} and \keyword{holds.} A ramp is a period of time during which the
+temperature changes, almost always increasing. The \keyword{ramp rate} is the
+rate at which the temperature changes. A hold is a period of time during which
+the temperature is kept constant.
+
+When developing a chromatographic method, at what rate must the temperature of a
+column increase so that the selectivity conditions match the kinetic conditions?
+Blumberg and Klee \autocite{Blumberg2000} recommend that a good initial
+temperature ramp rate is \SI{10}{]\celsius} per void time ($t_m$). For long
+columns the void times are long, and the ramp rates can be low. As an
 illustration, Figure \ref{fig:RampRate7890B} shows the temperature ramp rates of
 a state-of-the-art chromatograph. By contrast, for short, narrow-bore columns,
-the ramp rate needs to be thousands of degrees cper minute.
+the ramp rate needs to be thousands of \SI{}{\celsius\per\minute}.
 
 \begin{figure}
 	\centering
@@ -394,17 +406,17 @@ described by a measure called the \keyword{current} ($I$), and the electric fiel
 is can be described by the applied \keyword{voltage} ($V$). The current $I$ is
 proportional to the applied voltage, and the ratio $\frac{V}{I}$ defines a
 proportionality constant $R$, called the resistance, which is a function of
-conductor material and dimensions. The total power dissipated to heat ($P$) is
+the conductor's material and dimensions. The total power dissipated to heat ($P$) is
 given by $P=IV$ or, equivalently, $P=I^2R$ or $P=\frac{R}{V^2}$.
 
-Applying a voltage \(V\) to a metal element close to the column will heat the
-metal, and therefore the column in contact with it. The rate at which the piece
-of metal heats up depends on the power dissipated, the mass of the metal, and
-its heat capacity. If the volume of the metal is small enough, and the current
-high enough, the temperature of the metal element (and with it the temperature
-of the column) will increase at a rate high enough to be useful in
-chromatography. By suitable manipulation of \(V\), then, the temperature of the
-column can then be changed at any desirable rate.
+Applying a voltage \(V\) to a metal element close to a chromatographic column
+will heat the metal, and therefore the column in contact with it. The rate at
+which the piece of metal heats up depends on the power dissipated, the mass of
+the metal, and its heat capacity. If the volume of the metal is small enough,
+and the current high enough, the temperature of the metal element (and with it
+the temperature of the column) will increase at a rate high enough to be useful
+in chromatography. By suitable manipulation of \(V\), then, the temperature of
+the column can then be changed at any desirable rate.
 
 This technology has been reviewed \autocite{Wang2012, Jacobs2013, Miranda2010},
 and a few technologies for resistive heating of capillary columns have emerged:
@@ -513,10 +525,10 @@ dependence on \(dV\), so a general expression might be
 \section{Calibration}
 
 The assumption is that the temperature is a function of the resistance of the
-coaxial heater, or \( T = g(R_{col}) \). Because \( R_{col}=f(\frac{dV}{V_b} \),
+coaxial heater, or \( T = g(R_{col}) \). Because \( R_{col}=f(\frac{dV}{V_b}) \),
 we can see that \( T = g(f(\frac{dV}{V_b})) \), or, because a function \(g\) of
 a function \(f\) is a function \(h\) (\(f \circ g = h \)), \( T =
-h(\frac{dV}{V_b})) \).  Through a calibration procedure \(h{-1}\) can be
+h(\frac{dV}{V_b}) \).  Through a calibration procedure \(h\) can be
 approximated by a polynomial or lookup table.
 
 \subsection{Temperature uniformity}
@@ -585,13 +597,14 @@ endeavour would fall outside the scope of this project. Experience had not led
 us to expect any significant temperature non-uniformity, but we welcomed the 
 opportunity to get empirical confirmation.
 
-\keyword{Thermal imaging} is the process by which infrared radiation from objects
-can be captured in a photographic process. At near-ambient temperatures objects
-emit copious amounts of infrared radiation, and higher the temperature, the more
-is emitted. (See Equation \ref{eq:1}.) Specialized optics and sensors allow the
-capture of that radiation in a camera than can produce an image of a scene
-that shows objects based on their surface temperature. The technological
-capability of thermal imaging has improved markedly over the past years.
+\keyword{Thermal imaging} is the process by which infrared radiation from
+objects can be captured in a photographic process. At near-ambient temperatures
+objects emit copious amounts of infrared radiation, and higher the temperature,
+the more is emitted. (See Equation \ref{eq:1}.) Cameras designed using
+specialized optics and sensors allow the capture of that radiation as an image
+of a scene that shows objects based on their surface temperature. The
+technological capability of thermal imaging has improved markedly over the past
+years.
 
 Using a FLIR{\texttrademark} T660 thermal imaging camera we obtained a video of
 the coaxial heater executing three consecutive temperature ramps. This camera
@@ -615,7 +628,7 @@ photograph shows the setup used to record the termal video.}
 \end{figure}
 
 The video showed that the three consecutive temperature runs heated the coaxial
-heater in similar ways. Figure \ref{fig:ThermalImage} is a frame from the video,
+heater identically. Figure \ref{fig:ThermalImage} is a frame from the video,
 analysed to give estimates of the temperatures on spots on the coaxial heater.
 The maximum temperature difference between any two points is
 \SI{17.5}{\celsius}, and there are no marked gradients.
