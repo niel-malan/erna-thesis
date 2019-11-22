@@ -93,7 +93,7 @@ column will be discussed in the following sections.
 \subsection{Column lifetime}
 
 As discussed in Section \ref{sec:ChromDet}, FAMEs can be separated by gas
-chromatography using a relatively non-polar columns with high-temperature
+chromatography using relatively non-polar columns with high-temperature
 programs. For this purpose column manufacturers supply special 'high
 temperature' columns, which address two aspects of column lifetime: mechanical
 degradation and stationary phase degradation. The SFC×GC instrument did not use
@@ -128,8 +128,9 @@ periods at high temperature.
 Metals are not afflicted by brittle fracture the way fused silica is, but they
 don't offer the chemical inertness of fused silica. To exploit the fracture
 toughness of metal technologies have been developed to deactivate metal surfaces
-\autocite{Smith2002}, which makes metal columns a modern possibility. Column
-manufacturers offer metal columns specifically designed for biodiesel analysis.)
+\autocite{Rohwer1986, Smith2002}, which makes metal columns a modern
+possibility. Column manufacturers offer metal columns specifically designed for
+biodiesel analysis.)
 
 Another durability benefit of the stainless steel coaxial heater is that the
 outer surface of the capillary column is protected from mechanical damage by
@@ -144,7 +145,7 @@ coating from oxidative damage by purging the column environment of oxygen.
 
 \subsubsection{Stationary phase degradation}
 
-The stationary phases inside the GC columns face degradation similar to the that
+The stationary phases inside the GC columns face degradation similar to that
 of the polyimide. Column manufacturers minimize sta\-tion\-ary phase degradation
 by using improved technologies like cross-linked resins, or polymers with
 backbones resistant to certain degradation mechanisms \autocite{Day2003}.
@@ -208,7 +209,7 @@ water condensed from the atmosphere during the cooling of the column.
 \subsection{GC retention time precision}
 
 During the development of the resistive heater it was shown that the measured
-temperature ramps are highly repeatable. But the retention times of of compounds
+temperature ramps are highly repeatable. But the retention times of  compounds
 being separated by GC are highly sensitive to temperature, so it was necessary
 to obtain a measure of the retention time repeatability.
 
@@ -240,14 +241,16 @@ The peak widths were about \SI{500}{\milli\second}, so the
 \SI{20}{\milli\second} standard deviation for hexadecane means that the
 variation in retention time is only about \SI{10}{\percent} of the peak width.
 The relative standard deviations (RSD) of retention times were similar to those
-obtained in GC×GC \autocite{Shellie2002}.
+obtained in GC×GC \autocite{Shellie2002}, and much smaller than those of our original ``proof of concept'' instrument \autocite{Venter2003, Venter2004}
 
 \section[Study of biodiesel by SFC×GC]{Study of potential biodiesel feedstock by SFC×GC}
 
-Biodiesel can be produced from any combination of a variety of vegetable oils.
-Indeed, to ensure conformance to standards it might be necessary to produce
-biodiesel from blends or combinations of oils. But as an introduction it is
-instructive to start by analysing the FAMEs obtained from unblended oils.
+Biodiesel can be produced from any combination of a variety of vegetable
+oils\footnote{At this time SANS 1935 excludes animal fats, but they might be
+included in future. All of the following discussion also applies to animal
+fats.}. Indeed, to ensure conformance to standards it might be necessary to
+produce biodiesel from blends or combinations of oils. But as an introduction it
+is instructive to start by analysing the FAMEs obtained from unblended oils.
 
 \subsection{Samples}
 
@@ -329,7 +332,7 @@ column was five HPLC columns (150 mm $\times$ 4.6 mm, 3 $\mu$m particles)
 The modulation period was \SI{10}{\second} during which the fractions of the SFC
 eluate were transferred to the GC inlet via a linear restrictor. In the hot
 (\SI{350}{\celsius}) inlet the fractions were evaporated and were swept onto the
-cold (\SI{-20}{\celsius} column they were trapped in the stationary phase.
+cold (\SI{-20}{\celsius}) column where they were trapped in the stationary phase.
 \SI{3}{\second} after the collection period ended the vent valve opened for
 \SI{1}{\second} to vent excess pressure from the GC inlet.
 
@@ -376,12 +379,12 @@ the most common fatty acid in canola oil \autocite{JFAOWHOCAC2019}, and that
 therefore the major peak in the chromatogram is a C18 FAME. This allows us to
 easily identify the peaks for C16, C18, C20 and C22 in the GC dimension.
 
-By inspecting this chromatogram we can confirm that canola oil is a vi\-able
-biodiesel feedstock: The unsaturated compounds have mostly a single double bond,
-which should make it oxidatively stable, and the quantities of unsaturated FAMEs
-are low, which means that it will most likely have suitable cold-flow
-properties, because unsaturated FAMEs have higher freezing points than saturated
-FAMEs.
+The information provided by this chromatogram confirm that canola oil is a
+vi\-able bio\-diesel feedstock: The unsaturated compounds have mostly a single
+double bond, which should make it oxidatively stable, and the quantities of
+unsaturated FAMEs are low, which means that it will most likely have suitable
+cold-flow properties, because (cis) unsaturated FAMEs have higher freezing
+points than saturated FAMEs.
 
 \begin{figure}
 \centering
@@ -406,7 +409,7 @@ acid, \SI{20}{\percent} oleic acid, and \SI{11}{percent} saturated fats
 \autocite {JFAOWHOCAC2019}.
 
 This sunflower oil chromatogram was compared to a fatty acid profile obtained by
-a professional oil analysis laboratory\footnote{Precision Oil Laboratories,
+an accredited oil analysis laboratory\footnote{Precision Oil Laboratories,
 info@precisionoils.co.za,  +27 15 307 7208, SANAS Testing Laboratory T0802}.
 (See Table \ref{tab:SunflowerPrecisionOils}.) The fatty acid profile data was
 plotted on a 3D bar chart (See Figure \ref{fig:2DSunflowerBarChart}). The axes
@@ -480,7 +483,7 @@ acids.}
 \label{fig:2DFlax}
 \end{figure}
 
-The chromatogram shows that the major fatty acid component of this oil is
+The chromatogram shows that the major fatty acid component of flax seed oil is
 linolenic acid (C18:3). This will immediately inform a producer that flax seed
 oil would not be a suitable feedstock for biodiesel: SANS 1935 limits the
 linolenic acid fraction to less than \SI{12}{\percent} (See section
@@ -518,7 +521,7 @@ highly polar ionic liquid column, which increases the retention of the FAMEs in
 the blend relative to the retention of the petrodiesel hydrocarbons
 \autocite{Ragonese2009}.
 
-On a polar stationary phase like bare silica with a non-polar stationary phase
+On a polar stationary phase like bare silica with a non-polar mobile phase
 like carbon dioxide, the hydrocarbons from petrodiesel are not expected to be
 significantly retained. But, as shown in the in the previous section, under such
 conditions FAMEs are retained and separated. When we inject a blend of biodiesel
@@ -544,8 +547,8 @@ phase. The column consisted of five HPLC bare silica columns (150 mm $\times$
 
 \subsection{Modulation}
 
-The SFC eluate fractions \SI{2}{\second} were collected on the GC column
-cooled to a temperature of \SI{-20}{\celsius}. Tto he inlet vent was held closed
+The SFC eluate fractions of \SI{2}{\second} were collected on the GC column
+cooled to a temperature of \SI{-20}{\celsius}. The inlet vent was held closed
 for \SI{4}{\second}, and then opened for \SI{1}{\second} to release excess
 pressure.
 
@@ -613,18 +616,23 @@ of double bonds in the SFC dimension, and by volatility in the GC dimension.
 When compared to Figure \ref{fig:2DSunflower}, one can surmise that the
 feedstock for the biodiesel was waste sunflower oil.
 
-As an aside, it is worth pointing out that the hydrocarbons from the petrodiesel
-fraction of the blend were also separated on the SFC dimension. This is not
-surprising: the standard ASTM D 5186 provides a method for the determination of
-aromatic compounds in diesel by SFC \autocite{ASTMD5186}. The method separates
-the unretained non-aromatics from the monoaromatics and from the polynuclear
-aromatics. The SFC×GC method provides additional information about the
-volatility of those aromatics which could help to quantify or identify them, but
-that falls outside the scope of this discussion.
+It is worth pointing out that the hydrocarbons from the petrodiesel
+fraction of the blend were also separated on the SFC dimension
+\autocite{Venter1999}. This is not surprising: the standard ASTM D 5186 provides
+a method for the determination of aromatic compounds in diesel by SFC
+\autocite{ASTMD5186}. The method separates the unretained non-aromatics from the
+monoaromatics and from the polynuclear aromatics. The SFC×GC method provides
+additional information about the volatility of those aromatics which could help
+to quantify or identify them, but that falls outside the scope of this
+discussion.
 
 This separation shows that SFC×GC can be used to investigate the biodiesel
 component of petrodiesel/biodiesel blends without sample pretreatment or
-specialized columns.
+specialized columns. The intrinsic orthogonality provides easy identification of
+components and the excess separation space allows for the addition of suitable
+internal standards for reliable qualitative and quantitative analysis with the
+robust FID with its predictable response. There is no need to use expensive
+mass spectrometric detection.
 
 Being able to determine the biodiesel content of biodiesel blends may prove
 useful in at least two scenarios: 
@@ -675,14 +683,15 @@ chemical composition of the oils which facilitates prediction about the
 contribution these oils will make to the final biodiesel product.
 
 In the example of examining the FAME content of a biodiesel blend, the pattern
-shows that SFC chemically separates the hydrocarbons from petroleum from the
+shows that SFC readily separates the petroleum-derived hydrocarbons from the
 FAMEs of biological origin. The biodiesel content can be determined by focusing
-data analysis efforts on the relevant parts of the chromatogram. 
+data analysis efforts on the relevant parts of the chromatogram.
 
-In terms of compliance, SFC×GC can provide a chromatographic method that
+SFC×GC can assist with proving compliance: it provides a chromatographic method that
 combines the determination of total FAMEs and unsaturated FAMEs in a single
 method, and might provide a way to quantify the biodiesel component in blends
-with petrodiesel.
+with petrodiesel, and cost-effective, accurate and reliable quantitation of the
+biodiesel component in blends with petrodiesel can be expected.
 
 The provided examples also prove that it is possible to design a system that
 solves the problems of doing practical, rapidly-repeated fast temperature
