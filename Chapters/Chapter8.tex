@@ -7,43 +7,41 @@
 
 \chapter{Conclusion} % Main chapter title
 
+\label{Chapter8} % For referencing this chapter elsewhere, use \ref{Chapter8}
+
+\section{Introduction}
+
 \zlabel{chap:pdfstartpage} % For hyperref: this makes this the default page to open when the PDF opens.
 \todo{Move zlabel{chap:pdfstartpage} to appropriate chapter. Remove before publication}
 \todo{Remove usepackage{stampinclude} before publication.}
 
-\label{Chapter8} % For referencing this chapter elsewhere, use \ref{Chapter8}
-
-
-%----------------------------------------------------------------------------------------
-%	SECTION 1
-%----------------------------------------------------------------------------------------
-
-\section{Introduction}
-
-The world needs to change. If not you, who? If not now, when?
+This thesis discusses the research conducted towards the practical
+implementation of SFC×GC as a chromatographic technique. In this, final, chapter
+we provide an overview of the project, and discuss some of the lessons learned.
 
 \section{Synopsis}
 
 \subsection{Chapter \ref{Chapter1}: \nameref{Chapter1} }
 
 The molecular basis of sustainability \autocite{Anastas2016} demands that
-chemists discuss sustainability in terms of compounds. Chapter \ref{Chapter1}
-opens with the idea that energy is an essential component of industrialized
-societies, but that choosing of fossil fuels as our source of energy causes
-pollution, which threatens to nullify the benefits they bring. It describes the
-process which causes carbon dioxide to be emitted in large quantities, and how its
-interaction with planetary radiation makes it a pollutant. The concept of
-``carbon footprint'' is introduced, which allows the comparison of activities in
-terms of their carbon pollution, enabling allows decision makers to select the
-least polluting option. The discussion then focuses on internal-combustion
-engines, which is a major source of carbon and noxious pollution, and it is
-shown that higher-efficiency engines have lower carbon footprints. A discussion
-of ways to reduce the carbon footprint of internal combustion engines shows
-that, in the cases where they cannot be replaced by electric motors, a reduction
-of carbon footprint can be obtained by preferring large, high-performance Diesel
-engines fuelled by biodiesel. The discussion concludes with the idea that the
-success of such engines will demand high quality biodiesel, and that
-chromatography will play a central role in ensuring that quality.
+chemists discuss sustainability in terms of chemical compounds. Chapter
+\ref{Chapter1} opens with the idea that energy is an essential component of
+industrialized societies, but that choosing of fossil fuels as our source of
+energy causes pollution, which threatens to nullify the benefits they bring. It
+describes the process which causes carbon dioxide to be emitted in large
+quantities, and how its interaction with planetary radiation makes it a
+pollutant. The concept of ``carbon footprint'' is introduced, which allows the
+comparison of activities in terms of their carbon pollution, enabling allows
+decision makers to select the least polluting option. The discussion then
+focuses on internal-combustion engines, which is a major source of carbon and
+noxious pollution, and it is shown that higher-efficiency engines have lower
+carbon footprints. A discussion of ways to reduce the carbon footprint of
+internal combustion engines shows that, in the cases where they cannot be
+replaced by electric motors, a reduction of carbon footprint can be obtained by
+preferring large, high-performance Diesel engines fuelled by biodiesel. The
+discussion concludes with the idea that the success of such engines will demand
+high quality biodiesel, and that chromatography will play a central role in
+ensuring that quality.
 
 \subsection{Chapter \ref{Chapter2}: \nameref{Chapter2} }
 
@@ -63,10 +61,11 @@ requires a reliable fuel. Chapter \ref{Chapter3} discusses the concepts of
 technical standards, which establishes requirements with which fuels must
 comply. The discussion then focuses on the technical standard SANS 1935, which
 lists the requirements that biodiesel offered for sale in South Africa must
-comply with, concluding with the role chromatography plays in 
+comply with, concluding with the role chromatography plays in the process of
+ensuring compliance.
 
 \subsection{Chapter \ref{Chapter4}: \nameref{Chapter4} }
-
+ 
 Chapter \ref{Chapter4} explains the experimental equipment used for
 chromatography using high-pressure carbon dioxide as a mobile phase. It starts
 with describing the mobile phase, how it is stored and pumped, how modifier is
@@ -78,21 +77,22 @@ gas chromatograph as a detector for SFC.
 
 Chapter \ref{Chapter5} opens with a discussion on the time aspect of
 comprehensive SFC×GC chromatography, and shows that for practical analysis the
-GC dimension must be \textit{fast}. The theory of fast GC is discussed, which
+GC dimension must be \keyword{fast}. The theory of fast GC is discussed, which
 leads to the the need for fast temperature programming. The design of a
 resistively heated coaxial heater is described, including its calibration and
-control. The discussion then covers the need for a cold column, and the design
-of coaxial cooling using boiling liquid carbon dioxide is described. Next, the
-discussion covers the design of hardware to mount the coaxial heater of the fast
-GC in a conventional GC oven. The chapter concludes with a description of the
-detector and the data flow from signal to final chromatogram.
+control. The discussion then covers how a cold GC column acts as a trap, and the
+design of coaxial cooling using boiling liquid carbon dioxide is described.
+Next, the discussion covers the design of hardware to mount the coaxial heater
+of the fast GC in a conventional GC oven. The chapter concludes with a
+description of the flame ionization detector and the data flow from signal to
+final chromatogram.
 
 \subsection{Chapter \ref{Chapter6}: \nameref{Chapter6} }
 
 Chapter \ref{Chapter6} discusses the application of the developed SFC×GC
 instrument to the study of fatty acid profiles of various potential biodiesel
 feedstocks, and shows that SFC×GC can be used to separate biodiesel from
-petrodiesel in biodiesel blends.
+petrodiesel in diesel fuel blends.
 
 \subsection{Chapter \ref{Chapter7}: \nameref{Chapter7} }
 
@@ -102,63 +102,122 @@ dimension.
 
 \section{Contributions of this study}
 
-The research presented in this thesis contributes to the field of chromatography in the following aspects:
+The research presented in this thesis contributes to the field of chromatography
+in the following aspects, listed in order of decreasing novelty.
 
 \subsection{Coaxial heater cooling}
 
-The biggest new contribution is proving the concept of active cooling of short
-chromatography columns using precisely-applied carbon dioxide. To the best of
-our knowledge there is no other fast temperature-programmed chromatograph that
-that has sub-ambient ramp start temperatures or a faster repetition rate. 
+The most significant new contribution to chromatography is proving the concept
+of active cooling of short chromatography columns using precisely-applied liquid
+carbon dioxide. To the best of our knowledge there are no other fast
+temperature-programmed chromatographs with sub-ambient ramp start temperatures
+or a higher repetition rate.
 
 \subsection{Coaxial heater reliability}
 
-The success of the SFC×GC is undoubtedly attributable to the high repeatability of the fast temperature programming. The 
+Previous work in our laboratories proved the concept of SFC×GC with
+resistively-heated fast temperature programming \autocite{Venter2004,
+Venter2006}, but the repeatability of the gas chromatography was not good enough
+for practical implementation. The implementation of the coaxial heater made the
+heating of the column highly reliable and repeatable, enabling the performance
+of hundreds of consecutive fast GC runs
+
+\subsection{Integrated heating and sensing elements}
+
+Resistive heating has been used in chromatography before, but to the best of our
+knowledge this is the first time that the heating element and the temperature
+sensing element has been the same thing.
+
+\subsection{Modified SFC with FID}
+
+Modern SFC mostly uses carbon dioxide as a mobile phase, with modifiers added.
+This precludes the use of the flame ionization detector (SFC-FID), because the
+signal from the modifier will swamp the signal from the analyte. But when a
+fraction collected from a modified-SFC separation is subjected to a GC
+separation, then the modifiers and the analytes are separated, and the signal
+from the analyte can be captured while the signal from the FID is ignored. We
+demonstrated that modified-SFC comprehensively coupled to GC yields a space that
+can be used for novel separations and reliable quantitation.
 
 \subsection{Length of SFC column}
 
+The low viscosity of carbon dioxide allows the use of very long packed column.
+We were able to run SFC separations on five columns packed with
+\SI{3}{\micro\metre} particles in series. There were no problems in obtaining
+adequate flow with at an inlet pressure of \SI{500}{\bar}.
 
 \section{Voids in this study} 
 
+Since the focus of this study was the development of practical instrumentation,
+some aspects of good chromatography were overlooked. 
+
 \subsection{Lack of optimization}
+
+None of the flow rates or heating rates were optimized, so the results merely
+proves that it is possible to do chromatography using SFC×GC but do not
+provide any figures of merit.
 
 \subsection{Luck with voltage ranges}
 
+When designing the coaxial heater power electronics and control system, the
+choice of material, its dimensions and the required power matched well with the
+chosen analog-to-digital converter, and made it possible to use a remarkably
+simple electronic control circuit. A different resistive heater system might
+require more complex circuitry to match all the components, designed by an
+experienced electronic engineer.
+
+\section{Near disasters}
+
+The fact that the study came to a successful conclusion does not mean that
+success was ever guaranteed. A few problems brought the project close to
+failure, and tested persistence.
+
+\subsection{Restrictor blocking}
+
+The persistent blocking of the Guthrie restrictor (Section \ref{sec:Restrictor})
+came as a surprise. No previous work in our laboratories have experienced it,
+and our colleagues in industry who used them have also not experienced it.
+Identifying the true root of the problem took patience and persistence, and lead
+to the first measurement of the size of the Guthrie restrictor. In the end a
+linear restrictor was used, which means that we are not sure about the amount of
+discrimination that takes place.
+
+\subsection{ADC limitations}
+
+The resistive heater initially worked as expected at low applied power, but at
+higher powers inexplicable deviations appeared. At first we handled the problem
+by restricting the applied power to the range where it behaved as expected, but
+that limited the heating rate of the coaxial heater. Persistent study of the
+problem eventually revealed that we tried to measure a voltage that exceeded the
+safe operating range of the analog-to-digital converter (ADC) adapter card in
+the computer. Under these conditions safety circuits were activated, resulting
+in the ADC providing unreliable values. The problem was solved by installing an
+\keyword{isolation amplifier}.
+
+
 \section{Design}
 
-Although this was a scientific project, I learned a lot about design. If I'd start the project again 
+Although this was a 'scientific' project, with an emphasis on implementing
+theoretical ideas, over time it became apparent that using proper design
+principles when building scientific appartus saves time and energy in the long
+run.
 
-\section{Disasters}
+\subsection{Design weaknesses}
 
-\subsection{About the isolation amplifier}
+\subsubsection{Efficiency}
 
-\subsection{Thinking that we'd elute alcohols}
+The design of the SFC×GC is not particularly energy-efficient, and two elements
+of the design can be greatly improved. First, the heated T-piece blocks are
+probably not the best solution to the problem. Together they consume
+\SI{800}{\watt} of electrical power, for which there is no significant
+scientific return. Second, the power supply to the coaxial heater is a
+\keyword{linear power supply}. In practice terms this means that the excess
+power of the voltage drop between the DC power supply and the coaxial heater
+input is dissipated as heat. A future design for a resistively, coaxially heated
+fast gas chromatograph would be more efficient if it was powered by a
+\keyword{switched-mode power supply}.
 
-We could separate paraffins, olefins and aromatics, using the long column.
-
-\subsection{Variable modulation period}
-
-It is possible to vary the modulation period during an SFC×GC run. This would
-allow one to speed up analysis, by collecting fewer fractions where less
-information would be expected.
-
-\section{Limitations of this SFC×GC design}
-
-\subsection{Cooling control}
-The fast GC temperature was poorly controlled in the \SIrange{-20}{50}{\celsius}
-region of the temperature ramps, because the coaxial heater was not isolated. It
-was mounted in a GC oven, together with the heated T-piece blocks. The heat
-leaking from these uninsulated blocks accumulated in the oven, until the oven
-reached a temperature of about \SI{50}{\celsius}. Once the coolant flow stopped
-the temperature of the coaxial heater would immediate rise to the temperature of
-the oven.
-
-This was not a problem in the chosen biodiesel application, but better control
-over the beginning of the temperature ramp would be necessary 
-
-\section{Suggested design improvements}
-
-\subsection{Four-wire resistance measurement}
+\subsubsection{Two-wire resistance measurement}
 
 The resistive heater had a design that depended on measuring the resistance of
 the thin-walled stainless steel tube. The resistance was measured by comparing
@@ -166,23 +225,84 @@ the potential difference between the ends of the heater with the potential
 difference over a reference resistor carrying an identical current. The circuit
 that carried the current also measured the potential difference. Because the
 current was high, the circuit had to be constructed in such a way that it no
-other significant resistance in it, which meant that care had to be taken to
-used heavy-guage cable and only use soldered joints. 
+other significant resistance in it, which meant that care had to be taken to  
+used heavy-gauge cable and only use soldered joints. 
 
-These troubles could have been avoided if the current circuit and the measuring
-circuit were separated, using 'four wire' resistance measurement. In such a
-design the potential difference is measure using a circuit that connects
-directly to the voltmeter. The voltmeter has a high input impedance, which means
-that the current that the circuit carries is low, and stray resistances will
-play much less of a role. Also, this would have made it possible to use bolted
-joints on the current-carrying circuit, which could have simplifed operations.
+A future design could relieve some of these problems if the current circuit and
+the measuring circuit were separated, using \keyword{four wire resistance
+measurement}. In such a design the potential difference is measure using a
+circuit that connects directly to the voltmeter, and the current is carried by a
+separate circuit. The voltmeter has a high input impedance, which means that the
+current that the circuit carries is low, and stray resistances will play much
+less of a role. Also this makes it possible to use bolted or clip-on joints on
+the current-carrying circuit, which can simplify operations.
 
-\subsection{Legs heating and cooling integrated in detector and inlet}
+\subsubsection{Cooling control}
 
+The fast GC temperature was poorly controlled in the \SIrange{-20}{50}{\celsius}
+region of the temperature ramps, because the coaxial heater was not thermally
+isolated. It was mounted in a GC oven, together with the heated T-piece blocks.
+The heat leaking from these uninsulated blocks accumulated in the oven, until
+the oven reached a temperature of about \SI{50}{\celsius}. Once the coolant flow
+stopped the temperature of the coaxial heater would immediate rise to the
+temperature of the oven. Also, the coolant flow was only on/off controlled. If a
+future design uses variable orifice control or \keyword{pulse width modulation
+control} (PWM), then the actual cooling power can be controlled, and with it the
+trapping temperature of the column.
 
-\subsection{Siltek-treated coaxial heater}
+\subsubsection{Intertwined operation}
 
+The system, as built, does not allow for the separate operation of the SFC and
+the GC: the SFC needs the fast GC as a detector, and the fast GC can only inject
+fractions collected from the SFC. This means that it is not possible to trial a
+1D separation on SFC before engaging the \twoD GC, or to optimize the GC before
+without running the SFC. Adding an optical detector to the SFC, or writing code
+that will allow the manual injection of samples into the GC will make optimizing
+methods more flexible.
 
-\todo{Discuss material that passes through column during trapping.}
+\subsubsection{General-purpose operating system}
+
+The software ran on a general-purpose operating system (Microsoft Windows XP or
+Microsoft Windows 7), designed for interactive use by a human operator. In such
+a system there are many computing tasks running in parallel. The user is usually
+not aware that many tasks are running, because the operating system switches
+between tasks in less time than it takes a human to notice. The operating system
+decides which task gets priority. To most humans it is at most an irritating
+experience if the task they are working on gets lower priority than another
+task, but when the task is controlling a machine and it doesn't get priority,
+then accidents can happen. As an example of what can go wrong, a heater was left
+switched on while the operating system gave priority to software-updating task,
+because the heater control task was not given any processor time. This resulted
+in overheating and the risk of fire. On other occasions data got corrupted
+because data collection tasks got lower priority. Future designs of SFC×GC
+instruments can benefit from the use of \keyword{real-time operating systems.}
+
+\subsection{Design strengths}
+
+\subsubsection{Metal protection for column}
+
+Sheathing a capillary GC column in a stainless steel tube is a remarkably robust
+design. Combining the multiple roles of heating element, temperature sensing
+element, conduit for cryogenic coolant, and column protection into a single
+design element makes for an efficient design.
+
+\subsection{Time decoupling}
+
+The use of stopped-flow SFC decouples the \oneD time from the \twoD time. This
+means that the \twoD run time can be longer than the modulation period, but it
+also means that it is possible to vary the modulation period during an SFC×GC
+run. This would allow one to speed up analysis, by collecting fewer fractions
+where less information would be expected, or to get more detail in interesting
+portions of the \oneD chromatogram.
+
+\section{Future work}
+
+On the successful operation of the SFC×GC we look forward to applications that
+can benefit from the system. 
+
+\subsection{Biodiesel impurities}
+
+The dem
+\subsection{Chiral separations}
 
 \todos
