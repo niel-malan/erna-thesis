@@ -24,19 +24,19 @@ discussed below.
 
 \section{Mobile phase}
 
-As mobile phase we used carbon dioxide. The benefits of carbon dioxide as an
-solvent and mobile phase is discussed in Chapter \ref{Chapter2}. We used
-\SI{99.995}{\percent} pure carbon dioxide supplied by Air Products. Our
-colleagues in industry also use food grade or technical grade carbon dioxide and
-they have not reported any significant impurities.
+The benefits of carbon dioxide as an solvent and mobile phase is discussed in
+Chapter \ref{Chapter2}. We used \SI{99.995}{\percent} pure carbon dioxide
+supplied by Air Products. Our colleagues in industry also use food grade or
+technical grade carbon dioxide and they have not reported any significant
+impurities.
 
-As modifier we used LiChrosolv\textregistered methanol from Merck. This is an
-`HPLC-grade' solvent, of which the purification is optimized for the removal of
-UV-absorbing impurities. Using this grade of solvents is important when using
-optical absorbance or fluorescence detectors, because lowering levels of
-impurities improve limits of detection. It is quite likely that a less expensive
-grade of modifier would also be suitable for our SFC, because we do not use an
-optical detector.
+We used methanol as a modifier, specifically the LiChrosolv\textregistered{}
+brand from Merck. This is an `HPLC-grade' solvent, of which the purification is
+optimized for the removal of impurities that absorb ultraviolet radiation. Using
+this grade of solvent is important when using optical absorbance or fluorescence
+detectors, because lowering the concentration of these impurities improves the
+limits of detection. It is quite likely that a less expensive grade of modifier
+would also be suitable for our SFC, because we do not use an optical detector.
 
 \section{Pump}
 \label{sec:CO2Pump}
@@ -130,7 +130,7 @@ a head of \SI{1.2}{\metre}.
 For some experiments we also used a SFT-10 pump from Supercritical Fluid
 Technologies (Newark, Delaware). This is a purpose-built two-piston pump with
 sapphire valve seats and a Peltier-cooled head. This is a much better technology
-than the HPLC pumps. It takes up less space and does not need refilling, since
+than the HPLC pump. It takes up less space and does not need refilling, since
 it feeds directly from the cylinder. This pump had its own microprocessor
 controllers on board, and flow and pressure could simply be commanded from the
 PC through a USB cable.
@@ -252,7 +252,7 @@ voltage pulses.
 
 The sample inlet was a two-position rotary valve with an internal sampling
 volume (Figure \ref{fig:samplingvalve}). In one position the sampling volume is
-filled with a syringe, and when the valve was commanded to inject the sampling
+filled with a syringe, and when the valve is commanded to inject the sampling
 volume is switched into the carrier mobile stream. The sample volume was
 \SI{0.5}{\micro\litre}. The injection valve position was commanded from the
 controlling PC by electronic voltage pulses.
@@ -275,7 +275,7 @@ of this design is that it is not possible to vary the volume of sample injected.
 
 
 \subsection{Column}
-\label{sec:SFCColumn}
+%\label{sec:SFCColumn}
 
 The separation power of a chromatographic system can be modelled by the equation 
 
@@ -292,16 +292,16 @@ at the cost of increasing the time of the run. The maximum length of the column
 is determined by the pressure drop available that will still yield adequate
 flow. In capillary gas chromatography the openness of the column and the low
 viscosity of the gas-phase mobile phase routinely allows columns \SI{100}{\metre
-}long at inlet pressures of a few atmospheres. In HPLC the high viscosity of the
-mobile phase and the narrow, tortuous pathways between the small particles of
-the packing material means that the columns are typically
+} long at inlet pressures of a few atmospheres. In HPLC the high viscosity of
+the mobile phase and the narrow, tortuous pathways between the small particles
+of the packing material means that the columns are typically
 \SIrange{100}{200}{\milli\metre} long, requiring hundreds of atmospheres of
 inlet pressure for adequate flow.
 
-The low viscosity of an SFC mobile phase allows operation of much longer
-HPLC-type packed columns. This provides a much higher number of plates in the
-chromatographic system than HPLC. The SFC column we used in the SFC×GC system
-was a set of five HPLC columns (\SI{150}{\milli\metre} $\times$
+The low viscosity of an SFC mobile phase allows the use of packed columns much
+longer than those usually found in HPLC. This provides a much higher number of
+plates in the chromatographic system than HPLC. The SFC column we used in the
+SFC×GC system was a set of five HPLC columns (\SI{150}{\milli\metre} ×
 \SI{4.6}{\milli\metre}, \SI{3}{\micro\metre} particles) (Restek, Pinnacle DB
 Silica) connected in series.
 
@@ -406,9 +406,10 @@ possible to adjust the flow to a given flow rate. This design of restrictor
 should eliminate discrimination, because the decompression takes place in a very
 short space.
 
-However, the Guthrie design proved prone to blockage. These blockages could not
-be eliminated by incorporating a \SI{0.5}{\micro\metre} filter before the
-restrictor, which prompted an investigation into the cause of blockages. To rule
+However, the Guthrie restrictor design proved prone to blockage. Blockages are
+usually attributed to particles, but incorporating a \SI{0.5}{\micro\metre}
+filter before the restrictor did not eliminate or reduce the blockages.
+This prompted a structured investigation into the cause of blockages. To rule
 out the possibility that it was particles that caused the Guthrie restrictor to
 become blocked, we first had to determine the diameter of the orifice. This
 proved to be harder than expected: optical microscopy was not able to give a
@@ -494,6 +495,6 @@ UV/Vis optical detectors.
 In the supercritical fluid chromatograph described in this chapter there was no
 dedicated detector: the role of the detector was taken by a gas chromatograph.
 This gas chromatograph collected fractions from the SFC, and separated them in
-fast chromatographic runs with an FID detector, yielding comprehensive 2D
-chromatograms. This chromatograph-as-a-detector is described in Chapter
-\ref{Chapter5}.
+fast chromatographic runs, detecting the analytes with an FID, yielding
+comprehensive 2D chromatograms. This chromatograph-as-a-detector is described in
+Chapter \ref{Chapter5}.
