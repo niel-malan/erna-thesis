@@ -141,7 +141,7 @@ chromatography giving the highest resolution will be slow with low capacity, and
 the chromatograpy of a sample with a high concentration of analyte will be slow
 and have low resolution \autocite{Klee2002}. One way the chromatographer can
 ease the grip of the trilemma is to decide what factor is least important for
-the current problem, pick a value for that is likely to be satisfactory for most
+the current problem, pick a value that is likely to be satisfactory for most
 conditions, keep it fixed, and then find an acceptable compromise between the
 other two. In the development of the SFC×GC we decided to work with a fixed
 sample capacity: we chose a capillary column with a \SI{0.25}{\milli\metre}
@@ -279,11 +279,11 @@ allows a much higher SOF and therefore a very fast \twoD separation. Even at
 SOF, there might still be excess efficiency, which could be traded for higher
 speed. Since \(E^2 = \frac{H}{L} \), this higher speed can be obtained by
 increasing the flow beyond SOF (decreasing \(H\)), or by using a shorter column
-(decreasing \(L\)). Optimization with the goal of the best speed/efficiency
-ratio using column length and flow as optimizing parameters, theory and
-experiment shows that flow nearer the SOF combined with shorter columns give
-better performance \autocite{Klee2002, Reed1999} than flow much faster than SOF
-combined with longer columns.
+(decreasing \(L\)). Studies of optimization with the goal of the best
+speed/efficiency ratio using column length and flow as optimizing parameters
+revealed, theoretically and experimentally, that flow nearer the SOF combined
+with shorter columns give better performance \autocite{Klee2002, Reed1999} than
+flow much faster than SOF combined with longer columns.
 
 \section{The General Elution Problem.}
 
@@ -298,7 +298,7 @@ will be very different. So not all the compounds in complex mixture can be
 optimally separated with a single set of conditions. This is known as the
 \keyword{general elution problem} \autocite[p. 779]{Skoog2007}. The general
 elution problem makes speed and resolution mutually exclusive: a fast
-chromatogram will not meet satisfy resolution constraints, and a fully resolved
+chromatogram will not satisfy resolution constraints, and a fully resolved
 chromatogram will not satisfy speed constraints.
 
 The solution to the general elution problem is to adjust the conditions during
@@ -338,16 +338,16 @@ fast temperature program.
 \section{Temperature ramp rates}
 \label{sec:RampRates}
 
-Early experimenters realized the importance of temperature control in GC, and
-used vapour baths \autocite{Desty1957} or oil baths \autocite{Eggertsen1956} to
-control temperature in their experiments, but they quickly realized that leaks
-or cracks could allow oil into the column. Oil that entered the column would
-then contaminate the stationary phase, rendering it useless.  If air is used to
+Early experimenters understood the importance of temperature control in GC, and
+used vapour baths \autocite{Desty1957} or oil baths \autocite{Eggertsen1956} for
+temperature control in their experiments, but they quickly learned that leaks or
+cracks could allow oil into the column. Oil that entered the column would then
+contaminate the stationary phase, rendering it useless.  If air is used to
 transfer heat to the column, the gas pressure inside the column is higher than
 the atmospheric air pressure outside the column, so leaks let carrier gas escape
 but does not allow contaminants to enter. Therefore, in the modern gas
 chromatograph the convention is to control the temperature of GC columns by
-keeping them immersed in an air bath with a precisely controlled temperature. 
+keeping them immersed in an air bath with a precisely controlled temperature.
 
 A temperature program is traditionally described using a series of
 \keyword{ramps} and \keyword{holds.} A ramp is a period of time during which the
@@ -358,11 +358,13 @@ the temperature is kept constant.
 When developing a chromatographic method, at what rate must the temperature of a
 column increase so that the selectivity conditions match the kinetic conditions?
 Blumberg and Klee \autocite{Blumberg2000} recommend that a good initial
-temperature ramp rate is \SI{10}{]\celsius} per void time ($t_m$). For long
+temperature ramp rate is \SI{10}{\celsius} per void time (\(t_m\)). For long
 columns the void times are long, and the ramp rates can be low. As an
 illustration, Figure \ref{fig:RampRate7890B} shows the temperature ramp rates of
 a state-of-the-art chromatograph. By contrast, for short, narrow-bore columns,
-the ramp rate needs to be thousands of \SI{}{\celsius\per\minute}.
+the ramp rate needs to be thousands of \SI{}{\celsius\per\minute}, because the
+suggested ramp rate is inversely proportional to the void time: as the void time
+gets smaller the suggested ramp rate increases rapidly (See Figure ).
 
 \begin{figure}
 	\centering
@@ -373,6 +375,16 @@ the ramp rate needs to be thousands of \SI{}{\celsius\per\minute}.
 	\autocite{7890B}. }
 	\label{fig:RampRate7890B}
 \end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\textwidth]{Figures/RampRate.pdf}
+	\decoRule
+	\caption[Suggested ramp rate]{The suggested ramp rate for temperature-programmed gas chromatography as a function of void time.}
+	\label{fig:RampRate7890B}
+\end{figure}
+
+
 
 The low ramp rate of conventional air baths is caused by three factors:
 
@@ -392,22 +404,23 @@ complete redesign of the heating principle.
 
 Fortunately, the heating rate problem has a technologically simple solution,
 \keyword{resistive heating}\footnote{Alternative methods of heating by
-electromagnetic fields are \keyword{inductive heating} and \keyword{dielectric
-heating}.}. When a constant electric field is applied to a metal, the free electrons in
-the metal will be accelerated by the electric field. But the electrons are
-within the crystal lattice of the metal, where their mean free path is very
-short. The electrons will therefore collide with atoms in the crystal lattice,
-scattering inelastically. The energy lost in the inelastic collisions will
-increase the vibrational frequency of atoms, and this energy will appear as
-heat.
+electromagnetic fields are \keyword{radiative heating}, \keyword{inductive
+heating} and \keyword{dielectric heating}.}. When a constant electric field is
+applied to a metal, the free electrons in the metal will be accelerated by the
+electric field. But the electrons are within the crystal lattice of the metal,
+where their mean free path is very short. The electrons will therefore collide
+with atoms in the crystal lattice, scattering inelastically. The energy lost in
+the inelastic collisions will increase the vibrational frequency of atoms, and
+this energy will appear as heat.
 
 The number of electrons and their average (drift) speed in combination is
-described by a measure called the \keyword{current} ($I$), and the electric field
-is can be described by the applied \keyword{voltage} ($V$). The current $I$ is
-proportional to the applied voltage, and the ratio $\frac{V}{I}$ defines a
-proportionality constant $R$, called the resistance, which is a function of
-the conductor's material and dimensions. The total power dissipated to heat ($P$) is
-given by $P=IV$ or, equivalently, $P=I^2R$ or $P=\frac{R}{V^2}$.
+described by a measure called the \keyword{current} (\(I\)), and the electric
+field is can be described by the applied \keyword{voltage} (\(V\)). The current
+\(I\) is proportional to the applied voltage, and the ratio \(\frac{V}{I}\)
+defines a proportionality constant \(R\), called the resistance, which is a
+function of the conductor's material and dimensions. The total \keyword{power}
+dissipated to heat (\(P\)) is given by \(P=IV\) or, equivalently, \(P=I^2R\) or
+\(P=\frac{R}{V^2}\).
 
 Applying a voltage \(V\) to a metal element close to a chromatographic column
 will heat the metal, and therefore the column in contact with it. The rate at
@@ -1226,11 +1239,10 @@ the signals generated by the fast GC.
 The whole SFC×GC instrument was controlled from a single PC, running a single
 program. The program was written in LabVIEW 7.1\texttrademark{} (National
 Instruments). This software was designed to interact very easily with the
-National Instruments PCI-6014 multifunction data acquisition board.
-
-LabVIEW is a \keyword{visual programming language}, so called because programs
-are created by manipulating icons and wires on a screen, instead of typing text.
-This visual aspect of it makes it very easy to develop user interfaces as
+National Instruments PCI-6014 multifunction data acquisition board. LabVIEW is a
+\keyword{visual programming language}, so called because programs are created by
+manipulating icons and wires on a screen, instead of typing text. This visual
+aspect of it makes it very easy to develop user interfaces as
 \keyword{virtual instruments} and get quick results. Figure \ref{fig:SFCGCFastVI}
 shows the interface of the program used to control the SFC×GC instrument.
 
