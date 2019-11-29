@@ -130,6 +130,7 @@
   *{file}   {tikz.code.tex}{0000/00/00 v0.0}
   *{package}{refcheck}    {2013/02/14 v1.9.1}
   *{package}{tabulary}    {2014/06/11 v0.10}
+  *{package}{makeidx}     {2014/09/29 v1.0m}
   *{package}{csquotes}    {2019/05/10 v5.2e}
   *{file}   {csquotes.def}{2019/05/10 v5.2e}
   *{file}   {csquotes.cfg}{0000/00/00 v0.0}
@@ -213,7 +214,7 @@
   *{file}   {Chapters/Chapter7.tex}{0000/00/00 v0.0}
   *{file}   {Figures/Modifier.pdf}{0000/00/00 v0.0}
   *{file}   {Chapters/Chapter8.tex}{0000/00/00 v0.0}
-  *{file}   {Appendices/AppendixB.tex}{0000/00/00 v0.0}
+  *{file}   {Appendices/AppendixA.tex}{0000/00/00 v0.0}
   *{file}   {Appendices/AppendixD.tex}{0000/00/00 v0.0}
   *{file}   {Figures/ManifoldDimensions.pdf}{0000/00/00 v0.0}
   *{file}   {Figures/ManifoldAssemby.pdf}{0000/00/00 v0.0}

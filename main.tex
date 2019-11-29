@@ -93,7 +93,8 @@ headsepline, % Uncomment to get a line under the header
 \usepackage{zref-abspage,zref-user}
 \usepackage{refcheck}
 \usepackage{tabulary}
-%\usepackage{stampinclude}
+\usepackage{makeidx}
+	\makeindex
 
 % Command to generate list of files used in logfile
 %\listfiles
@@ -532,7 +533,7 @@ presenting the results obtained.
 %----------------------------------------------------------------------------------------
 
 % Define some commands to keep the formatting separated from the content 
-\newcommand{\keyword}[1]{\textbf{#1}}
+\newcommand{\keyword}[1]{\textbf{#1} \index{\lowercase{#1}}}
 \newcommand{\tabhead}[1]{\textbf{#1}}
 \newcommand{\code}[1]{\texttt{#1}}
 \newcommand{\file}[1]{\texttt{\bfseries#1}}
@@ -561,12 +562,11 @@ presenting the results obtained.
 % Include the appendices of the thesis as separate files from the Appendices folder
 % Uncomment the lines as you write the Appendices
 
-%\include{Appendices/AppendixA}
-\include{Appendices/AppendixB}
-%\include{Appendices/AppendixC}
-\include{Appendices/AppendixD}
-\include{Appendices/AppendixE}
-
+\include{Appendices/AppendixA} % Index
+%\include{Appendices/AppendixB} % Glossary
+%\include{Appendices/AppendixC} 
+\include{Appendices/AppendixD} % Engineering drawings
+\include{Appendices/AppendixE} % Fatty acid profiles
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
