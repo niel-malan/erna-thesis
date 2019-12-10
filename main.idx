@@ -1,21 +1,27 @@
 \indexentry{\lowercase {coal}|hyperpage}{1}
 \indexentry{\lowercase {crude oil}|hyperpage}{1}
 \indexentry{\lowercase {natural gas}|hyperpage}{1}
+\indexentry{\lowercase {pollution}|hyperpage}{2}
 \indexentry{\lowercase {aerosol}|hyperpage}{2}
 \indexentry{\lowercase {fly ash}|hyperpage}{2}
 \indexentry{\lowercase {ocean acidification}|hyperpage}{4}
 \indexentry{\lowercase {life cycle analysis}|hyperpage}{6}
 \indexentry{\lowercase {carbon footprint}|hyperpage}{6}
+\indexentry{\lowercase {internal\hyp  {}combustion engines}|hyperpage}{6}
 \indexentry{\lowercase {noxious pollution}|hyperpage}{7}
 \indexentry{\lowercase {carbon pollution}|hyperpage}{7}
 \indexentry{\lowercase {efficiency}|hyperpage}{7}
+\indexentry{\lowercase {output power}|hyperpage}{7}
+\indexentry{\lowercase {input power}|hyperpage}{7}
 \indexentry{\lowercase {compression ratio}|hyperpage}{9}
 \indexentry{\lowercase {auto-ignition temperature}|hyperpage}{10}
 \indexentry{\lowercase {cut-off ratio}|hyperpage}{11}
 \indexentry{\lowercase {knocking}|hyperpage}{11}
 \indexentry{\lowercase {octane number}|hyperpage}{11}
 \indexentry{\lowercase {gas turbine}|hyperpage}{11}
-\indexentry{\lowercase {pyro-synthesis}|hyperpage}{13}
+\indexentry{\lowercase {ozone}|hyperpage}{12}
+\indexentry{\lowercase {pyro-synthesis}|hyperpage}{12}
+\indexentry{\lowercase {photochemical smog}|hyperpage}{13}
 \indexentry{\lowercase {acid rain}|hyperpage}{13}
 \indexentry{\lowercase {exhaust gas recirculation}|hyperpage}{14}
 \indexentry{\lowercase {stratified charge}|hyperpage}{14}
@@ -26,8 +32,9 @@
 \indexentry{\lowercase {hydrogen}|hyperpage}{16}
 \indexentry{\lowercase {solar methanol}|hyperpage}{16}
 \indexentry{\lowercase {biofuels}|hyperpage}{16}
+\indexentry{\lowercase {photovoltaic}|hyperpage}{16}
 \indexentry{\lowercase {azeotropic mixture}|hyperpage}{18}
-\indexentry{\lowercase {green chemistry}|hyperpage}{19}
+\indexentry{\lowercase {green chemistry}|hyperpage}{18}
 \indexentry{\lowercase {transesterification}|hyperpage}{19}
 \indexentry{\lowercase {biodiesel}|hyperpage}{19}
 \indexentry{\lowercase {combined cycle gas turbine}|hyperpage}{20}
@@ -67,8 +74,10 @@
 \indexentry{\lowercase {property}|hyperpage}{40}
 \indexentry{\lowercase {requirement}|hyperpage}{40}
 \indexentry{\lowercase {test method}|hyperpage}{40}
+\indexentry{\lowercase {injector}|hyperpage}{42}
+\indexentry{\lowercase {cetane number}|hyperpage}{42}
 \indexentry{\lowercase {ignition delay}|hyperpage}{43}
-\indexentry{\lowercase {flash point}|hyperpage}{44}
+\indexentry{\lowercase {flash point}|hyperpage}{43}
 \indexentry{\lowercase {rancid}|hyperpage}{44}
 \indexentry{\lowercase {autocatalytic}|hyperpage}{44}
 \indexentry{\lowercase {induction period}|hyperpage}{44}
