@@ -128,7 +128,6 @@
   *{file}   {pgfmath.code.tex}{0000/00/00 v0.0}
   *{file}   {pgffor.code.tex}{0000/00/00 v0.0}
   *{file}   {tikz.code.tex}{0000/00/00 v0.0}
-  *{package}{refcheck}    {2013/02/14 v1.9.1}
   *{package}{tabulary}    {2014/06/11 v0.10}
   *{package}{makeidx}     {2014/09/29 v1.0m}
   *{package}{csquotes}    {2019/05/10 v5.2e}
@@ -143,7 +142,6 @@
   *{file}   {omszplm.fd}  {2002/09/08 v1.914}
   *{file}   {omxzplm.fd}  {2002/09/08 v1.914}
   *{file}   {ot1zplm.fd}  {2002/09/08 v1.914}
-  *{file}   {t1cmss.fd}   {2014/09/29 v2.5h}
   *{file}   {ts1ppl.fd}   {2001/06/04 v1/ppl.}
   *{file}   {t1pbk.fd}    {2001/06/04 v1/pbk.}
   *{file}   {t1cmtt.fd}   {2014/09/29 v2.5h}

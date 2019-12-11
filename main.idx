@@ -115,7 +115,7 @@
 \indexentry{\lowercase {modulation period}|hyperpage}{68}
 \indexentry{\lowercase {fast chromatography}|hyperpage}{68}
 \indexentry{\lowercase {optimization}|hyperpage}{68}
-\indexentry{\lowercase {goal}|hyperpage}{69}
+\indexentry{\lowercase {goal}|hyperpage}{68}
 \indexentry{\lowercase {criterion}|hyperpage}{69}
 \indexentry{\lowercase {constraints}|hyperpage}{69}
 \indexentry{\lowercase {optimizing parameters}|hyperpage}{69}
@@ -135,14 +135,14 @@
 \indexentry{\lowercase {speed-optimized flow}|hyperpage}{71}
 \indexentry{\lowercase {selective detection}|hyperpage}{71}
 \indexentry{\lowercase {sample cleanup}|hyperpage}{71}
-\indexentry{\lowercase {electron capture detector}|hyperpage}{72}
+\indexentry{\lowercase {electron capture detector}|hyperpage}{71}
 \indexentry{\lowercase {single ion monitoring}|hyperpage}{72}
 \indexentry{\lowercase {solid phase extraction}|hyperpage}{72}
 \indexentry{\lowercase {retention factor}|hyperpage}{72}
 \indexentry{\lowercase {general elution problem}|hyperpage}{72}
 \indexentry{\lowercase {gradient elution}|hyperpage}{72}
 \indexentry{\lowercase {temperature programming}|hyperpage}{72}
-\indexentry{\lowercase {temperature programming}|hyperpage}{73}
+\indexentry{\lowercase {temperature programming}|hyperpage}{72}
 \indexentry{\lowercase {wrap-around}|hyperpage}{73}
 \indexentry{\lowercase {ramps}|hyperpage}{73}
 \indexentry{\lowercase {holds}|hyperpage}{73}
@@ -150,13 +150,15 @@
 \indexentry{\lowercase {resistive heating}|hyperpage}{75}
 \indexentry{\lowercase {current}|hyperpage}{75}
 \indexentry{\lowercase {voltage}|hyperpage}{75}
+\indexentry{\lowercase {resistance}|hyperpage}{75}
 \indexentry{\lowercase {power}|hyperpage}{75}
 \indexentry{\lowercase {radiative heating}|hyperpage}{75}
 \indexentry{\lowercase {inductive heating}|hyperpage}{75}
 \indexentry{\lowercase {dielectric heating}|hyperpage}{75}
 \indexentry{\lowercase {emissivity}|hyperpage}{78}
-\indexentry{\lowercase {Thermal imaging}|hyperpage}{79}
+\indexentry{\lowercase {Thermal imaging}|hyperpage}{78}
 \indexentry{\lowercase {emissivity}|hyperpage}{79}
+\indexentry{\lowercase {pyrometry}|hyperpage}{81}
 \indexentry{\lowercase {Seebeck effect}|hyperpage}{81}
 \indexentry{\lowercase {thermocouple}|hyperpage}{81}
 \indexentry{\lowercase {calibration}|hyperpage}{85}

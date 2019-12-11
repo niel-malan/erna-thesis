@@ -33,24 +33,23 @@ practice, such an approach would be slow, labour-intensive, expensive, and
 error-prone. But reliable devices that can repeatedly collect and re-inject
 fractions of eluate were invented. These devices became known as
 \keyword{modulators} and made comprehensively coupled chromatography practical.
-In continuous flow coupling, such as that found in GC×GC, the fraction collection and
-\twoD injection happens during the uninterrupted \oneD separation. In stopped-flow
-coupling, as used in the SFC×GC chromatography described here, the \oneD SFC
-separation is stopped once a fraction has been collected, the fraction is
-separated on the \twoD column, and then the SFC separation is restarted and the
-next fraction collected.
+In continuous flow coupling, such as that found in GC×GC, the fraction
+collection and \twoD injection happens during the uninterrupted \oneD
+separation. In stopped-flow coupling as used in the SFC×GC chromatography
+described here, the \oneD SFC separation is stopped after a fraction has been
+collected. This fraction is separated on the \twoD GC column. After the \twoD
+run is complete the SFC run is restarted and the next fraction is collected.
 
-The rate at which fractions of the \oneD separation are collected is determined
+Fractions of the \oneD separation are collected at a rate at which is determined
 by the peak width on the \oneD chromatogram. To get adequate peak detection in
 the \oneD chromatogram, at least \num{3} fractions of each \oneD peak should be
-collected \autocite{Murphy1998}, but more is better. For examples, if the peaks
+collected \autocite{Murphy1998}, but more is better. For example, if the peaks
 are \SI{3}{s} wide the collection rate should not be less than \SI{1}{\hertz}.
-The rate at which fractions of the \oneD separation is collected is known as the
-\keyword{modulation rate}, and its inverse is the \keyword{modulation period}
-(\(P_M\)). In continuous-flow coupling (\textit{e.g.} as found in GC×GC), the
-\twoD separation should be completed in a time less than the modulation period.
-Evidently, this means that the \twoD separation should be faster than the \oneD
-separation.
+The rate of fractions collection is known as the \keyword{modulation rate} and
+its inverse is the \keyword{modulation period} (\(P_M\)). In continuous-flow
+coupling (\textit{e.g.} as found in GC×GC), the \twoD separation should be
+completed in a time less than the modulation period. Evidently, this means that
+the \twoD separation should be faster than the \oneD separation.
 
 In stopped-flow coupling, the duration of the \twoD separation is largely
 decoupled from the peak width of the of \oneD separation and, by implication,
@@ -62,7 +61,7 @@ is low, so that in principle the \twoD GC runs in SFC×GC need not be remarkably
 fast. In practice, however, \keyword{sample throughput} of a chromatographic
 method needs to be acceptable. One of the major determinants of sample
 throughput is \keyword{run time}, the time it takes from when the sample is
-injected until the the final compound has eluted. The judgement of what is
+injected until the final compound has eluted. The judgement of what is
 acceptable depends strongly on context: for finding the proverbial biomarker for
 Alzheimer's disease very long run times might be acceptable, but for routine
 analysis of a commodity biodiesel acceptable run times would probably be short.
@@ -83,7 +82,7 @@ Examining the expression shows that we can decrease \(t_T\) by increasing
 \(P_M\), but there is limit to this: if the modulation period becomes too long,
 the separation obtained in the \oneD separation will be lost. So, the only way
 to decrease the total run times is to reduce \(t_{stopped}\), the GC run time.
-For example, if a typical SFC run takes \SI{20}{\minute}, and fractions are
+For example, if a typical SFC run takes \SI{20}{\minute} and fractions are
 collected for every \SI{5}{\second} of SFC run, it means there will be \( 20
 \times 60 / 5 = 240 \) fractions collected. Each of these fractions must be
 injected into a GC chromatograph. If each GC run took \SI{1}{\minute}, the
@@ -103,7 +102,7 @@ Improving the speed of chromatographic separations is an aspect of
 the best or most effective use of a situation or resource'' \autocite{OUP2019}.
 ``Making the most effective use" means that optimization has a
 \keyword{goal}, which can be characterized by a numerical \keyword{criterion}
-while subject to to some \keyword{constraints}. The relative and variable amount
+while subject to some \keyword{constraints}. The relative and variable amount
 of ``resources'' used are \keyword{optimizing parameters}.
 
 There are two kinds of optimization in chromatography: selectivity and kinetic.
@@ -115,7 +114,7 @@ methods available. \keyword{Kinetic optimization} is the process of selecting
 the best combination of carrier gas, temperature, flow rate, column length,
 column diameter, and stationary phase thickness. This differentiation between
 selectivity optimization and kinetic optimization is not made on theoretical
-grounds, but practical reasons: selectivity optimization often involves the
+grounds, but for practical reasons: selectivity optimization often involves the
 discrete and expensive parameter of selecting a column, whereas the parameters
 involved in kinetic optimization can often be adjusted continuously and
 inexpensively. Selectivity optimization is guided by chemical knowledge; kinetic
@@ -165,13 +164,13 @@ adjustable parameters of kinetic optimization. Such functions help predict
 suitable chromatographic conditions and set limits to the expected performance
 of the separation.
 
-When doing chromatography, any optimization goal must contain resolution as part
-of the criteria; after all, the purpose of the activity is the separation of
+Any chromatographic optimization goal must contain resolution as part
+of the criteria. After all, the purpose of the activity is the separation of
 chemical compounds. Traditionally, the first optimization taught is the
 optimization of \(H\) as criterion, with the rate at which the carrier gas
 passes through the column as the variable parameter. The rate can be
 characterized by either the average gas velocity (\(\overline{u}\)) or the gas
-flow rate (\(F\)). Traditionally \(\overline{u}\) have been used, because it can
+flow rate (\(F\)). Traditionally \(\overline{u}\) has been used, because it can
 be conveniently calculated from simple measurements: \(\overline{u} = L/t_m\),
 where \(t_m\) is the \keyword{void time}, which is easily determined by
 measuring the retention time of an unretained compound. In modern gas
@@ -183,7 +182,7 @@ Blumberg has developed the theory of optimized flow rate
 in terms of flow rate can be simplified to two cases: a high-pressure drop and a
 low-pressure drop. (A high pressure drop is defined as the case when the
 difference in pressure between the inlet and outlet is much greater than the
-outlet pressure, \(\Delta{p} \gg p_o\)). When the pressure drop is low 
+outlet pressure, \(\Delta{p} \gg p_o\)). When the pressure drop is low
 
 \(H = \frac{\displaystyle b}{\displaystyle F}+(c_1+c_2)F \)
 
@@ -204,8 +203,8 @@ for the low pressure drop case and
 
 for the high pressure drop case. The low pressure drop case will be immediately
 recognized as the \keyword{van Deemter equation}, and the high-pressure drop
-case differs from it only by a factor of \num{0.125}. (See Figure
-\ref{fig:VanDeemter})
+case differs from it only by a factor of \num{0.125} (See Figure
+\ref{fig:VanDeemter}).
 
 \begin{figure}
 \centering
@@ -215,7 +214,7 @@ case differs from it only by a factor of \num{0.125}. (See Figure
 \label{fig:VanDeemter}
 \end{figure}
 
-It is clear that the function has a minimum, and the flow rate at this minimum
+It is clear that the function has a minimum. The flow rate at this minimum
 \(H\) can be called \(F_{Hmin}\). This flow is called
 \keyword{efficiency-optimized flow}, EOF. A remarkable feature of this
 theoretical result is that it is independent of column length
@@ -241,16 +240,18 @@ solute, column diameter, stationary phase and carrier gas there is no flow that
 will yield a faster separation without reducing the efficiency of the separation.
 
 The remaining parameters that can be manipulated to kinetically optimize for
-speed are column diameter and carrier gas diffusion. The theoretical details
+speed are column diameter and carrier gas diffusivity. The theoretical details
 will not be discussed here, but it will be clear that optimizing for separation
 speed tends towards the selection of narrow-bore capillary columns and using
 hydrogen as a carrier gas. The theoretical study of optimization gives great
 insight into which parameters to choose, but the actual calculation can be
 tedious, so for practical purposes the use of online method translation
-calculators is recommended \autocite{Restek2014}. The improvement possible in
-separation speed by using method translation calculations is remarkable, but
-still falls short of the speed that is needed for comprehensively coupled
-chromatography.
+calculators is recommended \autocite{Restek2014}. 
+
+%The improvement possible in
+%separation speed by using method translation calculations is remarkable, but
+%still falls short of the speed that is needed for comprehensively coupled
+%chromatography.
 
 SOF improves the speed of analysis by finding the combination of parameters
 \(F\) and \(L\) that will give the fastest separation under the constraint of
@@ -282,7 +283,7 @@ increasing the flow beyond SOF (decreasing \(H\)), or by using a shorter column
 (decreasing \(L\)). Studies of optimization with the goal of the best
 speed/efficiency ratio using column length and flow as optimizing parameters
 revealed, theoretically and experimentally, that flow nearer the SOF combined
-with shorter columns give better performance \autocite{Klee2002, Reed1999} than
+with shorter columns gives better performance \autocite{Klee2002, Reed1999} than
 flow much faster than SOF combined with longer columns.
 
 \section{The General Elution Problem.}
@@ -311,18 +312,18 @@ the heavier compounds will elute with with excess resolution. If --- after the
 elution of the more volatile compounds --- the temperature of the column is
 increased, then \(k'\) of the less volatile compounds will increase, so that the
 selectivity conditions will now match the optimized kinetic conditions, and
-their elution will be optimal. By careful programming the temperature can be
-continuously controlled so that the selectivity conditions always match the
-kinetic conditions, and all the compounds elute under optimum conditions. The
-technology for \keyword{temperature programming} in GC is mature, and every
-column manufacturer specifies temperature limits for isothermal and ramped
-temperature programs for every stationary phase.
+their elution will be optimal. With a precise control system the temperature can
+be continuously adjusted so that the selectivity conditions always match the
+kinetic conditions, and all the compounds elute optimally. The technology for
+\keyword{temperature programming} in GC is mature, and every column manufacturer
+specifies temperature limits for isothermal and ramped temperature programs for
+every stationary phase.
 
 In GC×GC the general elution problem appears in the form of
-\keyword{wrap-around}, defined as ``the occurence of second dimension peaks in
+\keyword{wrap-around}, defined as ``the occurrence of second dimension peaks in
 subsequent modulation sequences, caused by second-dimension retention times that
 exceed the modulation period of a comprehensive two-dimensional system''
-\autocite{Mariott2012}. In GC×GC the \twoD separation is isothermal, but because
+\autocite{Marriott2012}. In GC×GC the \twoD separation is isothermal, but because
 GC separations are predominantly determined by volatility, in the \twoD
 separation the retention factors have similar values and wrap-around is just a
 nuisance. In SFC×GC, where the group-type separation on the \oneD column yields
@@ -364,7 +365,7 @@ illustration, Figure \ref{fig:RampRate7890B} shows the temperature ramp rates of
 a state-of-the-art chromatograph. By contrast, for short, narrow-bore columns,
 the ramp rate needs to be thousands of \SI{}{\celsius\per\minute}, because the
 suggested ramp rate is inversely proportional to the void time: as the void time
-gets smaller the suggested ramp rate increases rapidly (See Figure ).
+gets smaller the suggested ramp rate increases rapidly (See Figure \ref{fig:RampRateBlumberg}).
 
 \begin{figure}
 	\centering
@@ -381,10 +382,8 @@ gets smaller the suggested ramp rate increases rapidly (See Figure ).
 	\includegraphics[width=0.8\textwidth]{Figures/RampRate.pdf}
 	\decoRule
 	\caption[Suggested ramp rate]{The suggested ramp rate for temperature-programmed gas chromatography as a function of void time.}
-	\label{fig:RampRate7890B}
+	\label{fig:RampRateBlumberg}
 \end{figure}
-
-
 
 The low ramp rate of conventional air baths is caused by three factors:
 
@@ -394,16 +393,15 @@ The low ramp rate of conventional air baths is caused by three factors:
 	\item The mass of the oven that needs to be heated. 
 \end{itemize}
 
-There is very little that can be done about these matters. It would be possible
-to switch oven gas to hydrogen for higher thermal conductivity, and construct a
-low-mass oven using, say, advanced resins for construction, but this would
-probably involve significant safety and cost issues. What is required is a
-complete redesign of the heating principle.
+There is very little that can be done about these matters. Attempts by
+instrument manufacturers to create air baths with faster ramp rates include
+decreasing the size of the oven and increasing the air flow rate, which yields
+modest improvements.
 
 \subsection{Resistive heating}
 
 Fortunately, the heating rate problem has a technologically simple solution,
-\keyword{resistive heating}\footnote{Alternative methods of heating by
+namely \keyword{resistive heating}\footnote{Alternative methods of heating by
 electromagnetic fields are \keyword{radiative heating}, \keyword{inductive
 heating} and \keyword{dielectric heating}.}. When a constant electric field is
 applied to a metal, the free electrons in the metal will be accelerated by the
@@ -415,12 +413,12 @@ this energy will appear as heat.
 
 The number of electrons and their average (drift) speed in combination is
 described by a measure called the \keyword{current} (\(I\)), and the electric
-field is can be described by the applied \keyword{voltage} (\(V\)). The current
+field can be described by the applied \keyword{voltage} (\(V\)). The current
 \(I\) is proportional to the applied voltage, and the ratio \(\frac{V}{I}\)
-defines a proportionality constant \(R\), called the resistance, which is a
-function of the conductor's material and dimensions. The total \keyword{power}
-dissipated to heat (\(P\)) is given by \(P=IV\) or, equivalently, \(P=I^2R\) or
-\(P=\frac{R}{V^2}\).
+defines a proportionality constant \(R\), called the \keyword{resistance}, which
+is a function of the conductor's material and dimensions. The total
+\keyword{power} dissipated to heat (\(P\)) is given by \(P=IV\) or,
+equivalently, \(P=I^2R\) or \(P=\frac{R}{V^2}\).
 
 Applying a voltage \(V\) to a metal element close to a chromatographic column
 will heat the metal, and therefore the column in contact with it. The rate at
@@ -482,16 +480,16 @@ changes in the temperature, and by comparing resistance at certain temperatures
 with known temperatures, one can get a calibrated temperature from a given
 resistance.
 
-High-powered resistive heating implies low resistance. Measuring the
-\emph{absolute value} of low resistance is technologically challenging
-\autocite{Dyos2012}. But a simple electronic circuit can be used to
-\emph{compare} the resistance of the coaxial heater with that of a reference
-resistor (Figure \ref{fig:HeaterDiagram}). The circuit is supplied by a voltage
-\(V_{sup}\), in general an unknown value.
-\(V_{col}\) and \(V_{ref}\) represents the voltage drop over the respective
-resistors. Because the current \(I\) through the circuit is the same for both
-\(R_{col}\) and \(R_{ref}\), it is true that
-\(\frac{R_{col}}{V_{col}} = \frac{ R_{ref} }{ V_{ref} }\), and therefore
+High-powered resistive heating at safe, convenient voltages implies low
+resistance. Measuring the \emph{absolute value} of low resistance is
+technologically challenging \autocite{Dyos2012}. But a simple electronic circuit
+can be used to \emph{compare} the resistance of the coaxial heater with that of
+a reference resistor (Figure \ref{fig:HeaterDiagram}). The circuit is supplied
+by a voltage \(V_{sup}\), in general an unknown value. \(V_{col}\) and
+\(V_{ref}\) represent the voltage drops over the respective resistors. Because
+the current \(I\) through the circuit is the same for both \(R_{col}\) and
+\(R_{ref}\), it is true that \(\frac{R_{col}}{V_{col}} = \frac{ R_{ref} }{
+V_{ref} }\), and therefore
 
 \(R_{col} = R_{ref}\frac{V_{col}}{V_{ref}}\)
 
@@ -529,7 +527,7 @@ Therefore
 
 \[ R_{col} = R_{ref} \left(\frac{g{dV}}{V_b} + (g-1) \right) \]
 
-In practice the gain \(g\) might not be completely constant, but show a slight
+In practice the gain \(g\) is not completely constant, but shows a slight
 dependence on \(dV\), so a general expression might be
 
 \[ R_{col} = f\left(\frac{dV}{V_b} \right) \]
@@ -592,9 +590,9 @@ radiation. This will tend to moderate temperature differences.
 
 \subsubsection{Convection}
 
-When a part of the coaxial heater is hot, it will heat the air around it,
-through radiation and conduction. This air might then move, through buoyancy or
-any other force, past another part of the coaxial heater. This second part could
+When a part of the coaxial heater is hot, it will heat the air around it through
+radiation and conduction. This air might then move, through buoyancy or any
+other force, past another part of the coaxial heater. This second part could
 then be heated up by the transported air. For example, a vertically mounted
 coaxial heater can be expected to develop a temperature gradient from bottom to
 top, as natural convection lets hot air transfer heat from the lower end of the
@@ -612,10 +610,10 @@ opportunity to get empirical confirmation.
 
 \keyword{Thermal imaging} is the process by which infrared radiation from
 objects can be captured in a photographic process. At near-ambient temperatures
-objects emit copious amounts of infrared radiation, and higher the temperature,
-the more is emitted. (See Equation \ref{eq:1}.) Cameras designed using
-specialized optics and sensors allow the capture of that radiation as an image
-of a scene that shows objects based on their surface temperature. The
+objects emit copious amounts of infrared radiation, and the higher the
+temperature, the more is emitted. (See Equation \ref{eq:1}.) Cameras designed
+using specialized optics and sensors allow the capture of that radiation as an
+image of a scene that shows objects based on their surface temperature. The
 technological capability of thermal imaging has improved markedly over the past
 years.
 
@@ -625,7 +623,7 @@ uses a \num{640 x 480} focal plane uncooled bolometer array as a detector, which
 is sensitive to radiation in the range \SI{7.5}{\micro\metre} to
 \SI{14}{\micro\metre}. Figure \ref{fig:ThermalImageSetup} shows the setup used
 to record the thermal video. To get reliable temperature information from a
-thermal image requires calibration or a precise knowledge about the material's
+thermal image requires calibration or a precise knowledge of the material's
 \keyword{emissivity}. In the absence of such calibration, the obtained
 temperature measurement is more useful if seen as relative rather than absolute.
 
@@ -680,30 +678,31 @@ available technologies to find the optimum solution.
 The following temperature measurement technologies exist:
 \begin{itemize}
 	\item Liquid-in-glass thermometers
-	\item Sealed liquid or gas sensing instruments and bimetallic sensors.
+	\item Sealed liquid or gas sensing instruments and bimetallic sensor
 	\item Electrical resistance temperature measurement using metallic sensors
 	\item Thermistors and semiconductors
 	\item Thermoelectric temperature measurement
 	\item Disappearing filament optical pyrometer
 	\item Photoelectric optical pyrometers
-	\item Total radiation pyrometers.
+	\item Total radiation pyrometers
 \end{itemize}
 
 Liquid-in-glass thermometry would not be applicable because of the size of the
-devices, and because they don't give a desirable electrical signal. Sealed
-liquid or gas sensing elements are also too bulky, and like bimetallic sensors
-are best used where only an on/of electric signal is required.
+devices, and because they don't give a desirable electrical signal. Bimetallic
+and sealed liquid or gas sensing elements are also too bulky and are best used
+where only an on/off electric signal is required.
 
-In recent years the technology for measuring temperature by radiant energy
-methods have improved markedly and has become affordable, in the form of thermal
-cameras. However, at lower temperatures the accuracy of the recorded temperature
-depends heavily on the emissivity of the measured material. Thermal imaging will
-also only measure the outside wall surface temperature of the heater, and not
-the temperature on the inside of the coaxial heater. So, while thermal imaging
-settled questions about heater uniformity (Section \ref{sec:Uniformity}), it was
-not considered ready to serve as a calibration standard. 
+In recent years \keyword{pyrometry}, the technology of measuring temperature by
+radiant energy methods, have improved markedly and has become affordable, in the
+form of thermal cameras. However, at lower temperatures the accuracy of the
+recorded temperature depends heavily on the emissivity of the measured material.
+Thermal imaging will also only measure the outside wall surface temperature of
+the heater, and not the temperature on the inside of the coaxial heater. So,
+while thermal imaging settled questions about heater uniformity (Section
+\ref{sec:Uniformity}), it was not considered ready to serve as a calibration
+standard.
 
-This leaves us with resistance temperature measurement with metallic sensors,
+The remaining options are resistance temperature measurement with metallic sensors,
 thermistors and semiconductors, and thermoelectric temperature measurement.
 
 Electrical resistance measurement using metallic sensors might have been
@@ -720,34 +719,34 @@ operating temperature range specified by manufacturers of semiconductor devices
 (\SI{-55}{\celsius} to \SI{125}{\celsius} for military applications)
 \autocite{nullD1996}.
 
-Thermoelectric temperature measurement then remains, and was used to calibrate
-the coaxial heater. In particular, the \keyword{Seebeck effect} was exploited,
-which is the observation that a temperature gradient imposed on a metallic
-conductor will generate an electrical potential along the gradient. Therefore, a
-circuit of two dissimilar metallic conductors will generate a voltage when there
-is a temperature gradient along the conductors. The voltage generated is a
-function of the temperature difference between the hot junction of the two
-metals and their cold junctions at the voltmeter input. Such a pair of
-dissimilar conductors used to generate a voltage is known as a
+Thermoelectric temperature measurement was the only remaining alternative, and
+was used to calibrate the coaxial heater. In particular, the \keyword{Seebeck
+effect} was exploited, which is the observation that a temperature gradient
+imposed on a metallic conductor will generate an electrical potential along the
+gradient. Therefore, a circuit of two dissimilar metallic conductors will
+generate a voltage when there is a temperature gradient along the conductors.
+The voltage generated is a function of the temperature difference between the
+hot junction of the two metals and their cold junctions at the voltmeter input.
+Such a pair of dissimilar conductors used to generate a voltage is known as a
 \keyword{thermocouple}, and this technology is mature and widely used in
 industry. Standard thermocouples are constructed from well-characterized alloys
 that generate predictable voltages for given junction temperatures. Pairs of
 thermocouple standardized alloys are known as 'types', of which the
 general-purpose Type K suited our purpose best. Thermocouple wire can be
-purchased in a range of gauges, down to \SI{25}{\micro\metre} in diameter, and the
-signal processing for thermocouple signals have been standardized. Thermocouple
-junctions can be made by welding, crimping, soft soldering, hard soldering,
-bolting, or simply twisting the wires together \autocite{McGee1988}. Because the
-temperature range to be measured was ({-}50 \si{\celsius} to 400 \si{\celsius})
-soft soldering is not a viable choice, because soft solders have melting points
-around \SI{200}{\celsius}. The possibility of corrosion and mechanical vibration
-suggest that twisting the wires together will not form a reliable joint, and of
-course there are no sub-millimetre bolts on the market.
+purchased in a range of gauges, down to \SI{25}{\micro\metre} in diameter, and
+the signal processing for thermocouple signals have been standardized.
+Thermocouple junctions can be made by welding, crimping, soft soldering, hard
+soldering, bolting, or simply twisting the wires together \autocite{McGee1988}.
+Because the temperature range to be measured was ({-}50 \si{\celsius} to 400
+\si{\celsius}) soft soldering is not a viable choice, because soft solders have
+melting points around \SI{200}{\celsius}. The possibility of corrosion and
+mechanical vibration suggests that twisting the wires together will not form a
+reliable joint, and of course there are no sub-millimetre bolts on the market.
 
 This leaves welding, crimping and hard soldering as methods for making
-thermocouple junctions. Tools for crimping hair-fine wire are rare, and it is
+thermocouple junctions. Tools for crimping hair-fine wire are rare and it is
 likely that a practical crimped connection will have a diameter many times the
-diameter of the wire, possibly making it too large to fit. 
+diameter of the wire, possibly making it too large to fit.
 
 Hard soldering is usually done with a high-temperature flame, and on contact the
 flame will rapidly burn the fine wires. The temperature required for hard
@@ -758,7 +757,7 @@ to solve the associated problems.
 Welding was found to be an accessible technology for forming small, reliable
 joints in fine thermocouple wire.
 
-\subsection{Thermocouple Welding}
+\subsection{Thermocouple welding}
 
 Welding is the process of joining two metal parts by melting a portion of each
 part, allowing the molten metals first to mix, and then to solidify. This
@@ -769,9 +768,9 @@ spot welding to melt the spot where two wires crossed. These thermocouples were
 found to be too fragile for the intended application, so a method was developed
 to yielded a more robust thermocouple.
 
-In the laboratory electricity is the most convenient sourc of heat. A
+In the laboratory, electricity is the most convenient source of heat. A
 \SI{24}{\volt} direct current, adjustable bench power supply was used to supply
-the current. The two wires of the thermocouple were twisted together, and the
+the current. The two wires of the thermocouple were twisted together and the
 twisted pair was connected to one pole of the power supply. A carbon electrode
 was connected to the other pole. The carbon electrode was carefully brought
 closer to the thermocouple pair until a spark jumped across the air gap. When
@@ -786,14 +785,14 @@ repeated as often as necessary to obtain a bead of the desired size.
 It is worth noting that it is necessary to form an arc: if the carbon electrode
 happens to touch the wire so that a current flows directly from the wire to the
 carbon electrode the wire rapidly heats up over its length and melts. It is also
-interesting that it seems necessary to have a roughly broken carbon electrode
-surface: a polished surface would not generate an arc, or even make electrical
-contact with the wires. This might be because the graphite used for the
-electrode was formulated for use in pencils.
+seems necessary to have a roughly broken carbon electrode surface: a polished
+surface would not generate an arc, or even make electrical contact with the
+wires. This might be because the graphite used for the electrode was formulated
+for use in pencils.
 
 The apparatus used to do the welding is depicted in Figure
 \ref{fig:FineWireWelder}, and Figure \ref{fig:TCWeldMicro} shows the image seen
-through the microscope when the welding is done.
+through the microscope during welding.
 
 \begin{figure}
 	\centering
@@ -815,7 +814,7 @@ thermocouples (a) Wires twisted together (b) Electric arc heating up the wires
 
 \caption[Fine-wire welder]{A view of the fine-wire thermocouple welder, as set
 up on a microscope base plate. The wire shown in the photograph is much thicker
-than that actually used. It is shown clamped between the clamping bar and the
+the one actually used. It is shown clamped between the clamping bar and the
 clamping weight. A thin sheet of acrylic serves to isolate the positive
 electrode from the negative base. The carbon electrode can be advanced towards
 the thermocouple twist using the screw. The black clamp at the bottom right-hand
@@ -847,7 +846,7 @@ an inside diameter of \SI{0.25}{\milli\metre} and an outside diameter of
 readily available, in the form of discarded chromatographic columns.) A narrower
 capillary was used to draw the wires through the probe capillary, in a process
 described in Figure \ref{fig:FineWireThermocouple}. The wires could then be
-welded to form a thermocouple, and then drawn to the desired position in the
+welded to form a thermocouple and positioned at the desired position in the
 probe capillary.
 
 \begin{figure}
@@ -874,15 +873,15 @@ capillary. }
 
 The Type K thermocouple has a sensitivity of approximately
 \SI{41}{\micro\volt\per\celsius}. This means the voltage generated at the
-temperature range of interest is too small to be conveniently digitized, and so
-needs to be amplified. Because the Type K thermocouple is so commonly used in
-industry, amplifiers have been developed specifically for thermocouple signal
+temperature range of interest is too small to be conveniently digitized and
+therefore must be amplified. Because the Type K thermocouple is so commonly used
+in industry, amplifiers have been developed specifically for thermocouple signal
 conditioning. We chose the AD595 integrated circuit amplifier. The component's
 data sheet explains its application concisely: ``The AD595 is a complete
 instrumentation amplifier and thermocouple cold junction compensator on a
 monolithic chip. It combines an ice point reference with a pre-calibrated
 amplifier to produce a high level (10 mV/°C) output directly from a thermocouple
-signal.'' \autocite{AD595} The output signal of the AD595 can be directly
+signal'' \autocite{AD595}. The output signal of the AD595 can be directly
 digitized for computer recording.
 
 \subsection{Calibration procedure}
@@ -902,21 +901,21 @@ subsequent calculations according to the AD595 data sheet. The
 \textbf{measurement standards} were the known responses of the thermocouple
 \autocite{Ripple1995}, the amplifier and the digitization system. The
 \textbf{indication} was the voltage ratio \(\frac{dV}{Vb}\). As this was a first
-attempt a calibration, \textbf{measurement uncertainties} were assumed to be
+attempt at calibration, \textbf{measurement uncertainties} were assumed to be
 negligible.
 
 In preparation for calibration the coaxial heater was installed in the oven of
-the Varian 3300 GC as it would be when in use. The detector was removed, and the
+the Varian 3300 GC as it would be when in use. The detector was removed and the
 thermocouple probe was threaded through the detector stem, through the heated
 T-piece block, and into the coaxial heater until the thermocouple junction was
 about half-way between the inlet end and the detector end of the coaxial heater.
 When the system was set up as it would be during use, the coaxial heater was
-cooled down, and a power ramp applied. The temperature of the thermocouple was
-recorded, together with the voltages \(dV\) and \(Vb\). A curve could then be
-plotted of thermocouple temperature \(T_{TC}\) against the voltage ratio \(
-\frac{dV}{V_b} \) (Figure \ref{fig:CalibrationCurve}). This revealed the shape
-of the function \(T(\frac{dV}{Vb})\), and completed the first step of the
-calibration.
+cooled down before a power ramp was applied. As the power increased the
+temperature rose, and the temperature of the thermocouple was recorded together
+with the voltages \(dV\) and \(Vb\). A curve could then be plotted of
+thermocouple temperature \(T_{TC}\) against the voltage ratio \( \frac{dV}{V_b}
+\) (Figure \ref{fig:CalibrationCurve}). This revealed the shape of the function
+\(T(\frac{dV}{Vb})\) and completed the first step of the calibration.
 
 \begin{figure}
 	\centering
@@ -929,7 +928,7 @@ calibration.
 The second step of a calibration is to establish a \textbf{measurement result}
 from an \textbf{indication}. It would be traditional to fit a mathematical
 function such as a polynomial to the curve, but a numerical method was chosen
-instead. We fitted a B-spline to the curve, and extracted coordinates on the
+instead. We fitted a B-spline to the curve and extracted coordinates on the
 curve from the B-spline (See Figure \ref{fig:MeasurementCurve}). An
 interpolation function was then used to obtain the measurement result \(T\) from
 the indication \(dV/V_b\).
@@ -957,16 +956,16 @@ for example proving overheating in a GC-MS transfer line.
 \subsection{Cold spots}
 \label{sec:ColdSpots}
 
-For the fastest temperature programming with resistive heating the heating
+For the fastest temperature programming with resistive heating, the heating
 element should be as light as possible and carry the largest necessary current.
 The current doing the heating must be carried to the coaxial heater using a feed
 conductor. To prevent the feed conductor from heating up it must have a low
-resistance, and this low resistance is achieved by making the conductor as
-'thick' or as 'heavy' as necessary, meaning that it is constructed of a material
-with a high mass per unit length.
+resistance, and this is achieved by making the conductor as 'thick' or as
+'heavy' as necessary, meaning that it is constructed of a material with a high
+mass per unit length.
 
-Good electrical metallic conductors are invariably also good thermal conductors,
-and therefore, the area around the junction of the feed conductor to the coaxial
+Good electrical metallic conductors are invariably also good thermal conductors.
+Therefore the area around the junction of the feed conductor to the coaxial
 heater will always have a lower temperature than the nominal temperature of the
 heater. In capillary GC this is undesirable: a cold spot in a column can wreak
 havoc with retention times and peak shapes.
@@ -1038,10 +1037,10 @@ The first reason is the quantity of coolant required: doing SFC×GC runs reveale
 that about \SI{15}{\kilogram} of carbon dioxide was consumed per run. A standard
 cylinder of carbon dioxide contains \SI{33}{\kilogram}, which implies that a new
 cylinder would be required every two runs. Such a rate of use is much too high
-for the intended application of the instrument. The second reason using is that
-it is much too slow. The time spent on cooling the oven and the column is time
-that cannot be spent doing separations, and cooling a conventional GC oven takes
-a lot of time: the Varian 3300's cryo-cooling function took \SI{30}{\second} to
+for the intended application of the instrument. The second reason is that it is
+much too slow. The time spent on cooling the oven and the column is time that
+cannot be spent doing separations, and cooling a conventional GC oven takes a
+lot of time: the Varian 3300's cryo-cooling function took \SI{30}{\second} to
 cool the column down to a low starting temperature. A commercial
 forced-convection system (``GC Chaser'' supplied by Zip Scientific) improves the
 cool down time of an Agilent 6890 GC oven, taking 7 minutes instead of 16,
@@ -1061,8 +1060,8 @@ the cooling is rapid, and because the coolant is applied where it is needed,
 only a small quantity is required.
 
 The carbon dioxide for cooling the coaxial heater was introduced through the
-same heated block that provided the electrical connection. (See Section
-\ref{sec:ColdSpots}.) A T-piece design allowed the liquid carbon dioxide to be
+same heated block that provided the electrical connection (see Section
+\ref{sec:ColdSpots}). A T-piece design allowed the liquid carbon dioxide to be
 admitted to the end of the coaxial heater, which was brazed to the block. A
 micro-union brazed to the block sealed the column's exit port, and the liquid
 carbon dioxide entered along the side of the T (Figure \ref{fig:ManifoldDims}
@@ -1072,7 +1071,7 @@ the flow on or off.
 
 \subsubsection{Cryogen supply}
 
-The carbon dioxide for cooling was supplied by Afrox, in high-pressure
+The carbon dioxide for cooling was supplied by Afrox in high-pressure
 cylinders each containing 33kg of technical grade carbon dioxide. Each cylinder
 was internally equipped with a \keyword{dip tube}, a tube that extends from the
 valve at the top of the cylinder to the bottom of the cylinder. This ensures
@@ -1107,7 +1106,7 @@ between the T-piece block and the inlet/detector should be quite small, but the
 gap cannot be zero, because electrical isolation needs to be maintained.
 Also, fused-silica capillary columns are fragile and misalignment causes them to
 break. Therefore, mechanically stiff and accurate mounting was needed for the
-T-piece blocks, to allow the precise but adjustable alignment of the T-piece
+T-piece blocks to allow the precise but adjustable alignment of the T-piece
 blocks with the inlet/detector.
 
 The final design for mounting the T-piece blocks was a pair of parallel rails.
@@ -1133,7 +1132,7 @@ Each car was designed as a sandwich of plates of stainless steel and silicon
 mica around a pair of brass bushes. Once assembled, the cars offered a set of
 studs on to which the user could fit and bolt down the T-piece blocks. The
 positions of the cars were determined by a locking collar on one of the rails.
-Figure \ref{fig:CarsDrawing1} shows technical drawings of the cars that explains
+Figure \ref{fig:CarsDrawing1} shows technical drawings of the cars that explain
 the design.
 
 
@@ -1162,7 +1161,7 @@ measurement is available to continuously feed to a control system.
 
 A proportional-integral-derivative (PID) controller was used to calculate the
 amount of power necessary to keep the temperature of the coaxial heater as close
-to the temperature set point as possible. The temperature set-point, in turn,
+to the temperature set-point as possible. The temperature set-point, in turn,
 was given by the desired chromatographic temperature ramp.
 
 The process of determining the best calculation by the PID is called
@@ -1263,8 +1262,8 @@ shows the interface of the program used to control the SFC×GC instrument.
 In GC×GC, 2D data is recorded as a continuous FID output stream --- as if it is
 a 1D GC chromatogram --- and later converted into a 2D chromatogram using
 knowledge of the modulation period. For two reasons we could not use this
-approach. First, in our instrument the first (SFC) dimension runs in a
-stop-flow mode making continuous data recording inappropriate. Second, the
+approach. Firstly, in our instrument the first (SFC) dimension runs in a
+stop-flow mode making continuous data recording inappropriate. Secondly, the
 duration of the cooling cycle varies, which would introduce unacceptable
 variation in \textsuperscript{2}D retention times.
 
@@ -1315,7 +1314,7 @@ respectively.
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.8\textwidth]{Figures/Contourplot.pdf}
+	\includegraphics[width=\textwidth]{Figures/Contourplot.pdf}
 	\decoRule
 	\caption[A 2D SFC×GC chromatogram]{An SFC×GC contour plot.}	
 	\label{fig:Contourplot}

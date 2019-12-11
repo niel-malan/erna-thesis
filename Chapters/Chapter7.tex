@@ -20,7 +20,7 @@ its name. But most modern SFC development involves the use of modifiers and
 additives\footnote{Modifiers are added to the carbon dioxide to manipulate the
 solubility of the analytes in the mobile phase, in exactly the same way that
 mixtures of solvents are used in, say, gradient elution in HPLC. Additives are
-added in small amounts, and manipulate the interaction of the analyte with the
+added in small amounts and manipulate the interaction of the analyte with the
 stationary phase.}. These modifiers are usually organic compounds, and in the
 FID flame they produce ions. When the modifier-containing eluate of an SFC
 column passes through the detector, the quantity of the modifiers will be much
@@ -60,22 +60,19 @@ In comparison, the FID can detect practically any organic compound over a wide
 concentration range, giving an integrated-over-time signal proportional to the
 mass of the compound.
 
-If only there were a way to separate the analytes modifiers from the modifiers
-before detection \ldots
-
 When GC is comprehensively coupled to SFC, the modulator will focus each
 fraction of SFC eluate, and then the GC will separate all the compounds in the
 fraction, be they analytes, modifiers, or additives. If the modifiers are more 
-volatile than the analytes then the modifiers will elute before the analytes, and
+volatile than the analytes, the modifiers will elute before the analytes, and
 the analyte can be detected or quantified using an FID while the signal from the
 modifier is ignored.
 
 Of course it is quite likely that the peak from the modifiers will
 \keyword{overload} the GC. Both the detector and the column may be overloaded.
-If the \emph{detector} is overloaded, then it just means that the detector no
+If the \emph{detector} is overloaded, it just means that the detector no
 longer responds linearly to the amount of material eluting from the column ---
 this might include responding with its maximum output, leaving flat-topped
-peaks. If the \emph{column} is overloaded, then the capacity of the stationary
+peaks. If the \emph{column} is overloaded, the capacity of the stationary
 phase is exceeded and the peaks will \keyword{front}: they will be asymmetrical,
 with the side of the peak towards earlier elution times having a slope smaller
 than the slope of non-overloaded peaks, and the side of the peak towards later
@@ -104,14 +101,14 @@ more volatile than methanol on the GC dimension.
 \subsection{Sample}
 
 The sample was a 1:1 blend of petrodiesel and biodiesel, prepared in the
-laboratory. The biodiesel sample was donated by a commercial testing laboratory,
+laboratory. The biodiesel sample was donated by a commercial testing laboratory
 and had been produced from palm oil by an anonymous producer. The petrodiesel
 (Shell Extra Diesel 500 ppm) was obtained from a commercial filling station.
 
 \subsection{SFC}
 
 The SFC used carbon dioxide at \SI{200}{\bar} inlet pressure and room
-temperature as mobile phase. The flow rate is of carbon dioxide at atmospheric
+temperature as mobile phase. The flow rate of carbon dioxide at atmospheric
 pressure was reportedly \SI{175}{\milli\litre\per\minute}. The carbon dioxide
 mobile phase was modified with \SI{5}{\percent} mass fraction of HPLC-grade
 methanol (Merck LiChrosolv). The column consisted of five HPLC bare silica
@@ -156,8 +153,8 @@ solvent front on the GC dimension, and does not otherwise affect the separation.
 	\label{fig:Modifier} 
 \end{figure}
 
-The intention of this chromatographic run was to explore the effect of the
-meth\-anol modifier on the retention behaviour of the biodiesel fraction of the
+The purpose of doing this chromatographic run was to explore the effect of the
+methanol modifier on the retention behaviour of the biodiesel fraction of the
 B50 blend. However, the run time was not long enough for the FAMEs to elute and
 the only peaks on the chromatogram are the group of hydrocarbons from the
 petrodiesel. Nevertheless, the chromatogram shows the possibilities that arise
@@ -173,8 +170,8 @@ comfortably accommodate the modifier peak, but the amplifier gain was chosen to
 best match the analyte signal with the input range of the 16-bit
 analog-to-digital converter.
 
-The 'corrugations' on the wall can be ascribed to two sources. First is
-variations in retention time of the modifier peak, which can be caused by
+The 'corrugations' on the wall can be ascribed to two sources. Firstly, there
+may be variations in retention time of the modifier peak, which can be caused by
 variations in GC gas flow and variations in the fast temperature programs.
 Second, variations in the amount of modifier collected by the modulator will
 also cause slight changes in the apparent position of the peak. This second
@@ -186,7 +183,7 @@ The chromatogram shows the hydrocarbon ``hump'' in the GC dimension and the
 separation of the aromatics in the SFC dimension, as discussed in Section
 \ref{sec:B50Discuss}. It can be seen that the 'solvent peak' of the modifier
 interferes with the more volatile of the hydrocarbons, but the rest of the
-separation space is available for separation. 
+separation space is available for separation.
 
 \subsection{Conclusion}
 
