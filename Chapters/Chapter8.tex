@@ -1,341 +1,204 @@
 % Chapter 8
 
 \begin{savequote}[\quotewidth]
-``Begin at the beginning," the King said, very gravely, ``and go on till you come to the end: then stop''.
-\qauthor{Lewis Carroll}
+It is a bad plan that admits of no modification.
+\qauthor{Publilius Syrus}
 \end{savequote}
 
-\chapter{Conclusion} % Main chapter title
+\chapter{Application: Modified SFC} % Main chapter title
 
-%\label{Chapter8} % For referencing this chapter elsewhere, use \ref{Chapter8}
 
 \section{Introduction}
 
-%\zlabel{chap:pdfstartpage} % For hyperref: this makes this the default page to open when the PDF opens.
-%\todo{Move zlabel{chap:pdfstartpage} to appropriate chapter. Remove before publication}
-
-In this thesis the research conducted on the practical implementation of SFC×GC
-as a chromatographic technique is discussed. In this final chapter we provide an
-overview of the project, and discuss some of the lessons learned.
-
-\section{Synopsis}
-
-\subsection{Chapter \ref{Chapter1}: \nameref{Chapter1} }
-
-The molecular basis of sustainability \autocite{Anastas2016} demands that
-chemists discuss sustainability in terms of chemical compounds. Chapter
-\ref{Chapter1} of this thesis opens with the idea that energy is an essential
-component of industrialized societies, but that choosing fossil fuels as our
-source of energy causes pollution, which threatens to nullify the benefits they
-bring. It describes the process which causes carbon dioxide to be emitted in
-large quantities, and how its interaction with planetary radiation makes it a
-pollutant. The concept of a ``carbon footprint'' is introduced, which allows the
-comparison of activities in terms of their carbon pollution, enabling decision
-makers to select the least polluting option. The discussion then focuses on
-internal-combustion engines, which is a major source of carbon and noxious
-pollution, and shows that higher-efficiency engines have lower carbon
-footprints. A discussion of ways to reduce the carbon footprint of internal
-combustion engines shows that, in the cases where they cannot be replaced by
-electric motors, a reduction of carbon footprint can be obtained by preferring
-large, high-performance diesel engines fuelled by biodiesel. The discussion
-concludes with the idea that the success of such engines will demand high
-quality biodiesel, and that chromatography will play a central role in ensuring
-that quality.
-
-\subsection{Chapter \ref{Chapter2}: \nameref{Chapter2} }
-
-Chapter \ref{Chapter2} starts with a discussion of the chemical industry and the
-need to move towards ``green'' chemistry. It introduces carbon dioxide as a
-renewable resource, discusses its various uses in industry, and then focuses on
-its application in extraction and chromatography. It describes how carbon
-dioxide becomes a solvent at high pressures and densities, and then introduces
-supercritical fluid chromatography (SFC). Fractions of eluate from SFC can be
-analysed by gas chromatography, and if a suitable set of criteria is met, then
-the combination is called SFC×GC.
-
-\subsection{Chapter \ref{Chapter3}: \nameref{Chapter3} }
-
-As discussed in Chapter \ref{Chapter1}, a reliable high-performance engine
-requires a reliable fuel. Chapter \ref{Chapter3} discusses the concepts of
-technical standards, which establish requirements fuels must comply with to be
-reliable. The discussion then focuses on the technical standard SANS 1935, which
-lists the requirements that South African commercial biodiesel must comply with,
-concluding with the role chromatography plays in the process of ensuring
-compliance.
-
-\subsection{Chapter \ref{Chapter4}: \nameref{Chapter4} }
- 
-Chapter \ref{Chapter4} explains the experimental equipment used for
-chromatography using high-pressure carbon dioxide as a mobile phase. It starts
-with describing the mobile phase, how it is stored and pumped, how modifier is
-added, and how the sample is injected. It describes problems with designing the
-restrictor that maintains the pressure, and concludes with remarks about using a
-gas chromatograph as a detector for SFC. 
-
-\subsection{Chapter \ref{Chapter5}: \nameref{Chapter5} }
-
-Chapter \ref{Chapter5} opens with a discussion on the time aspect of
-comprehensive SFC×GC chromatography, and shows that for practical analysis the
-GC dimension must be \keyword{fast}. The theory of fast GC is discussed, which
-leads to the the need for fast temperature programming. The design of a
-resistively heated coaxial heater is described, including its calibration and
-control. The discussion then covers how a cold GC column acts as a trap, and the
-design of coaxial cooling using boiling liquid carbon dioxide is described.
-Next, the discussion covers the design of hardware to mount the coaxial heater
-of the fast GC in a conventional GC oven. The chapter concludes with a
-description of the flame ionization detector and the data flow from signal to
-final chromatogram.
-
-\subsection{Chapter \ref{Chapter6}: \nameref{Chapter6} }
-
-Chapter \ref{Chapter6} discusses the application of the developed SFC×GC
-instrument to the study of fatty acid profiles of various potential biodiesel
-feedstocks, and shows that SFC×GC can be used to separate biodiesel from
-petrodiesel in diesel fuel blends.
-
-\subsection{Chapter \ref{Chapter7}: \nameref{Chapter7} }
-
-Chapter \ref{Chapter7} demonstrates that the use of SFC with modifiers does not
-preclude the use of the flame ionization detector when GC is used as a second
-dimension.
-
-\section{Contributions of this study}
-
-The research presented in this thesis contributes to the field of chromatography
-in the following aspects, listed in order of decreasing novelty.
-
-\subsection{Coaxial heater cooling}
-
-The most significant new contribution to chromatography of this project is
-proving the concept of active cooling of short chromatography columns by
-precisely-applied liquid carbon dioxide. To the best of our knowledge there are
-no other fast temperature-programmed chromatographs with sub-ambient ramp start
-temperatures and higher repetition rates.
-
-\subsection{Coaxial heater reliability}
+The previous chapter described SFC×GC runs that used neat carbon dioxide as
+mobile phase for the SFC separation. Carbon dioxide as a mobile phase is
+compatible with a flame ionization (FID) detector: under the conditions found in
+the hydrogen-rich portion of the flame the carbon dioxide cannot be reduced to
+methane, the first step in the process that produces the ions that gives the FID
+its name. But most modern SFC development involves the use of modifiers and
+additives\footnote{Modifiers are added to the carbon dioxide to manipulate the
+solubility of the analytes in the mobile phase, in exactly the same way that
+mixtures of solvents are used in, say, gradient elution in HPLC. Additives are
+added in small amounts and manipulate the interaction of the analyte with the
+stationary phase.}. These modifiers are usually organic compounds, and in the
+FID flame they produce ions. When the modifier-containing eluate of an SFC
+column passes through the detector, the quantity of the modifiers will be much
+higher than quantity of the analytes. If the detector is an FID, the modifiers
+will produce many more ions than the analyte will produce, and therefore the the
+modifier signal will swamp the analyte signal. Mixing organic modifiers and
+additives with the carbon dioxide mobile phase therefore renders SFC
+incompatible with flame ionization as a detection method. As a result, most
+modern SFC chromatographs use optical detectors, most commonly UV
+spectrophotometry adopted from HPLC.
+
+While the use of optical detectors has not hampered the development of SFC,
+they do have a few shortcomings, which might be imposing artificial limits on
+the exploitation of the versatility of carbon dioxide as a mobile phase:
+
+\begin{itemize}
+
+\item While SFC is compatible with optical detection (carbon dioxide does not
+absorb visible or ultraviolet radiation), there is a wide range of potential
+modifiers that are not compatible with spectrophotometric detection because they
+absorb strongly in the UV, but might have chemical properties useful for
+manipulating SFC separations. 
+
+\item Optical detectors can only detect analytes with chromophores, and the
+intensity of the signal depends strongly on the species.
+
+\item Optical detectors have a limited dynamic range, which complicates
+quantification.
+
+\item Expensive 'HPLC-grade' solvents do not provide better chromatography than
+other grades of solvents: the processes used to purify them are just optimized to
+reduce the amount of UV-absorbing impurities that can interfere with analysis.
+
+\end{itemize}
+
+In comparison, the FID can detect practically any organic compound over a wide
+concentration range, giving an integrated-over-time signal proportional to the
+mass of the compound.
+
+When GC is comprehensively coupled to SFC, the modulator will focus each
+fraction of SFC eluate, and then the GC will separate all the compounds in the
+fraction, be they analytes, modifiers, or additives. If the modifiers are more 
+volatile than the analytes, the modifiers will elute before the analytes, and
+the analyte can be detected or quantified using an FID while the signal from the
+modifier is ignored.
+
+Of course it is quite likely that the peak from the modifiers will
+\keyword{overload} the GC. Both the detector and the column may be overloaded.
+If the \emph{detector} is overloaded, it just means that the detector no
+longer responds linearly to the amount of material eluting from the column ---
+this might include responding with its maximum output, leaving flat-topped
+peaks. If the \emph{column} is overloaded, the capacity of the stationary
+phase is exceeded and the peaks will \keyword{front}: they will be asymmetrical,
+with the side of the peak towards earlier elution times having a slope smaller
+than the slope of non-overloaded peaks, and the side of the peak towards later
+elution times having a larger slope.
+
+The requirement that the modifiers added to the SFC mobile phase be volatile (so
+that they can elute before the analyte) is not too onerous a restriction. Higher
+volatility correlates with lower diffusivity, so that the preferred
+high-diffusivity modifiers for SFC  would also tend to be be volatile enough to
+elute early on GC. 
+
+A practical SFC×GC chromatograph opens up the field for the use of carbon
+dioxide mixed with modifier as a mobile phase for analysing complex mixtures
+found in biodiesel production, biodiesel quality control, and compliance
+monitoring.
+
+\section[SFC×GC with modifier]{SFC×GC using modified carbon dioxide.}
+
+In this section a SFC×GC chromatogram is presented that shows that methanol
+added as a modifier to the SFC mobile phase does not interfere with the fast GC
+any more than a sample's solvent interferes in the usual 1D GC. The 2D
+separation space of SFC×GC therefore gains in control over elution in the SFC
+dimension at the cost of losing the capability to detect compounds
+more volatile than methanol on the GC dimension.
+
+\subsection{Sample}
+
+The sample was a 1:1 blend of petrodiesel and biodiesel, prepared in the
+laboratory. The biodiesel sample was donated by a commercial testing laboratory
+and had been produced from palm oil by an anonymous producer. The petrodiesel
+(Shell Extra Diesel 500 ppm) was obtained from a commercial filling station.
+
+\subsection{SFC}
+
+The SFC used carbon dioxide at \SI{200}{\bar} inlet pressure and room
+temperature as mobile phase. The flow rate of carbon dioxide at atmospheric
+pressure was reportedly \SI{175}{\milli\litre\per\minute}. The carbon dioxide
+mobile phase was modified with \SI{5}{\percent} mass fraction of HPLC-grade
+methanol (Merck LiChrosolv). The column consisted of five HPLC bare silica
+columns (150 mm $\times$ 4.6 mm, 3 $\mu$m particles) (Restek, Pinnacle DB
+Silica) connected in series.
+
+\subsection{Modulation}
+
+A fraction was collected for each \SI{5}{\second} SFC flow time. After the flow
+from the SFC was stopped, \SI{3}{\second} was allowed for the last vapour in the
+inlet to be swept into the cold (\SI{-20}{\celsius}) column for trapping, and
+then the inlet vent valve was opened for \SI{1}{\second} to relieve excess inlet
+pressure.
+
+\subsection{GC}
+
+The GC column was a Restek Rxi-5Sil MS \SI{0.250}{\milli\metre} x
+\SI{0.25}{\micro\meter} × \SI{1}{\metre}.
+
+For each fast GC program the temperature was ramped from \SI{-20}{\celsius} to
+\SI{320}{\celsius} in \SI{10.3}{\second} (\SI{33}{\celsius\per\second}) and kept
+there for \SI{10}{\second} before cooling the column down to \SI{-20}{\celsius}
+to prepare for trapping the next fraction.
+
+A total of 233 fast chromatograms were recorded and combined into a 2D
+chromatogram.
+
+\subsection{Results and discussion}
+
+The chromatogram obtained for this run is shown in Figure \ref{fig:Modifier}.
+Note the unusual orientation of the chromatogram, chosen to best show the data:
+In the SFC dimension the later elution times are closer to the reader.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{Figures/Modifier.pdf}
+	\decoRule	
+	
+	\caption[Modifiers in SFC]{The modifier used in the SFC dimension elutes as a
+solvent front on the GC dimension, and does not otherwise affect the separation.}
+	
+	\label{fig:Modifier} 
+\end{figure}
+
+The purpose of doing this chromatographic run was to explore the effect of the
+methanol modifier on the retention behaviour of the biodiesel fraction of the
+B50 blend. However, the run time was not long enough for the FAMEs to elute and
+the only peaks on the chromatogram are the group of hydrocarbons from the
+petrodiesel. Nevertheless, the chromatogram shows the possibilities that arise
+when a modifier is added to the SFC mobile phase.
+
+The 'wall' that appears on the chromatogram is the tailing edge of the peak of
+the modifier added to the SFC. These peaks are present in all the fractions at
+equal concentration. The flat top of the peak is caused by \keyword{detector
+overload}. It should be emphasized that this overload is not caused by
+saturation of the FID response, but by limits imposed by the chosen signal
+amplifier. The FID has a dynamic range of 10\textsuperscript{6} and could
+comfortably accommodate the modifier peak, but the amplifier gain was chosen to
+best match the analyte signal with the input range of the 16-bit
+analog-to-digital converter.
+
+The 'corrugations' on the wall can be ascribed to two sources. Firstly, there
+may be variations in retention time of the modifier peak, which can be caused by
+variations in GC gas flow and variations in the fast temperature programs.
+Second, variations in the amount of modifier collected by the modulator will
+also cause slight changes in the apparent position of the peak. This second
+reason is probably the major contributor for this run, caused by variations in
+the timed collection period introduced by the imprecision of the
+electromechanical valve actuator and by variations in the SFC flow.
+
+The chromatogram shows the hydrocarbon ``hump'' in the GC dimension and the
+separation of the aromatics in the SFC dimension, as discussed in Section
+\ref{sec:B50Discuss}. It can be seen that the 'solvent peak' of the modifier
+interferes with the more volatile of the hydrocarbons, but the rest of the
+separation space is available for separation.
+
+\subsection{Conclusion}
+
+Adding modifiers to SFC expands the versatility of carbon dioxide as a mobile
+phase, but in 1D SFC the use of modifiers precludes the use of the universal
+flame ionization detector (FID), because the modifier signal will swamp the
+analyte signal.
+
+Adding GC-FID as a \textsuperscript{2}D separation allows the use of any
+volatile modifier to manipulate retention in the SFC dimension, including
+modifiers that might not be UV-transparent. Modifiers present in the fraction
+collected by the modulator elute like the customary solvent peak in the GC
+dimension, which means that the signal from the modifier does not interfere with
+the signal of the analyte.
+
+The example shown above shows that SFC×GC will reliably separate any modifiers
+used in the SFC dimension from the analytes, allowing the FID to be used as a
+detector for gradient-elution SFC separations.
 
-Previous work in our laboratories proved the concept of SFC×GC with
-resistively-heated fast temperature programming \autocite{Venter2004,
-Venter2006}, but the repeatability of the gas chromatography was not good enough
-for practical implementation. The implementation of the coaxial heater made the
-heating of the column highly reliable and repeatable, enabling the performance
-of hundreds of consecutive fast GC runs
-
-\subsection{Integrated heating and sensing elements}
-
-Resistive heating has been used in chromatography before, but to the best of our
-knowledge this is the first time the heating element and the temperature sensing
-element is the same thing.
-
-\subsection{Modified SFC with FID}
-
-Modern SFC mostly uses carbon dioxide as a mobile phase, with modifiers added.
-This precludes the use of the flame ionization detector (SFC-FID), because the
-signal from the modifier will swamp the signal from the analyte. But when a
-fraction collected from a modified-SFC separation is subjected to a GC
-separation, the modifiers and the analytes are separated, and the signal
-from the analyte can be captured while the signal from the analyte is ignored.
-We demonstrated that modified-SFC comprehensively coupled to GC yields a space
-that can be used for novel separations and reliable quantitation.
-
-\subsection{Length of SFC column}
-
-The low viscosity of carbon dioxide allows for the use of very long packed
-columns. We were able to run SFC separations on five columns packed with
-\SI{3}{\micro\metre} particles in series. There were no problems in obtaining
-adequate flow using an inlet pressure of \SI{200}{\bar}.
-
-\section{Voids in this study} 
-
-Since the focus of this study was the development of practical instrumentation,
-some aspects of good chromatography and good design were overlooked.
-
-\subsection{Lack of optimization}
-
-None of the flow rates or heating rates were optimized, so the results merely
-prove that it is possible to do chromatography using SFC×GC but do not provide
-any figures of merit.
-
-\subsection{Effect of modifiers}
-
-Although we demonstrated that modifiers can be added to the SFC mobile phase
-when running SFC×GC-FID, we did not offer any demonstration that modifiers
-improve separations.
-
-\subsection{Lack of quantification}
-
-It was demonstrated that the SFC×GC can separate compounds, but not that they
-can be quantified, for example by setting up calibration curves. But the
-technology for quantification from 2D chromatograms is mature, and we don't
-believe that quantification by SFC×GC should prove any obstacles.
-
-\subsection{Luck with voltage ranges}
-
-When designing the coaxial heater power electronics and control system, the
-choice of material, its dimensions and the required power matched well with the
-chosen analog-to-digital converter, and made it possible to use a remarkably
-simple electronic control circuit. A different resistive heater system might
-require more complex circuitry to match all the components, designed by an
-experienced electronic engineer using the principles established by this
-project.
-
-\section{Near disasters}
-
-The fact that the study came to a successful conclusion does not mean that
-success was ever guaranteed. A few problems brought the project close to
-failure and tested persistence.
-
-\subsection{Restrictor blocking}
-
-The persistent blocking of the Guthrie restrictor (Section \ref{sec:Restrictor})
-came as a surprise. No previous work in our laboratories have experienced it,
-and our colleagues in industry who used them have also not experienced it.
-Identifying the true root of the problem took patience and persistence, and lead
-to the first measurement of the size of the Guthrie restrictor orifice. In the
-end a linear restrictor was used, which means that we are not sure to what
-degree discrimination takes place.
-
-\subsection{ADC limitations}
-
-The resistive heater initially worked as expected at low applied power, but at
-higher powers inexplicable deviations appeared. At first we handled the problem
-by restricting the applied power to the range where it behaved as expected, but
-that limited the heating rate of the coaxial heater. Persistent study of the
-problem eventually revealed that we tried to measure a voltage that exceeded the
-safe operating range of the analog-to-digital converter (ADC) adapter card in
-the computer. Under these conditions safety circuits were activated, resulting
-in the ADC providing unreliable values. The problem was solved by installing an
-\keyword{isolation amplifier}.
-
-
-\section{Design}
-
-Although this was a 'scientific' project, with an emphasis on implementing
-theoretical ideas, over time it became apparent that using proper design
-principles when building scientific apparatus saves time and energy in the long
-run.
-
-\subsection{Design weaknesses}
-
-\subsubsection{Efficiency}
-
-The design of the SFC×GC is not particularly energy-efficient, and two elements
-of the design can be greatly improved. Firstly, the heated T-piece blocks are
-probably not the best solution to the problem. Together they consume
-\SI{800}{\watt} of electrical power, for which there is no significant
-scientific return. Secondly, the power supply to the coaxial heater is a
-\keyword{linear power supply}. In practical terms this means that the excess
-power of the voltage drop between the DC power supply and the coaxial heater
-input is dissipated as heat. A future design for a resistively, coaxially heated
-fast gas chromatograph would be more efficient if it was powered by a
-\keyword{switched-mode power supply}.
-
-\subsubsection{Two-wire resistance measurement}
-
-The resistive heater had a design that depended on measuring the resistance of
-the thin-walled stainless steel tube. The resistance was measured by comparing
-the potential difference between the ends of the heater with the potential
-difference over a reference resistor carrying an identical current. The circuit
-that carried the current also measured the potential difference. Because the
-current was high, the circuit had to be constructed in such a way that it no
-other significant resistance in it, which meant that care had to be taken to  
-used heavy-gauge cable and only use soldered joints. 
-
-A future design could relieve some of these problems if the current circuit and
-the measuring circuit were separated, using \keyword{four wire resistance
-measurement}. In such a design the potential difference is measure using a
-circuit that connects directly to the voltmeter, and the current is carried by a
-separate circuit. The voltmeter has a high input impedance, which means that the
-current the circuit carries is low, and stray resistances will play much less of
-a role. Also this makes it possible to use bolted or plugged connectors on the
-current-carrying circuit, which can simplify operations.
-
-\subsubsection{Cooling control}
-
-The fast GC temperature was poorly controlled in the \SIrange{-20}{50}{\celsius}
-region of the temperature ramps, because the coaxial heater was not thermally
-isolated. It was mounted in a GC oven together with the heated T-piece blocks.
-The heat leaking from these uninsulated blocks accumulated in the oven, until
-the oven reached a temperature of about \SI{50}{\celsius}. Once the coolant flow
-stopped the temperature of the coaxial heater would immediate rise to the
-temperature of the oven. Also, the coolant flow was only on/off controlled. If a
-future design uses variable orifice control or \keyword{pulse width modulation
-control} (PWM), the actual cooling power can be controlled and with it the
-trapping temperature of the column.
-
-\subsubsection{Intertwined operation}
-
-The system, as built, does not allow for the separate operation of the SFC and
-the GC: the SFC needs the fast GC as a detector, and the fast GC can only inject
-fractions collected from the SFC. This means that it is not possible to trial a
-1D separation on SFC before engaging the \twoD GC, or to optimize the GC
-independently of running the SFC. Adding an optical detector to the SFC, or
-writing code that will allow the manual injection of samples into the GC will
-make optimizing more more flexible.
-
-\subsubsection{General-purpose computer operating system}
-
-The software ran on a general-purpose operating system (Microsoft Windows XP or
-Microsoft Windows 7), designed for interactive use by a human operator. In such
-a system there are many computing tasks running in parallel. The user is usually
-not aware that many tasks are running, because the operating system switches
-between tasks in less time than it takes a human to notice. The operating system
-decides which task gets priority. To most humans it is at most an irritating
-experience if the task they are working on gets lower priority than another
-task, but when the task is controlling a machine and it doesn't get priority,
-then accidents can happen. As an example of what can go wrong, a heater was left
-switched on while the operating system gave priority to software-updating task,
-because the heater control task was not given any processor time. This resulted
-in overheating and the risk of fire. On other occasions data got corrupted
-because data collection tasks got lower priority. Future designs of SFC×GC
-instruments can benefit from the use of \keyword{real-time operating systems.}
-
-\subsection{Design strengths}
-
-\subsection{Metal protection for column}
-
-Sheathing a capillary GC column in a stainless steel tube is a remarkably good
-idea. Combining the multiple roles of heating element, temperature sensing
-element, conduit for cryogenic coolant, and column protector into a single
-object makes for a robust, efficient design element that could find multiple
-applications.
-
-\subsubsection{Time decoupling}
-
-The use of stopped-flow SFC decouples the \oneD time from the \twoD time. This
-means that the \twoD run time can be longer than the modulation period, but it
-also means that it is possible to vary the modulation period during an SFC×GC
-run. This would allow one to speed up analysis by collecting fewer fractions
-where less information would be expected, or to get more detail in interesting
-portions of the \oneD chromatogram.
-
-\section{Future work}
-
-On the successful operation of the SFC×GC we look forward to applications that
-can benefit from the increased separation space and highly structured
-information provided by SFC×GC.
-
-\subsection{Biodiesel impurities}
-
-SFC×GC was shown to be able to separate the main components of biodiesel and
-diesel fuel blends. Future work can include the determination of impurities, in
-particular free glycerol, glycerides and free fatty acids.
-
-\subsection{Literature review}
-
-Knowing that the strength of SFG×GC lies in the orthogonality of the two
-separations, it would be worth doing an exhaustive literature search to find
-novel or forgotten normal-phase LC separations that effectively separate
-compounds by functional group. Such methods could be adapted to SFC×GC to expand
-the analysis of complex mixtures.
-
-\section{Conclusion}
-
-The high repeatability of fast temperature ramps afforded by a
-resistively-heated coaxial heating of short GC columns, combined with the high
-repetition rate afforded by coaxial cooling of column, applied to the analysis
-of fractions of compounds separated by the selective group-type separation of
-SFC, creates a powerful chromatograph that can find a use in many different
-applications.
-
-\todos
