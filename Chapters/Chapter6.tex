@@ -34,7 +34,7 @@ grows, feedstocks proliferate, and complexity increase, the analytical chemist
 will need better tools, methods, and instruments to understand the problems that
 arise when automation fails. Comprehensively coupled chromatography offers a way
 to better exploit chemistry for improved analytical separations, adding another
-tool to the chemical analyst's toolbox. It does this in three ways: the first is
+tool to the analytical chemist's toolbox. It does this in three ways: the first is
 by increasing the peak capacity of the system, the second is by improved
 sensitivity, and the third is by generating patterns in the data.
 
@@ -267,7 +267,7 @@ Various samples of edible oil were obtained from supermarkets. (See Table
 	Sunflower oil	& Pick n Pay 	& \textit{Helianthus annuus}	\\
 	Coconut oil  	& Lemcke 		& \textit{Cocos nucifera}		\\
 	Flax seed oil 	& Lemcke 		& \textit{Linum usitatissimum}	\\
-	Salmon oil		& Dis-Chem	Gold& \textit{Salmonidae}		\\
+	Salmon oil		& Dis-Chem	Gold& Family \textit{Salmonidae}		\\
 	\bottomrule\\
 	\end{tabular}
 \end{table}
@@ -340,7 +340,7 @@ cold (\SI{-20}{\celsius}) column where they were trapped in the stationary phase
 
 The fast temperature program ramped the GC column temperature from
 \SI{-20}{\celsius} to \SI{350}{\celsius} in \SI{10}{s}
-(\SI{2200}{\celsius\per\second}), maintaining \SI{350}{\celsius} for
+(\SI{2220}{\celsius\per\minute}), maintaining \SI{350}{\celsius} for
 \SI{2}{\second}. Then the cooling system activated and cooled the column to
 \SI{-20}{\celsius} or below, ready to trap the next SFC fraction. The FID
 detector was kept at \SI{350}{\celsius}.
@@ -383,8 +383,8 @@ The information provided by this chromatogram confirms that canola oil is a
 vi\-able bio\-diesel feedstock: The unsaturated compounds have mostly a single
 double bond, which should make it oxidatively stable, and the quantities of
 unsaturated FAMEs are low, which means that it will most likely have suitable
-cold-flow properties, because (cis) unsaturated FAMEs have higher freezing
-points than saturated FAMEs.
+cold-flow properties, because the naturally occurring \textit{cis} isomers of
+unsaturated FAMEs have higher freezing points than their saturated analogues.
 
 \begin{figure}
 \centering
@@ -508,6 +508,62 @@ has been pre-treated. In biodiesel such polymerization could cause clogging or
 the formation of objectionable sludge.
 
 \subsection{Salmon oil}
+Figure \ref{fig:2DSalmon} shows an SFC×GC chromatogram of FAMEs obtained from
+salmon oil. This oil is obtained from a variety of fish species of the family
+\textit{Salmonidae} \autocite{JFAOWHOCAC2017} and was sold as a food
+supplement, packaged in gelatine capsules.
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Figures/Salmon.png}
+\decoRule
+
+\caption[SFC×GC of salmon oil]{A 2D chromatogram of FAMEs derived from salmon
+oil. It is clear that the oil contains significant quantities of polyunsaturated
+fatty acids.}
+
+\label{fig:2DSalmon}
+\end{figure}
+
+This chromatogram does not include the \oneD solvent peak. It is much more
+complex than the chromatograms of the plant oils shown above. It clearly
+shows a degree of unsaturation of up to 5, and there is evidence of a peak that
+represents a degree of unsaturation of 6. Unfortunately the instrument started
+malfunctioning before this peak could elute completely, and because of a
+shortage of time and money the project could not be extended to repair the
+instrument, repeat the chromatogram, and confirm the results. 
+
+The fatty acid profile of salmon oil given by the Codex Alimentarius
+\autocite{JFAOWHOCAC2017} is shown in Table \ref{tab:SalmonFAO}. Figure
+\ref{fig:2DSalmonBarChart} shows the bar-chart representation of the fatty acid
+profile. A comparison of the pattern in chromatogram with the bar chart shows
+that the chromatogram is consistent with the source of oil being farmed salmon.
+The chromatogram also suggests that biodiesel made from salmon oil would not be
+compliant with SANS 1935: the mass fraction of fatty acid methyl esters with
+four or more double bonds is more than \SI{1}{\percent}, which is above the
+specified limit. 
+
+This complex chromatogram also raises the intriguing possibility of identifying
+fatty acid isomers by SFC×GC. This is suggested by the small peaks with a \oneD
+retention times slightly different from the main peaks. The identification of
+the isomers fall outside the scope of this project, but initial indications are
+that, for example, the n-9 isomers of the monounsaturated fatty acids are
+slightly less retained than the n-7 isomers. Further studies will be needed to
+compare this suspicion to the separation of \textit{cis/trans} isomers of FAMEs
+reported by Roger Smith \autocite{Smith2001}.
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{Figures/SalmonBarChart.png}
+\decoRule
+
+\caption[3D Bar chart of salmon oil fatty acid profile]{The fatty acid profile
+of salmon oil, when plotted on a suitably-scaled bar chart, shows how well the
+SFC×GC chromatogram of the same oil (Figure \ref{fig:2DSalmon}) represents
+the same data without any processing.}
+
+\label{fig:2DSalmonBarChart}
+\end{figure}
 
 \section{Conclusion}
 
@@ -521,25 +577,16 @@ necessary. What these examples do show is that the high orthogonality between
 SFC and GC provides data that contains a clear and powerful pattern that greatly
 simplifies interpretation.
 
-In the example of FAMEs derived from various vegetable oils the pattern shows
+In the example of FAMEs derived from various oils the pattern shows
 how the degree of unsaturation provides separation on the first dimension, and
 the volatility provides separation on the second dimension. These separations,
 combined in one 2D chromatogram, provides intuitive understanding of the
 chemical composition of the oils which facilitates prediction about the
 contribution these oils will make to the final biodiesel product.
 
-In the example of examining the FAME content of a biodiesel blend, the pattern
-shows that SFC readily separates the petroleum-derived hydrocarbons from the
-FAMEs of biological origin. The biodiesel content can be determined by focusing
-data analysis efforts on the relevant parts of the chromatogram.
-
 SFC×GC can assist with proving compliance: it provides a chromatographic method that
 combines the determination of total FAMEs and unsaturated FAMEs in a single
-method, and might provide a way to quantify the biodiesel component in blends
-with petrodiesel, and cost-effective, accurate and reliable quantitation of the
-biodiesel component in blends with petrodiesel can be expected.
-
-The provided examples also prove that it is possible to design a system that
+method. The provided examples also prove that it is possible to design a system that
 solves the problems of doing practical, rapidly-repeated fast temperature
 programmed GC, ramping temperatures from below ambient to the limits of the
 column in hundreds of consecutive, identical runs. This high performance is
