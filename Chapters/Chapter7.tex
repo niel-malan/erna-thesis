@@ -47,10 +47,12 @@ the higher the proportion of aromatic compounds in diesel fuel, the higher the
 PAH emissions of the engine that uses it. Therefore, the amount of PAHs in
 diesel is regulated.
 
-ASTM D5168 \autocite{ASTMD5186} is an SFC-FID method for determining the amount and type of aromatic
-compounds.
+ASTM D5186 \autocite{ASTMD5186} is an SFC-FID method for determining the amount
+and type of aromatic compounds. 
 
 \subsection{SFC×GC of petrodiesel/biodiesel blends}
+
+The elution properties of aromatic hydrocarbons are different from that of FAMEs. For the ASTM method the k = \num{1.83} for naphtalene, and the 
 
 \todo{k-primes}
 
@@ -65,13 +67,45 @@ classes of compounds were \SI{68.19}{\percent} alkanes, \SI{18.10}{\percent}
 alkenes, \SI{13.69}{\percent} aromatics and \SI{0.01}{\percent} oxygenates
 \autocite{Smit2015}.
 
-\todo{Spiked diesel sample}
+To determine the relative retention times of aromatic compounds with different
+numbers of rings, a known amounts of a selection of aromatic compounds was added
+to a sample the low-sulfur diesel. The retention times of these \keyword{spiked}
+compounds will give an indication of how the structure of an aromatic compound
+influences its retention time, and how the 2D chromatographic pattern could be
+interpreted. The compounds and their amounts used in the spike are listed in
+Table \ref{tab:Aromatics}
+
+
+\begin{table}
+\caption{Aromatic compounds added to a \SI{1.2819}{\gram} diesel sample}
+	\label{tab:Aromatics}
+	\centering
+	\renewcommand{\arraystretch}{2}%
+	\begin{tabular}{|c|c|c|c|}
+	\hline
+	Structure & name & boiling point (°C) & mass (mg)\\
+	\hline
+	\raisebox{-.5\height}{\rule{0pt}{13mm}}\raisebox{-.5\height}{\includegraphics{Figures/Aromatics/cumene.pdf}} & \text{cumene} & 153.\text{${}^{\circ}$C} & 8.4 \\
+ 	\hline	 
+ 	\raisebox{-.5\height}{\rule{0pt}{13mm}}\raisebox{-.5\height}{\includegraphics{Figures/Aromatics/diisopropylbenzene.pdf}} & \text{1,4-diisopropylbenzene} & 210.\text{${}^{\circ}$C} & 9.3 \\
+ 	\hline
+ 	\raisebox{-.5\height}{\rule{0pt}{18mm}}\raisebox{-.5\height}{\includegraphics{Figures/Aromatics/bibenzyl.pdf} }& \text{bibenzyl} & 284.\text{${}^{\circ}$C} & 14.2 \\
+ 	\hline
+ 	\raisebox{-.5\height}{\rule{0pt}{15mm}}\raisebox{-.5\height}{\includegraphics{Figures/Aromatics/naphthalene.pdf}} & \text{naphthalene} & 218.\text{${}^{\circ}$C} & 8.3 \\
+ 	\hline
+ 	\raisebox{-.5\height}{\rule{0pt}{15mm}}\raisebox{-.5\height}{\includegraphics{Figures/Aromatics/anthracene.pdf} }& \text{anthracene} & 340.\text{${}^{\circ}$C} & 7.1 \\
+ 	\hline
+ 	\raisebox{-.5\height}{\rule{0pt}{22mm}}\raisebox{-.5\height}{\includegraphics{Figures/Aromatics/chrysene.pdf}} & \text{chrysene} & 448.\text{${}^{\circ}$C} & 3.2 \\
+ 	\hline
+ 	\raisebox{-.5\height}{\rule{0pt}{23mm}}\raisebox{-.5\height}{\includegraphics{Figures/Aromatics/benzo[a]pyrene.pdf}}& \text{benzo[a]pyrene} & 495.\text{${}^{\circ}$C} & 3.1 \\
+ 	\hline
+\end{tabular}
+\end{table}
 
 \subsection{SFC}
 
-The injection system described in Section
-\ref{sec:SFCInjection} was used to inject a \SI{0.5}{\micro\litre} volume of
-this undiluted \todo{7\%} blend.
+The injection system described in Section \ref{sec:SFCInjection} was used to
+inject a \SI{0.5}{\micro\litre} volume of this undiluted \SI{7}{\percent} blend.
 
 The SFC used neat carbon dioxide at \SI{200}{\bar} inlet pressure as mobile
 phase. The column consisted of five HPLC bare silica columns
@@ -82,32 +116,55 @@ phase. The column consisted of five HPLC bare silica columns
 
 \todo{Check modulation details}
 
-The SFC eluate fractions of \SI{2}{\second} were collected on the GC column
-cooled to a temperature of \SI{-20}{\celsius}. The inlet vent was held closed
-for \SI{4}{\second}, and then opened for \SI{1}{\second} to release excess
+For the aromatic portion of the chromatogram SFC eluate fractions of
+\SI{3}{\second} were collected on the GC column cooled to a temperature of
+\SI{-20}{\celsius} or below. The inlet vent was held closed for \SI{3}{\second}
+after the the SFC stop valve closed to allow the last of the eluted fraction to
+be swept onto the column, and then opened for \SI{1}{\second} to release excess
 pressure.
 
-\todo{Talk about }
-\todo{Add vent time increase}
+For the FAMEs portion of the chromatogram the same trapping temperature was
+used, but the modulation period was increased to \SI{10}{\second}. This longer
+trapping period causes a higher increase in inlet pressure by the eluting carbon
+dioxide, which required a vent time of \SI{3}{\second} to release the excess
+pressure.
 
 \subsection{GC}
 
 \todo{Correct column (HP DB5 equvalent)}
-The column used in the fast gas chromatograph was an OV-5 column, which has a
-stationary phase comprised of \SI{5}{\percent} diphenyl, \SI{95}{\percent}
-dimethylpolysiloxane. It was \SI{1}{\metre} long, with an internal diameter of
-\SI{0.25}{\milli\metre}. The thickness of the stationary phase was
-\SI{0.25}{\micro\metre}.
+The column used in the fast gas chromatograph was an DB-5MS column from J\&W
+Scientific Inc, which has a stationary phase comprised of \SI{5}{\percent}
+diphenyl, \SI{95}{\percent} dimethylpolysiloxane. It was \SI{1}{\metre} long,
+with an internal diameter of \SI{0.25}{\milli\metre}. The thickness of the
+stationary phase was \SI{0.25}{\micro\metre}, and had an operational temperature
+range of \SI{-60}{\celsius} to \SI{325}{\celsius} for isothermal elution, or up
+to \SI{350}{\celsius} when using temperature programming.
 
-\todo{Check temperature ramp}
-The temperature was ramped from \SI{-20}{\celsius} at a rate of
-\SI{1800}{\celsius\per\minute} to \SI{250}{\celsius}, where it was maintained
-for \SI{6}{s}. After the temperature program had ended the column was cooled to
-\SI{-20}{\celsius} again and the next fraction was collected.
+For every fast GC run the temperature was ramped from \SI{-30}{\celsius} at a
+rate of \SI{8000}{\celsius\per\minute} to \SI{25}{\celsius}, and from there to
+\SI{350}{\celsius} where it was maintained for \SI{2}{s}. After the temperature
+program had ended the column was cooled to \SI{-20}{\celsius} again and the next
+fraction was collected. Figure \ref{fig:Setpoint_Following} shows how well the
+indicated temperature followed the temperature program.
 
-The detector was an FID at \SI{350}{\celsius}. The FID response was recorded,
-and so a total of \todo{370} fast GC chromatograms were collected to compile the 2D
-chromatogram.
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{Figures/Setpoint_Following.pdf}
+	\decoRule	
+	
+\caption[The fidelity of a fast GC temperature program]{ The graph shows how
+well the indicated temperature followed the fast temperature program. The orange
+line shows the intended temperature program and the blue line shows the actual
+indicated temperature, as recorded. The ``steps'' in the orange line is caused
+by the \SI{100}{\milli}{\second} period of the control loop.}
+
+	\label{fig:Setpoint_Following} 
+\end{figure}
+
+
+The detector was an FID at \SI{350}{\celsius}. The FID response was recorded as
+fast GC chromatograms and the collected GC chromatograms were used to compile
+the 2D chromatogram.
 
 \section{Results}
 
@@ -118,22 +175,44 @@ Figure \ref{fig:PAH_FAMEs} shows the SFC×GC chromatogram of the diesel/biodiese
 	\includegraphics[width=\textwidth]{Figures/PAH_FAMEs.png}
 	\decoRule	
 	
-\caption[Biodiesel separated from petrodiesel.]{The separation of the biodiesel
-and petrodiesel in a \SI{7}{\percent} blend. The hydrocarbons elute completely
-before the first FAME elute, offer interference-free determination of both.}
+\caption[Biodiesel separated from petrodiesel.]{A 2D chromatogram of the
+biodiesel and petrodiesel in a \SI{7}{\percent} blend. The hydrocarbons elute
+completely before the first FAME elute, offer interference-free determination of
+both. The chromatogram was compiled from \num{368} 1D fast temperature-programmed GC
+chromatogram}
 
 	\label{fig:PAH_FAMEs} 
 \end{figure}
 
+It is clear that the SFC×GC completely separates the aromatic compounds in the diesel from the FAMEs 
+
 \todo{Aromatics section}
 
-\todo{Spiked diesel}
+
+
 
 \section{Discussion}
 
-\todo{Adjustable modulation}
+Figure \ref{fig:Spiked_Diesel} shows the chromatogram of the diesel sample spiked with a selection of aromatic compounds. 
 
+\todo{Spiked diesel}
 \todo{Peak assignment}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{Figures/Spiked_Diesel.png}
+	\decoRule	
+	
+\caption[Peak assignment in spiked ]{A 2D chromatogram of the
+biodiesel and petrodiesel in a \SI{7}{\percent} blend. The hydrocarbons elute
+completely before the first FAME elute, offer interference-free determination of
+both. The chromatogram was compiled from \num{368} 1D fast temperature-programmed GC
+chromatogram}
+
+	\label{fig:Spiked_Diesel} 
+\end{figure}
+
+\todo{Adjustable modulation}
 
 \todo{Open vent}
 
