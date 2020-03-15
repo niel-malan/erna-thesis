@@ -37,22 +37,67 @@ which simplifies sample handling but complicates calibration. Both these methods
 makes some assumptions about the sample, and the methods suffers from inaccuracy
 if those assumptions do not hold \autocite{Pinho2014}.
 
+ASTM D7371,
+ASTM D7806 or
+EN 14078a (
+
 \subsection{PAHs in diesel} 
 
 Polycyclic aromatic hydrocarbons (PAHs) are noxious pollutants and are therefore
 regulated when possible. The primary source of PAHs in the environment is
 combustion, of which a portion is in internal-combustion engines.  PAHs might
-escape from diesel fuel during normal operations, or in accidents. Additionally,
+escape from diesel fuel during normal operations or in accidents. Additionally,
 the higher the proportion of aromatic compounds in diesel fuel, the higher the
-PAH emissions of the engine that uses it. Therefore, the amount of PAHs in
-diesel is regulated.
+PAH emissions of the engine that uses it. These higher emissions are ascribed to
+the poorer combustion of fuels containing aromatics. Therefore, the amount of
+PAHs in diesel is regulated.
 
-ASTM D5186 \autocite{ASTMD5186} is an SFC-FID method for determining the amount
-and type of aromatic compounds. 
+SANS 342 describes two classes of diesel fuel, CF1 and CF2, named after the
+Department of Energy's Cleaner Fuels program. For CF1 the standard does not
+include a requirement for PAHs, but for CF2 an upper limit of \SI{8}{\percent}
+mass fraction is prescribed.
+
+The prescribed test methods are IP 391, ASTM D2425, or the referee test method
+EN 12916.
+
+IP 391 and  EN 12916 are HPLC methods with refractive index detection. ASTM
+D2425, although entitled ``Standard Test Method for Hydrocarbon Types in Middle
+Distillates by Mass Spectrometry'' requires the chromatographic separation of
+the aromatics from the saturates by chromatography. All these methods allow for
+the presence of FAMEs in diesel. Although these methods undoubtedly provide
+reliable results, quantitation by refractive index and mass spectrometric
+detection have their problems, which have been reviewed in detail
+\autocite{Kaminski2005}. As an example of one of the challenges for RI
+detection, there is no correlation between the refractive index of a compound
+and its chemical structure. Therefore successful quantitation depends on the
+precise determination of response factors. But in a mixture of petrochemicals
+from different feedstocks the compounds and their relative quantities are
+unknown, so the physical meaning of the determined peak areas is unclear. 
+
+Although not specified by SANS 342, ASTM D5186 \autocite{ASTMD5186} is an
+SFC-FID method for determining the amount and type of aromatic compounds. In
+principle it is similar to the methods prescribed, with three key differences:
+it uses neat carbon dioxide at high pressure as a mobile phase, it uses bare
+silica as a stationary phase, and it uses a flame ionization detector (FID). As
+discussed in Section \ref{sec:FID}, the FID has an unsurpassed dynamic range and
+responds to the primarily to number of carbon atoms, which means that its signal
+reflects the mass of the analyte. This makes it a reliable and robust detector
+that excels at quantitation.
 
 \subsection{SFC×GC of petrodiesel/biodiesel blends}
 
-The elution properties of aromatic hydrocarbons are different from that of FAMEs. For the ASTM method the k = \num{1.83} for naphtalene, and the 
+The simplicity of coupling GC to SFC has been recognized and used for the
+detailed analysis of hydrocarbon groups in diesel \autocite{Pal1998}.
+
+The elution properties of aromatic hydrocarbons on SFC are different from that
+of FAMEs. Being polar oxygenates, the FAMEs have a much higher retention than
+the aromatic compounds, and the two classes elute completely separately. But,
+just as the hydrocarbon compounds elute in order of number of rings, the FAMEs
+elute in order of double bonds \autocite{Smith2001}. 
+
+Comprehensively coupling GC to separate fractions of the SFC eluate on a second
+dimension will then yield further information that correlates with the molecular
+mass of the compounds.
 
 \todo{k-primes}
 
@@ -77,7 +122,7 @@ Table \ref{tab:Aromatics}
 
 
 \begin{table}
-\caption{Aromatic compounds added to a \SI{1.2819}{\gram} diesel sample}
+\caption{Aromatic compounds added to a \SI{1.2819}{\gram} low sulfur diesel sample}
 	\label{tab:Aromatics}
 	\centering
 	\renewcommand{\arraystretch}{2}%
