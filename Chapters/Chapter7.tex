@@ -5,61 +5,66 @@
 \qauthor{Shark}
 \end{savequote}
 
-\chapter{SFC×GC for the determination of FAMEs and PAHs in diesel fuel.} % Main chapter title
+\chapter{The determination of FAMEs and PAHs in diesel fuel by SFC×GC.} % Main chapter title
 \label{Chapter7} % For referencing this chapter elsewhere, use \ref{Chapter7}
 
 \section{Introduction}
 
 In South Africa the quality of biodiesel is regulated by the technical standard
 SANS 1935, and petrodiesel by SANS 342. There is a considerable overlap in the
-requirements of the two, as discussed in Section \ref{sec:Comparison},
+requirements of the two, as discussed in Section \ref{sec:Comparison} and
 illustrated in Figure \ref{fig:Venn}. Two of the requirements of SANS 342 that
-does not overlap with SANS 1935 are the allowed amounts of polycyclic aromatic
+do not overlap with SANS 1935 are the allowed amounts of polycyclic aromatic
 hydrocarbons (PAHs) and fatty acid methyl esters (FAMEs). This chapter's
-discussion introduces the application of SFC×GC to these determinations. 
+discussion introduces the application of SFC×GC to these determinations.
 
 \subsection{FAMEs in diesel}
 
 Biodiesel can be blended in all proportions with diesel obtained from petroleum
 (\keyword{petrodiesel}). To reduce the carbon footprint of diesel fuel,
 legislators are encouraging the use of blended fuels. In South Africa standard
-grades of diesel may contain up to \SI{5}{\percent} volume fraction biodiesel, 
-and higher fractions of FAMEs are allowed as different grades. Manufacturers might
-also add biodiesel to their fuel formulations to present improve properties such as
-lubricity \autocite{Knothe2005}, or to reduce emissions \autocite{Wattrus2016}.
+grades of diesel may contain up to \SI{5}{\percent} volume fraction biodiesel,
+and higher fractions of FAMEs are allowed as different grades. Manufacturers
+might also add biodiesel to their fuel formulations to present improve
+properties such as lubricity \autocite{Knothe2005}, or for its ability to reduce
+engine emissions \autocite{Wattrus2016}.
 
-The prescribed test methods for FAMEs in standard diesel are EN 14078, ASTM
-D7806 and ASTM D7371. These are all infrared absorption methods. The first two
-method measures the absorption of infrared radiation at
-\SI{1745}{\per\centi\metre} (\SI{5.4}{\micro\metre}) in a cell with a path
-length of \SI{0.5}{\milli\metre}. The method prescribed by ASTM D7371
-specifies attenuated total reflection (ATR) sampling, which simplifies sample
-handling but complicates calibration. Both these methods makes some assumptions
-about the sample, and the methods may suffer from inaccuracy if those assumptions
-do not hold \autocite{Pinho2014}.
+The test methods for FAMEs in standard diesel prescribed by SANS 342 are EN
+14078, ASTM D7806 and ASTM D7371. These are all infrared absorption methods. The
+first two method measures the absorption of infrared radiation at
+\SI{1745}{\per\centi\metre} (\SI{5.4}{\micro\metre}) in an absorption cell with
+a path length of \SI{0.5}{\milli\metre}. A Beer's law calibration method is
+used. The method prescribed by ASTM D7371 specifies an \keyword{attenuated total
+reflection} (ATR) optical interface combined with \keyword{partial least squares
+calibration}, which simplifies sample handling but complicates calibration. Both
+these methods makes some assumptions about the sample, and the methods may
+suffer from inaccuracy if those assumptions do not hold \autocite{Pinho2014}.
 
 \subsection{PAHs in diesel} 
 
 Polycyclic aromatic hydrocarbons (PAHs) are noxious pollutants and are therefore
 regulated when possible. The primary source of PAHs in the environment is
-combustion, of which a portion is in internal-combustion engines.  PAHs might
-escape from diesel fuel during normal operations or in accidents. Additionally,
-the higher the proportion of aromatic compounds in diesel fuel, the higher the
-PAH emissions of the engine that uses it. These higher emissions are ascribed to
-the poorer combustion of fuels containing aromatics. Therefore, the amount of
-PAHs in diesel is regulated.
+combustion, of which a portion is in internal-combustion engines. PAHs are also
+abundant in fossil fuels, including diesel, and might escape from diesel during
+normal operations or in accidents. Primarily, however, the higher the proportion
+of aromatic compounds in diesel fuel, the higher the PAH emissions of the engine
+it fuels. These higher emissions are ascribed to the poorer combustion of fuels
+containing higher amounts of aromatics. By limiting the amount of PAHs in diesel
+regulators aim to reduce the exposure of the population to the harm of PAHs.
 
 SANS 342 describes two classes of diesel fuel, CF1 and CF2, named after the
-Department of Energy's Cleaner Fuels program. For CF1 the standard does not
+Department of Energy's Cleaner Fuels programme. For CF1 the standard does not
 include a requirement for PAHs, but for CF2 an upper limit of \SI{8}{\percent}
-mass fraction is prescribed.
+mass fraction is prescribed. At the time of writing the implementation date of
+the CF2 standard had been indefinitely postponed. 
 
-The prescribed test methods are IP 391, ASTM D2425, EN 12916. In case of dispute
-EN 12916 is the referee method. IP 391 and  EN 12916 are HPLC methods with
-\keyword{refractive index} detection. ASTM D2425, although entitled ``Standard
-Test Method for Hydrocarbon Types in Middle Distillates by Mass Spectrometry''
-requires the chromatographic separation of the aromatics from the saturates by
-chromatography. All these methods allow for the presence of FAMEs in diesel.
+The test methods for determining the amount of PAHs in diesel prescribed by SANS
+342 are IP 391, ASTM D2425, EN 12916. In case of dispute EN 12916 is the referee
+method. IP 391 and  EN 12916 are HPLC methods with \keyword{refractive index}
+detection. ASTM D2425, although entitled ``Standard Test Method for Hydrocarbon
+Types in Middle Distillates by Mass Spectrometry'' requires the chromatographic
+separation of the aromatics from the saturates by chromatography before the MS
+measurement. All these methods allow for the presence of FAMEs in diesel.
 Although these methods undoubtedly provide reliable results when applied
 intelligently, quantitation by refractive index and mass spectrometric detection
 have their problems, which have been reviewed in detail \autocite{Kaminski2005}.
@@ -70,16 +75,16 @@ factors. But in a mixture of petrochemicals from different feedstocks the
 compounds and their relative quantities are unknown, so the physical meaning of
 the determined peak areas is unclear.
 
-
 Although not specified by SANS 342, ASTM D5186 \autocite{ASTMD5186} is an
 SFC-FID method for determining the amount and type of aromatic compounds. In
-principle it is similar to the methods prescribed, with three key differences:
-it uses neat carbon dioxide at high pressure as a mobile phase, it uses bare
-silica as a stationary phase, and it uses flame ionization as a detector (FID).
-As discussed in Section \ref{sec:FID}, the FID has an unsurpassed dynamic range
-and responds to the primarily to number of carbon atoms, which means that its
-signal reflects the mass of the analyte. This makes it a reliable and robust
-detector that excels at quantitation.
+principle it is similar to the prescribed HPLC methods, with three key
+differences: it uses neat carbon dioxide at high pressure as a mobile phase, it
+uses bare silica as a stationary phase, and it uses flame ionization as a
+detector (FID). As discussed in Section \ref{sec:FID}, the FID has an
+unsurpassed dynamic range and responds to the primarily to the number of carbon
+atoms in the analyte, which means that its signal reflects the mass of the
+analyte. This makes it a reliable and robust detector that excels at
+quantitation.
 
 \subsection{SFC×GC of petrodiesel/biodiesel blends}
 
@@ -89,8 +94,9 @@ detailed analysis of hydrocarbon groups in diesel \autocite{Pal1998}.
 The elution properties of aromatic hydrocarbons on SFC are different from that
 of FAMEs. Being polar oxygenates, the FAMEs have a much higher retention than
 the aromatic compounds, and the two classes elute completely separately. But,
-just as the hydrocarbon compounds elute in order of number of rings, the FAMEs
-elute in order of double bonds \autocite{Smith2001}. 
+just as the aromatic hydrocarbon compounds elute in order of their number of
+rings, the FAMEs elute in order of their number of double bonds
+\autocite{Smith2001}.
 
 Comprehensively coupling GC to separate fractions of the SFC eluate on a second
 dimension will then yield further information that correlates with the molecular
@@ -114,9 +120,9 @@ To determine the relative retention times of aromatic compounds with different
 numbers of rings, known amounts of a selection of aromatic compounds were added
 (\keyword{spiked}) to a neat sample of the low-sulfur diesel. The retention
 times of these compounds will give an indication of how the structure of an
-aromatic compound influences its retention time which will aid the 2D
-chromatographic pattern interpretation. The compounds and their amounts used in
-the spike are listed in Table \ref{tab:Aromatics}
+aromatic compound influences its retention time, which will guide the 2D
+chromatographic pattern interpretation. The selected compounds and their amounts
+used in the spike are listed in Table \ref{tab:Aromatics}.
 
 
 \begin{table}
@@ -201,7 +207,6 @@ by the \SI{100}{\milli\second} period of the control loop.}
 	\label{fig:Setpoint_Following} 
 \end{figure}
 
-
 The detector was an FID at \SI{350}{\celsius}. The FID response was recorded as
 fast GC chromatograms and the collected GC chromatograms were used to compile
 the 2D chromatogram.
@@ -231,39 +236,22 @@ Figure \ref{fig:Spiked_Diesel} shows the chromatogram of the diesel sample spike
 	\includegraphics[width=\textwidth]{Figures/Spiked_Diesel.png}
 	\decoRule	
 	
-\caption[Peak assignment in spiked ]{A 2D chromatogram of a commercial diesel sample spiked with selected aromatic compounds.}
+\caption[Spiked diesel ]{A 2D chromatogram of a commercial diesel sample spiked with selected aromatic compounds.}
 
 	\label{fig:Spiked_Diesel} 
 \end{figure}
 
 
-It is clear that the SFC×GC completely separates the aromatic compounds in the diesel from the FAMEs 
-
-\todo{Aromatics section}
-
-
-
-
 \section{Discussion}
 
-\todo{Spiked diesel}
-\todo{Peak assignment}
-
-
-\todo{Adjustable modulation}
-
-\todo{Open vent}
 
 The chromatogram of the biodiesel/petrodiesel blend (Figure \ref{fig:PAH_FAMEs}) shows
 that the blend was separated into two distinct groups of compounds. At a \oneD
 (SFC) retention time of about \SI{980}{\second} the hydrocarbons from the
-petrodiesel part of the blend elutes. To those familiar with petrochemical
+petrodiesel part of the blend elute. To those familiar with petrochemical
 chromatography the characteristic unresolved complex mixture (``hydrocarbon
 hump'') topped by alkane peaks will be instantly recognizable as representing
 a petroleum product. (See Figure \ref{fig:HCHump} for an example.)
-
-Between \SI{980}{\second} and \SI{1200}{\second} a pattern of small peaks elute.
-These represent the aromatic fraction of the petrodiesel.
 
 \begin{figure}
 	\centering
@@ -277,25 +265,153 @@ unresolved complex mixture topped by alkane peaks.}
 	\label{fig:HCHump} 
 \end{figure}
 
+At \(^{1}t_{r} \geq \) \SI{2200}{\second} a series of tall peaks represent the
+FAMEs, in a pattern that was described in Chapter \ref{Chapter6}: \oneD
+separation is according to the number of double bonds of the fatty acids, and
+\twoD separation is according to the chain length of the fatty acids.
+
+
+\subsection{Aromatic hydrocarbons}
+
+Between \SI{980}{\second} and \SI{1200}{\second} a pattern of small peaks elute.
+This portion of the chromatogram is shown magnified in Figure
+\ref{fig:Hydrocarbons_Portion}, where individual peaks can clearly be distinguished.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{Figures/Hydrocarbons_Portion.png}
+	\decoRule	
+	
+\caption[Hydrocarbons in RME/CD6 blend.]{Hydrocarbons in RME/CD6 blend}
+	
+	\label{fig:Hydrocarbons_Portion} 
+\end{figure}
+
+This result can be compared to the results of the SFC-FID method by integrating
+each \twoD GC chromatogram, and plotting these values against their start times.
+This creates a virtual SFC chromatogram, which should look similar to 1D SFC
+chromatograms. The virtual SFC chromatogram corresponding to Figure
+\ref{fig:Hydrocarbons_Portion} is shown in Figure \ref{fig:Virtual_SFC},
+compared to an SFC-GC chromatogram taken from the paper on which ASTM 5186 is
+based \autocite{DiSanzo1991}. The similarity between the virtual and real
+chromatograms confirms that the pattern of peaks that elute shortly after the
+alkanes are the aromatic hydrocarbons. The virtual chromatogram seems to show
+that there is incomplete separation between the alkanes and the aromatics, but
+the 2D chromatogram shows that there is complete separation. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{Figures/VirtualSFC_Compared.png}
+	\decoRule	
+	
+\caption[Comparing SFC-FID and virtual SFC.]{Comparing SFC-FID and virtual SFC chromatograms.}
+	
+	\label{fig:Virtual_SFC} 
+\end{figure}
+
+Although the identification of peaks of aromatic hydrocarbons in the SFC×GC
+chromatogram is beyond the scope of this project, injection of the spiked diesel
+sample confirms that aromatic compounds elute in this region and shows that the
+PAHs in diesel can be clearly separated from the alkanes and quantified. By
+comparing the boiling points and relative masses of the spike compounds, a
+tentative peak assignment could be made, as shown in Figure
+\ref{fig:Spiked_Diesel_Annotated}.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{Figures/Spiked_Diesel_Annotated.png}
+	\decoRule	
+	
+\caption[Peak assignment in spiked diesel sample.]{A 2D chromatogram of a
+commercial diesel sample spiked with selected aromatic compounds. Tentative peak
+assignments were made using knowledge of the boiling points and relative masses
+of the spike compounds.}
+
+	\label{fig:Spiked_Diesel_Annotated} 
+\end{figure}
+
+It should be noted that the 5-ring PAH benzo[a]pyrene that was spiked in did not
+elute on this chromatogram. Its retention time is still unknown, but broad
+interfering peaks have been recorded in subsequent chromatograms which can be
+attributed to slowly-eluting benzo[a]pyrene. 
+
+Previous work has shown that it is possible to also separate the alkenes from
+the alkanes \autocite{Venter1999}, at least in petrol, and that the resolution
+can be improved by cooling the SFC column. Further research along these lines
+might reveal that is possible to separate the alkenes from the alkanes in
+diesel. While cooling requires more hardware, the SFC×GC discussed in this
+thesis offers two sources of cooling that might be exploited in such a project:
+a portion of the coolant used to cool the SFC pump and the cryogen reservoir can
+be diverted to cool the column, or any excess coolant from the
+cooling cycle of the fast GC can be used to also cool the SFC column.
+Alternatively, small solid-state Peltier cooling devices used for cooling
+integrated circuits are readily available on the consumer market.
+
+\subsection{FAMEs}
+
 Between the \textsuperscript{1}D retention times of \SI{2200}{\second} and
 \SI{3200}{\second} the peaks of the FAMEs are seen, clearly separated by number
 of double bonds in the SFC dimension, and by volatility in the GC dimension.
 When compared to Figure \ref{fig:2DCanola}, the pattern is clearly similar, so
-the RME is not incorrect.
+the label ``rapeseed methyl ester'' is not incorrect.
 
-This separation shows that SFC×GC can be used to investigate the biodiesel
-component of petrodiesel/biodiesel blends without sample pre-treatment or
+\subsection{Adjustable modulation}
+
+Because the SFC is operated in stopped flow mode, the modulation period is
+independent of the fast GC run times. This means that the modulation period can
+be adapted during the SFC×GC chromatographic run. Short modulation periods might
+be required to preserve resolution obtained in the \oneD separation but this
+will increase the total SFC×GC run time. In areas of the chromatogram where
+there is plenty of resolution the modulation period might be increased to
+decrease the run time.
+
+In the chromatogram of the biodiesel blend (Figure \ref{PAH_FAMEs}), the modulation period was
+\SI{3}{\second} up to a \oneD retention time of \SI{1100}{s}. After that the
+modulation period was increased to \SI{10}{\second}, which shortened the
+chromatographic run time. In this instrument this is the upper limit of the
+modulation period, and is determined by the flow of carbon dioxide that the FID
+flame can tolerate. If the flow of carbon dioxide through the column during
+trapping becomes too high, the flame is extinguished and the signal disappears.
+This limitation can fairly simply be overcome by arranging automatic re-ignition
+of the flame. Then the upper limit of the modulation period depends on the
+pressure limits of the GC inlet. These might be mechanical, but experience has
+also taught that overly high inlet pressures can damage pressure gauges without
+any other sign of over-pressure.
+
+\subsubsection{Trapping suspension}
+
+In an extreme version of adjustable modulation, it is also possible  suspend
+trapping. This is implemented by opening both the SFC stop valve and the GC
+inlet vent. The SFC elaute is then swept out of the GC inlet with no, or
+mininal, trapping on the GC column. This scheme might be used, for example,
+between \(^{1}t_r = 1200\) and \(^{1}t_r = 2200\) during the diesel blend
+chromatogram. No peaks of interest elute during this period, so suspending
+trapping can save a lot of time.
+
+\subsubsection{Variable temperature programs}
+
+Because stop-flow operation decouples the SFC and the GC, the modulation period
+is independent of the GC run time as discussed in the previous sections. But
+this also implies that, conversely,  the GC run time is independent of the
+modulation period. This means that the GC fast temperature program can be
+adapted to suit the GC separation of the different classes of compounds
+as separated by the SFC.
+
+\subsection{Application}
+
+This separation shows that SFC×GC can be used to investigate the amount FAMEs and PAHs
+petrodiesel/biodiesel blends without sample pre-treatment or
 specialized columns. The intrinsic orthogonality provides easy identification of
 components and the excess separation space allows for the addition of suitable
 internal standards for reliable qualitative and quantitative analysis with the
 robust FID with its predictable response. Expensive mass spectrometric detection
-is unnecessary
+is unnecessary.
 
 Being able to determine the biodiesel content of biodiesel blends may prove
 useful in at least two scenarios: 
 
-The first is in monitoring blending. Biodiesel, essentially a mixture of esters,
-is quite polar compared to petrodiesel, essentially a mixture of hydrocarbons.
+The first is in monitoring blending. Biodiesel (essentially a mixture of esters)
+is quite polar compared to petrodiesel (essentially a mixture of hydrocarbons).
 This means that blending might not be a matter of just pumping the relevant volumes
 of the respective fuels into a tank and relying on diffusion to complete the
 mixing. Being able to determine the amount of biodiesel in different samples of
@@ -304,7 +420,7 @@ according to expectations. While such a test is perhaps better performed using a
 spectroscopic method, SFC×GC can provide information for calibration, and will
 of course be invaluable during trouble shooting.  
 
-The second application of SFC×GC is in regulating biodiesel content. In some
+The second application of SFC×GC is in regulating diesel content. In some
 political environments fuels might be taxed according to their
 biologically-derived content, for example to promote agriculture or to meet
 carbon emissions targets. Sometimes biological content is not encouraged by
@@ -319,24 +435,15 @@ method. But radiochemical methods require specialized equipment and trained
 staff, whereas fuel laboratories more often have experience with chromatographic
 techniques and might find SFC×GC a useful technique to provide evidence that a
 diesel fuel blend contains the stated amount of biodiesel.
-
-\begin{todo}
-
-Previous work has shown that it is possible to also separate the alkenes from
-the alkanes \autocite{Venter1999}, at least in petrol, and that the resolution
-can be improved by cooling the column. Further research along these lines might
-reveal that is possible to separate the alkenes from the alkanes in diesel. 
-
-\end{todo}
-
-
 \begin{todo}Virtual SFC\end{todo}
+
+\section{Conclusion}
+
 
 , and might provide a way to quantify the biodiesel component in blends
 with petrodiesel, and cost-effective, accurate and reliable quantitation of the
 biodiesel component in blends with petrodiesel can be expected.
 
 
-\section{Conclusion}
 
 \todos
