@@ -80,22 +80,22 @@ headsepline, % Uncomment to get a line under the header
 % Packages added by Niel:
 \usepackage{hyphenat}
 \usepackage{xspace}
-\usepackage{hyperref}
+\usepackage[unicode=true]{hyperref}
 \usepackage{bookmark}
 \usepackage[]{todo}
 \usepackage{eurosym} 
 \usepackage{textcomp}
 \usepackage[modulo]{lineno}
-\usepackage{quotchap}
+\usepackage{quotchap} % Chapter heading quotations
 	\newcommand{\quotewidth}{80mm}
 \usepackage{caption}
 \usepackage{chemfig}
 \usepackage{zref-abspage,zref-user}
-%\usepackage{refcheck} %Remove before final submission
+\usepackage{refcheck} % Checks references. Remove before final submission
 \usepackage{tabulary}
-\usepackage{rotating}
-\usepackage{array}% http://ctan.org/pkg/array
-\usepackage{makeidx}
+\usepackage{rotating} % To allow rotated table
+\usepackage{pdfpages} % To include article manuscripa}
+\usepackage{makeidx} % To make index (Appendix A)
 	\makeindex
 
 % Command to generate list of files used in logfile
@@ -113,6 +113,7 @@ headsepline, % Uncomment to get a line under the header
 \def\dotsign{\xleaders\hbox to .2em{\d{}}\hfill\d{}}
 \newcommand{\oneD}{\textsuperscript{1}D\xspace}
 \newcommand{\twoD}{\textsuperscript{2}D\xspace}
+\newcommand{\std}[1]{\textsc{\lowercase{#1}}}
 
 %----------------------------------------------------------------------------------------
 %	MARGIN SETTINGS
@@ -441,7 +442,7 @@ presenting the results obtained.
 
 \begin{abbreviations}{ll} % Include a list of abbreviations (a table of two columns)
 
-
+\textbf{ATR} & Attenuated Total Reflection \\
 \textbf{CCGT} & Combined Cycle Gas Turbine \\
 \textbf{DIO} &  Digital Input/Output\\
 \textbf{EOF} &  Efficiency-Optimized Flow\\
@@ -454,14 +455,17 @@ presenting the results obtained.
 \textbf{GHG} & Greenhouse Gases \\
 \textbf{HPLC} & High-Performance Liquid Chromatography\\
 \textbf{IPCC} & Intergovernmental Panel on Climate Change\\
+\textbf{IR}& Infrared \\
 \textbf{LCA} & Life Cycle Analysis \\
 \textbf{LC×GC} &  Comprehensively coupled (Liquid Chromatography × Gas Chromatography)\\
 \textbf{MV} &  Manipulated Variable\\
 \textbf{\nox} &  Nitrogen Oxides (NO, NO$_2$, NO$_3$ and N$_2$O, and N$_2$O$_5$)\\
+\textbf{PAH} & Polycyclic Aromatic Hydrocarbons \textit{or} Polynuclear Aromatic Hydrocarbons\\
 \textbf{PID} &  Proportional Integral Derivative\\
 \textbf{PLOT} & Porous Layer Open Tubular\\
 \textbf{PV} &  Process Variable\\
 \textbf{PWM} &  Pulse-Width Modulation \\
+\textbf{RI} & Refractive Index \\
 \textbf{SFC} & Supercritical Fluid Chromatography \\
 \textbf{SFC×GC} &  Comprehensively coupled (Supercritical Fluid × Gas Chromatography)\\
 \textbf{SIM} &  Single Ion Monitoring \\
@@ -573,7 +577,7 @@ presenting the results obtained.
 % Uncomment the lines as you write the Appendices
 
 \include{Appendices/AppendixA} % Index
-%\include{Appendices/AppendixB} % Glossary
+\include{Appendices/AppendixB} % Published paper
 %\include{Appendices/AppendixC} 
 \include{Appendices/AppendixD} % Engineering drawings
 \include{Appendices/AppendixE} % Fatty acid profiles
