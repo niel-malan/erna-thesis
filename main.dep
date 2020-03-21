@@ -94,6 +94,7 @@
   *{package}{hycolor}     {2016/05/16 v1.8}
   *{file}   {pd1enc.def}  {2019/06/12 v6.88h}
   *{file}   {hyperref.cfg}{2002/06/06 v1.2}
+  *{file}   {puenc.def}   {2019/06/12 v6.88h}
   *{file}   {hpdftex.def} {2019/06/12 v6.88h}
   *{package}{rerunfilecheck}{2016/05/16 v1.8}
   *{package}{bookmark}    {2019/06/04 v1.27}
@@ -128,13 +129,17 @@
   *{file}   {pgfmath.code.tex}{0000/00/00 v0.0}
   *{file}   {pgffor.code.tex}{0000/00/00 v0.0}
   *{file}   {tikz.code.tex}{0000/00/00 v0.0}
+  *{package}{refcheck}    {2013/02/14 v1.9.1}
   *{package}{tabulary}    {2014/06/11 v0.10}
   *{package}{rotating}    {2016/08/11 v2.16d}
+  *{package}{pdfpages}    {2019/09/21 v0.5n}
+  *{package}{calc}        {2017/05/25 v4.3}
+  *{package}{eso-pic}     {2018/04/12 v2.0h}
+  *{file}   {pppdftex.def}{2019/09/21 v0.5n}
   *{package}{makeidx}     {2014/09/29 v1.0m}
   *{package}{csquotes}    {2019/05/10 v5.2e}
   *{file}   {csquotes.def}{2019/05/10 v5.2e}
   *{file}   {csquotes.cfg}{0000/00/00 v0.0}
-  *{file}   {puenc.def}   {2019/06/12 v6.88h}
   *{file}   {english.lbx} {2018/11/02 v3.12}
   *{file}   {ts1cmr.fd}   {2014/09/29 v2.5h}
   *{file}   {t1ppl.fd}    {2001/06/04 v1/ppl.}
@@ -155,6 +160,9 @@
   *{file}   {main.bbl}    {0000/00/00 v0.0}
   *{package}{nameref}     {2016/05/21 v2.44}
   *{package}{gettitlestring}{2016/05/16 v1.5}
+  *{package}{pdflscape}   {2016/05/14 v0.11}
+  *{package}{lscape}      {2000/10/22 v3.01}
+  *{file}   {lscape.hak}  {2019/02/01 v3.26b}
   *{file}   {Chapters/Chapter1.tex}{0000/00/00 v0.0}
   *{file}   {Figures/otto-cycle.pdf}{0000/00/00 v0.0}
   *{file}   {Figures/diesel-cycle.pdf}{0000/00/00 v0.0}
@@ -229,6 +237,33 @@
   *{file}   {Figures/Modifier.pdf}{0000/00/00 v0.0}
   *{file}   {Chapters/Chapter9.tex}{0000/00/00 v0.0}
   *{file}   {Appendices/AppendixA.tex}{0000/00/00 v0.0}
+  *{file}   {Appendices/AppendixB.tex}{0000/00/00 v0.0}
+  *{file}   {RSI19-AR-01677.pdf}{Graphic v0.0}
+  *{file}   {RSI19-AR-01677.pdf}{Graphic v0.0}
+  *{file}   {RSI19-AR-01677.pdf}{Graphic v0.0}
+  *{file}   {RSI19-AR-01677.pdf}{Graphic v0.0}
+  *{file}   {RSI19-AR-01677.pdf}{Graphic v0.0}
+  *{file}   {RSI19-AR-01677.pdf}{Graphic v0.0}
+  *{file}   {RSI19-AR-01677.pdf}{Graphic v0.0}
+  *{file}   {RSI19-AR-01677.pdf}{Graphic v0.0}
+  *{file}   {RSI19-AR-01677.pdf}{Graphic v0.0}
+  *{file}   {RSI19-AR-01677.pdf}{Graphic v0.0}
+  *{file}   {RSI19-AR-01677.pdf}{Graphic v0.0}
+  *{file}   {RSI19-AR-01677.pdf}{Graphic v0.0}
+  *{file}   {RSI19-AR-01677.pdf}{Graphic v0.0}
+  *{file}   {RSI19-AR-01677.pdf}{Graphic v0.0}
+  *{file}   {RSI19-AR-01677.pdf}{Graphic v0.0}
+  *{file}   {RSI19-AR-01677.pdf}{Graphic v0.0}
+  *{file}   {RSI19-AR-01677.pdf}{Graphic v0.0}
+  *{file}   {RSI19-AR-01677.pdf}{Graphic v0.0}
+  *{file}   {RSI19-AR-01677.pdf}{Graphic v0.0}
+  *{file}   {RSI19-AR-01677.pdf}{Graphic v0.0}
+  *{file}   {RSI19-AR-01677.pdf}{Graphic v0.0}
+  *{file}   {RSI19-AR-01677.pdf}{Graphic v0.0}
+  *{file}   {RSI19-AR-01677.pdf}{Graphic v0.0}
+  *{file}   {RSI19-AR-01677.pdf}{Graphic v0.0}
+  *{file}   {RSI19-AR-01677.pdf}{Graphic v0.0}
+  *{file}   {RSI19-AR-01677.pdf}{Graphic v0.0}
   *{file}   {Appendices/AppendixD.tex}{0000/00/00 v0.0}
   *{file}   {Figures/ManifoldDimensions.pdf}{0000/00/00 v0.0}
   *{file}   {Figures/ManifoldAssemby.pdf}{0000/00/00 v0.0}
