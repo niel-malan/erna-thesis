@@ -10,7 +10,7 @@
 % Vel (vel@latextemplates.com)
 % Johannes Böttcher
 %
-% Notes:
+% Notes:ab
 % 1) This class file defines the structure and layout of the template file (main.tex).
 % 2) It has been written in such a way that under most circumstances you should not need
 % to edit it; updating it to a newer version will be harder. If you do make changes, please change the name of
@@ -339,10 +339,14 @@ KOMA-script documentation for details.}]{fancyhdr}
 
 \DeclareDocumentCommand{\abstractauthorfont}{}{}
 \DeclareDocumentCommand{\abstracttitlefont}{}{}
-\newcommand{\byname}{by}
-\newcommand{\abstractname}{Summary}
+\newcommand{\byname}{byXXX} % These don't seem to do anything -- Niel 
+\newcommand{\abstractname}{SummaryXXX} % These don't seem to do anything -- Niel 
 \providecaptionname{german,ngerman,austrian,naustrian}{\byname}{von}
+\providecaptionname{german,ngerman,austrian,naustrian}{\abstractname}{Zusammenfassung}
 \providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\byname}{by}
+\providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\abstractname}{Summary}
+
+
 \ifbool{consistentlayout}{
 	\DeclareDocumentEnvironment{abstract}{ O{} }{%
 		\addchap*{\abstractname}%
