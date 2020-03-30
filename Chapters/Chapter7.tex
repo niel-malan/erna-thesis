@@ -93,8 +93,8 @@ similar to the prescribed HPLC methods, with three key differences: it uses neat
 carbon dioxide at high pressure as a mobile phase, it uses bare silica as a
 stationary phase, and it uses flame ionization as a detector (FID). As discussed
 in Section \ref{sec:FID}, the FID has an unsurpassed dynamic range and responds
-to the primarily to the number of carbon atoms in the analyte, which means that
-its signal reflects the mass of the analyte. This reliable and robust detector
+primarily to the number of carbon atoms in the analyte, which means that its
+signal reflects the mass of the analyte. This reliable and robust detector
 excels at the quantitation of hydrocarbons.
 
 \subsection{SFC×GC of petrodiesel/biodiesel blends}
@@ -122,7 +122,7 @@ recognized and used for the detailed analysis of hydrocarbon groups in diesel
 A sample was prepared by blending \SI{7}{\percent} of biodiesel from canola
 (labelled "rapeseed methyl ester" (RME)) with a commercial low-sulfur (50 ppm)
 diesel. (The \SI{7}{\percent} blend level was chosen to reflect the amount
-allowed by \std{EN 590}, the European equivalent to \std{EN 342}). In a GC×GC-MS
+allowed by \std{EN 590}, the European equivalent to \std{SANS 342}). In a GC×GC-MS
 analysis of the low-sulfur diesel using \keyword{electron-impact} (EI)
 ionization the relative percentages of total ion intensity for different classes
 of compounds were \SI{68.19}{\percent} alkanes, \SI{18.10}{\percent} alkenes,
@@ -244,9 +244,9 @@ The collected GC chromatograms were used to compile the 2D chromatogram.
 	
 \caption[Biodiesel separated from petrodiesel.]{A 2D chromatogram of the
 biodiesel and petrodiesel in a \SI{7}{\percent} blend. The hydrocarbons elute
-completely before the first FAME elute, offer interference-free determination of
+completely before the first FAME elutes, offering interference-free determination of
 both. The chromatogram was compiled from \num{368} 1D fast temperature-programmed GC
-chromatogram}
+chromatograms.}
 
 	\label{fig:PAH_FAMEs} 
 \end{figure}
@@ -269,7 +269,8 @@ petroleum product. (See Figure \ref{fig:HCHump} for an example.)
 	
 \caption[An example of a petrochemical fuel chromatogram.]{An example of a GC
 chromatogram obtained from a petroleum-based diesel fuel sample, showing the
-unresolved complex mixture topped by alkane peaks.}
+unresolved complex mixture topped by alkane peaks. Restek Searchable
+Chromatogram Library, reproduced with permission of Restek Corporation.}
 	
 	\label{fig:HCHump} 
 \end{figure}
@@ -325,25 +326,24 @@ appears very similar to an SFC-FID chromatogram from literature
 \end{figure}
 
 
-\begin{figure}
-	\centering
-	\includegraphics[width=\textwidth]{Figures/Spiked_Diesel.png}
-	\decoRule	
-	
-\caption[Spiked diesel ]{A 2D chromatogram of a commercial diesel sample spiked
-with selected aromatic compounds.}
+% \begin{figure}
+% 	\centering
+% 	\includegraphics[width=\textwidth]{Figures/Spiked_Diesel.png}
+% 	\decoRule	
+% 	
+% \caption[Spiked diesel ]{A 2D chromatogram of a commercial diesel sample spiked
+% with selected aromatic compounds.}
+% 
+% 	\label{fig:Spiked_Diesel} 
+% \end{figure}
 
-	\label{fig:Spiked_Diesel} 
-\end{figure}
-
-
-Although the identification of peaks of aromatic hydrocarbons in the SFC×GC
-chromatogram is beyond the scope of this project, injection of the spiked diesel
-sample shown in Figure \ref{fig:Spiked_Diesel} confirms that aromatic compounds
-elute in this region and shows that the PAHs in diesel can be clearly separated
-from the alkanes and quantified. By comparing the boiling points and relative
-masses of the spike compounds, a tentative peak assignment could be made, as
-shown in Figure \ref{fig:Spiked_Diesel_Annotated}.
+Although the identification of peaks of individual aromatic hydrocarbons in the
+SFC×GC chromatogram is beyond the scope of this project, injection of the spiked
+diesel sample confirms that aromatic compounds elute in this region and shows
+that the PAHs in diesel can be clearly separated from the alkanes and
+quantified. By comparing the boiling points and relative masses of the spike
+compounds, a tentative peak assignment could be made, as shown in Figure
+\ref{fig:Spiked_Diesel_Annotated}.
 
 \begin{figure}
 	\centering
@@ -359,9 +359,9 @@ of the spike compounds.}
 \end{figure}
 
 It should be noted that the 5-ring PAH compound benzo[\textit{a}]pyrene that was
-included in the spike did not elute on this chromatogram. Its retention time is
+included in the spike did not elute on this chromatogram. (Its retention time is
 still unknown, but broad interfering peaks in subsequent chromatograms can be
-attributed to slowly-eluting benzo[\textit{a}]pyrene.
+attributed to slowly-eluting benzo[\textit{a}]pyrene.)
 
 \subsection{FAMEs}
 
@@ -386,27 +386,28 @@ modulation period was \SI{3}{\second} up to a \oneD retention time of
 \SI{1100}{s}. After that the modulation period was increased to
 \SI{10}{\second}, which shortened the chromatographic run time. In this
 instrument this is the upper limit of the modulation period, and is determined
-by the flow of carbon dioxide that the FID flame can tolerate. If the flow of
-carbon dioxide through the column during trapping becomes too high, the flame is
-extinguished and the signal disappears. This limitation can fairly simply be
-overcome by arranging automatic re-ignition of the flame before the start of the
-fast GC run. Then the upper limit of the modulation period depends on the
-pressure limit of the GC inlet. This might be determined by mechanical
+by the flow of carbon dioxide that the FID flame can tolerate\footnote{If the
+flow of carbon dioxide through the column during trapping becomes too high, the
+flame is extinguished and the signal disappears. This limitation can fairly
+simply be overcome by arranging automatic re-ignition of the flame before the
+start of the fast GC run. Then the upper limit of the modulation period depends
+on the pressure limit of the GC inlet. This might be determined by mechanical
 strength, but experience has also taught that overly high inlet pressures can
-damage pressure gauges without any other sign of over-pressure.
+damage pressure gauges without any other sign of over-pressure. Alternatively, a
+portion of the SFC flow could be split off before it enters the GC inlet.}
 
-\subsubsection{Trapping suspension}
+\subsubsection{Suspending SFC fraction trapping}
 
-In an extreme version of adjustable modulation, it is also possible  suspend
+In an extreme version of adjustable modulation, it is also possible to suspend
 trapping. This is implemented by opening both the SFC stop valve and the GC
-inlet vent and not running GC runs. The SFC eluate is then swept out of the GC
+inlet vent and not performing GC runs. The SFC eluate is then swept out of the GC
 inlet with no, or minimal, trapping on the GC column. This scheme might be used,
 for example, between \(^{1}t_r = 1200\) and \(^{1}t_r = 2200\) of the diesel
 blend chromatogram (Figure \ref{fig:PAH_FAMEs}). No peaks of interest elute
 during this period, so suspending trapping can save a significant amount of
 time.
 
-\subsubsection{Variable temperature programs}
+\subsubsection{Variable GC temperature programs}
 
 Because stopped-flow operation decouples the SFC and the GC, the modulation
 period is independent of the GC run time as discussed in the previous section.
@@ -421,13 +422,13 @@ temperature program can be used for optimum separation.
 \subsection{Application}
 
 The separation of the compounds found in the \SI{7}{\percent} diesel/biodiesel
-blend shows that SFC×GC can be used to investigate the amount FAMEs and PAHs in
-petrodiesel blended with biodiesel without sample pre-treatment or specialized
-columns. The intrinsic orthogonality provides easy identification of components
-and the ample separation space allows for the addition of suitable internal
-standards for reliable qualitative and quantitative analysis by exploiting the
-robustness and reliability of the FID. Expensive mass spectrometric detection is
-unnecessary.
+blend shows that SFC×GC can be used to investigate the amount of FAMEs and PAHs
+in petrodiesel blended with biodiesel without sample pre-treatment or
+specialized columns. The intrinsic orthogonality provides easy identification of
+components and the ample separation space allows for the addition of suitable
+internal standards for reliable qualitative and quantitative analysis by
+exploiting the robustness and reliability of the FID. Expensive mass
+spectrometric detection is unnecessary.
 
 Being able to determine the biodiesel content of biodiesel blends may prove
 useful in at least two scenarios:
@@ -459,7 +460,7 @@ might find SFC×GC a useful technique to provide evidence that a diesel fuel
 blend contains the stated amount of biodiesel.
 
 Apart from demonstrating compliance with regulation, SFC×GC for the
-determination of PAHs have potential forensic applications. Oil spills are often
+determination of PAHs has potential forensic applications. Oil spills are often
 followed by litigation, and methods are required to unambiguously identify
 sources of spills. The ratios between different PAHs species is unique to each
 crude oil, which transfers to the products distilled from them. Such a ratio

@@ -1,0 +1,17 @@
+[0] Config.pm:304> INFO - This is Biber 2.12
+[0] Config.pm:307> INFO - Logfile is 'main.blg'
+[101] biber-MSWIN64:315> INFO - === 
+[391] Biber.pm:371> INFO - Reading 'main.bcf'
+[541] Biber.pm:889> INFO - Found 184 citekeys in bib section 0
+[576] Biber.pm:4093> INFO - Processing section 0
+[729] Biber.pm:4254> INFO - Looking for bibtex format file 'main.bib' for section 0
+[744] bibtex.pm:1523> INFO - LaTeX decoding ...
+[1236] bibtex.pm:1340> INFO - Found BibTeX data source 'main.bib'
+[2531] Utils.pm:193> WARN - Overwriting field 'month' with month value from field 'date' for entry 'Sarowha2000'
+[2867] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2867] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2867] Biber.pm:3921> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[2867] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
+[3164] bbl.pm:636> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[3402] bbl.pm:739> INFO - Output to main.bbl
+[3403] Biber.pm:110> INFO - WARNINGS: 1

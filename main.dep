@@ -129,7 +129,6 @@
   *{file}   {pgfmath.code.tex}{0000/00/00 v0.0}
   *{file}   {pgffor.code.tex}{0000/00/00 v0.0}
   *{file}   {tikz.code.tex}{0000/00/00 v0.0}
-  *{package}{refcheck}    {2013/02/14 v1.9.1}
   *{package}{tabulary}    {2014/06/11 v0.10}
   *{package}{rotating}    {2016/08/11 v2.16d}
   *{package}{pdfpages}    {2019/09/21 v0.5n}
@@ -231,7 +230,6 @@
   *{file}   {Figures/hchump.pdf}{0000/00/00 v0.0}
   *{file}   {Figures/Hydrocarbons_Portion.png}{0000/00/00 v0.0}
   *{file}   {Figures/VirtualSFC_Compared.png}{0000/00/00 v0.0}
-  *{file}   {Figures/Spiked_Diesel.png}{0000/00/00 v0.0}
   *{file}   {Figures/Spiked_Diesel_Annotated.png}{0000/00/00 v0.0}
   *{file}   {Chapters/Chapter8.tex}{0000/00/00 v0.0}
   *{file}   {Figures/Modifier.pdf}{0000/00/00 v0.0}
