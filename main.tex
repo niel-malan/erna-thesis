@@ -46,8 +46,8 @@ english, % ngerman for German
 singlespacing, % Single line spacing, alternatives: onehalfspacing or doublespacing
 %draft, % Uncomment to enable draft mode (no pictures, no links, overfull hboxes indicated)
 %nolistspacing, % If the document is onehalfspacing or doublespacing, uncomment this to set spacing in lists to single
-%liststotoc, % Uncomment to add the list of figures/tables/etc to the table of contents
-%toctotoc, % Uncomment to add the main table of contents to the table of contents
+liststotoc, % Uncomment to add the list of figures/tables/etc to the table of contents
+toctotoc, % Uncomment to add the main table of contents to the table of contents
 %parskip, % Uncomment to add space between paragraphs
 %nohyperref, % Uncomment to not load the hyperref package
 headsepline, % Uncomment to get a line under the header
@@ -158,7 +158,7 @@ headsepline, % Uncomment to get a line under the header
 
 % Added to avoid error reported by pdfTeX
 \pdfsuppresswarningpagegroup=1
- 
+
 \frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
 
 \pagestyle{plain} % Default to the plain heading style until the thesis style is called for the body content
@@ -168,6 +168,7 @@ headsepline, % Uncomment to get a line under the header
 %----------------------------------------------------------------------------------------
 
 \begin{titlepage}
+\addchaptertocentry{Title Page}
 \begin{center}
 
 \vspace*{.06\textheight}
@@ -469,6 +470,7 @@ presenting the results obtained.
 
 \begin{abbreviations}{ll} % Include a list of abbreviations (a table of two columns)
 
+
 \textbf{ATR} & Attenuated Total Reflection \\
 \textbf{CCGT} & Combined Cycle Gas Turbine \\
 \textbf{DIO} &  Digital Input/Output\\
@@ -524,30 +526,33 @@ presenting the results obtained.
 
 \begin{symbols}{lll} % Include a list of Symbols (a three column table)
 
+
 \textbf{Symbol} & \textbf{Name} & \textbf{Unit}\\
 
-\( \a \) & selectivity & dimensionless  \\
-\( k' \) & retention factor & dimensionless\\
-\( P_M \) & modulation period & \si{\second} \\
-\oneD & first dimension & \\
-\twoD & second dimension & \\
-\( t_r \) & retention time & \si{second}\\
+\( \alpha \) & selectivity & dimensionless  \\
 \( \eta \) & energy efficiency & dimensionless\\
 \( \eta_{C} \) & Carnot energy efficiency & dimensionless\\
 \( \eta_{CM} \) & Chambadal-Novikov energy efficiency & dimensionless\\
-\( V \) & electrical potential difference &  \si{\volt} \\
-\( I \) & electrical current & \si{\ampere}\\
-\( P \) & power & \si{\watt}\\
-\( p_o \) & outlet pressure & \si{\pascal}\\
-\( \Delta p \) &  pressure difference & \si{\pascal}\\
-\( T \) & temperature & \si{kelvin} \\
-\( N \) &  number of plates & dimensionless \\
-\( E \) & chromatographic efficiency & dimensionless \\
 
 %$P$ & power & \si{\watt} (\si{\joule\per\second}) \\
 %Symbol & Name & Unit \\
 
-%\addlinespace % Gap to separate the Roman symbols from the Greek
+\addlinespace % Gap to separate the Roman symbols from the Greek
+
+\oneD & first dimension & \\
+\twoD & second dimension & \\
+\( E \) & chromatographic efficiency & dimensionless \\
+\( I \) & electrical current & \si{\ampere}\\
+\( k' \) & capacity factor & dimensionless\\
+\( N \) &  number of plates & dimensionless \\
+\( P_M \) & modulation period & \si{\second} \\
+\( P \) & power & \si{\watt}\\
+\( p_o \) & outlet pressure & \si{\pascal}\\
+\( \Delta p \) &  pressure difference & \si{\pascal}\\
+\( T \) & temperature & \si{kelvin} \\
+\( t_r \) & retention time & \si{\second}\\
+\( V \) & electrical potential difference &  \si{\volt} \\
+
 
 %$\omega$ & angular frequency & \si{\radian} \\
 
