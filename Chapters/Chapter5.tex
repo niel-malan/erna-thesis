@@ -54,17 +54,18 @@ the \twoD separation should be faster than the \oneD separation.
 In stopped-flow coupling, the duration of the \twoD separation is largely
 decoupled from the peak width of the of \oneD separation and, by implication,
 the \oneD modulation period. In terms of the third criterion of comprehensive
-coupling listed above, as long as the resolution obtained in the \oneD
-separation is not lost during the stopped-flow period, the duration of the \twoD
-separation can be as long as it needs to be. In SFC the longitudinal diffusion
-is low, so that in principle the \twoD GC runs in SFC×GC need not be remarkably
-fast. In practice, however, \keyword{sample throughput} of a chromatographic
-method needs to be acceptable. One of the major determinants of sample
-throughput is \keyword{run time}, the time it takes from when the sample is
-injected until the final compound has eluted. The judgement of what is
-acceptable depends strongly on context: for finding the proverbial biomarker for
-Alzheimer's disease very long run times might be acceptable, but for routine
-analysis of a commodity biodiesel acceptable run times would probably be short.
+coupling listed at the start of this section, as long as the resolution obtained
+in the \oneD separation is not lost during the stopped-flow period, the duration
+of the \twoD separation can be as long as it needs to be. In SFC the
+longitudinal diffusion is low, so that in principle the \twoD GC runs in SFC×GC
+need not be remarkably fast. In practice, however, \keyword{sample throughput}
+of a chromatographic method needs to be acceptable. One of the major
+determinants of sample throughput is \keyword{run time}, the time it takes from
+when the sample is injected until the final compound has eluted. The judgement
+of what is acceptable depends strongly on context: for finding the proverbial
+biomarker for Alzheimer's disease very long run times might be acceptable, but
+for routine analysis of a commodity biodiesel acceptable run times would
+probably be short.
 Therefore, when developing a practical SFC×GC chromatograph the aim should be to
 make run times as short as possible.
 
@@ -75,14 +76,14 @@ The time it takes for a stopped-flow SFC×GC run can be calculated from
 where \(t_T\) is the total time, \(t_{^{1}D}\) is the run time the unmodulated
 \oneD run would take, \(P_M\) is the \keyword{modulation period}, and
 \(t_{stopped}\) is the duration of the SFC stopped-flow state, during which the
-\oneD run is completed. With continuous-flow coupling (as in GC×GC) \(
+\twoD run is completed. With continuous-flow coupling (as in GC×GC) \(
 t_{stopped}=0 \), so that \(t_{T} = t_{^{1}D}\).
 
 Examining the expression shows that we can decrease \(t_T\) by increasing
 \(P_M\), but there is limit to this: as the modulation period becomes longer the
 separation obtained in the \oneD separation is decreased when fractions start
 including first portions of two adjacent peaks and then more than one peak. So,
-the only way to decrease the total run times is to reduce \(t_{stopped}\), the
+the only way to decrease the total run time is to reduce \(t_{stopped}\), the
 GC run time. For example, if a typical SFC run takes \SI{20}{\minute} and fractions are
 collected for every \SI{5}{\second} of SFC run, it means there will be \( 20
 \times 60 / 5 = 240 \) fractions collected. Each of these fractions must be
@@ -212,7 +213,11 @@ case differs from it only by a factor of \num{1.125} (See Figure
 \centering
 \includegraphics[width=0.75\textwidth]{Figures/VanDeemter.pdf}
 \decoRule
-\caption[A plot of H \textit{vs.} F]{A plot of H \textit{vs.} F.}
+
+\caption[A plot of H \textit{vs.} F]{A plot of H \textit{vs.} F. The solid line
+represents the low pressure drop case, and the dashed line the high pressure
+drop case.}
+
 \label{fig:VanDeemter}
 \end{figure}
 
@@ -278,15 +283,15 @@ sample requires lower efficiency, so the SOF can be higher.
 The high speed chromatography that is used in GC×GC is possible because any
 fraction collected from the \oneD separation is considerably simpler than the
 original sample, and therefore the efficiency constraint is relaxed, which
-allows a much higher SOF, and therefore a very fast \twoD
-separation. Even at SOF, there might still be excess efficiency, which could be
-traded for higher speed. Since \(E^2 = \frac{H}{L} \), this higher speed can be
-obtained by increasing the flow beyond SOF (decreasing \(H\)), or by using a
-shorter column (decreasing \(L\)). Studies of optimization with the goal of the
-best speed/efficiency ratio using column length and flow as optimizing
-parameters revealed, theoretically and experimentally, that flow nearer the SOF
-combined with shorter columns gives better performance \autocite{Klee2002,
-Reed1999} than flow much faster than SOF combined with longer columns.
+allows a much higher SOF, and therefore a very fast \twoD separation. Even at
+SOF, there might still be excess efficiency, which could be traded for higher
+speed. Since \(E^2 = \frac{H}{L} \), this higher speed can be obtained by
+increasing the flow beyond SOF (increasing \(H\)), or by using a shorter column
+(decreasing \(L\)). Studies of optimization with the goal of the best
+speed/efficiency ratio using column length and flow as optimizing parameters
+revealed, theoretically and experimentally, that flow nearer the SOF combined
+with shorter columns gives better performance than flow much faster than SOF
+combined with longer columns \autocite{Klee2002, Reed1999}.
 
 \section{The General Elution Problem.}
 
@@ -378,7 +383,7 @@ rate increases rapidly (See Figure \ref{fig:RampRateBlumberg}).
 	\includegraphics[width=0.8\textwidth]{Figures/7890B.png}
 	\decoRule
 	\caption[A temperature-rate table from the Agilent7890B data sheet]{The
-	temperature-rate table from the Agilent 7890B chromatograph data sheet
+	temperature-rate table from the Agilent 7890B chromatograph data sheet.
 	\autocite{7890B}. }
 	\label{fig:RampRate7890B}
 \end{figure}
@@ -758,10 +763,10 @@ likely that a practical crimped connection will have a diameter many times the
 diameter of the wire, possibly making it too large to fit.
 
 Hard soldering is usually done with a high-temperature flame, and on contact the
-flame will rapidly burn the fine wires. The temperature required for hard
-soldering is still lower than the melting point of the wires, so that hard
-soldering is not excluded, but we did not have the knowledge or the technology
-to solve the associated problems.
+flame will rapidly burn the fine wires and destroy them. The temperature
+required for hard soldering is still lower than the melting point of the wires,
+so that hard soldering is not excluded, but we did not have the knowledge or the
+technology to solve the associated problems.
 
 Welding was found to be an accessible technology for forming small, reliable
 joints in fine thermocouple wire.

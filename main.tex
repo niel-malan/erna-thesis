@@ -61,7 +61,7 @@ headsepline, % Uncomment to get a line under the header
 
 \usepackage{mathpazo} % Use the Palatino font by default
 
-\usepackage[style=authoryear, backend=biber, url=false]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
+\usepackage[style=authoryear, backend=biber, url=false, uniquename=false]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
 
 \addbibresource{main.bib} % The filename of the bibliography
 
@@ -94,7 +94,8 @@ headsepline, % Uncomment to get a line under the header
 %\usepackage{refcheck} % Checks references. Remove before final submission
 \usepackage{tabulary}
 \usepackage{rotating} % To allow rotated table
-\usepackage{pdfpages} % To include article manuscripa}
+\usepackage{pdfpages} % To include article manuscript}
+\usepackage{flafter} % To ensure floats appear after their references.
 \usepackage{makeidx} % To make index (Appendix A)
 	\makeindex
 
@@ -473,7 +474,9 @@ presenting the results obtained.
 
 \textbf{ATR} & Attenuated Total Reflection \\
 \textbf{CCGT} & Combined Cycle Gas Turbine \\
+\textbf{CFPP} & Cold Filter Plugging Point\\
 \textbf{DIO} &  Digital Input/Output\\
+\textbf{ECD} &  Electron Capture Detector\\
 \textbf{EOF} &  Efficiency-Optimized Flow\\
 \textbf{EOV} &  Efficiency-Optimized Velocity\\
 \textbf{EPC} &  Electronic Pneumatic Control\\
@@ -492,11 +495,14 @@ presenting the results obtained.
 \textbf{PAH} & Polycyclic Aromatic Hydrocarbons \textit{or} Polynuclear Aromatic Hydrocarbons\\
 \textbf{PID} &  Proportional Integral Derivative\\
 \textbf{PLOT} & Porous Layer Open Tubular\\
+\textbf{PUFA} & Polyunsaturated fatty acid\\
+\textbf{PV} &  Photovoltaic\\
 \textbf{PV} &  Process Variable\\
 \textbf{PWM} &  Pulse-Width Modulation \\
 \textbf{RI} & Refractive Index \\
 \textbf{SFC} & Supercritical Fluid Chromatography \\
 \textbf{SFC×GC} &  Comprehensively coupled (Supercritical Fluid × Gas Chromatography)\\
+\textbf{SFE} & Supercritical Fluid Extraction\\
 \textbf{SIM} &  Single Ion Monitoring \\
 \textbf{SOF} &  Speed-Optimized Flow\\
 \textbf{SOV} &  Speed-Optimized Velocity\\

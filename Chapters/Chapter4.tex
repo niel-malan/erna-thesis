@@ -53,13 +53,13 @@ built-in pressure transducer that provides an electronic signal proportional to
 the pressure at the pump outlet.
 
 The Varian 8500 pump is a single-piston pump with a \SI{250}{\milli\litre}
-capacity that needs to be refilled between strokes. Refilling means that one has
-to stop chromatography, which makes it important to fill the pump to full
-capacity, so that chromatographic runs are not interrupted. It also means that the
+capacity that needs to be refilled between strokes. Chromatography is not
+possible during refilling, so to prevent the interruption of chromatographic
+runs it is necessary to fill the pump to full capacity. It also means that the
 pump needs to be filled with carbon dioxide in the liquid phase rather than the
-vapour phase. Compressing either would create the appropriate phase for doing
-chromatography, but compressing a vapour would leave a much smaller volume of
-high-pressure carbon dioxide in the pump than compressing a liquid would.
+vapour phase: compressing either phase creates the desired mobile phase,
+but compressing a vapour leaves a much smaller volume of high-pressure carbon
+dioxide in the pump than compressing a liquid does.
  
 \begin{figure}
 \centering
@@ -137,11 +137,11 @@ the PC through a USB cable.
 
 \subsection{Pressure control system}
 
-The aim of chromatography is to separate chromatograms by a certain distance.
+The aim of chromatography is to separate compounds in distance.
 But the days of separating coloured compounds in glass packed columns are long
 past and the direct measurement of distances are now relegated to thin-layer
-chromatography. Instead, we have to make do with proxies for distance such as
-\keyword{retention volumes} or \keyword{retention times}.
+chromatography. Instead, proxies for distance such as \keyword{retention
+volumes} or \keyword{retention times} are used.
 
 
 % In chromatography the figure of merit by which the performance of a system is
@@ -150,7 +150,7 @@ chromatography. Instead, we have to make do with proxies for distance such as
 
 Retention times are particularly convenient today, because they can easily be
 measured by computer systems. Retention times, however, depend on a known flow
-rate of the mobile phase through the column. The flow rate needs not be
+rate of the mobile phase through the column. The flow rate need not be
 constant, although for the sake of simplicity a constant flow rate is preferred.
 Ideally, the flow rate should also be adjustable. The need for an adjustable,
 constant flow rate can be met by using a control system. Control systems are
@@ -362,11 +362,11 @@ have a major effect on the resolution of the \oneD chromatography.
 
 No matter the kind of SFC system one uses, at some point the eluate needs to be
 depressurized. This can be before or after the detector. If depressurization
-happens after the detector, the details of the mechanism doesn't matter
-much, because the information has been obtained and the eluate can be discarded.
+happens after the detector, the details of the mechanism don't matter much,
+because the information has been obtained and the eluate can be discarded.
 If, as in our case, the depressurized eluate needs to still pass the detector,
-it is important to not lose the resolution achieved by the column.
-This means that the design of the depressurizer requires some care.
+it is important to not lose the resolution achieved by the column. This means
+that the design of the depressurizer requires some care.
 
 The main concern in depressurizer design is premature desolvation of analytes.
 This causes \keyword{discrimination}, which is the differential treatment of
