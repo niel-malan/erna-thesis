@@ -57,8 +57,9 @@ stationary phase (See Figure \ref{fig:RestekFAMEsGC}).
 \decoRule
 
 \caption[Separation of FAME by GC]{This figure shows that when separating FAMEs
-by GC, using specialized column, separation is primarily by fatty acid chain
-length, and secondarily by number of double bonds. Reproduced with permission of Restek Corporation.}
+by GC, using a specialized column, separation is primarily by fatty acid chain
+length, and secondarily by number of double bonds. Reproduced with permission of
+Restek Corporation.}
 
 \label{fig:RestekFAMEsGC}
 \end{figure}
@@ -173,7 +174,7 @@ different temperatures. The material that the object is made of has a certain
 of the parts of the object at different temperatures will change at different
 rates. This will cause stress between the parts, and if the stress exceeds the
 strength of the material, the material will fracture. Fused silica has a low
-coefficient of expansion\footnote{ (\SI{0.55e-6}{\per\kelvin}, compared to the
+coefficient of expansion\footnote{\SI{0.55e-6}{\per\kelvin}, compared to the
 \SI{9.0e-6}{\per\kelvin} of soda lime glass or the \SI{4.0e-6}{\per\kelvin} of
 borosilicate glass}, and therefore experiences low thermal shock. The amount of
 material in a capillary is also relatively small, which keeps temperature
@@ -211,12 +212,12 @@ being separated by GC are highly sensitive to temperature, so it was necessary
 to obtain a measure of the retention time repeatability.
 
 To estimate the retention time variance, two alkanes (dodecane and hexadecane)
-were added to the SFC mobile phase at low concentration. These compounds are not
-retained on the silica at all, and are therefore present in all the GC runs at
-the same concentration and all the peaks should be identical. Variance in
-retention time, peak area, and peak height therefore indicate the repeatability
-of the fast GC system. Variability of retention time is summarized in Table
-\ref{tab:RetentionTimeVariance}.
+were added to the SFC mobile phase at a concentration of about
+\SI{0.6}{\percent}. These compounds are not retained on the silica at all, and
+are therefore present in all the GC runs at the same concentration and all the
+peaks should be identical. Variance in retention time, peak area, and peak
+height therefore indicate the repeatability of the fast GC system. Variability
+of retention time is summarized in Table \ref{tab:RetentionTimeVariance}.
 
 \begin{table}
 
@@ -241,7 +242,16 @@ The relative standard deviations (RSD) of retention times were similar to those
 obtained in GC×GC \autocite{Shellie2002}, and much smaller than those of our
 original ``proof of concept'' instrument \autocite{Venter2003, Venter2004}.
 
-\section[Study of biodiesel by SFC×GC]{Study of potential biodiesel feedstock by SFC×GC}
+\subsection{Coolant consumption}
+
+In Section \ref{sec:ColdColumn} it was mentioned that the first SFC×GC
+instrument consumed many kilograms of carbon dioxide coolant for each run. With
+coaxial cooling, if a typical SFC×GC run consists of \num{200} GC runs which
+each requires \SI{7}{\second} of coolant flow at a rate of
+\SI{30}{\gram\per\minute}, then \SI{700}{\gram} of carbon dioxide coolant would
+be consumed per run, an order-of-magnitude improvement.
+
+\section[Study of biodiesel feedstock by SFC×GC]{Study of potential biodiesel feedstock by SFC×GC}
 
 Biodiesel can be produced from any combination of a variety of vegetable
 oils\footnote{At this time \std{SANS 1935} excludes animal fats, but they might be
@@ -275,11 +285,11 @@ Various samples of edible oil were obtained from supermarkets. (See Table
 \subsection{Sample preparation}
 
 Fatty acids in oils might be either free or bound to glycerol. To quantitatively
-convert them to FAME therefore requires that the bound fatty acid be transesterified,
-and the free fatty acids esterified. Both transesterification and esterification
-can be achieved by acid catalyst, but this reaction is quite slow. Basic
-catalysts can rapidly transesterify acyl glycerols, but will not esterify free
-fatty acids.
+convert them to FAMEs therefore requires that the bound fatty acid be
+transesterified, and the free fatty acids esterified. Both transesterification
+and esterification can be achieved by acid catalyst, but this reaction is quite
+slow. Basic catalysts can rapidly transesterify acyl glycerols, but will not
+esterify free fatty acids.
 
 The method used involved first treating the oil sample with sodium hydroxide
 dissolved in dry methanol. The methanol acts as a solvent but also provides an

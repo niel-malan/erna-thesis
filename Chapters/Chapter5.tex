@@ -834,7 +834,7 @@ electrode from the negative base. The carbon electrode can be advanced towards
 the thermocouple twist using the screw. The black clamp at the bottom right-hand
 corner attached to the base plate and the red clamp attached to the screw
 housing provide a potential difference of approximately \SI{20}{V} between the
-carbon electrode and the thermocouple. }
+carbon electrode and the thermocouple. \todo{Maybe add labels}}
 
 \label{fig:FineWireWelder}
 \end{figure}
@@ -845,8 +845,8 @@ carbon electrode and the thermocouple. }
 	\decoRule
 	
 \caption[A microphoto of a thermocouple twist ready to be welded.]{A microphoto
-of a twisted wire ready to be welded. The black carbon electrode is
-\SI{2}{\milli\metre} in diameter.}
+of a pair of twisted thermocouple wires ready to be welded. The black carbon
+electrode is \SI{2}{\milli\metre} in diameter.}
 	
 	\label{fig:TCWeldMicro}
 \end{figure}
@@ -899,6 +899,7 @@ signal'' \autocite{AD595}. The output signal of the AD595 can be directly
 digitized for computer recording.
 
 \subsection{Calibration procedure}
+\label{sec:Calibration}
 
 The International Vocabulary of Metrology \autocite{JCGM200:2012} define
 \keyword{calibration} as ``[an] operation that, under specified conditions, in a
@@ -1167,9 +1168,9 @@ Independent of the amount of power dissipated in the coaxial heater, the current
 through the reference resistor was compared to the current through the column.
 This ratio corresponds to the resistance of the coaxial heater. This resistance
 is a function of the temperature of the heater. Through the calibration
-procedure described above the temperature of the coaxial heater can be
-calculated. The computer can do this fast enough so that a temperature
-measurement is available to continuously feed to a control system.
+procedure described in \ref{sec:Calibration} the temperature of the coaxial
+heater can be calculated. The computer can do this fast enough to continuously
+provide temperature as a process variable to the control system.
 
 \subsubsection{PID tuning}
 
@@ -1200,7 +1201,7 @@ Figure \ref{fig:LoopTuning} shows the effect of an improved loop tuning.
 \end{figure}
 
 A properly tuned heater helps to improve the repeatability of the chromatography
-through reliable temperature programs and prevents damage to the column due
+through reliable temperature programs and prevents damage to the column due to
 overheating during set point overshoots.
 
 \subsubsection{Heating rates}
@@ -1214,9 +1215,10 @@ Celsius per minute.
 	\includegraphics[width=0.8\textwidth]{Figures/high_rate_heating.pdf}
 	\decoRule
 		
-	\caption[Heating rate illustration]{A graph of 9 identical, consecutive
-	temperature ramps overlaid. The heating rate is \SI{4000}{C\degree\per\minute}.
-	The temperature follows the set point faithfully up to \SI{350}{\celsius}.}
+\caption[Heating rate illustration]{A graph of 9 identical, consecutive
+temperature ramps overlaid. The heating rate is \SI{4000}{\celsius\per\minute}.
+The temperature follows (with some lag) the set point up to \SI{350}{\celsius}
+before deviating noticeably.}
 
 	\label{fig:4000K/min} 
 \end{figure}
@@ -1230,12 +1232,14 @@ significant differences between the 9 consecutive ramps.
 The project did not demand a precise knowledge of, or control over, the cooling
 rate of the coaxial heater. The only requirement was that cooling should be as
 fast as possible. The cooling rate could be adjusted through the metering valve,
-and an optimum cooling rate of \SI{5100}{C\degree\per\min} was achieved with a
-carbon dioxide flow rate of around \SI{30}{\gram\per\min}. This allowed the
+and an optimum cooling rate of \SI{5100}{\celsius\per\minute} was achieved with
+a carbon dioxide flow rate of around \SI{30}{\gram\per\minute}. This allowed the
 column to be cooled down from \SI{350}{\celsius} to \SI{-20}{\celsius} in about
-2 seconds. At this rate the portion of the chromatographic cycle that is not
-used for separation is dominated by fraction collection, and further cooling
+\SI{2}{\second}. At this rate the portion of the chromatographic cycle that is
+not used for separation is dominated by fraction collection, and further cooling
 rate increases will not significantly reduce sample throughput.
+
+\todo{Find a place to put estimate of total coolant consumption for chromatogram.}
 
 \section{Detector}
 
@@ -1305,7 +1309,7 @@ then be examined using the \texttt{Manipulate[]} function (Figure
 	
 	\caption[A single fast GC chromatogram ]{A single fast GC chromatogram, in a
 	Mathematica \texttt{Manipulate[]} environment. The sliders can be used to select
-	the which GC run to view, and which data of that run. }
+	which GC run to view, and which data of that run. }
 	
 	\label{fig:SingleGC}
 \end{figure}
@@ -1321,7 +1325,10 @@ respectively.
 	\centering
 	\includegraphics[width=0.8\textwidth]{Figures/2DChromatogram.pdf}
 	\decoRule
-	\caption[A 2D SFC×GC chromatogram]{A 2D SFC×GC chromatogram.}	
+	
+\caption[A 2D SFC×GC chromatogram]{A 2D SFC×GC chromatogram of fatty acid methyl
+esters of sunflower oil}
+	
 	\label{fig:2DChromatogram}
 \end{figure}
 
@@ -1330,7 +1337,10 @@ respectively.
 	\centering
 	\includegraphics[width=\textwidth]{Figures/Contourplot.pdf}
 	\decoRule
-	\caption[A 2D SFC×GC chromatogram]{An SFC×GC contour plot.}	
+	
+\caption[A 2D SFC×GC chromatogram]{The SFC×GC contour plot representation of the
+2D chromatogram shown in Figure \ref{fig:2DChromatogram}.}
+	
 	\label{fig:Contourplot}
 \end{figure}
 
