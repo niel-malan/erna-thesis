@@ -16,12 +16,13 @@ compatible with a flame ionization (FID) detector: under the conditions found in
 the hydrogen-rich portion of the flame the carbon dioxide cannot be reduced to
 methane, the first step in the process that produces the ions that gives the FID
 its name. But most modern SFC development involves the use of modifiers and
-additives\footnote{Modifiers are added to the carbon dioxide to manipulate the
-solubility of the analytes in the mobile phase, in exactly the same way that
-mixtures of solvents are used in, say, gradient elution in HPLC. Additives are
-added in small amounts and manipulate the interaction of the analyte with the
-stationary phase.}. These modifiers are usually organic compounds, and in the
-FID flame they produce ions. When the modifier-containing eluate of an SFC
+additives\footnote{Nominally, modifiers are added to the carbon dioxide to
+manipulate the solubility of the analytes in the mobile phase, in the same way
+that mixtures of solvents are used in, say, gradient elution in HPLC. Additives
+are added in small amounts and manipulate the interaction of the analyte with
+the stationary phase. In reality, the mechanism of their action is more complex
+\autocite{Berger1991}.}. These modifiers are usually organic compounds, and in
+the FID flame they produce ions. When the modifier-containing eluate of an SFC
 column passes through the detector, the quantity of the modifiers will be much
 higher than quantity of the analytes. If the detector is an FID, the modifiers
 will produce many more ions than the analyte will produce, and therefore the the
@@ -94,8 +95,9 @@ In this section a SFC×GC chromatogram is presented that shows that methanol
 added as a modifier to the SFC mobile phase does not interfere with the fast GC
 any more than a sample's solvent interferes in the usual 1D GC. The 2D
 separation space of SFC×GC therefore gains in control over elution in the SFC
-dimension at the cost of losing the capability to detect compounds
-more volatile than methanol on the GC dimension.
+dimension at the cost of losing the capability to detect compounds more volatile
+than methanol on the GC dimension: modifiers can help elute more polar compounds
+on SFC, but they will co-elute with volatile analytes and saturate the detector.
 
 \subsection{Sample}
 
@@ -112,8 +114,9 @@ injected. The flow rate of carbon dioxide at atmospheric pressure was
 \SI{175}{\milli\litre\per\minute}, corresponding to a mass flow rate of about
 \SI{0.3}{\gram\per\minute}. The carbon dioxide mobile phase was modified with
 \SI{5}{\percent} mass fraction of HPLC-grade methanol (Merck LiChrosolv).
-The column consisted of five HPLC bare silica columns (150 mm $\times$ 4.6 mm, 3
-$\mu$m particles) (Restek, Pinnacle DB Silica) connected in series.
+The column consisted of five HPLC bare silica columns (\SI{150}{\milli\metre}
+$\times$ \SI{4.6}{\milli\metre}, \SI{3}{\micro\metre} particles) (Restek,
+Pinnacle DB Silica) connected in series.
 
 \subsection{Modulation}
 
@@ -190,16 +193,15 @@ separation space is available for separation.
 Adding modifiers to SFC expands the versatility of carbon dioxide as a mobile
 phase, but in 1D SFC the use of modifiers precludes the use of the universal
 flame ionization detector (FID), because the modifier signal will swamp the
-analyte signal.
-
-Adding GC-FID as a \textsuperscript{2}D separation allows the use of any
+analyte signal. Adding GC-FID as a \twoD separation allows the use of any
 volatile modifier to manipulate retention in the SFC dimension, including
 modifiers that might not be UV-transparent. Modifiers present in the fraction
 collected by the modulator elute like the customary solvent peak in the GC
 dimension, which means that the signal from the modifier does not interfere with
-the signal of the analyte.
-
-The example above shows that SFC×GC will reliably separate any modifiers
-used in the SFC dimension from the analytes, allowing the FID to be used as a
-detector for gradient-elution SFC separations.
-
+the signal of the analyte, if it is given that the analyte is less volatile than
+the modifier.
+ 
+The example above shows that SFC×GC will reliably separate methanol used as an
+SFC modifier from the less-volatile analytes found in a biodiesel blend sample,
+promising the use of FID as a detector for gradient-elution SFC×GC separations
+of biodiesel and biodiesel blends.
