@@ -39,7 +39,7 @@ collection and \twoD injection happens during the uninterrupted \oneD
 separation. In stopped-flow coupling as used in the SFC×GC chromatography
 described here, the \oneD SFC separation is stopped after a fraction has been
 collected. This fraction is separated on the \twoD GC column. After the \twoD
-run is complete the SFC run is restarted and the next fraction is collected.
+run is complete the SFC run is resumed and the next fraction is collected.
 
 Fractions of the \oneD separation are collected at a rate which is determined
 by the peak width on the \oneD chromatogram. To get adequate peak detection in
@@ -141,16 +141,16 @@ chromatography. When using packed columns, the capacity can be readily increased
 by using a column with a larger diameter and a larger amount of packing.}. The
 fastest chromatography will have low capacity and low resolution, the
 chromatography giving the highest resolution will be slow with low capacity, and
-the chromatography of a sample with a large amount of analyte will be slow
-and have low resolution \autocite{Klee2002}. One way the chromatographer can
-ease the grip of the trilemma is to decide what factor is least important for
-the current problem, pick a value that is likely to satisfy most
-conditions, keep it fixed, and then find an acceptable compromise between the
-other two. In the development of the SFC×GC we decided to work with a fixed
-sample capacity: we chose a capillary column with a \SI{0.25}{\milli\metre}
-internal diameter and a \SI{0.25}{\micro\metre} stationary phase. With the
-sample capacity held constant, it is now possible to optimize the system so that
-it gives adequate resolution in the shortest possible time.
+the chromatography of a sample with a large amount of analyte will be slow and
+have low resolution \autocite{Klee2002}. One way the chromatographer can ease
+the grip of the trilemma is to decide what factor is least important for the
+current problem, pick a value that is likely to satisfy most conditions, keep it
+fixed, and then find an acceptable compromise between the other two. In the
+development of the SFC×GC it was decided to work with a fixed sample capacity: a
+capillary column with a \SI{0.25}{\milli\metre} internal diameter and a
+\SI{0.25}{\micro\metre} stationary phase was chosen. With the sample capacity
+held constant, it is now possible to optimize the system so that it gives
+adequate resolution in the shortest possible time.
 
 The \keyword{efficiency} of a column is given by the relationship \(E =
 \frac{t_R}{\sigma} \), where \(t_R\) is the \keyword{retention time} of a peak,
@@ -467,12 +467,12 @@ as part of the manufacturing process.
 
 For the work presented in this thesis, a coaxial heater was used. This heater is
 in the form of a thin-walled stainless-steel tube that carries the electric
-current. It was made of a \SI{940}{\milli\metre} length of SAE 304 stainless
-steel with an outside diameter of \SI{1.06}{\milli\metre} and an inside diameter
-of \SI{0.80}{\milli\metre}, obtained from Mifam (Milanówek, Poland). The column
-was threaded inside the stainless steel tube, which put it in close contact with
-the heater for reliable heat transfer. The coaxial heater can be coiled to
-fit inside a conventional GC oven.
+current. It was made of a \SI{940}{\milli\metre} length of a standard stainless
+steel alloy (SAE 304) with an outside diameter of \SI{1.06}{\milli\metre} and an
+inside diameter of \SI{0.80}{\milli\metre}, obtained from Mifam (Milanówek,
+Poland). The column was threaded inside the stainless steel tube, which put it
+in close contact with the heater for reliable heat transfer. The coaxial heater
+can be coiled to fit inside a conventional GC oven.
 
 This coaxial design has the advantage that the column can be changed without
 changing the resistive heater. This means that there is no need to re-calibrate
@@ -560,7 +560,7 @@ approximated by a polynomial or lookup table.
 
 It is highly desirable that the coaxial heater should give uniform heating, but
 there is no obvious guarantee an electrically heated tube will heat uniformly.
-We did not analyse the problem theoretically, but the following factors will
+The problem was not analysed theoretically, but the following factors will
 play a role:
 
 \subsubsection{Resistivity's dependence on temperature}
@@ -620,8 +620,8 @@ The effect of the combination of resistivity's temperature dependence, thermal
 conduction, radiation, and convection on the temperature uniformity of the
 coaxial heater could be mathematically or numerically modelled, but such an
 endeavour would fall outside the scope of this project. Experience had not led
-us to expect any significant temperature non-uniformity, but we welcomed the 
-opportunity to get empirical confirmation.
+us to expect any significant temperature non-uniformity, but the
+opportunity to get empirical confirmation was welcomed.
 
 \keyword{Thermal imaging} is the process by which infrared radiation from
 objects can be captured in a photographic process. At near-ambient temperatures
@@ -632,7 +632,7 @@ image of a scene that shows objects based on their surface temperature. The
 technological capability of thermal imaging has improved markedly over the past
 years.
 
-Using a FLIR{\texttrademark} T660 thermal imaging camera we obtained a video of
+A FLIR{\texttrademark} T660 thermal imaging camera was used to obtain a video of
 the coaxial heater executing three consecutive temperature ramps. This camera
 uses a \num{640 x 480} focal plane uncooled bolometer array as a detector, which
 is sensitive to radiation in the range \SI{7.5}{\micro\metre} to
@@ -687,8 +687,8 @@ coaxial heater, it means comparing the results of the temperature as measured by
 the coaxial heater with a standard temperature.
 
 The problems of measuring a temperature inside a tube with a bore of
-\SI{0.8}{\milli\metre} are not trivial, and to solve them we examined the
-available technologies to find the optimum solution.
+\SI{0.8}{\milli\metre} are not trivial, and to solve them the
+available technologies was examined to find the optimum solution.
 
 The following temperature measurement technologies exist:
 \begin{itemize}
@@ -766,8 +766,8 @@ diameter of the wire, possibly making it too large to fit.
 Hard soldering is usually done with a high-temperature flame, and on contact the
 flame will rapidly burn the fine wires and destroy them. The temperature
 required for hard soldering is still lower than the melting point of the wires,
-so that hard soldering is not excluded, but we did not have the knowledge or the
-technology to solve the associated problems.
+so that hard soldering is not excluded, but the knowledge or the technology to
+solve the associated problems was not available.
 
 Welding was found to be an accessible technology for forming small, reliable
 joints in fine thermocouple wire.
@@ -891,7 +891,7 @@ The Type K thermocouple has a sensitivity of approximately
 temperature range of interest is too small to be conveniently digitized and
 therefore must be amplified. Because the Type K thermocouple is so commonly used
 in industry, amplifiers have been developed specifically for thermocouple signal
-conditioning. We chose the AD595 integrated circuit amplifier. The component's
+conditioning. The AD595 integrated circuit amplifier was chosen. The component's
 data sheet explains its application concisely: ``The AD595 is a complete
 instrumentation amplifier and thermocouple cold junction compensator on a
 monolithic chip. It combines an ice point reference with a pre-calibrated
@@ -944,8 +944,8 @@ thermocouple temperature \(T_{TC}\) against the voltage ratio \( \frac{dV}{V_b}
 The second step of a calibration is to establish a \textbf{measurement result}
 from an \textbf{indication}. It would be traditional to fit a mathematical
 function such as a polynomial to the curve, but a numerical method was chosen
-instead. We fitted a B-spline to the curve and extracted coordinates on the
-curve from the B-spline (See Figure \ref{fig:MeasurementCurve}). An
+instead. A B-spline was fitted to the data and coordinates on the
+B-spline was extracted. (See Figure \ref{fig:MeasurementCurve}). An
 interpolation function was then used to obtain the measurement result \(T\) from
 the indication \(dV/V_b\).
 
@@ -1100,7 +1100,7 @@ by a mixture of gas and liquid, and only finally liquid. (This is similar to the
 common experience of opening a water tap after a municipal water supply
 interruption: a lot of gurgling and spitting before a reliable stream of water
 flows from the tap.) Such unreliable coolant flow gives unreliable cooling.
-To solve this problem we installed a reservoir for liquid carbon dioxide on top
+To solve this problem a reservoir for liquid carbon dioxide was installed on top
 of the GC. The problem of filling a receptacle with liquid carbon dioxide was
 described in Section \ref{sec:CO2Pump}, so the final design of the reservoir
 took the form of a coil of copper tube immersed in a circulating coolant (Figure
@@ -1181,11 +1181,11 @@ to the temperature set-point as possible. The temperature set-point, in turn,
 was given by the desired chromatographic temperature ramp.
 
 The process of determining the best calculation by the PID is called
-\keyword{tuning}, and usually consists of determining the optimum values of a few
-parameters. Tuning PID controllers is a complex sub-discipline of process
-engineering, and outside the scope of this project, but for practical purposes
-we used a privately published step-by-step tuning method \autocite{Peacock2008}
-which is a version of the Cohen-Coon tuning method.
+\keyword{tuning}, and usually consists of determining the optimum values of a
+few parameters. Tuning PID controllers is a complex sub-discipline of process
+engineering, and outside the scope of this project, but for practical purposes a
+privately published tuning method was used \autocite{Peacock2008}. This is a
+step-by-step  implementation of the Cohen-Coon tuning method.
 
 Figure \ref{fig:LoopTuning} shows the effect of an improved loop tuning. 
 
@@ -1280,23 +1280,21 @@ shows the interface of the program used to control the SFC×GC instrument.
 
 In GC×GC, 2D data is recorded as a continuous FID output stream --- as if it is
 a 1D GC chromatogram --- and later converted into a 2D chromatogram using
-knowledge of the modulation period. For two reasons we could not use this
-approach. Firstly, in our instrument the first (SFC) dimension runs in a
-stop-flow mode making continuous data recording inappropriate. Secondly, the
-duration of the cooling cycle varies, which would introduce unacceptable
-variation in \textsuperscript{2}D retention times.
+knowledge of the modulation period. For two reasons this approach could not
+used. Firstly, in this instrument the first (SFC) dimension runs in a stop-flow
+mode making continuous data recording inappropriate. Secondly, the duration of
+the cooling cycle varies, which would introduce unacceptable variation in
+\textsuperscript{2}D retention times.
 
-We therefore constructed 2D chromatograms by recording a GC run for each SFC
-fraction injected. The \textsuperscript{1}D
-retention times were recorded as the start times of each individual GC run.
-The \textsuperscript{2}D retention times were measured from
-the time the GC fast temperature program started. 
+The 2D chromatograms were therefore constructed by recording a GC run for each
+SFC fraction injected. The \textsuperscript{1}D retention times were recorded as
+the start times of each individual GC run. The \textsuperscript{2}D retention
+times were measured from the time the GC fast temperature program started.
 
 \section{Data visualization}
-For data visualization we used the technical computing system Wolfram
-Mathematica 11.3\texttrademark{}. Mathematica is an extremely powerful and broad
-system, and we found it useful for its data manipulation and visualization
-tools.
+To visualized the data the technical computing system Wolfram Mathematica
+11.3\texttrademark{} was used. Mathematica is an extremely powerful and broad
+system, and its data manipulation and visualization tools were exploited.
 
 The collected data could be handled in different ways. One way was to split it
 up into separate GC runs. Each individual GC run and its associated data could

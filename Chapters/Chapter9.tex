@@ -104,7 +104,7 @@ The research presented in this thesis contributes to the field of chromatography
 in the following aspects, in order of decreasing novelty.
 
 The most significant new contribution to chromatography of this project is
-proving the concept of active cooling of short chromatography columns by
+proving the concept of active cooling of short gas chromatography columns by
 precisely-applied liquid carbon dioxide. To the best of our knowledge there are
 no other fast temperature-programmed chromatographs with sub-ambient ramp start
 temperatures or higher repetition rates.
@@ -133,12 +133,12 @@ separations, and the possibility of exploiting the advantages of the FID
 promises reliable quantitation.
 
 The low viscosity of carbon dioxide allows the use of very long packed columns
-without excessively high pressure. We were able to run SFC separations on five
-columns packed with \SI{3}{\micro\metre} particles in series. There were no
+without excessively high pressure. It was possible to run SFC separations on
+five columns packed with \SI{3}{\micro\metre} particles in series. There were no
 problems in obtaining adequate flow using an inlet pressure of \SI{200}{\bar}.
 As was shown in Chapter \ref{Chapter7}, this long column provided sufficient
 retention to separate the poorly-retained aromatic hydrocarbons from the alkanes
-in a diesel sample. 
+in a diesel sample.
 
 \section{Special challenges}
 
@@ -151,18 +151,17 @@ came as a surprise. No previous work in our laboratories prepared us for it, and
 our colleagues in industry who used them have also not experienced it.
 Identifying the true root of the problem took patience and persistence, and lead
 to the first measurement of the size of the Guthrie restrictor orifice. In the
-end a linear restrictor was used, which means that we are not sure about the
-degree of volatility discrimination.
+end a linear restrictor was used, which means that there might be some degree of
+volatility discrimination.
 
 The resistive heater initially worked as expected at low applied power, but at
-higher powers inexplicable deviations appeared. At first we handled the problem
+higher powers inexplicable deviations appeared. At first the problem was handled
 by restricting the applied power to the range where it behaved as expected, but
 that limited the heating rate of the coaxial heater. Persistent study of the
-problem eventually revealed that we tried to measure a voltage that exceeded the
-safe operating range of the analog-to-digital converter (ADC) device. Under
-these conditions safety circuits were activated, resulting in the ADC providing
-unexpected values. The problem was solved by installing an \keyword{isolation
-amplifier}.
+problem eventually revealed that a voltage exceeded the safe operating range of
+the analog-to-digital converter (ADC) device. Under these conditions safety
+circuits were activated, resulting in the ADC providing unexpected values. The
+problem was solved by installing an \keyword{isolation amplifier}.
 
 
 \section{Design}
@@ -282,17 +281,17 @@ None of the flow rates or heating rates were optimized, so the results merely
 prove that it is possible to do chromatography using SFC×GC but do not provide
 any figures of merit.
 
-Although we demonstrated that modifiers can be added to the SFC mobile phase
-when running SFC×GC-FID, we did not demonstrate any separations that require
-modifiers.
+Although it was demonstrated that modifiers can be added to the SFC mobile phase
+when running SFC×GC-FID, no separations that require or would be improved by
+using modifiers were demonstrated.
 
-We demonstrated that the SFC×GC can separate compounds, but not that they can be
-quantified, for example by setting up calibration curves. But the FID excels at
-quantification and the technology for quantification from 2D chromatograms is
-mature, so we believe that there are no major obstacles to quantification by
-SFC×GC-FID.
+It was demonstrated that the SFC×GC can separate compounds, but not that they
+can be quantified, for example by setting up calibration curves. But the FID
+excels at quantification and the technology for quantification from 2D
+chromatograms is mature, so major obstacles to quantification by SFC×GC-FID are
+not expected.
 
-When we designed the coaxial heater power electronics and control system, the
+When the coaxial heater power electronics and control system was designed, the
 choice of material, its dimensions and the required power matched well with the
 chosen analog-to-digital converter and made it possible to use a remarkably
 simple electronic control circuit. A different resistive heater system might

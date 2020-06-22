@@ -96,6 +96,7 @@ headsepline, % Uncomment to get a line under the header
 \usepackage{rotating} % To allow rotated table
 \usepackage{pdfpages} % To include article manuscript}
 \usepackage{flafter} % To ensure floats appear after their references.
+\usepackage{makecell} % To split lines in tabular environments.
 \usepackage{makeidx} % To make index (Appendix A)
 	\makeindex
 
@@ -237,7 +238,7 @@ In the Faculty of Natural \& Agricultural Sciences\\ University of Pretoria \\ P
 
 \noindent I, \authorname, declare that the thesis, which I hereby submit for the
 degree Doctor of Philosophy at the University of Pretoria, is my own work and has not
-previously been submitted by for a degree at this or any other tertiary
+previously been submitted by me for a degree at this or any other tertiary
 institution.
 
 \vspace{2em} 
@@ -471,7 +472,8 @@ presenting the results obtained.
 
 \begin{abbreviations}{ll} % Include a list of abbreviations (a table of two columns)
 
-
+\textbf{\oneD} & First Dimension \\
+\textbf{\twoD} & Second Dimension\\
 \textbf{ADC} & Analog to Digital Converter \\
 \textbf{ATR} & Attenuated Total Reflection \\
 \textbf{CCGT} & Combined Cycle Gas Turbine \\
@@ -490,8 +492,10 @@ presenting the results obtained.
 \textbf{HPLC} & High-Performance Liquid Chromatography\\
 \textbf{IPCC} & Intergovernmental Panel on Climate Change\\
 \textbf{IR}& Infrared \\
+\textbf{IUPAC}& International Union of Pure and Applied Chemistry\\
 \textbf{LCA} & Life Cycle Analysis \\
 \textbf{LC×GC} &  Comprehensively coupled (Liquid Chromatography × Gas Chromatography)\\
+\textbf{MS} &  Mass Spectrometry\\
 \textbf{MV} &  Manipulated Variable\\
 \textbf{\nox} &  Nitrogen Oxides (NO, NO$_2$, NO$_3$ and N$_2$O, and N$_2$O$_5$)\\
 \textbf{PAH} & Polycyclic Aromatic Hydrocarbons \textit{or} Polynuclear Aromatic Hydrocarbons\\
@@ -503,6 +507,7 @@ presenting the results obtained.
 \textbf{PWM} &  Pulse-Width Modulation \\
 \textbf{RI} & Refractive Index \\
 \textbf{RME} & Rapeseed Metyl Ester\\
+\textbf{SEM} & Scanning Electron Microscopy\\
 \textbf{SFC} & Supercritical Fluid Chromatography \\
 \textbf{SFC×GC} &  Comprehensively coupled (Supercritical Fluid × Gas Chromatography)\\
 \textbf{SFE} & Supercritical Fluid Extraction\\

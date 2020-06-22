@@ -136,6 +136,7 @@
   *{package}{eso-pic}     {2018/04/12 v2.0h}
   *{file}   {pppdftex.def}{2019/09/21 v0.5n}
   *{package}{flafter}     {2018/11/28 v1.4d}
+  *{package}{makecell}    {2009/08/03 v0.1e}
   *{package}{makeidx}     {2014/09/29 v1.0m}
   *{package}{csquotes}    {2019/05/10 v5.2e}
   *{file}   {csquotes.def}{2019/05/10 v5.2e}
