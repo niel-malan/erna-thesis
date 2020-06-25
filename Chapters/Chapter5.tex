@@ -384,7 +384,7 @@ rate increases rapidly (See Figure \ref{fig:RampRateBlumberg}).
 	\includegraphics[width=0.8\textwidth]{Figures/7890B.png}
 	\decoRule
 	\caption[A temperature-rate table from the Agilent7890B data sheet]{The
-	temperature-rate table from the Agilent 7890B chromatograph data sheet.
+	ramp-rate table from the Agilent 7890B chromatograph data sheet.
 	\autocite{7890B}. }
 	\label{fig:RampRate7890B}
 \end{figure}
@@ -393,7 +393,8 @@ rate increases rapidly (See Figure \ref{fig:RampRateBlumberg}).
 	\centering
 	\includegraphics[width=0.8\textwidth]{Figures/RampRate.pdf}
 	\decoRule
-	\caption[Suggested ramp rate]{The suggested ramp rate for temperature-programmed gas chromatography as a function of void time.}
+	\caption[Suggested ramp rate]{The ramp rate for temperature-programmed gas chromatography as a function of void time (\SI{10}{\celsius} per
+void time (\(t_m\))).}
 	\label{fig:RampRateBlumberg}
 \end{figure}
 
@@ -902,7 +903,7 @@ digitized for computer recording.
 \subsection{Calibration procedure}
 \label{sec:Calibration}
 
-The International Vocabulary of Metrology \autocite{JCGM200:2012} define
+The International Vocabulary of Metrology \autocite{JCGM200:2012} defines
 \keyword{calibration} as ``[an] operation that, under specified conditions, in a
 first step, establishes a relation between the \textbf{quantity values} with
 \textbf{measurement uncertainties} provided by \textbf{measurement standards}
@@ -933,7 +934,7 @@ thermocouple temperature \(T_{TC}\) against the voltage ratio \( \frac{dV}{V_b}
 \) (Figure \ref{fig:CalibrationCurve}). This revealed the shape of the function
 \(T(\frac{dV}{Vb})\) and completed the first step of the calibration.
 
-\begin{figure}
+\begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.8\textwidth]{Figures/2019_07_12_B-spline_fit_CPlot.pdf}
 	\decoRule

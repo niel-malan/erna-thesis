@@ -65,6 +65,12 @@ headsepline, % Uncomment to get a line under the header
 
 \addbibresource{main.bib} % The filename of the bibliography
 
+\renewbibmacro*{begentry}{%
+    \ifnameundef{shortauthor}
+        {}
+        {\printnames{shortauthor}%
+         \addspace\textendash\space}}
+
 % Set up hyperref for creating a non-default PDF starting page . This must be done before \usepackage, because that sets defaults that cannot be overwritten.
 \usepackage{zref-abspage,zref-user} 
 \makeatletter
@@ -95,7 +101,7 @@ headsepline, % Uncomment to get a line under the header
 \usepackage{tabulary}
 \usepackage{rotating} % To allow rotated table
 \usepackage{pdfpages} % To include article manuscript}
-\usepackage{flafter} % To ensure floats appear after their references.
+%\usepackage{flafter} % To ensure floats appear after their references.
 \usepackage{makecell} % To split lines in tabular environments.
 \usepackage{makeidx} % To make index (Appendix A)
 	\makeindex
@@ -563,8 +569,8 @@ presenting the results obtained.
 \( P \) & power & \si{\watt}\\
 \( p_o \) & outlet pressure & \si{\pascal}\\
 \( \Delta p \) &  pressure difference & \si{\pascal}\\
-\( T \) & temperature & \si{kelvin} \\
-\( t_r \) & retention time & \si{\second}\\
+\( T \) & temperature & \si{\kelvin} \\
+\( t_r \) & retention time & \si{\second}
 \( V \) & electrical potential difference &  \si{\volt} \\
 
 
