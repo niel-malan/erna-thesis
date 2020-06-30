@@ -20,11 +20,11 @@ Industrialized societies depend on chemicals. (In this discussion I define
 chemicals as pure substances that are produced by industry for industry.)
 Chemicals might be used in the processing of products, or blended with other
 chemicals in formulations that might be sold to users as products. In a familiar
-example, sugar is a chemical produced by the sugar industry from sugar cane or
-sugar beet. It is a pure substance (sucrose) that is mostly used in the industry
+example, Sucrose is a chemical produced by the sugar industry from sugar cane or
+sugar beet. It is a pure substance that is mostly used in the industry
 as an ingredient for processed food. Other uses of sugar include coatings for
 medication, and feedstock for engineered micro-organisms that produce
-pharmaceuticals. (Sugar is a rare example of a chemical that is also sold to
+pharmaceuticals. (Sucrose is a rare example of a chemical that is also sold to
 consumers.)
  
 The chemical industry produces a huge variety of products, from compounds as
@@ -56,8 +56,8 @@ reckless emissions of chlorofluorocarbons \autocite{Ball2018}. Plastic
 microparticles are now found everywhere in the oceans \autocite{Woodall2014},
 and the pesticide DDT (dichlorodiphenyltrichloroethane \textit{or}
 1-chloro-4-[2,2,2-trichloro-1-(4-chlorophenyl)ethyl]benzene) is found in the
-breast milk of Inuit mothers \autocite{Gibson2016}, very far from the tropical
-areas where it was once sprayed for pest control.
+breast milk of Inuit mothers \autocite{Gibson2016} who live in polar regions,
+very far from the tropical areas where it was once sprayed for pest control.
 
 The chemical industry is also a prodigious producer of greenhouse gases. Apart
 from the carbon dioxide emitted by the production of the energy that powers
@@ -72,7 +72,7 @@ No chemical has ever jumped out of a lab, multiplied uncontrollably, and spread
 into the environment to poison or pollute: they have all been introduced into
 the environment by human ignorance, negligence or recklessness. All chemicals
 behave well when used in properly controlled environments, but human actions can
-let them escape and damage and pollute. But while we try to solve the
+let them escape to damage and pollute. But while we try to solve the
 intractable problem of human behaviour, we as chemists cannot just lay blame: we
 must pay attention to the intrinsic safety of chemicals and chemical processes.
  
@@ -84,7 +84,7 @@ must pay attention to the intrinsic safety of chemicals and chemical processes.
 The date of birth of the environmental movement is conventionally set to 1962, when
 the biologist Rachel Carson published the book \textit{Silent Spring}, which
 pointed out the destruction of nature by the unrestricted use of pesticides and
-the dangers of overuse \autocite{Carson1962}. This was a direct imputation of
+the dangers of their overuse \autocite{Carson1962}. This was a direct imputation of
 the chemical industry, because the pesticide products contained many chemicals.
 
 Chemists are human, and the realization that uncontrolled chemicals can have
@@ -186,7 +186,8 @@ Carbon dioxide as a chemical is used in industry in a few key areas.
    point, and the gas crystallizes. The resulting `snow' can be compressed into
    blocks, which only slowly sublimates into gaseous carbon dioxide, keeping the
    temperature at the freezing point. Packing frozen food products together with
-   this 'dry ice' allows for it to be transported cold.
+   this 'dry ice' allows for it to be transported cold without mechanical
+   refrigeration.
    
    \item Pellets of dry ice can be entrained in a jet of air, and used to abrade
    surfaces for cleaning \autocite{Spur1999}. This use of carbon dioxide can
@@ -205,7 +206,8 @@ Carbon dioxide as a chemical is used in industry in a few key areas.
 	
 \end{itemize}
 
-Of these uses, extractions are economically the most important.
+Of these uses, extractions are economically the most important, where it
+replaces hydrocarbon solvents.
 
 \section{Extractions using carbon dioxide}
 
@@ -449,6 +451,29 @@ mixture. Tsvet called this method of separation \keyword{chromatography}
 today chromatography is a major, established scientific field with many
 ramifications and a myriad of applications.
 
+The effectiveness of a chromatographic system is firstly judged by how well it
+separates two compounds of interest. The separation is quantified by the
+\keyword{resolution} \(R\), which is calculated as the ratio of the distance by
+which the two compounds of interest have been separated to the width to which
+they have spread during the separation. Because these distances are rarely
+measured directly in modern instruments, the proxy of \keyword{retention times}
+\(t_r\) are normally used for the distance travelled. To compare the retention
+of different compounds, a normalized measure is used to remove the effect of the
+time they would have spent in the column if they were unretained, the
+\keyword{hold-up time} \(t_m\). This is the \keyword{retention factor}, \(k =
+\frac{t_r-t_m}{t_m}\), and is related to the relative amounts of the analyte in
+the mobile and stationary phases respectively. The relative retention of two
+compounds can then quantified by the \keyword{separation factor} \(\alpha =
+\frac{k_2}{k_1} \). The values of \(k\) and \(\alpha\) are determined by
+thermodynamic and chemical factors, respectively, but these only address the
+difference in retention of the two compounds used to calculate separation.
+
+\[ R = \sqrt{N}\left(\frac{k}{k-1}\right)\left(\frac{\alpha - 1}{\alpha}\right) \]
+
+Rigorous derivations of this equation can be found in the literature
+\autocite{Sandra1989, Sandra1989a} and precise definitions of the factors are
+provided by IUPAC \autocite{Ettre1993b}.
+
 Because of the different technologies used in its applications, chromatography
 is conventionally classed by the state of its mobile phase as either
 \keyword{gas chromatography} (GC) or \keyword{liquid chromatography} (LC).
@@ -456,7 +481,15 @@ However, as we have seen, solvating gases can also extract analytes from solid
 stationary phases, and hence the term \keyword{supercritical fluid
 chromatography} (SFC) was created for these kinds of separations.
 
-\begin{figure}
+Supercritical fluid chromatography as practised today bears a great resemblance
+to \keyword{high performance liquid chromatography} (HPLC) (See Figure
+\ref{fig:sfcdiagram}). The main reason for this is that there is a large overlap
+between the technology used for HPLC and the technology needed for SFC. In
+particular, both use high-pressure pumps and columns packed with particles of
+very small diameter and use optical detectors. Manufacturers supplying HPLC
+instrumentation often also supply SFC instrumentation.
+
+\begin{figure}[hptb]
 \centering
 \includegraphics[width=\textwidth]{Figures/SFC_System}
 \decoRule
@@ -469,13 +502,50 @@ collection.}
 
 \end{figure}
 
-Supercritical fluid chromatography as practised today bears a great resemblance
-to \keyword{high performance liquid chromatography} (HPLC) (See Figure
-\ref{fig:sfcdiagram}). The main reason for this is that there is a large overlap
-between the technology used for HPLC and the technology needed for SFC. In
-particular, both use high-pressure pumps and columns packed with particles of
-very small diameter and use optical detectors. Manufacturers supplying HPLC
-instrumentation often also supply SFC instrumentation.
+A full discussion of the differences between SFC and HPLC is beyond the scope of
+this thesis, but the kinetic advantages of SFC are considerable. In a study
+comparing SFC and LC methods for the analytical separation of pharmaceutical
+compounds \autocite{Perrenoud2012}, the flow at minimum plate height \(H\), was
+found to be five times higher for SFC than for LC when using columns packed with
+\SI{3.5}{\micro\metre} particles, and four times higher for columns packed with
+\SI{1.7}{\micro\metre} particles. (See Figure \ref{fig:SFCvsHPLC_Van_Deemter}).
+This difference in in speed is attributed to the higher diffusivity of
+supercritical carbon dioxide, which increases the rate of mass transfer between
+the stationary and mobile phases.
+
+\begin{figure}[hptb] \centering
+\includegraphics[width=0.8\textwidth]{Figures/SFCvsHPLC_Van_Deemter} \decoRule
+\caption[Van Deemter]{Kinetic performance as a function of linear velocity for
+1.7 and 3.5 μm particles in LC and SFC. Van Deemter curves for butylparaben on 2
+systems equipped with 1.7 or 3.5 μm particles columns. LC conditions:
+H\textsubscript{2}O/ACN (60/40, v/v), \SI{30}{\celsius}, \SI{1}{\micro\litre}
+injected. SFC conditions: CO\textsubscript{2}/MeOH (96/4, v/v),
+\SI{40}{\celsius}, \SI{150}{\bar} backpressure, \SI{1}{\micro\litre} injected.
+Adapted from \autocite{Perrenoud2012}.}
+\label{fig:SFCvsHPLC_Van_Deemter}
+
+\end{figure}
+
+These high speeds can be achieved at much lower pressure drops per length of
+column than in LC, as shown in Figure \ref{fig:SFCvsHPLC_Pressure}. This can be
+attributed to the low viscosity of supercritical carbon dioxide, because less
+energy is required to pump the lower-viscosity supercritical fluid at the same
+flow rate as a liquid, all else being equal.
+
+\begin{figure}[hptb] \centering
+\includegraphics[width=0.8\textwidth]{Figures/SFCvsHPLC_Pressure} \decoRule
+\caption[]{Normalized generated pressure drop as a function of linear velocity
+for 1.7 and 3.5 μm particles in LC and SFC. Each curve represents the pressure
+drop  required to generate the linear velocity of the corresponding curve in
+Figure \ref{fig:SFCvsHPLC_Van_Deemter}, normalized to \SI{1}{\metre} of column
+to avoid influence of column geometry variations. Adapted from
+\autocite{Perrenoud2012}.}
+\label{fig:SFCvsHPLC_Pressure}
+
+\end{figure}
+
+This low pressure drop can be exploited by using very long columns to generate a
+large number of plates.
 
 \subsection{SFC and FID}
 \label{sec:FID}
@@ -596,16 +666,16 @@ met \autocite{Giddings1987}:
 \end{enumerate} 
 
 To effectively distinguish between heart-cut and comprehensive 2D couplings, a
-terse nomenclature was developed. Simple coupling between systems is designated
-by a hyphen (``-''), for example ``HPLC-GC''. This corresponds to the usual
-notation of a coupled detector coupled to a chromatograph, for example GC-FID or
-GC-MS. Comprehensive coupling is denoted by a multiplex sign (``×''), for
-example GC×GC. If it is not clear from the context, the detector can be
+terse nomenclature was developed {Marriott2012}. Simple coupling between systems
+is designated by a hyphen (``-''), for example ``HPLC-GC''. This corresponds to
+the usual notation of a coupled detector coupled to a chromatograph, for example
+GC-FID or GC-MS. Comprehensive coupling is denoted by a multiplex sign (``×''),
+for example GC×GC. If it is not clear from the context, the detector can be
 specified using a hyphen, as in GC×GC-MS. Of the comprehensive coupled
 chromatography techniques, GC×GC is the most mature, with a selection of
 powerful instruments on the market.
 
-This thesis further explores the implementation of SFC×GC, as first developed by
+This thesis further explores the implementation of SFC×GC, first demonstrated by
 Venter and Rohwer \autocite{Venter2004, Venter2006}. In the implementation of
 SFC×GC described in this thesis, fractions of the eluate from the SFC are
 transferred to the GC. The mobile phase is changed from carbon dioxide to

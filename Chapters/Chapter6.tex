@@ -279,7 +279,7 @@ Various samples of edible oil were obtained from supermarkets. (See Table
 	Sunflower oil	& Pick n Pay 	& \textit{Helianthus annuus}	\\
 	Coconut oil  	& Lemcke 		& \textit{Cocos nucifera}		\\
 	Flax seed oil 	& Lemcke 		& \textit{Linum usitatissimum}	\\
-	Salmon oil		& Dis-Chem	Gold& Family \textit{Salmonidae}		\\
+	Salmon oil		& Dis-Chem Gold & Family \textit{Salmonidae}		\\
 	\bottomrule\\
 	\end{tabular}
 \end{table}
@@ -392,10 +392,11 @@ easily identify the peaks for C16, C18, C20, and C22 in the GC dimension.
 
 The information provided by this chromatogram confirms that canola oil is a
 vi\-able bio\-diesel feedstock: The unsaturated compounds have mostly a single
-double bond, which should make it oxidatively stable, and the quantities of
-unsaturated FAMEs are low, which means that it will most likely have suitable
-cold-flow properties, because the naturally occurring \textit{cis} isomers of
-unsaturated FAMEs have higher freezing points than their saturated analogues.
+double bond, which should make it oxidatively stable (\label{sec:Rancimat}), and
+the quantities of unsaturated FAMEs are low, which means that it will most
+likely have suitable cold-flow properties (see Section \ref{sec:CFPP}), because
+the naturally occurring \textit{cis} isomers of unsaturated FAMEs have higher
+freezing points than their saturated analogues.
 
 \begin{figure}
 \centering
@@ -434,8 +435,9 @@ plot of FID response and involves no quantification.
 
 This chromatogram suggests that sunflower oil is a suitable feedstock for
 producing biodiesel: the relatively high amount of unsaturated FAs would seem to
-imply suitable cold flow properties. The relatively high degree of unsaturation
-does suggest caution regarding oxidative stability.
+imply suitable cold flow properties (see Section \ref{sec:CFPP}). The relatively
+high degree of unsaturation does suggest caution regarding oxidative stability
+(see Section \ref{sec:Rancimat}).
 
 \begin{figure}
 \centering
@@ -456,9 +458,10 @@ Figure \ref{fig:2DCoconut} shows the SFC×GC chromatogram of FAMES from coconut
 oil (\textit{Cocos nucifera L}). It is clear that the dominant FAMEs in coconut
 oil are saturated.
 
-The high saturation of coconut oil makes it oxidatively stable, but the high
-melting point of the saturated FAMEs also means that it might not meet
-cold flow requirements.
+The high saturation of coconut oil makes it oxidatively stable (see Section
+\refl{sec:Rancimat}), but the high melting point of the saturated FAMEs also
+means that it might not meet cold flow requirements (see Section
+\ref{sec:CFPP}).
 
 The high oxidative stability of coconut oil makes it resistant to going rancid,
 which means it has been used as a natural ingredient for cosmetics since
@@ -552,7 +555,7 @@ that the chromatogram is consistent with the source of oil being farmed salmon.
 The chromatogram also suggests that biodiesel made from salmon oil would not be
 compliant with \std{SANS 1935}: the mass fraction of fatty acid methyl esters
 with four or more double bonds is more than \SI{1}{\percent}, which is above the
-specified limit.
+specified limit (see Section \ref{sec:PUFA}).
 
 This complex chromatogram also raises the intriguing possibility of identifying
 fatty acid isomers by SFC×GC. This is suggested by the small peaks with a \oneD
@@ -592,7 +595,27 @@ complex sample. Neither is improved sensitivity relevant: determining biodiesel
 components is not a trace analysis problem for which high sensitivity is
 necessary. What these examples do show is that the high orthogonality between
 SFC and GC provides data that contains a clear and powerful pattern that greatly
-simplifies interpretation.
+simplifies interpretation. In contrast, Figure \ref{fig:GCxGCFAMEs} shows a
+GC×GC chromatogram of a a 37-component FAMEs standard. This separation uses a
+polar column in the first dimension, and a non-polar column in the second
+dimension \autocite{SepSolveAnalytical2018}. The coloured bands indicates the 2D
+retention times of FAMEs with different degrees of unsaturation. The positions
+of these bands were determined experimentally using TOF-MS, and are not based on
+a separation mechanism. The lower orthogonality of GC×GC, compared to SFC×GC,
+means that the position of the bands cannot be predicted, and the shapes of the
+bands are likely to change with changing chromatographic conditions.
+
+\begin{figure}[hptb] \centering
+\includegraphics[width=\textwidth]{Figures/GCxGCPattern.png} \decoRule
+
+\caption[GC×GC contour plot]{GC×GC-FID colour plot of a 37-component FAME
+standard. The coloured bands indicate successively higher levels of
+unsaturation, from 0 (red, no double bonds) to 6 (violet, with 6 double
+bonds) \autocite{SepSolveAnalytical2018}.
+}
+
+\label{fig:GCxGCFAMEs}
+\end{figure}
 
 In the example of FAMEs derived from various oils the pattern shows how the
 separation is based on degree of unsaturation in the first dimension and on

@@ -65,11 +65,6 @@ headsepline, % Uncomment to get a line under the header
 
 \addbibresource{main.bib} % The filename of the bibliography
 
-\renewbibmacro*{begentry}{%
-    \ifnameundef{shortauthor}
-        {}
-        {\printnames{shortauthor}%
-         \addspace\textendash\space}}
 
 % Set up hyperref for creating a non-default PDF starting page . This must be done before \usepackage, because that sets defaults that cannot be overwritten.
 \usepackage{zref-abspage,zref-user} 
@@ -478,8 +473,6 @@ presenting the results obtained.
 
 \begin{abbreviations}{ll} % Include a list of abbreviations (a table of two columns)
 
-\textbf{\oneD} & First Dimension \\
-\textbf{\twoD} & Second Dimension\\
 \textbf{ADC} & Analog to Digital Converter \\
 \textbf{ATR} & Attenuated Total Reflection \\
 \textbf{CCGT} & Combined Cycle Gas Turbine \\
@@ -523,7 +516,9 @@ presenting the results obtained.
 \textbf{SPE} & Solid Phase Extraction\\
 \textbf{SV} &  Set Value \\
 \textbf{TLC} & Thin-Layer Chromatography \\
+\textbf{UHPLC} & Ultra-high-performance Liquid Chromatography\\
 \textbf{UNFCCC} & United Nations Framework Convention on Climate Change \\
+
 
 \end{abbreviations}
 
