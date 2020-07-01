@@ -673,8 +673,11 @@ The specified method is \std{SANS 54103}. This document refers to \std{ISO
 \std{ISO 5508} and \std{ISO 12966} describe gas chromatographic methods for the
 determination of FAMEs. \std{ISO 5508} is obsolete: it gives conditions for
 packed GC columns and thermal conductivity detectors, two technologies which are
-now rarely found in the chromatography laboratory. Both methods, however,
-require polar stationary phases. The quantity of esters is determined by
+now rarely found in the chromatography laboratory. For resolution of all isomers
+\std{ISO 12966} recommends a very long\SI{100}{\percent} biscyanopropyl
+polysiloxane capillary column (\SI{100}{\meter} x \SI{0.25}{\milli\metre} ID,
+\SI{0.20}{\micro\metre} film) is used, with FID detection. The run time for the
+separation is \SI{37}{\minute}. The quantity of esters is determined by
 integrating all the peaks in a certain retention time window and comparing it to
 the peak area of an internal standard.
 
@@ -728,6 +731,14 @@ replaced by the TMS group, which is inert and will not interact with polar
 entities in the stationary phase or column, which will lead to improved peak
 shapes.
 
+The stationary phase of the column prescribed by \std{SANS 54105} is the
+conventional \SI{5}{\percent} diphenyl/\SI{95}{\percent} (\SI{10}{\metre} x
+\SI{0.32}{\milli\metre} ID,  \SI{0.1}{\micro\metre} film) with FID detection.
+Because of the high elution temperature of the triglycerides the column must be
+robust if it is to have a long lifetime. Therefore columns based on metal
+capillaries are popular in this application, and the stationary phase is
+engineered to exhibit low bleed.
+
 \subsection{Free glycerol}
 
 Free glycerol is one of the products of the transesterification of plant oils to
@@ -744,11 +755,13 @@ for the determination of the other glycerides in \std{SANS 54105} (see Section
 mixture of ethanol, water, and hexane. The free glycerol transfers
 quantitatively to the bottom layer, which is then analysed with a gas
 chromatographic method. The benefit of this method is that the resulting
-chromatogram has only one peak, that of glycerol, so quantification is
+chromatogram has only one peak, that of glycerol, so quantification by FID is
 straightforward. The column specified in \std{SANS 54106} method is a
-\keyword{porous layer open tubular} (PLOT) column, \textit{i.e.} a capillary
-lined on the inside with a layer of particles coated with the stationary phase,
-in this case a polar polyethylene glycol.
+\keyword{porous layer open tubular} (PLOT) column (\SI{10}{\metre} x
+\SI{0.32}{\milli\metre}, \SI{0.10}{\micro\metre} film), \textit{i.e.} a
+capillary lined on the inside with a layer of particles coated with the
+stationary phase, in this case a polar polyethylene glycol. The maximum
+temperature in the temperature program is \SI{120}{\celsius}.
 
 \subsection{Polyunsaturated methyl esters}
 \label{sec:ChromDetUnsat}
@@ -764,7 +777,9 @@ or more double bonds is limited to less than \SI{1}{\percent} mass fraction.
 
 The prescribed method for the determination of methyl linolenate (C18:3) is
 \std{SANS 54103}, the same method as prescribed for total esters (see Section
-\ref{sec:EsterContent}).
+\ref{sec:EsterContent}). The long, highly polar capillary column prescribed by
+the GC method in \std{ISO 12966} resolves all FAMEs isomers, including methyl
+linolenate, allowing it to be quantified.
 
 \subsubsection{Highly unsaturated fatty acid methyl esters}
 \label{sec:PUFA}
@@ -777,7 +792,9 @@ oil is not a sustainable resource and should not be used for fuel
 therefore undesirable in biodiesel.
 
 The method prescribed for the determination of PUFA FAMEs is \std{EN 15779}.
-This method uses a capillary column with a polyethylene glycol stationary phase.
+This method uses a capillary column (\SI{30}{\metre} × \SI{0.25}{\milli\metre}
+ID, \SI{0.25}{\micro\metre} film thickness) with a polyethylene glycol
+stationary phase and FID detection.
 
 \section{Comparison of \texorpdfstring{\std{SANS 1935}}{SANS 1935} and \texorpdfstring{\std{SANS 342}}{SANS 342}}
 
