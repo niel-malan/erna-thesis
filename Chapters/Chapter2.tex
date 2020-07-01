@@ -442,37 +442,87 @@ However, \textit{different} analytes will extract out of a matrix with
 \textit{different} efficiencies and at \textit{different} rates. In a 1906 paper
 the Russian botanist Mikhail Semyonovich Tsvet\footnote{Also transliterated from
 Russian as Tsvett, Tswett, Tswet, Zwet, or Cvet} applied this observation to the
-dynamic extraction of a bed of calcium carbonate that had mixture of plant
-pigments applied at the inlet end, using petrochemical solvents. The different
+dynamic extraction with petrochemical solvents of a bed of calcium carbonate
+that had mixture of plant pigments applied at the inlet end. The different
 extraction efficiencies and rates of adsorption and desorption on the calcium
 carbonate surface lead to the \keyword{separation} of the compounds in the
 mixture. Tsvet called this method of separation \keyword{chromatography}
-\autocite{Ettre1993,Ettre1993a}. With time this method became generalized, and
-today chromatography is a major, established scientific field with many
-ramifications and a myriad of applications.
+\autocite{Ettre1993,Ettre1993a}. (See Figure \ref{fig:ChromatographyBasics}.)
+With time this method became generalized, and today chromatography is a major,
+established scientific field with many ramifications and a myriad of
+applications.
 
-The effectiveness of a chromatographic system is firstly judged by how well it
-separates two compounds of interest. The separation is quantified by the
-\keyword{resolution} \(R\), which is calculated as the ratio of the distance by
-which the two compounds of interest have been separated to the width to which
-they have spread during the separation. Because these distances are rarely
-measured directly in modern instruments, the proxy of \keyword{retention times}
-\(t_r\) are normally used for the distance travelled. To compare the retention
-of different compounds, a normalized measure is used to remove the effect of the
-time they would have spent in the column if they were unretained, the
-\keyword{hold-up time} \(t_m\). This is the \keyword{retention factor}, \(k =
-\frac{t_r-t_m}{t_m}\), and is related to the relative amounts of the analyte in
-the mobile and stationary phases respectively. The relative retention of two
-compounds can then quantified by the \keyword{separation factor} \(\alpha =
-\frac{k_2}{k_1} \). The values of \(k\) and \(\alpha\) are determined by
-thermodynamic and chemical factors, respectively, but these only address the
-difference in retention of the two compounds used to calculate separation.
+\begin{figure}[hptb] \centering
+\includegraphics[width=\textwidth]{Figures/Chromatography_Basics} \decoRule
+\caption[Basic Chromatography]{A conceptual diagram of basic chromatography. (a)
+A mixture of compounds (represented by squares and triangles) are introduced in
+a thin band on the head of a column (stippled area). (b) A solvent (grey) is run
+through the column. The different compounds migrate at different rates. (c) If
+conditions are optimal the compounds are separated fully (but not excessively)
+when they reach the end of the column. \(R_s = 2 (l_1 - l_2)/(w_1 + w2)}
+\label{fig:ChromatographyBasics}
 
-\[ R = \sqrt{N}\left(\frac{k}{k-1}\right)\left(\frac{\alpha - 1}{\alpha}\right) \]
 
-Rigorous derivations of this equation can be found in the literature
-\autocite{Sandra1989, Sandra1989a} and precise definitions of the factors are
-provided by IUPAC \autocite{Ettre1993b}.
+\end{figure}
+
+The effectiveness of a chromatographic system is judged by how well it separates
+two compounds of interest. The separation is quantified by the
+\keyword{resolution} (\(R_s\)), which is calculated as the ratio of the distance
+by which the two compounds of interest have been separated to the width to which
+they have spread during the separation. Because it rarely possible to directly
+measure a distance in modern instruments, \keyword{retention time} (\(t_r\)) is
+normally used as a proxy for the distance travelled. To compare the retention of
+different compounds in different columns, a normalized measure is used to remove
+the effect of their \keyword{hold-up time} (\(t_m\) )in the column. This is the
+\keyword{retention factor}, \(k = \frac{t_r-t_m}{t_m}\), and is related to the
+relative amounts of the analyte in the mobile and stationary phases. The
+relative retention of two compounds can then quantified by the
+\keyword{separation factor} \(\alpha = \frac{k_2}{k_1} \). The values of \(k\)
+and \(\alpha\) are primarily determined by thermodynamic and chemical factors,
+respectively, but these only quantify the retention of the two compounds used to
+calculate separation, and not how much they spread as they migrate through the
+column. The spread of the components during separation is described by a
+quantity known as the \keyword{plate number} (\(N\)), which depends on the
+physical form of the column and stationary phase, the diffusion coefficients of
+the mobile phase, and the flow rate of the mobile phase. The values of \(N\),
+\(k\), and \(\alpha\) are practically independent and can be used to calculate
+the resolution:
+ 
+\[ {R_s} = \frac{\sqrt{N}}{4}\left(\frac{k}{k+1}\right)\left(\frac{\alpha - 1}{\alpha}\right) \]
+
+(Rigorous derivations of this equation can be found in the literature
+\autocite{Sandra1989a} and precise definitions of the factors are
+provided by IUPAC \autocite{Ettre1993b}.)
+
+The number of plates \(N\) depends on the length \(L\) of the column: the longer
+the column, the more the band of an analyte will spread during separation. To
+compare columns of different lengths, the \keyword{plate height} \(H\) is used,
+where \(H\) = \(L / N \). A first-order approximation of plate height is
+provided by the \keyword{Van Deemter equation},
+
+\[ H = A + B/u + C u \] 
+
+where \(u\) is the linear velocity of the mobile phase. The coefficient \(A\)
+describes band broadening by the mere flow through the column, \(B\) describes
+the broadening due to longitudinal diffusion in the mobile phase, and \(C\)
+describes the broadening due to resistance to mass transfer between the mobile
+and stationary phases. A rigorous derivation of this equation can be found in
+the literature  \autocite{Sandra1989}.
+
+An automated instrument that performs chromatography is called a
+\keyword{chromatograph}. Such an instrument maintains the composition and state
+of the mobile phase (which controls \(k\)), allows the installation of columns
+with different stationary phases (which controls \(\alpha\) and \(N\)) and
+regulates the flow of the mobile phase (which controls \(H\)). It also has a
+\keyword{detector}, a device that monitors the composition of the
+\keyword{eluate}. A change in the eluate composition results in a change in the
+signal from the detector, and is usually caused by an analyte eluting. As the
+band of analyte elute the signal from the detector first increases, reaches a
+maximum, and then decreases, which causes a \keyword{peak} in a graph of the
+signal \textit{vs} time. This graph is called a \keyword{chromatogram}.
+Contemporary chromatographs are controlled by electronic digital computers and
+usually produce chromatograms as computer files which are viewed and processed
+by specialized software.
 
 Because of the different technologies used in its applications, chromatography
 is conventionally classed by the state of its mobile phase as either
@@ -516,30 +566,30 @@ the stationary and mobile phases.
 \begin{figure}[hptb] \centering
 \includegraphics[width=0.8\textwidth]{Figures/SFCvsHPLC_Van_Deemter} \decoRule
 \caption[Van Deemter]{Kinetic performance as a function of linear velocity for
-1.7 and 3.5 μm particles in LC and SFC. Van Deemter curves for butylparaben on 2
-systems equipped with 1.7 or 3.5 μm particles columns. LC conditions:
-H\textsubscript{2}O/ACN (60/40, v/v), \SI{30}{\celsius}, \SI{1}{\micro\litre}
-injected. SFC conditions: CO\textsubscript{2}/MeOH (96/4, v/v),
-\SI{40}{\celsius}, \SI{150}{\bar} backpressure, \SI{1}{\micro\litre} injected.
-Adapted from \autocite{Perrenoud2012}.}
+different particle sizes in LC and SFC. Van Deemter curves for butylparaben on 2
+systems equipped with \SI{1.7}{\micro\metre} or \SI{3.5}{\micro\metre} particles
+columns. LC conditions: H\textsubscript{2}O/ACN (60/40, v/v), \SI{30}{\celsius},
+\SI{1}{\micro\litre} injected. SFC conditions: CO\textsubscript{2}/MeOH (96/4,
+v/v), \SI{40}{\celsius}, \SI{150}{\bar} backpressure, \SI{1}{\micro\litre}
+injected. Adapted from \autocite{Perrenoud2012}.}
 \label{fig:SFCvsHPLC_Van_Deemter}
 
 \end{figure}
 
 These high speeds can be achieved at much lower pressure drops per length of
 column than in LC, as shown in Figure \ref{fig:SFCvsHPLC_Pressure}. This can be
-attributed to the low viscosity of supercritical carbon dioxide, because less
-energy is required to pump the lower-viscosity supercritical fluid at the same
-flow rate as a liquid, all else being equal.
+attributed to the low viscosity of supercritical carbon dioxide, because, for a
+given flow rate, less energy is required to pump the lower-viscosity
+supercritical fluid than the higher-viscosity liquid.
 
 \begin{figure}[hptb] \centering
 \includegraphics[width=0.8\textwidth]{Figures/SFCvsHPLC_Pressure} \decoRule
 \caption[]{Normalized generated pressure drop as a function of linear velocity
-for 1.7 and 3.5 μm particles in LC and SFC. Each curve represents the pressure
-drop  required to generate the linear velocity of the corresponding curve in
-Figure \ref{fig:SFCvsHPLC_Van_Deemter}, normalized to \SI{1}{\metre} of column
-to avoid influence of column geometry variations. Adapted from
-\autocite{Perrenoud2012}.}
+for \SI{1.7}{\micro\metre} and \SI{3.5}{\micro\metre} particles in LC and SFC.
+Each curve represents the pressure drop  required to generate the linear
+velocity of the corresponding curve in Figure \ref{fig:SFCvsHPLC_Van_Deemter},
+normalized to \SI{1}{\metre} of column to avoid influence of column geometry
+variations. Adapted from \autocite{Perrenoud2012}.}
 \label{fig:SFCvsHPLC_Pressure}
 
 \end{figure}
