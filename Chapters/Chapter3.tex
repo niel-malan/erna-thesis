@@ -221,14 +221,13 @@ management systems. It is followed by a bibliography.}
 
 On studying \std{SANS 1935}, it quickly becomes clear that the core of the
 document is Table 1. This table has three columns. The first column lists a
-\keyword{property}, the second column specifies a numerical value the property
-has to conform to, the \keyword{requirement}, and the third column prescribes
+\keyword{property}, the second column specifies a \keyword{requirement}, a
+numerical value the property has to conform to, and the third column prescribes
 the \keyword{test method} that must be used to obtain the value.
 
 In the following discussion each of the requirements will be discussed in order
 of increasing relevance to this thesis, grouped by method of determination (See
 Figure \ref{fig:MindMap}).
-
 
 \begin{figure}
 \centering
@@ -255,16 +254,15 @@ power output of an engine depends on a specified fuel density.
 According to \std{SANS 1935} the density of biodiesel is required to be
 \SIrange{860}{900}{\kilogram\per\cubic\metre} at a temperature of
 \SI{15}{\celsius}. The testing methods that can be used are described in
-\std{ISO 3675} and \std{ISO 12185}.
-
+\std{ISO 3675} and \std{ISO 12185}. 
 
 \std{ISO 12185} prescribes the measurement of density by using an electronic
 instrument known as the oscillating tube density meter. This measures the
 density of a liquid by measuring the frequency of a freely-oscillating tube
 filled with the liquid under test. The frequency depends on the mass of the
-filled tube, and therefore on the density of the liquid.
-These devices are easy to use and very accurate. The temperature of the liquid
-is controlled electronically.
+filled tube, and therefore on the density of the liquid. These devices are easy
+to use and very accurate. The temperature of the liquid is controlled
+electronically.
 
 \std{ISO 3675} prescribes the use of a hydrometer, which is an instrument that
 measures density by measuring the buoyant force on a floating indicator.
@@ -275,6 +273,11 @@ float with more of the indicator above the surface of the liquid. Hydrometer
 technology is mature, and the devices are simple and robust.  If \std{ISO 3675}
 is used at a temperature other than the specified one, a temperature correction
 is applied, as described in Annex D.
+
+If the FAME composition of the biodiesel is known, its density can be calculated
+\autocite{Knothe2014}. Therefore a knowledge of biodiesel feedstock chemistry
+can help guide the blending of biodiesel to produce a product that comply with
+this requirement.
 
 \subsection{Kinematic viscosity}
 \label{sec:Viscosity}
@@ -287,7 +290,13 @@ the liquid's viscosity and dividing it by its density. The viscosity of a diesel
 fuel is important, because the fuel must be finely divided for rapid combustion.
 In the diesel engine this division is achieved by the \keyword{injector}, which
 produces a spray of fuel into the cylinder. The fuel droplet size distribution
-in the spray is strongly influenced by the fuel's viscosity.
+in the spray is strongly influenced by the fuel's viscosity. 
+
+The viscosity of biodiesel is mainly determined by FAMEs it is composed of, and
+it is possible to predict the viscosity if the chemical composition is known
+\autocite{ChavarriaHernandez2014}. Therefore, if the feedstocks used in a
+biodiesel blend have been chemically characterized, the knowledge can be used to
+guide blending to achieve a compliant biodiesel.
 
 \std{SANS 1935} requires that kinematic viscosity be
 \SIrange{3.5}{5.0}{\milli\metre\squared\per\second}. The measurement method is
@@ -344,8 +353,10 @@ prescribed ignition delay, then the cetane number 50 is assigned.
 Cetane number gives limited insight into the chemical properties of the fuel or
 the performance of an engine using the fuel, but it is a trusted measure of the
 suitability of a fuel for use in a diesel engine and is therefore included in
-the standard. Biodiesel from common feedstocks usually easily meets the cetane
-specifications.
+the standard. But conversely, if the FAME composition of biodiesel is known, the
+cetane number can be predicted \autocite{Tong2010}. This means that a knowledge
+of the chemical composition of the biodiesel feedstock can help the biodiesel
+producer to manufacture a compliant product.
 
 \subsection{Flash point}
 
@@ -742,7 +753,7 @@ engineered to exhibit low bleed.
 \subsection{Free glycerol}
 
 Free glycerol is one of the products of the transesterification of plant oils to
-produce biodiesel. It is a polar compound, which naturally separates from the
+produce biodiesel. It is a polar compound which naturally separates from the
 non-polar biodiesel, and any excess remaining dissolved in the biodiesel is
 removed during the washing step. Inappropriate processing may leave excess free
 glycerol in the biodiesel. Free glycerol contributes to injector coking,

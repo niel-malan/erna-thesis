@@ -25,10 +25,11 @@ Biodiesel can be blended in all proportions with diesel obtained from petroleum
 (\keyword{petrodiesel}). To reduce the carbon footprint of diesel fuel,
 legislators are encouraging the use of blended fuels. Manufacturers might also
 add biodiesel to their fuel formulations to improve properties such as lubricity
-\autocite{Knothe2005}, or for its ability to reduce engine emissions
-\autocite{Wattrus2016}. In South Africa the standard grade of diesel may contain
-up to \SI{5}{\percent} volume fraction biodiesel, and higher fractions of FAMEs
-are allowed as different grades \autocite{Act120-1997}.
+\autocite{Knothe2005}, or for its ability to reduce engine emissions (see
+Section \label{sec:FuelFormulation}) \autocite{Wattrus2016}. In South Africa the
+standard grade of diesel may contain up to \SI{5}{\percent} volume fraction
+biodiesel, and higher fractions of FAMEs are allowed as different grades
+\autocite{Act120-1997}.
 
 The test methods for FAMEs in standard diesel allowed by \std{SANS 342} are
 \std{EN 14078}, \std{ASTM D7806}, or \std{ASTM D7371}. These are all infrared
@@ -53,14 +54,15 @@ methods may suffer from inaccuracy if those assumptions do not hold
 
 Polycyclic aromatic hydrocarbons (PAHs) are noxious pollutants and are therefore
 regulated when possible. The primary source of PAHs that enter the environment
-is combustion, of which a portion takes place in internal-combustion engines.
-PAHs are also abundant in fossil fuels, including diesel, and might escape from
-diesel during normal operations or in leaks and spills. Primarily, however, the
-higher the proportion of aromatic compounds in diesel fuel, the higher the PAH
-emissions of the engine it fuels \autocite{Souza2016}. These higher emissions
-are ascribed to the poorer combustion of fuels containing higher amounts of
-aromatics. For all these reasons regulators aim to reduce the exposure of the
-population to the harm of PAHs by limiting the amount of PAHs in diesel.
+is combustion, of which a portion takes place in internal-combustion engines
+(see Section \ref{sec:IncompleteCombustion}). PAHs are also abundant in fossil
+fuels, including diesel, and might escape from diesel during normal operations
+or in leaks and spills. Primarily, however, the higher the proportion of
+aromatic compounds in diesel fuel, the higher the PAH emissions of the engine it
+fuels \autocite{deSouza2016}. These higher emissions are ascribed to the poorer
+combustion of fuels containing higher amounts of aromatics. For all these
+reasons regulators aim to reduce the exposure of the population to the harm of
+PAHs by limiting the amount of PAHs in diesel.
 
 \std{SANS 342} describes two classes of diesel fuel, CF1 and CF2, named after the
 Department of Energy's Cleaner Fuels programme. For CF1 the standard does not
@@ -364,9 +366,13 @@ It should be noted that the 5-ring PAH compound benzo[\textit{a}]pyrene that was
 included in the spike did not elute in the SFC dimension on this chromatogram.
 Its \oneD retention time is still unknown, but broad interfering peaks in
 subsequent chromatograms can be attributed to slowly-eluting
-benzo[\textit{a}]pyrene shows that it elutes in \twoD without wrap-around, so if
-the \oneD run was made longer one would expect its peak to appear in the 2D
-chromatogram.
+benzo[\textit{a}]pyrene shows that it elutes in \twoD without wrap-around. This
+very long retention time of a very simple PAH compound means that perhaps the
+method described in \std{ASTM 5186} cannot quantify PAHs with more than four
+rings in diesel. This is no failure: ``PAHs with molecular weight greater than
+pyrene (\SI{202 }{\gram\per\mole}) are not usually found in diesel or have low
+concentrations'', \autocite{deSouza2016} and require methods with very low
+limits of detection to be determined. 
 
 \subsection{FAMEs}
 
@@ -436,7 +442,7 @@ standards for reliable qualitative and quantitative analysis by exploiting the
 robustness and reliability of the FID. Expensive mass spectrometric detection is
 unnecessary.
 
-Being able to determine the biodiesel content of biodiesel blends may prove
+Being able to determine the biodiesel content of diesel blends may prove
 useful in at least two scenarios:
 
 The first is in monitoring blending. Biodiesel (essentially a mixture of esters)
