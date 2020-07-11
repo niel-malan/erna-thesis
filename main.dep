@@ -163,6 +163,8 @@
   *{package}{pdflscape}   {2016/05/14 v0.11}
   *{package}{lscape}      {2000/10/22 v3.01}
   *{file}   {lscape.hak}  {2019/02/01 v3.26b}
+  *{file}   {Chapters/Chapter0.tex}{0000/00/00 v0.0}
+  *{file}   {Figures/ThesisOrganization.pdf}{0000/00/00 v0.0}
   *{file}   {Chapters/Chapter1.tex}{0000/00/00 v0.0}
   *{file}   {Figures/otto-cycle.pdf}{0000/00/00 v0.0}
   *{file}   {Figures/diesel-cycle.pdf}{0000/00/00 v0.0}
@@ -276,4 +278,5 @@
   *{file}   {Figures/CarDrawing2.pdf}{0000/00/00 v0.0}
   *{file}   {Figures/CarDrawing3.pdf}{0000/00/00 v0.0}
   *{file}   {Appendices/AppendixE.tex}{0000/00/00 v0.0}
+  *{file}   {Appendices/AppendixF.tex}{0000/00/00 v0.0}
 }

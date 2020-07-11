@@ -1,0 +1,25 @@
+[0] Config.pm:304> INFO - This is Biber 2.12
+[0] Config.pm:307> INFO - Logfile is 'main.blg'
+[45] biber-MSWIN64:315> INFO - === 
+[80] Biber.pm:371> INFO - Reading 'main.bcf'
+[272] Biber.pm:889> INFO - Found 198 citekeys in bib section 0
+[287] Biber.pm:4093> INFO - Processing section 0
+[304] Biber.pm:4254> INFO - Looking for bibtex format file 'main.bib' for section 0
+[332] bibtex.pm:1523> INFO - LaTeX decoding ...
+[909] bibtex.pm:1340> INFO - Found BibTeX data source 'main.bib'
+[1130] Utils.pm:193> WARN - month field 'jun' in entry 'Xu2010' is not an integer - this will probably not sort properly.
+[1432] Utils.pm:193> WARN - Overwriting field 'month' with month value from field 'date' for entry 'Mansouri2016'
+[1485] Utils.pm:193> WARN - Overwriting field 'month' with month value from field 'date' for entry 'Green2019'
+[1805] Utils.pm:193> WARN - month field 'jan' in entry 'Ettre1993b' is not an integer - this will probably not sort properly.
+[1821] Utils.pm:193> WARN - Overwriting field 'month' with month value from field 'date' for entry 'Perrenoud2012'
+[1908] Utils.pm:193> WARN - month field 'aug' in entry 'Knothe2014' is not an integer - this will probably not sort properly.
+[1915] Utils.pm:193> WARN - month field 'may' in entry 'ChavarriaHernandez2014' is not an integer - this will probably not sort properly.
+[1923] Utils.pm:193> WARN - month field 'sep' in entry 'Tong2010' is not an integer - this will probably not sort properly.
+[2336] Utils.pm:193> WARN - Overwriting field 'month' with month value from field 'date' for entry 'Sarowha2000'
+[2635] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2635] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2635] Biber.pm:3921> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[2635] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
+[2958] bbl.pm:636> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[3055] bbl.pm:739> INFO - Output to main.bbl
+[3055] Biber.pm:110> INFO - WARNINGS: 9
